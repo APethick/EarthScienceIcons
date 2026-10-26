@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Remote Sensing &amp; Hyperspectral</title>
+  <desc id="desc">Multi-band hyperspectral image cube with diagnostic mineral SWIR/VNIR absorption trough (GeophysicalMethod.REMOTE_SENSING &amp; HyperspectralProperty).</desc>
+  <path fill="#3478F6" d="M125.0 166.7 L500.0 83.3 L875.0 166.7 L500.0 333.3 Z"/>
+  <path fill="#DDEAFF" d="M125.0 375.0 L500.0 291.7 L875.0 375.0 L500.0 541.7 Z"/>
+  <path fill="#26354D" d="M125.0 583.3 L500.0 500.0 L875.0 583.3 L500.0 750.0 Z"/>
+  <path fill="#26354D" d="M531.2 791.7 L531.2 812.5 L568.8 812.5 L500.0 916.7 L431.2 812.5 L468.8 812.5 L468.9 788.6 L470.1 782.6 L472.4 776.9 L475.8 771.8 L480.2 767.5 L485.3 764.1 L488.0 762.8 L493.9 761.0 L500.0 760.4 L506.1 761.0 L512.0 762.8 L517.4 765.7 L519.8 767.5 L524.2 771.8 L527.6 776.9 L529.9 782.6 L530.6 785.6 Z"/>
+</svg>

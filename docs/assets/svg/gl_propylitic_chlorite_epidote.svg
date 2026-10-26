@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Propylitic Alteration (Chlorite-Epidote)</title>
+  <desc id="desc">Low-temperature outer greenstone halo composed of epidote, chlorite, albite, and calcite (AlterationType.EPIDOTE_ALTERATION).</desc>
+  <path fill="#239D88" d="M166.7 833.3 L291.7 166.7 L416.7 125.0 L375.0 791.7 Z"/>
+  <path fill="#D5EEE7" d="M458.3 833.3 L625.0 166.7 L750.0 208.3 L625.0 875.0 Z"/>
+  <path fill="#26354D" d="M750.0 875.0 L833.3 500.0 L916.7 541.7 L875.0 875.0 Z"/>
+</svg>

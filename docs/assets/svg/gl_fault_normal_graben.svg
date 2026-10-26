@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Horst &amp; Graben Extensional Rift</title>
+  <desc id="desc">Conjugate normal faults dropping a central graben rift valley between elevated horst shoulders (FaultType.HIGH_ANGLE_NORMAL_FAULT &amp; EventProcess.RIFTING).</desc>
+  <path fill="#239D88" d="M125.0 208.3 L333.3 208.3 L500.0 708.3 L125.0 708.3 Z"/>
+  <path fill="#239D88" d="M666.7 208.3 L875.0 208.3 L875.0 708.3 L500.0 708.3 Z"/>
+  <path fill="#D5EEE7" d="M375.0 416.7 L625.0 416.7 L500.0 791.7 Z"/>
+  <path fill="#26354D" d="M121.9 52.2 L187.5 52.1 L187.5 14.6 L291.7 83.3 L187.5 152.1 L187.5 114.6 L125.0 114.6 L118.9 114.0 L113.0 112.2 L107.6 109.3 L102.9 105.4 L99.0 100.7 L96.1 95.3 L95.1 92.4 L93.9 86.4 L93.9 80.3 L94.4 77.2 L96.1 71.4 L97.4 68.6 L100.8 63.5 L105.2 59.2 L107.6 57.3 L113.0 54.5 L115.9 53.4 Z"/>
+  <path fill="#26354D" d="M812.5 14.6 L812.5 52.1 L875.0 52.1 L878.1 52.2 L884.1 53.4 L889.7 55.8 L892.4 57.3 L897.1 61.2 L901.0 66.0 L903.9 71.4 L904.9 74.3 L905.6 77.2 L906.2 83.3 L905.6 89.4 L903.9 95.3 L901.0 100.7 L899.2 103.2 L897.1 105.4 L892.4 109.3 L889.7 110.9 L884.1 113.2 L881.1 114.0 L875.0 114.6 L812.5 114.6 L812.5 152.1 L708.3 83.3 Z"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Basalt Columnar Cooling Jointing</title>
+  <desc id="desc">Array of vertical hexagonal prismatic basalt columns formed by thermal contraction during lava cooling (SimpleLithology.BASALT).</desc>
+  <path fill="#D5EEE7" d="M125.0 333.3 L250.0 208.3 L375.0 333.3 L375.0 791.7 L250.0 916.7 L125.0 791.7 Z"/>
+  <path fill="#239D88" d="M375.0 208.3 L500.0 83.3 L625.0 208.3 L625.0 791.7 L500.0 916.7 L375.0 791.7 Z"/>
+  <path fill="#26354D" d="M625.0 333.3 L750.0 208.3 L875.0 333.3 L875.0 791.7 L750.0 916.7 L625.0 791.7 Z"/>
+</svg>

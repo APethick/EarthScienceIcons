@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <title>Ignimbrite &amp; Welded Fiamme (Geological - Earth Model Types)</title>
+  <desc>Flattened lenticular glassy pumice fiamme defining eutaxitic compaction fabric in welded pyroclastic tuff (ParticleType.FIAMME).</desc>
+  <path fill="currentColor" d="M60.0 940.0 L60.0 60.0 L940.0 60.0 L940.0 940.0 Z M900.1 100.6 L899.4 99.9 L100.1 100.1 L100.1 899.9 L899.9 899.9 Z M143.0 479.0 L311.1 374.0 L688.9 374.0 L857.0 479.0 L752.0 531.5 L521.0 563.0 L269.0 542.0 Z M195.5 741.5 L374.0 678.5 L615.5 678.5 L804.5 741.5 L594.5 794.0 L353.0 794.0 Z M227.0 237.5 L405.5 174.5 L625.9 174.5 L773.0 237.5 L584.0 279.5 L374.0 279.5 Z"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Portable XRF (pXRF) Analyzer</title>
+  <desc id="desc">Handheld portable X-ray fluorescence analyzer irradiating a rock specimen and measuring secondary X-ray emission.</desc>
+  <path fill="#8A63CF" d="M125.0 208.3 L666.7 208.3 L666.7 458.3 L458.3 458.3 L375.0 875.0 L166.7 833.3 L250.0 458.3 L125.0 458.3 Z"/>
+  <path fill="#EAE1F6" d="M491.7 291.7 L494.9 292.3 L497.6 294.1 L499.4 296.8 L500.0 300.0 L500.0 366.7 L499.8 368.3 L498.6 371.3 L496.3 373.6 L494.9 374.4 L491.7 375.0 L258.3 375.0 L255.1 374.4 L253.7 373.6 L251.4 371.3 L250.6 369.9 L250.0 366.7 L250.0 300.0 L250.2 298.4 L251.4 295.4 L253.7 293.1 L255.1 292.3 L258.3 291.7 Z"/>
+  <path fill="#26354D" d="M750.0 302.1 L812.5 302.1 L812.5 264.6 L916.7 333.3 L812.5 402.1 L812.5 364.6 L750.0 364.6 L743.9 364.0 L738.0 362.2 L732.6 359.3 L727.9 355.4 L724.0 350.7 L721.1 345.3 L719.4 339.4 L718.9 336.4 L718.9 330.3 L719.4 327.2 L721.1 321.4 L722.4 318.6 L725.8 313.5 L727.9 311.2 L730.2 309.2 L735.3 305.8 L740.9 303.4 L743.9 302.7 Z"/>
+</svg>

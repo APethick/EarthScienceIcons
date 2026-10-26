@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Tectonic Fault Slip &amp; Rupture</title>
+  <desc id="desc">Relative hanging-wall and footwall displacement along a tectonic fault plane with kinematic shear arrows.</desc>
+  <path fill="#239D88" d="M125.0 208.3 L458.3 208.3 L291.7 750.0 L125.0 750.0 Z"/>
+  <path fill="#D5EEE7" d="M625.0 333.3 L875.0 333.3 L875.0 875.0 L458.3 875.0 Z"/>
+  <path fill="#26354D" d="M458.1 284.4 L421.7 275.3 L363.7 507.6 L361.6 513.3 L358.4 518.6 L354.3 523.1 L349.4 526.8 L343.9 529.4 L337.9 530.9 L331.8 531.2 L328.8 530.9 L322.8 529.4 L317.3 526.8 L312.4 523.2 L310.2 521.0 L306.5 516.1 L305.1 513.4 L303.9 510.5 L302.4 504.6 L302.1 498.5 L302.4 495.4 L361.1 260.1 L324.7 251.0 L416.7 166.7 Z"/>
+  <path fill="#26354D" d="M613.7 507.6 L555.6 739.9 L592.0 749.0 L500.0 833.3 L458.6 715.6 L494.9 724.7 L553.0 492.4 L555.1 486.7 L558.2 481.4 L562.3 476.9 L567.3 473.2 L572.8 470.6 L575.7 469.7 L581.8 468.8 L587.9 469.1 L590.9 469.7 L596.7 471.7 L601.9 474.9 L606.5 479.0 L608.4 481.4 L611.6 486.6 L612.8 489.5 L614.2 495.4 L614.5 501.5 Z"/>
+</svg>

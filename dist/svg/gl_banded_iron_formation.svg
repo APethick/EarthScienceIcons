@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Banded Iron Formation (BIF)</title>
+  <desc id="desc">Precambrian chemical sedimentary rock with micro-laminated alternating beds of iron oxide and chert (SimpleLithology.BANDED_IRON_FORMATION).</desc>
+  <path fill="#D5EEE7" d="M845.8 125.0 L851.5 125.6 L857.0 127.2 L862.0 129.9 L866.5 133.5 L870.1 138.0 L872.8 143.0 L874.4 148.5 L875.0 154.2 L875.0 845.8 L874.4 851.5 L872.8 857.0 L870.1 862.0 L866.5 866.5 L862.0 870.1 L857.0 872.8 L851.5 874.4 L845.8 875.0 L154.2 875.0 L148.5 874.4 L143.0 872.8 L138.0 870.1 L133.5 866.5 L129.9 862.0 L127.2 857.0 L125.6 851.5 L125.0 845.8 L125.0 154.2 L125.6 148.5 L127.2 143.0 L129.9 138.0 L133.5 133.5 L138.0 129.9 L143.0 127.2 L148.5 125.6 L154.2 125.0 Z"/>
+  <path fill="#239D88" d="M875.0 166.7 L875.0 270.8 L125.0 270.8 L125.0 166.7 Z"/>
+  <path fill="#26354D" d="M875.0 416.7 L875.0 520.8 L125.0 520.8 L125.0 416.7 Z"/>
+  <path fill="#239D88" d="M875.0 666.7 L875.0 770.8 L125.0 770.8 L125.0 666.7 Z"/>
+</svg>

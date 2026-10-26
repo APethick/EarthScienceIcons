@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Greisen &amp; Twinned Cassiterite</title>
+  <desc id="desc">Pneumatolytic quartz-muscovite-topaz altered granite border containing geniculate twinned cassiterite elbow crystals (AlterationType.GREISEN).</desc>
+  <path fill="#239D88" d="M166.7 166.7 L333.3 166.7 L666.7 833.3 L500.0 833.3 Z"/>
+  <path fill="#26354D" d="M666.7 166.7 L833.3 166.7 L500.0 833.3 L333.3 833.3 Z"/>
+</svg>

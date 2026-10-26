@@ -1,0 +1,220 @@
+/**
+ * GeoScience Icons v2.1.0
+ * Domains: Geophysical, Geotechnical, Geological, Geochemical
+ * Categories: Methods, Earth Model Types, Processes
+ */
+@font-face {
+  font-family: 'GeoScience Icons';
+  src: url('GeoScienceIcons.woff') format('woff'),
+       url('GeoScienceIcons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.gi {
+  font-family: 'GeoScience Icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gi-gp-seismic-reflection::before { content: "\e001"; } /* Seismic Reflection Survey (U+E001) */
+.gi-gp-gravity-survey::before { content: "\e002"; } /* Gravity Survey (U+E002) */
+.gi-gp-magnetic-survey::before { content: "\e003"; } /* Magnetic Survey (U+E003) */
+.gi-gp-electromagnetic-em::before { content: "\e004"; } /* Electromagnetic (EM) Induction (U+E004) */
+.gi-gp-ert-ip::before { content: "\e005"; } /* Electrical Resistivity & IP (ERT/IP) (U+E005) */
+.gi-gp-velocity-model::before { content: "\e006"; } /* Seismic Velocity Model (U+E006) */
+.gi-gp-density-model::before { content: "\e007"; } /* Density Contrast Block Model (U+E007) */
+.gi-gp-susceptibility-model::before { content: "\e008"; } /* Magnetic Susceptibility Model (U+E008) */
+.gi-gp-resistivity-section::before { content: "\e009"; } /* Resistivity Pseudosection (U+E009) */
+.gi-gp-seismic-cube-3d::before { content: "\e00a"; } /* 3D Seismic Volume Cube (U+E00A) */
+.gi-gp-wave-propagation::before { content: "\e00b"; } /* Seismic Wave Propagation (U+E00B) */
+.gi-gp-ray-refraction-snell::before { content: "\e00c"; } /* Snell's Law & Critical Refraction (U+E00C) */
+.gi-gp-geophysical-inversion::before { content: "\e00d"; } /* Forward & Inverse Modeling (U+E00D) */
+.gi-gp-signal-deconvolution::before { content: "\e00e"; } /* Wavelet Deconvolution (U+E00E) */
+.gi-gp-nmo-stacking::before { content: "\e00f"; } /* NMO Correction & Stacking (U+E00F) */
+.gi-gt-spt-test::before { content: "\e010"; } /* Standard Penetration Test (SPT) (U+E010) */
+.gi-gt-cpt-cone::before { content: "\e011"; } /* Cone Penetration Test (CPT) (U+E011) */
+.gi-gt-triaxial-shear::before { content: "\e012"; } /* Triaxial Shear Compression Test (U+E012) */
+.gi-gt-piezometer-well::before { content: "\e013"; } /* Piezometer & Groundwater Well (U+E013) */
+.gi-gt-inclinometer-casing::before { content: "\e014"; } /* Borehole Inclinometer (U+E014) */
+.gi-gt-mohr-coulomb::before { content: "\e015"; } /* Mohr-Coulomb Failure Envelope (U+E015) */
+.gi-gt-rock-mass-rmr-gsi::before { content: "\e016"; } /* Rock Mass Classification (RMR / GSI) (U+E016) */
+.gi-gt-slope-stability-grid::before { content: "\e017"; } /* Limit Equilibrium Slope Model (U+E017) */
+.gi-gt-soil-profile-log::before { content: "\e018"; } /* Engineering Soil Horizon Profile (U+E018) */
+.gi-gt-fe-mesh-tunnel::before { content: "\e019"; } /* Geomechanical FEA Tunnel Mesh (U+E019) */
+.gi-gt-consolidation-settlement::before { content: "\e01a"; } /* Consolidation & Foundation Settlement (U+E01A) */
+.gi-gt-soil-liquefaction::before { content: "\e01b"; } /* Seismic Soil Liquefaction (U+E01B) */
+.gi-gt-slope-landslide::before { content: "\e01c"; } /* Rotational Slope Failure & Landslide (U+E01C) */
+.gi-gt-seepage-flownet::before { content: "\e01d"; } /* Darcy Seepage & Flow Net (U+E01D) */
+.gi-gt-rock-burst-spalling::before { content: "\e01e"; } /* Stress Spalling & Rockburst (U+E01E) */
+.gi-gl-strike-dip-mapping::before { content: "\e01f"; } /* Structural Strike & Dip Mapping (U+E01F) */
+.gi-gl-diamond-core-drilling::before { content: "\e020"; } /* Diamond Core Drilling (U+E020) */
+.gi-gl-thin-section-petrography::before { content: "\e021"; } /* Thin-Section Optical Petrography (U+E021) */
+.gi-gl-stratigraphic-logging::before { content: "\e022"; } /* Measured Stratigraphic Column (U+E022) */
+.gi-gl-structural-stereonet::before { content: "\e023"; } /* Schmidt Structural Stereonet (U+E023) */
+.gi-gl-block-model-3d::before { content: "\e024"; } /* 3D Resource Block Model (U+E024) */
+.gi-gl-wireframe-mesh::before { content: "\e025"; } /* 3D Geological Wireframe Mesh (U+E025) */
+.gi-gl-faulted-stratigraphy::before { content: "\e026"; } /* Faulted Stratigraphic Horizon Model (U+E026) */
+.gi-gl-folded-anticline-model::before { content: "\e027"; } /* Folded Anticline-Syncline Model (U+E027) */
+.gi-gl-intrusive-pluton-model::before { content: "\e028"; } /* Igneous Pluton, Dike & Sill Model (U+E028) */
+.gi-gl-plate-subduction::before { content: "\e029"; } /* Plate Tectonic Subduction (U+E029) */
+.gi-gl-fault-slip-tectonics::before { content: "\e02a"; } /* Tectonic Fault Slip & Rupture (U+E02A) */
+.gi-gl-sedimentation-deposition::before { content: "\e02b"; } /* Sediment Transport & Deposition (U+E02B) */
+.gi-gl-metamorphism-pt::before { content: "\e02c"; } /* Metamorphic P-T Recrystallization (U+E02C) */
+.gi-gl-weathering-erosion::before { content: "\e02d"; } /* Weathering & Erosional Breakdown (U+E02D) */
+.gi-gc-soil-stream-sampling::before { content: "\e02e"; } /* Soil & Stream Geochemical Sampling (U+E02E) */
+.gi-gc-pxrf-analyzer::before { content: "\e02f"; } /* Portable XRF (pXRF) Analyzer (U+E02F) */
+.gi-gc-icp-ms-spectrometry::before { content: "\e030"; } /* ICP-MS / OES Mass Spectrometry (U+E030) */
+.gi-gc-fire-assay::before { content: "\e031"; } /* Fire Assay & Cupellation (U+E031) */
+.gi-gc-isotope-ratio-analysis::before { content: "\e032"; } /* Radiogenic & Stable Isotope Analysis (U+E032) */
+.gi-gc-alteration-zonation::before { content: "\e033"; } /* Hydrothermal Alteration Zonation (U+E033) */
+.gi-gc-geochem-anomaly-contours::before { content: "\e034"; } /* Geochemical Iso-Grade Contour Map (U+E034) */
+.gi-gc-ternary-classification::before { content: "\e035"; } /* Geochemical Ternary Diagram (U+E035) */
+.gi-gc-eh-ph-pourbaix::before { content: "\e036"; } /* Eh-pH (Pourbaix) Stability Diagram (U+E036) */
+.gi-gc-downhole-geochem-log::before { content: "\e037"; } /* Downhole Multi-Element Assay Log (U+E037) */
+.gi-gc-hydrothermal-circulation::before { content: "\e038"; } /* Hydrothermal Fluid Convection (U+E038) */
+.gi-gc-supergene-leaching::before { content: "\e039"; } /* Supergene Leaching & Enrichment (U+E039) */
+.gi-gc-redox-front-roll::before { content: "\e03a"; } /* Roll-Front Redox Migration (U+E03A) */
+.gi-gc-magmatic-differentiation::before { content: "\e03b"; } /* Magmatic Differentiation & Cumulates (U+E03B) */
+.gi-gc-element-dispersion-halo::before { content: "\e03c"; } /* Geochemical Dispersion Halo (U+E03C) */
+.gi-gp-self-potential::before { content: "\e03d"; } /* Self-Potential (SP) Method (U+E03D) */
+.gi-gp-magnetotellurics-mt::before { content: "\e03e"; } /* Magnetotellurics (MT) (U+E03E) */
+.gi-gp-ground-penetrating-radar::before { content: "\e03f"; } /* Ground Penetrating Radar (GPR) (U+E03F) */
+.gi-gp-radiometrics-gamma::before { content: "\e040"; } /* Radiometric Gamma Spectrometry (U+E040) */
+.gi-gp-nmr-sounding::before { content: "\e041"; } /* Nuclear Magnetic Resonance (NMR) (U+E041) */
+.gi-gp-thermal-geothermal::before { content: "\e042"; } /* Thermal & Heat Flow Survey (U+E042) */
+.gi-gp-acoustics-sonar::before { content: "\e043"; } /* Acoustics & Sonar Imaging (U+E043) */
+.gi-gp-geodesy-insar-gnss::before { content: "\e044"; } /* Geodesy, GNSS & InSAR (U+E044) */
+.gi-gp-remote-sensing-hyperspectral::before { content: "\e045"; } /* Remote Sensing & Hyperspectral (U+E045) */
+.gi-gp-matrix-mixing-bounds::before { content: "\e046"; } /* Matrix Mixing Model (Voigt / Reuss / HS / Bruggeman) (U+E046) */
+.gi-gp-pore-fluid-archie::before { content: "\e047"; } /* Pore Fluid & Archie / Waxman-Smits Model (U+E047) */
+.gi-gp-ip-cole-cole::before { content: "\e048"; } /* IP Relaxation Model (Cole-Cole / Revil) (U+E048) */
+.gi-gp-dielectric-permittivity::before { content: "\e049"; } /* Dielectric Permittivity Model (CRIM / Topp) (U+E049) */
+.gi-gp-koenigsberger-remanence::before { content: "\e04a"; } /* Magnetic Remanence & Koenigsberger Model (U+E04A) */
+.gi-gp-gassmann-fluid-sub::before { content: "\e04b"; } /* Gassmann & Rock Physics Velocity Model (U+E04B) */
+.gi-gp-permeability-kozeny::before { content: "\e04c"; } /* Permeability Model (Kozeny-Carman / Timur) (U+E04C) */
+.gi-gt-deere-rqd::before { content: "\e04d"; } /* Deere RQD (Rock Quality Designation) (U+E04D) */
+.gi-gt-barton-q-tunnel::before { content: "\e04e"; } /* Barton Q-System Tunnel Support (U+E04E) */
+.gi-gt-bieniawski-rmr::before { content: "\e04f"; } /* Bieniawski RMR Scorecard (U+E04F) */
+.gi-gt-hoek-brown-criterion::before { content: "\e050"; } /* Generalized Hoek-Brown Criterion (U+E050) */
+.gi-gt-ucs-from-velocity::before { content: "\e051"; } /* UCS from P-Wave Velocity (U+E051) */
+.gi-gt-brittleness-index::before { content: "\e052"; } /* Rock Brittleness Index (U+E052) */
+.gi-gl-rock-type-igneous::before { content: "\e053"; } /* Igneous Rock Type (U+E053) */
+.gi-gl-rock-type-sedimentary::before { content: "\e054"; } /* Sedimentary Rock Type (U+E054) */
+.gi-gl-rock-type-metamorphic::before { content: "\e055"; } /* Metamorphic Rock Type (U+E055) */
+.gi-gl-composition-category::before { content: "\e056"; } /* Silicate & Lithological Composition (U+E056) */
+.gi-gl-genetic-category::before { content: "\e057"; } /* Genetic Classification & Rock Cycle (U+E057) */
+.gi-gl-metamorphic-facies-pt::before { content: "\e058"; } /* Metamorphic Facies & Grade (P-T Grid) (U+E058) */
+.gi-gl-consolidation-degree::before { content: "\e059"; } /* Consolidation & Induration Degree (U+E059) */
+.gi-gl-deformation-brittle-ductile::before { content: "\e05a"; } /* Brittle-Ductile Deformation Style (U+E05A) */
+.gi-gl-unit-morphology::before { content: "\e05b"; } /* Geologic Unit Morphology (Boudin & Dome) (U+E05B) */
+.gi-gl-style-disseminated::before { content: "\e05c"; } /* Disseminated Sulfide Texture (U+E05C) */
+.gi-gl-style-net-textured::before { content: "\e05d"; } /* Net-Textured Matrix Sulfide (U+E05D) */
+.gi-gl-style-massive-sulfide::before { content: "\e05e"; } /* Semi-Massive & Massive Sulfide Ore (U+E05E) */
+.gi-gl-style-veined-stringer::before { content: "\e05f"; } /* Veined & Stringer Stockwork Texture (U+E05F) */
+.gi-gl-particle-shape-roundness::before { content: "\e060"; } /* Particle Shape, Roundness & Aspect Ratio (U+E060) */
+.gi-gl-contact-unconformity::before { content: "\e061"; } /* Geological Contact & Unconformity (U+E061) */
+.gi-gl-foliation-lineation::before { content: "\e062"; } /* Foliation & Mineral Lineation (S-L Fabric) (U+E062) */
+.gi-gl-borehole-drilling-methods::before { content: "\e063"; } /* Rotary, RC & Auger Borehole Drilling (U+E063) */
+.gi-gl-planar-polarity-overturned::before { content: "\e064"; } /* Planar Polarity (Upright vs Overturned) (U+E064) */
+.gi-gm-acid-rock-drainage::before { content: "\e065"; } /* Acid Rock Drainage (ARD / NAPP / NAG) (U+E065) */
+.gi-gm-comminution-work-index::before { content: "\e066"; } /* Comminution & Bond Work Index (Wi / SAG) (U+E066) */
+.gi-gm-flotation-recovery::before { content: "\e067"; } /* Mineral Liberation & Flotation Recovery (U+E067) */
+.gi-gc-melt-chemistry-f02::before { content: "\e068"; } /* Silicate Melt Chemistry & Oxygen Fugacity (fO2) (U+E068) */
+.gi-gc-carbon-mineralisation::before { content: "\e069"; } /* Ultramafic CO2 Sequestration & Carbonation (U+E069) */
+.gi-gl-lithology-tensor-anisotropy::before { content: "\e06a"; } /* Lithology Fabric & Tensor Anisotropy (U+E06A) */
+.gi-gl-fault-normal-graben::before { content: "\e06b"; } /* Horst & Graben Extensional Rift (U+E06B) */
+.gi-gl-fault-thrust-ramp::before { content: "\e06c"; } /* Thrust Fault & Ramp-Flat Anticline (U+E06C) */
+.gi-gl-fault-strike-slip-dextral::before { content: "\e06d"; } /* Dextral Strike-Slip & Riedel Shears (U+E06D) */
+.gi-gl-shear-zone-sigmoidal::before { content: "\e06e"; } /* Ductile Shear Zone & Delta Porphyroclast (U+E06E) */
+.gi-gl-chevron-kink-fold::before { content: "\e06f"; } /* Chevron & Kink Band Folds (U+E06F) */
+.gi-gl-ptygmatic-vein-fold::before { content: "\e070"; } /* Ptygmatic Metamorphic Fold (U+E070) */
+.gi-gl-columnar-jointing::before { content: "\e071"; } /* Basalt Columnar Cooling Jointing (U+E071) */
+.gi-gl-spinifex-texture::before { content: "\e072"; } /* Komatiite Spinifex Texture (U+E072) */
+.gi-gl-pillow-lava::before { content: "\e073"; } /* Pillow Basalt & Geopetal Way-Up (U+E073) */
+.gi-gl-fiamme-ignimbrite::before { content: "\e074"; } /* Ignimbrite & Welded Fiamme (U+E074) */
+.gi-gl-banded-iron-formation::before { content: "\e075"; } /* Banded Iron Formation (BIF) (U+E075) */
+.gi-gl-hydrothermal-breccia::before { content: "\e076"; } /* Hydrothermal Jigsaw Breccia (U+E076) */
+.gi-gl-potassic-alteration::before { content: "\e077"; } /* Potassic Hydrothermal Alteration (U+E077) */
+.gi-gl-phyllic-sericitic-alteration::before { content: "\e078"; } /* Phyllic (Sericitic / QSP) Alteration (U+E078) */
+.gi-gl-advanced-argillic::before { content: "\e079"; } /* Advanced Argillic & Vuggy Silica (U+E079) */
+.gi-gl-propylitic-chlorite-epidote::before { content: "\e07a"; } /* Propylitic Alteration (Chlorite-Epidote) (U+E07A) */
+.gi-gl-serpentinite-mesh::before { content: "\e07b"; } /* Serpentinisation Mesh Texture (U+E07B) */
+.gi-gl-skarn-calc-silicate::before { content: "\e07c"; } /* Calc-Silicate Skarn Reaction Zone (U+E07C) */
+.gi-gl-greisen-cassiterite::before { content: "\e07d"; } /* Greisen & Twinned Cassiterite (U+E07D) */
+.gi-gl-tourmaline-sun-rosette::before { content: "\e07e"; } /* Tourmaline Sun Rosette (U+E07E) */
+.gi-gl-turbidite-bouma-sequence::before { content: "\e07f"; } /* Turbidite Bouma Sequence (Ta-Te) (U+E07F) */
+.gi-gl-fluvial-point-bar-channel::before { content: "\e080"; } /* Fluvial Point Bar & Meander Channel (U+E080) */
+.gi-gc-la-icp-ms-laser::before { content: "\e081"; } /* LA-ICP-MS Laser Microprobe (U+E081) */
+.gi-gc-epma-wds-microprobe::before { content: "\e082"; } /* Electron Microprobe (EPMA / WDS) (U+E082) */
+.gi-gc-xrd-diffractometer::before { content: "\e083"; } /* X-Ray Powder Diffraction (XRD) (U+E083) */
+.gi-gc-xanes-synchrotron::before { content: "\e084"; } /* Synchrotron X-Ray Absorption (XANES) (U+E084) */
+.gi-gc-libs-laser-plasma::before { content: "\e085"; } /* Laser-Induced Breakdown (LIBS) (U+E085) */
+.gi-gc-ftir-raman-spectroscopy::before { content: "\e086"; } /* FTIR & Raman Vibrational Spectroscopy (U+E086) */
+.gi-gc-four-acid-total-digest::before { content: "\e087"; } /* Four-Acid Near-Total Digestion (U+E087) */
+.gi-gc-aqua-regia-partial-digest::before { content: "\e088"; } /* Aqua Regia Partial Digestion (U+E088) */
+.gi-gc-cyanide-bottle-roll::before { content: "\e089"; } /* Cyanide Bottle Roll Leach Test (U+E089) */
+.gi-gc-sequential-extraction::before { content: "\e08a"; } /* Sequential Chemical Extraction (U+E08A) */
+.gi-gc-gas-chromatography-ms::before { content: "\e08b"; } /* Gas Chromatography-MS (GC-MS) (U+E08B) */
+.gi-gc-sims-shrimp-microprobe::before { content: "\e08c"; } /* Secondary Ion Mass Spectrometry (SIMS / SHRIMP) (U+E08C) */
+.gi-gc-tims-thermal-ionization::before { content: "\e08d"; } /* Thermal Ionization Mass Spectrometry (TIMS) (U+E08D) */
+.gi-gc-stable-isotope-gas-irms::before { content: "\e08e"; } /* Gas Stable Isotope Ratio MS (IRMS) (U+E08E) */
+.gi-gc-fluid-inclusion-microtherm::before { content: "\e08f"; } /* Fluid Inclusion Microthermometry (U+E08F) */
+.gi-gc-radon-emanometry::before { content: "\e090"; } /* Soil-Gas Radon Emanometry (U+E090) */
+.gi-gc-biogeochem-vegetation::before { content: "\e091"; } /* Biogeochemical Vegetation Sampling (U+E091) */
+.gi-gc-ree-chondrite-spidergram::before { content: "\e092"; } /* Chondrite-Normalized REE Spidergram (U+E092) */
+.gi-gc-primitive-mantle-spidergram::before { content: "\e093"; } /* Primitive Mantle Multi-Element Spidergram (U+E093) */
+.gi-gc-tas-volcanic-diagram::before { content: "\e094"; } /* TAS Volcanic Classification Diagram (U+E094) */
+.gi-gc-qapf-ternary-double::before { content: "\e095"; } /* QAPF Double-Ternary Diamond (U+E095) */
+.gi-gc-pearce-tectonic-discrimination::before { content: "\e096"; } /* Pearce Granite Tectonic Discrimination (U+E096) */
+.gi-gc-activity-activity-diagram::before { content: "\e097"; } /* Hydrothermal Activity-Activity Diagram (U+E097) */
+.gi-gc-zircon-upb-concordia::before { content: "\e098"; } /* Wetherill U-Pb Concordia Diagram (U+E098) */
+.gi-gc-rb-sr-isochron-diagram::before { content: "\e099"; } /* Radiogenic Isochron Diagram (Rb-Sr) (U+E099) */
+.gi-gc-sulfur-isotope-delta34s::before { content: "\e09a"; } /* Sulfur Isotope (delta34S) Fractionation (U+E09A) */
+.gi-gc-swir-mineral-spectral-trough::before { content: "\e09b"; } /* Diagnostic SWIR Mineral Absorption Trough (U+E09B) */
+.gi-gc-campbell-vectoring-ratio::before { content: "\e09c"; } /* Campbell Porphyry Geochemical Vector (U+E09C) */
+.gi-gc-alumina-saturation-asi::before { content: "\e09d"; } /* Alumina Saturation Index (ASI / Shand) (U+E09D) */
+.gi-gc-harker-variation-diagram::before { content: "\e09e"; } /* Harker Major Oxide Variation Diagram (U+E09E) */
+.gi-gc-water-solubility-melt::before { content: "\e09f"; } /* Volatile H2O-CO2 Magma Solubility (U+E09F) */
+.gi-gc-oxygen-isotope-delta18o::before { content: "\e0a0"; } /* Meteoric Water Line & Oxygen Shift (U+E0A0) */
+.gi-gc-hydrothermal-boiling-immiscibility::before { content: "\e0a1"; } /* Hydrothermal Boiling & Phase Separation (U+E0A1) */
+.gi-gc-sulfide-melt-immiscibility::before { content: "\e0a2"; } /* Magmatic Sulfide Liquid Immiscibility (U+E0A2) */
+.gi-gc-fluid-rock-metasomatism::before { content: "\e0a3"; } /* Metasomatic Infiltration Reaction Front (U+E0A3) */
+.gi-gc-bacterial-sulfate-reduction::before { content: "\e0a4"; } /* Bacterial Sulfate Reduction (BSR / Framboid) (U+E0A4) */
+.gi-gc-heavy-mineral-placer::before { content: "\e0a5"; } /* Heavy Mineral Placer Hydrodynamics (U+E0A5) */
+.gi-gc-gossan-boxwork-weathering::before { content: "\e0a6"; } /* Gossan Cellular Boxwork Weathering (U+E0A6) */
+.gi-gc-fumarolic-gas-exsolution::before { content: "\e0a7"; } /* Volcanic Fumarolic Gas Exsolution (U+E0A7) */
+.gi-gc-clay-adsorption-cec::before { content: "\e0a8"; } /* Clay Interlayer Cation Adsorption (CEC) (U+E0A8) */
+.gi-gc-metal-chloride-complexation::before { content: "\e0a9"; } /* Hydrothermal Metal Complexation (U+E0A9) */
+.gi-gc-hydrocarbon-catagenesis::before { content: "\e0aa"; } /* Hydrocarbon Catagenesis & Cracking (U+E0AA) */
+.gi-gc-colloid-flocculation::before { content: "\e0ab"; } /* Estuarine Colloid Flocculation (U+E0AB) */
+.gi-gc-gibbs-free-energy::before { content: "\e0ac"; } /* Gibbs Free Energy Minimisation (U+E0AC) */
+.gi-gc-chemical-elements::before { content: "\e0ad"; } /* Chemical Elements & Atomic Structure (U+E0AD) */
+.gi-gl-minerals-specimen::before { content: "\e0ae"; } /* Minerals & Crystal Aggregate (U+E0AE) */
+.gi-gc-element-diff-wtpct::before { content: "\e0af"; } /* Element Difference in Weight Percent (U+E0AF) */
+.gi-gc-temperature-thermo::before { content: "\e0b0"; } /* Temperature & Geothermometry (U+E0B0) */
+.gi-gc-pressure-gauge::before { content: "\e0b1"; } /* Pressure & Geobarometry (U+E0B1) */
+.gi-gc-gradient-perturbation-factor::before { content: "\e0b2"; } /* Gradient Perturbation Factor (U+E0B2) */
+.gi-gc-l1-norm-regularization::before { content: "\e0b3"; } /* L1 Norm Sparse Regularization (U+E0B3) */
+.gi-gc-n-iterations-loop::before { content: "\e0b4"; } /* Optimization Iteration Loop (U+E0B4) */
+.gi-gc-thermodynamics-system::before { content: "\e0b5"; } /* Thermodynamic Equilibrium & Heat System (U+E0B5) */
+.gi-gp-petrophysics-core-matrix::before { content: "\e0b6"; } /* Petrophysics & Core Plug Porosity (U+E0B6) */
+.gi-gl-positions-spatial-coords::before { content: "\e0b7"; } /* Spatial Coordinate Positions (U+E0B7) */
+.gi-gc-volatiles-degassing::before { content: "\e0b8"; } /* Magmatic Volatiles & Degassing Bubbles (U+E0B8) */
+.gi-gc-water-activity-ah2o::before { content: "\e0b9"; } /* Water Activity (aH2O) (U+E0B9) */
+.gi-gc-fluid-xco2-mole-fraction::before { content: "\e0ba"; } /* Fluid Carbon Dioxide Mole Fraction (XCO2) (U+E0BA) */
+.gi-gc-oxygen-fugacity-fo2::before { content: "\e0bb"; } /* Oxygen Fugacity & Redox State (fO2) (U+E0BB) */
+.gi-gc-major-element-oxides::before { content: "\e0bc"; } /* Major Element Silicate Oxides (U+E0BC) */
+.gi-gc-gradient-initial-step::before { content: "\e0bd"; } /* Gradient Descent Initial Step Size (U+E0BD) */
+.gi-gc-sensitivity-jacobian::before { content: "\e0be"; } /* Inversion Sensitivity Matrix (U+E0BE) */
+.gi-gp-specific-gravity-balance::before { content: "\e0bf"; } /* Specific Gravity & Hydrostatic Balance (U+E0BF) */
+.gi-gc-log-error-residuals::before { content: "\e0c0"; } /* Logarithmic Residual Error (U+E0C0) */
+.gi-gl-geological-tagging-domain::before { content: "\e0c1"; } /* Geological Domain Tagging (U+E0C1) */

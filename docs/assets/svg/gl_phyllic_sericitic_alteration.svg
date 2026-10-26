@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Phyllic (Sericitic / QSP) Alteration</title>
+  <desc id="desc">Pervasive bleached alteration assemblage of quartz, sericite (white mica), and cubic pyrite (AlterationType.PHYLLIC).</desc>
+  <path fill="#D5EEE7" d="M845.8 125.0 L851.5 125.6 L857.0 127.2 L862.0 129.9 L866.5 133.5 L870.1 138.0 L872.8 143.0 L874.4 148.5 L875.0 154.2 L875.0 845.8 L874.4 851.5 L872.8 857.0 L870.1 862.0 L866.5 866.5 L862.0 870.1 L857.0 872.8 L851.5 874.4 L845.8 875.0 L154.2 875.0 L148.5 874.4 L143.0 872.8 L138.0 870.1 L133.5 866.5 L129.9 862.0 L127.2 857.0 L125.6 851.5 L125.0 845.8 L125.0 154.2 L125.6 148.5 L127.2 143.0 L129.9 138.0 L133.5 133.5 L138.0 129.9 L143.0 127.2 L148.5 125.6 L154.2 125.0 Z"/>
+  <path fill="#239D88" d="M250.0 250.0 L416.7 208.3 L375.0 333.3 L208.3 375.0 Z"/>
+  <path fill="#239D88" d="M625.0 291.7 L791.7 250.0 L750.0 375.0 L583.3 416.7 Z"/>
+  <path fill="#239D88" d="M333.3 625.0 L500.0 583.3 L458.3 708.3 L291.7 750.0 Z"/>
+  <path fill="#239D88" d="M666.7 666.7 L833.3 625.0 L791.7 750.0 L625.0 791.7 Z"/>
+</svg>

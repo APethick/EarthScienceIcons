@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <title>Hydrothermal Jigsaw Breccia (Geological - Earth Model Types)</title>
+  <desc>Angular wall-rock fragments with jigsaw-puzzle fit cemented by open-space hydrothermal quartz and sulfides (ParticleType.HYDROTHERMAL_VEIN).</desc>
+  <path fill="currentColor" d="M60.0 940.0 L60.0 60.0 L940.0 60.0 L940.0 940.0 Z M100.6 99.9 L99.9 100.6 L100.1 899.9 L899.9 899.9 L899.9 100.1 Z M489.5 332.0 L542.0 132.5 L867.5 164.0 L794.0 437.0 Z M479.0 542.0 L752.0 521.0 L867.5 794.0 L563.0 857.0 Z M477.8 455.9 L477.8 418.1 L510.5 399.2 L543.2 418.1 L543.2 455.9 L510.5 474.8 Z M132.5 458.0 L311.0 132.5 L479.0 248.0 L353.0 489.5 Z M390.5 535.7 L390.6 506.3 L416.0 491.6 L441.4 506.3 L441.4 535.7 L416.0 550.4 Z M132.5 857.0 L143.0 563.0 L416.0 584.0 L342.5 857.0 Z"/>
+</svg>
