@@ -1,6 +1,6 @@
 'use strict';
 const $ = id => document.getElementById(id);
-const state = {icons: [], style: 'detailed', domain: 'all', selected: null};
+const state = {icons: [], style: new URLSearchParams(location.search).get('style') === 'flat' ? 'flat' : 'detailed', domain: 'all', selected: null};
 const labels = {Geophysical:'Geophysics',Geological:'Geology',Geochemical:'Geochemistry',Geotechnical:'Geotechnical'};
 const featuredIds = ['gp_seismic_reflection','gl_minerals_specimen','gp_magnetic_survey','gc_chemical_elements','gc_temperature_thermo','gl_block_model_3d','gc_aqua_regia_partial_digest','gl_strike_dip_mapping','gp_electromagnetic_em','gl_rock_type_igneous','gc_pressure_gauge','gl_geological_tagging_domain'];
 let toastTimer;
@@ -34,7 +34,8 @@ function toast(message){clearTimeout(toastTimer);$('toast').textContent=message;
 async function copy(text,label){try{if(navigator.clipboard&&window.isSecureContext)await navigator.clipboard.writeText(text);else{const input=document.createElement('textarea');input.value=text;input.style.position='fixed';input.style.opacity='0';($('detail').open?$('detail'):document.body).append(input);input.select();const success=document.execCommand('copy');input.remove();if(!success)throw new Error('Clipboard unavailable');}toast(label);}catch{toast('Clipboard unavailable. Select and copy the code above.');}}
 $('search').addEventListener('input',render);$('category').addEventListener('change',render);
 document.querySelectorAll('[data-domain]').forEach(button=>button.addEventListener('click',()=>{state.domain=button.dataset.domain;document.querySelectorAll('[data-domain]').forEach(item=>item.setAttribute('aria-pressed',item===button));render();}));
-for(const style of ['detailed','flat'])$(style).addEventListener('click',()=>{state.style=style;for(const id of ['detailed','flat'])$(id).setAttribute('aria-pressed',id===style);render();});
+for(const style of ['detailed','flat'])$(style).addEventListener('click',()=>{state.style=style;for(const id of ['detailed','flat'])$(id).setAttribute('aria-pressed',id===style);const url=new URL(location.href);if(style==='flat')url.searchParams.set('style','flat');else url.searchParams.delete('style');history.replaceState(null,'',url);render();});
+for(const id of ['detailed','flat'])$(id).setAttribute('aria-pressed',id===state.style);
 $('size').addEventListener('input',event=>{document.documentElement.style.setProperty('--icon-size',event.target.value+'px');$('size-label').value=event.target.value;});
 $('theme').addEventListener('click',()=>{const dark=document.body.classList.toggle('dark');$('theme').setAttribute('aria-label',dark?'Use light theme':'Use dark theme');});
 $('reset').addEventListener('click',()=>{$('search').value='';$('category').value='all';document.querySelector('[data-domain="all"]').click();});

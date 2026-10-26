@@ -16,7 +16,7 @@
 
 ## The collection
 
-The library covers field and laboratory methods, Earth models and scientific processes. The detailed font preserves raypaths, electrodes, magnetic field lines, instrument components, crystal faces, rock textures and chart boundaries. Flat SVGs provide a simpler colour style for visual interfaces and illustrations.
+The library covers field and laboratory methods, Earth models and scientific processes. The detailed font preserves raypaths, electrodes, magnetic field lines, instrument components, crystal faces, rock textures and chart boundaries. The flat colour SVGs now use the same detailed technical compositions, with representative material colours for rock, soil, water, vegetation, glass and metal rather than discipline colour themes. Abstract plots use neutral ink. Material colours are illustrative rather than a scientific classification legend.
 
 | Discipline | Icons | Examples |
 | --- | ---: | --- |
@@ -84,13 +84,15 @@ python -m http.server 8080 --directory docs
 
 Open `http://localhost:8080`. The website is static, with no npm build or external asset dependencies.
 
-`build_font.py` generates both SVG styles, fonts, CSS, the manifest, Java binding and specimens. `build_site.py` updates Pages assets and the downloadable ZIP. Commit generated outputs with source changes to keep the site and downloads in sync.
+`build_font.py` generates both SVG styles, fonts, CSS, the manifest, Java binding and specimens. `build_site.py` updates Pages assets and the downloadable ZIP. Commit generated outputs with source changes to keep the site and downloads in sync. For flat-only changes, run `python build_flat.py` followed by `python build_site.py`; this leaves the detailed TTF, WOFF and monochrome SVGs unchanged.
 
 | Path | Purpose |
 | --- | --- |
 | `icons_*.py` | Scientific metadata and detailed discipline builders |
 | `font_artwork.py` | Detailed glyph corrections, cleanup and optical fit |
-| `icon_artwork.py` | Flat colour artwork |
+| `detailed_flat.py` | Flat material-colour layers from the detailed font builders |
+| `icon_materials.py` | Object-specific material assignments |
+| `icon_artwork.py` | SVG conversion and original simplified recipes |
 | `geom_utils.py` | Geometry primitives |
 | `build_font.py` | Font and vector compilation |
 | `icon_specimen.py` | Local catalog and specimens |

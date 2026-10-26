@@ -1,4 +1,4 @@
-"""GeoScience visual system: bespoke flat SVG artwork and matching line glyphs.
+"""GeoScience SVG utilities and original simplified composition archive.
 
 Artwork is drawn on a 24-unit grid, with 1.5-unit rounded strokes and a
 two-unit optical margin. Flat and monochrome forms share the same geometry;
@@ -361,11 +361,8 @@ PALETTES = {
 
 
 def artwork(icon):
-    layers = build_recipes()[icon["id"]]
-    accent, pale = PALETTES[icon["domain"]]
-    for layer in layers:
-        layer.color = {"a": accent, "p": pale}.get(layer.color, layer.color)
-    return layers
+    from detailed_flat import artwork as detailed_artwork
+    return detailed_artwork(icon)
 
 
 def font_geometry(layers):

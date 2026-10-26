@@ -25,7 +25,7 @@ from icons_geochemical_expanded import EXPANDED_GEOCHEMISTRY_ICONS
 from icons_mineralis_inversion import MINERALIS_INVERSION_ICONS
 from icon_artwork import artwork, svg_document, build_recipes
 from font_artwork import detailed_font_geometry
-from icon_specimen import build_catalog, render_flat_sheet, render_style_preview
+from icon_specimen import build_catalog, render_flat_sheet, render_style_preview, render_material_preview
 
 UPM = 1000
 ASCENT = 880
@@ -237,7 +237,7 @@ def build_all(install_opus: bool = False):
         "fontFamily": "GeoScience Icons",
         "postScriptName": "GeoScienceIcons-Regular",
         "version": "2.1.0",
-        "svgStyle": "flat",
+        "svgStyle": "detailed-flat-natural-materials",
         "fontStyle": "detailed-technical-line",
         "unitsPerEm": UPM,
         "ascent": ASCENT,
@@ -292,6 +292,7 @@ def build_all(install_opus: bool = False):
     render_specimen_png(ttf_dist_path, dist_dir / "specimen_sheet.png", catalog_entries)
     render_flat_sheet(dist_dir / "flat_specimen_sheet.png", all_icons)
     render_style_preview(dist_dir / "style_preview.png", all_icons, ttf_dist_path)
+    render_material_preview(dist_dir / "natural_colour_preview.png", all_icons)
 
     # Generate Java GlyphFont class for Opus
     java_code = build_java_glyph_class(catalog_entries)
