@@ -4,11 +4,11 @@
 
 **A visual language for Earth science.**
 
-193 specialist icons for geophysics, geology, geochemistry and geotechnical engineering.
+273 specialist icons for geophysics, geology, geochemistry and geotechnical engineering.
 
 **Detailed linework · Flat colour · SVG · TTF · WOFF · Public domain**
 
-[**Explore every icon →**](https://APethick.github.io/EarthScienceIcons/) · [Download the set](https://APethick.github.io/EarthScienceIcons/assets/EarthScienceIcons.zip) · [TTF font](dist/GeoScienceIcons.ttf) · [Icon manifest](dist/geoscience-icons.json)
+[**Explore every icon →**](https://APethick.github.io/EarthScienceIcons/) · [Download the set](https://APethick.github.io/EarthScienceIcons/assets/EarthScienceIcons.zip?v=2.2.0) · [TTF font](dist/GeoScienceIcons.ttf) · [Icon manifest](dist/geoscience-icons.json)
 
 ![Flat colour SVGs and detailed technical font glyphs](dist/style_preview.png)
 
@@ -20,13 +20,29 @@ The library covers field and laboratory methods, Earth models and scientific pro
 
 | Discipline | Icons | Examples |
 | --- | ---: | --- |
-| Geophysical | 39 | Seismic reflection, magnetotellurics, gravity, GPR, petrophysics |
+| Geophysical | 119 | Seismic reflection, magnetotellurics, gravity, GPR, petrophysics |
 | Geological | 59 | Mapping, drilling, stratigraphy, faults, folds, minerals |
 | Geochemical | 73 | XRF, ICP-MS, assays, geochemical diagrams, thermodynamics |
 | Geotechnical | 22 | SPT, CPT, triaxial testing, rock quality, slope stability |
-| **Total** | **193** | **59 methods · 85 Earth model types · 49 processes** |
+| **Total** | **273** | **126 methods · 85 Earth model types · 50 processes · 12 petrophysical quantities** |
 
 The [interactive library](https://APethick.github.io/EarthScienceIcons/) shows every icon. Search names and keywords, filter by discipline or category, compare both styles, change the preview size, and copy integration code.
+
+## Geophysics expansion
+
+The collection includes **119 geophysics icons**, with 80 additions covering:
+
+- AEM, fixed-wing systems, VTEM, SkyTEM, Loupe, FDEM, TDEM, ground TEM loop arrangements, LOTEM, terrestrial/marine CSEM and CSAMT.
+- GPR radargrams, time slices, volumes, CMP/WARR velocity analysis, utility/rebar detection, borehole radar and antennas.
+- Total-count radiometrics, potassium, equivalent uranium, equivalent thorium, ternary display and airborne gamma spectrometry.
+- Crosshole, downhole, uphole, VSP, refraction, MASW and passive H/V seismic methods; a broad borehole logging and tomography suite.
+- Conductivity, resistivity, density, magnetic susceptibility, remanence, chargeability, Vp, Vs, porosity, permeability, dielectric permittivity and thermal conductivity.
+
+The original 193 IDs, codepoints, fallback keys and glyph drawings are preserved. SP was already present and remains at `U+E03D`; a separate borehole SP icon is now included. New glyphs occupy `U+E0C2`–`U+E111`.
+
+[View the new geophysics catalog and references](docs/geophysics.md).
+
+![80 new detailed geophysics icons in natural colours](dist/geophysics_expansion_sheet.png)
 
 ## Using the icons
 
@@ -56,7 +72,7 @@ Copy `geoscience-icons.css`, `GeoScienceIcons.woff` and `GeoScienceIcons.ttf` fr
 
 Pair decorative glyphs with visible text. Give icon-only buttons accessible names. Detailed glyphs reveal more internal structure at 32 px and above; check the size that suits your interface.
 
-The family name is `GeoScience Icons`. Codepoints span `U+E001`–`U+E0C1`. Existing IDs, CSS classes, printable fallback keys and codepoints are preserved. The manifest contains every mapping, description and keyword.
+The family name is `GeoScience Icons`. Codepoints span `U+E001`–`U+E111`. Existing IDs, CSS classes, printable fallback keys and codepoints are preserved. The manifest contains every mapping, description and keyword.
 
 ### Java / Opus
 
@@ -79,6 +95,7 @@ Use Python 3.10 or newer:
 python -m pip install -r requirements.txt
 python build_font.py
 python build_site.py
+python tests/verify_distribution.py
 python -m http.server 8080 --directory docs
 ```
 
@@ -98,6 +115,7 @@ Open `http://localhost:8080`. The website is static, with no npm build or extern
 | `icon_specimen.py` | Local catalog and specimens |
 | `dist/` | Ready-to-use distribution |
 | `docs/` | GitHub Pages website |
+| `tests/` | Distribution checks and published glyph compatibility fixture |
 
 The normal build only writes inside the repository. `python build_font.py --install-opus` also copies the font and Java binding into an existing `C:\projects\opus\opus.base` checkout.
 

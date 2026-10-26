@@ -1,0 +1,967 @@
+{
+  "gp_seismic_reflection": {
+    "codepoint": 57345,
+    "fallback": "!",
+    "outline_sha256": "917a0dba313ada202c941f20bca54fceb00cb76fe105a34e3750b541aad97522"
+  },
+  "gp_gravity_survey": {
+    "codepoint": 57346,
+    "fallback": "\"",
+    "outline_sha256": "49b783abe2e4a94949bc6c215ceb2c59afa7f8fc9c0be4f822f6d538c4a159a4"
+  },
+  "gp_magnetic_survey": {
+    "codepoint": 57347,
+    "fallback": "#",
+    "outline_sha256": "b16362bd438647bea4a3e2539015557fab9e6bfa182f21a1cb06d38ee743051e"
+  },
+  "gp_electromagnetic_em": {
+    "codepoint": 57348,
+    "fallback": "$",
+    "outline_sha256": "ec9df44d8511df3f707328c5ed663d9220c6b2748528371a6870363efb6e65da"
+  },
+  "gp_ert_ip": {
+    "codepoint": 57349,
+    "fallback": "%",
+    "outline_sha256": "d78c5f542dc661bb2e7e96efdca5ce45374098864b67bd92c3b4ba4bb0359772"
+  },
+  "gp_velocity_model": {
+    "codepoint": 57350,
+    "fallback": "&",
+    "outline_sha256": "95bf6e6c212b50b3cdc72003b1b925faedb85ecb3a5ddd2883cb3f455e4b6b9e"
+  },
+  "gp_density_model": {
+    "codepoint": 57351,
+    "fallback": "'",
+    "outline_sha256": "6cc0ab60b473adf15f1939b34dd3c0612eabf1ae21899851cd83a757b9557257"
+  },
+  "gp_susceptibility_model": {
+    "codepoint": 57352,
+    "fallback": "(",
+    "outline_sha256": "f305f41a71f6386abaf8a5221c103ade118662d1740d46f3f1e95cc27982c166"
+  },
+  "gp_resistivity_section": {
+    "codepoint": 57353,
+    "fallback": ")",
+    "outline_sha256": "0d7d4f6eb13a6c737771620b2299b3dfaadf056304f25ab39fe1b617895beacc"
+  },
+  "gp_seismic_cube_3d": {
+    "codepoint": 57354,
+    "fallback": "*",
+    "outline_sha256": "c1fb0d5b5b1fe300d8ba8e2f494bb66fb66b4f436f4c13f4a8a09c382a9c48ad"
+  },
+  "gp_wave_propagation": {
+    "codepoint": 57355,
+    "fallback": "+",
+    "outline_sha256": "ab48f950bf6be98594f00c8b8ca68937c73fd71868923b8c6cbe0e5073c1e323"
+  },
+  "gp_ray_refraction_snell": {
+    "codepoint": 57356,
+    "fallback": ",",
+    "outline_sha256": "d8606f7dd142a275383907bda96def491a494150506ff787640fec8b10647523"
+  },
+  "gp_geophysical_inversion": {
+    "codepoint": 57357,
+    "fallback": "-",
+    "outline_sha256": "ffbeedb26238ae8d4e4c2aea950a878953548489b7b722588cfc38528f50d74f"
+  },
+  "gp_signal_deconvolution": {
+    "codepoint": 57358,
+    "fallback": ".",
+    "outline_sha256": "3eb2da2bfe90c557e83fa764ea1bf56774a66833f54641761d0ad0a0a724ef96"
+  },
+  "gp_nmo_stacking": {
+    "codepoint": 57359,
+    "fallback": "/",
+    "outline_sha256": "779625b0bacdf07f0b191ba4ea6f88a0fbf72e549be17f013a7c87cd35476d7b"
+  },
+  "gt_spt_test": {
+    "codepoint": 57360,
+    "fallback": "0",
+    "outline_sha256": "4da61e45418c9daa4c55644053b8d81c3b96a214444d013132caf8493984ac47"
+  },
+  "gt_cpt_cone": {
+    "codepoint": 57361,
+    "fallback": "1",
+    "outline_sha256": "8a1e32609466b42f6a791e50439eb842a839301e090d5eef1c2646d787a040c8"
+  },
+  "gt_triaxial_shear": {
+    "codepoint": 57362,
+    "fallback": "2",
+    "outline_sha256": "542f10a99f97cb2de16cb4444b29bf8fab301ab0788a471b140c328310774626"
+  },
+  "gt_piezometer_well": {
+    "codepoint": 57363,
+    "fallback": "3",
+    "outline_sha256": "a3cb7f8a602988dd470b24a4e9b660f413708eb4c1327855f7b27822c924aa0e"
+  },
+  "gt_inclinometer_casing": {
+    "codepoint": 57364,
+    "fallback": "4",
+    "outline_sha256": "22c73d1dd731bc9b88d642cdc373d3e5744d82afe939f65c9c22fdc8e40a1484"
+  },
+  "gt_mohr_coulomb": {
+    "codepoint": 57365,
+    "fallback": "5",
+    "outline_sha256": "5f27cdd6452cd14f5abbf686ec286069ff3cda2ca8009d7d563b89dd64731659"
+  },
+  "gt_rock_mass_rmr_gsi": {
+    "codepoint": 57366,
+    "fallback": "6",
+    "outline_sha256": "c13756b27318c001688a6e9cd7dec828eab9ff8043960dc09ff4b81dcaa18441"
+  },
+  "gt_slope_stability_grid": {
+    "codepoint": 57367,
+    "fallback": "7",
+    "outline_sha256": "ce47a2588288bd1908a38fa4a5e35062f3385cd9b9f92061810bb079edf399ec"
+  },
+  "gt_soil_profile_log": {
+    "codepoint": 57368,
+    "fallback": "8",
+    "outline_sha256": "91a717f403cb77881bebe0aa5fa3316d958a86e2d31e49965f90b91fa4728845"
+  },
+  "gt_fe_mesh_tunnel": {
+    "codepoint": 57369,
+    "fallback": "9",
+    "outline_sha256": "caec5de1934950805edb895a2a8bb25ab8df7380fff84549fa701cf5ad42bd93"
+  },
+  "gt_consolidation_settlement": {
+    "codepoint": 57370,
+    "fallback": ":",
+    "outline_sha256": "556a5bfd6bc5e1bdaaea0144da929b941d1be91ae6656b6cb8fd7df67d2bfa62"
+  },
+  "gt_soil_liquefaction": {
+    "codepoint": 57371,
+    "fallback": ";",
+    "outline_sha256": "b56f7f3a7df7a39fc44fd08dd7fa22fa3dd1661c595d6cba04b62c4b3e653817"
+  },
+  "gt_slope_landslide": {
+    "codepoint": 57372,
+    "fallback": "<",
+    "outline_sha256": "757444817cfb2adeac300eec9688ae4b53cd87bba5251495ba05d71ec0c735fb"
+  },
+  "gt_seepage_flownet": {
+    "codepoint": 57373,
+    "fallback": "=",
+    "outline_sha256": "0f59a2666a114ba319c96b087e75c24b23ababe5d7245c0ee319e9ea70d4f410"
+  },
+  "gt_rock_burst_spalling": {
+    "codepoint": 57374,
+    "fallback": ">",
+    "outline_sha256": "5950fce915f495232e6546319915b2b6b9624808e25bad1f35f37d294a5d8904"
+  },
+  "gl_strike_dip_mapping": {
+    "codepoint": 57375,
+    "fallback": "?",
+    "outline_sha256": "2bd4b3b87d0ab4cbb25157879d14b121336c391e15a7edf9a9b9d8702dabf714"
+  },
+  "gl_diamond_core_drilling": {
+    "codepoint": 57376,
+    "fallback": "@",
+    "outline_sha256": "52d01faccd8ada20bacaae1c960708daa022f90a354370a8e7867d666a205474"
+  },
+  "gl_thin_section_petrography": {
+    "codepoint": 57377,
+    "fallback": "A",
+    "outline_sha256": "a4cfa07c99354e4644552cf524e34fd874537711e1e9d27b1031bb94c85a2d02"
+  },
+  "gl_stratigraphic_logging": {
+    "codepoint": 57378,
+    "fallback": "B",
+    "outline_sha256": "4c4982489b244c2cf3f77334f563b8aeb6228cea7bcdf9deb91804dbd9437a8d"
+  },
+  "gl_structural_stereonet": {
+    "codepoint": 57379,
+    "fallback": "C",
+    "outline_sha256": "9dbd8c63dcba7c5c77e89caa793deb9f046c440f8979a028d59268eb0c328462"
+  },
+  "gl_block_model_3d": {
+    "codepoint": 57380,
+    "fallback": "D",
+    "outline_sha256": "8a7bc5fc1524396d17b31bfa38227f270326a445f0577e43e93e77ad89bd8d93"
+  },
+  "gl_wireframe_mesh": {
+    "codepoint": 57381,
+    "fallback": "E",
+    "outline_sha256": "abea858a1dbec0478acc7e1cf7668ae7d49003566b67eb7287185c8433391755"
+  },
+  "gl_faulted_stratigraphy": {
+    "codepoint": 57382,
+    "fallback": "F",
+    "outline_sha256": "c655d3b553d8ce5afef4f86f89fa95c47caf561844879dbb9782c76326e4d3ae"
+  },
+  "gl_folded_anticline_model": {
+    "codepoint": 57383,
+    "fallback": "G",
+    "outline_sha256": "31da58ceba95e89ef82dc2843a6da9366749d4bce9aa6526ab3d93784ddab940"
+  },
+  "gl_intrusive_pluton_model": {
+    "codepoint": 57384,
+    "fallback": "H",
+    "outline_sha256": "15b850e4e08a8762bebe7051c5aa8c6275417f8ce579aa8ee830376af95d30f3"
+  },
+  "gl_plate_subduction": {
+    "codepoint": 57385,
+    "fallback": "I",
+    "outline_sha256": "c5b24d6b9046739823f3f1584d8e961b2a624004e014817cd5dd38bbf23f187d"
+  },
+  "gl_fault_slip_tectonics": {
+    "codepoint": 57386,
+    "fallback": "J",
+    "outline_sha256": "fe948f1cdbf26b2950543ee5fcbd36e3e4c3cd81a4011d284a098a6627772b78"
+  },
+  "gl_sedimentation_deposition": {
+    "codepoint": 57387,
+    "fallback": "K",
+    "outline_sha256": "d5f8db66f444e1b480822061657ce168f027295eeba4f8da418c36649a1f21ef"
+  },
+  "gl_metamorphism_pt": {
+    "codepoint": 57388,
+    "fallback": "L",
+    "outline_sha256": "0e70050da4e16d3e05c90a5ca9110bf303a19893c49437d87663e36ccfc6b05c"
+  },
+  "gl_weathering_erosion": {
+    "codepoint": 57389,
+    "fallback": "M",
+    "outline_sha256": "aa75b3ab263a87aafc3098b1a13f41e2c7628d8a8b881c947071985d348617a7"
+  },
+  "gc_soil_stream_sampling": {
+    "codepoint": 57390,
+    "fallback": "N",
+    "outline_sha256": "47de74f3d5018e3564b650f8c307a08026d59103d67d2332f84ba04e0381de5f"
+  },
+  "gc_pxrf_analyzer": {
+    "codepoint": 57391,
+    "fallback": "O",
+    "outline_sha256": "abf42aff3e2759c6ba67046dd376d883bc394c6c12e4970b1420c6c18d170399"
+  },
+  "gc_icp_ms_spectrometry": {
+    "codepoint": 57392,
+    "fallback": "P",
+    "outline_sha256": "56bc6b9f1d761590b754163f890a98b6e94d94f65255213b323e8cf96771f966"
+  },
+  "gc_fire_assay": {
+    "codepoint": 57393,
+    "fallback": "Q",
+    "outline_sha256": "75da1dd36fa3b7d9bae83930e55d34693d9c8e4043c028499bde8ad53878653a"
+  },
+  "gc_isotope_ratio_analysis": {
+    "codepoint": 57394,
+    "fallback": "R",
+    "outline_sha256": "a12646b4c73125d675afd56f00c461cd697fdff6f706e09ce11effdd7b90aa8a"
+  },
+  "gc_alteration_zonation": {
+    "codepoint": 57395,
+    "fallback": "S",
+    "outline_sha256": "d12aab775a2244e5ba46ab29efbc504dfa2e0d53d01cd0ae11e0c55674012b4c"
+  },
+  "gc_geochem_anomaly_contours": {
+    "codepoint": 57396,
+    "fallback": "T",
+    "outline_sha256": "445d02965d94c9d730897e085a27a3c5072acb70f853312732f503cbab45f816"
+  },
+  "gc_ternary_classification": {
+    "codepoint": 57397,
+    "fallback": "U",
+    "outline_sha256": "4e0ef764c103256c1ada02febdfeab5c629b8d28be3c0dd1b1d8e5b967ff1282"
+  },
+  "gc_eh_ph_pourbaix": {
+    "codepoint": 57398,
+    "fallback": "V",
+    "outline_sha256": "a507af7175775d96e90b615d639d6239870f5d8d389654cfd380b59eb888e886"
+  },
+  "gc_downhole_geochem_log": {
+    "codepoint": 57399,
+    "fallback": "W",
+    "outline_sha256": "de7b39985f942f4d7a7d6422f4c72db07019d2b2cbea705c2f93a9830ce6b34c"
+  },
+  "gc_hydrothermal_circulation": {
+    "codepoint": 57400,
+    "fallback": "X",
+    "outline_sha256": "eb32ff57570a2e1d0c43615ae5eb90ac30d95e489e0271969a7db84917715380"
+  },
+  "gc_supergene_leaching": {
+    "codepoint": 57401,
+    "fallback": "Y",
+    "outline_sha256": "5bde68537ed2cdee7d444f89728737de74e29f73d1eb6b274e46eba9ee8ee053"
+  },
+  "gc_redox_front_roll": {
+    "codepoint": 57402,
+    "fallback": "Z",
+    "outline_sha256": "1086ae7885302937d1ab191447eb3293613efa6a4d7cef83493139d4fca48bfe"
+  },
+  "gc_magmatic_differentiation": {
+    "codepoint": 57403,
+    "fallback": "[",
+    "outline_sha256": "cfd1e72465d35a1f8b03a05339ed66641430fc18f3566715c452a8171ad52957"
+  },
+  "gc_element_dispersion_halo": {
+    "codepoint": 57404,
+    "fallback": "\\",
+    "outline_sha256": "c7d2ee8132dfc08ecbbe797761f121f5896d4c393b9900957066caa540da25f4"
+  },
+  "gp_self_potential": {
+    "codepoint": 57405,
+    "fallback": "]",
+    "outline_sha256": "cf1d5575f609b66e862dd8926bc78f7ae1ede48778f24c04777b2d4f4f3d5a93"
+  },
+  "gp_magnetotellurics_mt": {
+    "codepoint": 57406,
+    "fallback": "^",
+    "outline_sha256": "6f9baea349ec42a2ac41113d12358afa53b990c0c95e336e259d4f5028822bc7"
+  },
+  "gp_ground_penetrating_radar": {
+    "codepoint": 57407,
+    "fallback": "_",
+    "outline_sha256": "f0c5f014ae91efc4aea6e0184ab6f957c51b41052f7242acf8a40f3c5a822776"
+  },
+  "gp_radiometrics_gamma": {
+    "codepoint": 57408,
+    "fallback": "`",
+    "outline_sha256": "d2e9beba6d3bc6e0abc5ca26b4324b510d24cfcb1215d7bad1d2ee0d1ae66f99"
+  },
+  "gp_nmr_sounding": {
+    "codepoint": 57409,
+    "fallback": "a",
+    "outline_sha256": "b8b143eb3462bdc6408e5b56d22db3b7cd033df78419ac6de3313ac3183784e2"
+  },
+  "gp_thermal_geothermal": {
+    "codepoint": 57410,
+    "fallback": "b",
+    "outline_sha256": "ff39e52446e0d46c6812e44ba0fd152082087804507386468e89604e611083f1"
+  },
+  "gp_acoustics_sonar": {
+    "codepoint": 57411,
+    "fallback": "c",
+    "outline_sha256": "3ccbd42ad151d25f53eac8721186bf5927ae554410b31e68b0a35b07574c0869"
+  },
+  "gp_geodesy_insar_gnss": {
+    "codepoint": 57412,
+    "fallback": "d",
+    "outline_sha256": "5108fcb3eef0f4a297df4e0d5ad9f613086b04cca83627494cc122311fb807bc"
+  },
+  "gp_remote_sensing_hyperspectral": {
+    "codepoint": 57413,
+    "fallback": "e",
+    "outline_sha256": "aa7318e58000e4b9a04598938f64014e2c7234cbc1fef48338c427bdea05ddc4"
+  },
+  "gp_matrix_mixing_bounds": {
+    "codepoint": 57414,
+    "fallback": "f",
+    "outline_sha256": "1f93a6f687acf122add17b52439a2cf0d3d2881b7a81c481d298fc4049736475"
+  },
+  "gp_pore_fluid_archie": {
+    "codepoint": 57415,
+    "fallback": "g",
+    "outline_sha256": "af6584b78e66f4a2698d4e29aab2fe92ead4f1e2d96e1cafbd3eebe766ac92ca"
+  },
+  "gp_ip_cole_cole": {
+    "codepoint": 57416,
+    "fallback": "h",
+    "outline_sha256": "15838ee784a1057f1253e9f356d50b76fd85436b54fbb578b114bf4cae345dd8"
+  },
+  "gp_dielectric_permittivity": {
+    "codepoint": 57417,
+    "fallback": "i",
+    "outline_sha256": "d413b0c6eccea54282e9083950a9e63bd34308a1544045ca5659915483d11e7c"
+  },
+  "gp_koenigsberger_remanence": {
+    "codepoint": 57418,
+    "fallback": "j",
+    "outline_sha256": "c7eed324fba53a94ec3bd56f33153647a287452de6a937fb1b8b2210553f5f58"
+  },
+  "gp_gassmann_fluid_sub": {
+    "codepoint": 57419,
+    "fallback": "k",
+    "outline_sha256": "dc46697fd78604c7de475ccf58aebb82db79dc74a69f8cbe3e812d1c1450c86e"
+  },
+  "gp_permeability_kozeny": {
+    "codepoint": 57420,
+    "fallback": "l",
+    "outline_sha256": "1e423c426166a0bbf1491e0a0fc3ec3b8984d933198ec10652e0ea0c30a32449"
+  },
+  "gt_deere_rqd": {
+    "codepoint": 57421,
+    "fallback": "m",
+    "outline_sha256": "1841a18054ce8798b1b2cbad4a11007033e9c7dadd1304500957921f55346ef9"
+  },
+  "gt_barton_q_tunnel": {
+    "codepoint": 57422,
+    "fallback": "n",
+    "outline_sha256": "541b7af2ac74ed421e799650d473ef436b74ed5a900d26ec9e13a8d19fdc4f13"
+  },
+  "gt_bieniawski_rmr": {
+    "codepoint": 57423,
+    "fallback": "o",
+    "outline_sha256": "8c49028c0b9c515f464371430126110ad55deb8c7389462d2c73fdd2776e3121"
+  },
+  "gt_hoek_brown_criterion": {
+    "codepoint": 57424,
+    "fallback": "p",
+    "outline_sha256": "3b8222ddbb4050ba20ee4eac5de593b555a5e9daf504829c70ddfefeff73c705"
+  },
+  "gt_ucs_from_velocity": {
+    "codepoint": 57425,
+    "fallback": "q",
+    "outline_sha256": "d52b638b04afb3cbbaa710cdb7e03de2868c0044115aaca249448ebc9136e5fb"
+  },
+  "gt_brittleness_index": {
+    "codepoint": 57426,
+    "fallback": "r",
+    "outline_sha256": "071a2a85933157b0758a3b43c3634ad132d38b92fa16f2efb3cb848d9ebbaa2d"
+  },
+  "gl_rock_type_igneous": {
+    "codepoint": 57427,
+    "fallback": "s",
+    "outline_sha256": "a605fcb78dab1fb7f7edd1a7ab7137142a1c8328044a049982fd9dffa72260e6"
+  },
+  "gl_rock_type_sedimentary": {
+    "codepoint": 57428,
+    "fallback": "t",
+    "outline_sha256": "66fa157872a252797c7a13f69e046dd79ab63a438eb66c1a821cd27f69b81220"
+  },
+  "gl_rock_type_metamorphic": {
+    "codepoint": 57429,
+    "fallback": "u",
+    "outline_sha256": "63ba1a0026faa75dbced59765ef11c3916d2ad66dc4f862afed40a6e319e7d9e"
+  },
+  "gl_composition_category": {
+    "codepoint": 57430,
+    "fallback": "v",
+    "outline_sha256": "36a9251fb9ea85dd053ab81927d617a3ebdc53f3e7edcdab3d8669a465fa55f3"
+  },
+  "gl_genetic_category": {
+    "codepoint": 57431,
+    "fallback": "w",
+    "outline_sha256": "fd7367c287adbca668e3b64d4d181db9b87c17a24f449cd8319f05fc1abf318a"
+  },
+  "gl_metamorphic_facies_pt": {
+    "codepoint": 57432,
+    "fallback": "x",
+    "outline_sha256": "6a51126727ead92d020b1d723b38fd589243995824afb98657550973dcda14de"
+  },
+  "gl_consolidation_degree": {
+    "codepoint": 57433,
+    "fallback": "y",
+    "outline_sha256": "894f772f99c449e31ed902c8a5d28c464361c0cf9e1b44e4e147829c7684fb4c"
+  },
+  "gl_deformation_brittle_ductile": {
+    "codepoint": 57434,
+    "fallback": "z",
+    "outline_sha256": "eb6e438e7bb6fb0102aed25a031f56532403d40e4831973573f2b8ee183a1b86"
+  },
+  "gl_unit_morphology": {
+    "codepoint": 57435,
+    "fallback": "{",
+    "outline_sha256": "d70dde8e9ca3c686d9fc126968fa3a4d1bcae008b7c4d4414ead2cc694fcf0b3"
+  },
+  "gl_style_disseminated": {
+    "codepoint": 57436,
+    "fallback": "|",
+    "outline_sha256": "68e342bbdc860685749bb429d82b59e2c7343b58b308edc7585ca17c695aa0b0"
+  },
+  "gl_style_net_textured": {
+    "codepoint": 57437,
+    "fallback": "}",
+    "outline_sha256": "060f319efbd4ba56fad29edfafb3d5746f9f5d63c4978cfa638cae847a080029"
+  },
+  "gl_style_massive_sulfide": {
+    "codepoint": 57438,
+    "fallback": "~",
+    "outline_sha256": "43303bc2e5abda68581f3ada8550053b884d97e6e5fd9faabed88ff2a2d9a707"
+  },
+  "gl_style_veined_stringer": {
+    "codepoint": 57439,
+    "fallback": "\u00a1",
+    "outline_sha256": "9f645c3d210f9bcdd38ba161f00f8fac4ded8195677998b43df93a4b342b1d53"
+  },
+  "gl_particle_shape_roundness": {
+    "codepoint": 57440,
+    "fallback": "\u00a2",
+    "outline_sha256": "9fb5e0d74ce66a54e73e92b9dbf4a5725825197f29f94d2c3823408547dbf584"
+  },
+  "gl_contact_unconformity": {
+    "codepoint": 57441,
+    "fallback": "\u00a3",
+    "outline_sha256": "bc0de872f3ded8318228b19c7a2422244d549d10a6589012d0ba8b661115d9ec"
+  },
+  "gl_foliation_lineation": {
+    "codepoint": 57442,
+    "fallback": "\u00a4",
+    "outline_sha256": "0c8e79e4fdedef95e40d180a672e0881346297b8f8f27109c7ee801b31713ecd"
+  },
+  "gl_borehole_drilling_methods": {
+    "codepoint": 57443,
+    "fallback": "\u00a5",
+    "outline_sha256": "445b4f031bfa7c660d55d32ffc88573cd8d74d8daeb026339d7e781f9b8a7f9b"
+  },
+  "gl_planar_polarity_overturned": {
+    "codepoint": 57444,
+    "fallback": "\u00a6",
+    "outline_sha256": "314acca82f26ba98f48600d3e13d938e0bb561f8d9c8859208599742fedf889a"
+  },
+  "gm_acid_rock_drainage": {
+    "codepoint": 57445,
+    "fallback": "\u00a7",
+    "outline_sha256": "3006f401997c705d7391900b895db78780dd131621afea693a246abde1be397f"
+  },
+  "gm_comminution_work_index": {
+    "codepoint": 57446,
+    "fallback": "\u00a8",
+    "outline_sha256": "94e73c9aac7b11d00a359674d6f414f6b1b32b6fdf8ef8318ae81862ed559aee"
+  },
+  "gm_flotation_recovery": {
+    "codepoint": 57447,
+    "fallback": "\u00a9",
+    "outline_sha256": "a3e59480a48939900ce6ec9279ce556a277bcd54264f711cda70bb4ab631da49"
+  },
+  "gc_melt_chemistry_f02": {
+    "codepoint": 57448,
+    "fallback": "\u00aa",
+    "outline_sha256": "8d4ea65c5e7da6d7b6e798915ad43bec766a7b0ba126da6dd23f055d1da01866"
+  },
+  "gc_carbon_mineralisation": {
+    "codepoint": 57449,
+    "fallback": "\u00ab",
+    "outline_sha256": "3badfddae38449c3e0f65f7463282e590c939c4ce24f0a43542d48fa19d0c368"
+  },
+  "gl_lithology_tensor_anisotropy": {
+    "codepoint": 57450,
+    "fallback": "\u00ac",
+    "outline_sha256": "a3d5626e487eb981d98591a1ee06c6793f6a6197b058fe6c1322765f1766a6c9"
+  },
+  "gl_fault_normal_graben": {
+    "codepoint": 57451,
+    "fallback": "\u00ad",
+    "outline_sha256": "56e5dce8ef66354c0f2cd6dec1c49c1b5c7295e82f8315af5a3a18b8663fd1db"
+  },
+  "gl_fault_thrust_ramp": {
+    "codepoint": 57452,
+    "fallback": "\u00ae",
+    "outline_sha256": "ee86c238620745409ec9e79fbebf56966230e458c92eb4de18e764cde0eb78ef"
+  },
+  "gl_fault_strike_slip_dextral": {
+    "codepoint": 57453,
+    "fallback": "\u00af",
+    "outline_sha256": "180ef4cdde81a6a643f4ec0aa11e96a8428f6b75c7140c64a44ac32a53a348e4"
+  },
+  "gl_shear_zone_sigmoidal": {
+    "codepoint": 57454,
+    "fallback": "\u00b0",
+    "outline_sha256": "a6302d2b4b96a4a2ba284aab34732c8806fbbfbdf1ea40537d1b13ad1f88c623"
+  },
+  "gl_chevron_kink_fold": {
+    "codepoint": 57455,
+    "fallback": "\u00b1",
+    "outline_sha256": "d2253ae57e9d58c354637554e5043ac8a13086090d52e2d8ee57bf93da7c9a80"
+  },
+  "gl_ptygmatic_vein_fold": {
+    "codepoint": 57456,
+    "fallback": "\u00b2",
+    "outline_sha256": "256f034a36c12278e5c34289916f0a9c5fd801b238f5c8b7d2a647c346f9dc39"
+  },
+  "gl_columnar_jointing": {
+    "codepoint": 57457,
+    "fallback": "\u00b3",
+    "outline_sha256": "4713775cb99be9ffbb62b4647aae38a1d11ab99c73d812f4f96250d6d310237b"
+  },
+  "gl_spinifex_texture": {
+    "codepoint": 57458,
+    "fallback": "\u00b4",
+    "outline_sha256": "1260a4d56ee43de3684bbd2865e0e81ed679f7aa1a5d6217959404ef94175d61"
+  },
+  "gl_pillow_lava": {
+    "codepoint": 57459,
+    "fallback": "\u00b5",
+    "outline_sha256": "2f8c9573876b9116c473cf0f94cd4b65673e50a83775edbd017e50da5dcf2cf4"
+  },
+  "gl_fiamme_ignimbrite": {
+    "codepoint": 57460,
+    "fallback": "\u00b6",
+    "outline_sha256": "d5c3a9b47950ed20b4db9e668742d96784b43eae997e72eaa9864348f2c8191b"
+  },
+  "gl_banded_iron_formation": {
+    "codepoint": 57461,
+    "fallback": "\u00b7",
+    "outline_sha256": "6bfcf7f41221df1358f08714d359498a5e8a9fd2c99e2d5f870f86e6734aa4fd"
+  },
+  "gl_hydrothermal_breccia": {
+    "codepoint": 57462,
+    "fallback": "\u00b8",
+    "outline_sha256": "71b64ac8d4f07e45a00398764c9485199f71b9e82762681e3e8b4ab009aacc03"
+  },
+  "gl_potassic_alteration": {
+    "codepoint": 57463,
+    "fallback": "\u00b9",
+    "outline_sha256": "d8d84ef8364f568f80408c7c2814fa3427a08177e0d49c3b45fe1b45620327c7"
+  },
+  "gl_phyllic_sericitic_alteration": {
+    "codepoint": 57464,
+    "fallback": "\u00ba",
+    "outline_sha256": "999751e70a8340a92bc233026a41c935e3e40329eb231b032c8044452e722249"
+  },
+  "gl_advanced_argillic": {
+    "codepoint": 57465,
+    "fallback": "\u00bb",
+    "outline_sha256": "8eb59bb424552b3ad9df7441cf2f8ea37f7d95c74b2693619cae51b7a556c503"
+  },
+  "gl_propylitic_chlorite_epidote": {
+    "codepoint": 57466,
+    "fallback": "\u00bc",
+    "outline_sha256": "ad4ccc322aca2f58c47fd6b811d15d8357b8b736e5cc73a74f57e1a287de96ea"
+  },
+  "gl_serpentinite_mesh": {
+    "codepoint": 57467,
+    "fallback": "\u00bd",
+    "outline_sha256": "f4d1033e07fa34b151378bff64047c48822c9d6d96d83b6399d0f6d0eb88affc"
+  },
+  "gl_skarn_calc_silicate": {
+    "codepoint": 57468,
+    "fallback": "\u00be",
+    "outline_sha256": "af7f1beae392544f9936c1bf049c0ff8d2934aecfef091f78bef02e0d45126fa"
+  },
+  "gl_greisen_cassiterite": {
+    "codepoint": 57469,
+    "fallback": "\u00bf",
+    "outline_sha256": "dfc769ed60efc6bffa3fa0c7c128cefeec468891d4c4cb97041d42a33ad7d55d"
+  },
+  "gl_tourmaline_sun_rosette": {
+    "codepoint": 57470,
+    "fallback": "\u00c0",
+    "outline_sha256": "a099e338dc8a7bd77aba794e08a12c099e84500450aac8a9153948d07e2a62a7"
+  },
+  "gl_turbidite_bouma_sequence": {
+    "codepoint": 57471,
+    "fallback": "\u00c1",
+    "outline_sha256": "13ab07bb34a4616e2a543e51b5801826a5e398139ca8f5f412cd5369309a94d5"
+  },
+  "gl_fluvial_point_bar_channel": {
+    "codepoint": 57472,
+    "fallback": "\u00c2",
+    "outline_sha256": "acf23dc3edb8756194489a71ba504886c5fa1daa9900c0f8463e9516ebccee3d"
+  },
+  "gc_la_icp_ms_laser": {
+    "codepoint": 57473,
+    "fallback": "\u00c3",
+    "outline_sha256": "eedb2ce61234fe0a918724ac111570f32ed471a2d9fe4eaa0de7317f4a59c52a"
+  },
+  "gc_epma_wds_microprobe": {
+    "codepoint": 57474,
+    "fallback": "\u00c4",
+    "outline_sha256": "d800c933c58b33139cd6a088e8ec2d0c7fd8110309299ca6cc7ce32a0845004d"
+  },
+  "gc_xrd_diffractometer": {
+    "codepoint": 57475,
+    "fallback": "\u00c5",
+    "outline_sha256": "631112df492627b9be8311b1f7578df02766d0abffd753c8f170974fa4cca770"
+  },
+  "gc_xanes_synchrotron": {
+    "codepoint": 57476,
+    "fallback": "\u00c6",
+    "outline_sha256": "a515b56d90618cfe6c14a8be35790b8898ad5377d9bbe0cf0e079dfb05665827"
+  },
+  "gc_libs_laser_plasma": {
+    "codepoint": 57477,
+    "fallback": "\u00c7",
+    "outline_sha256": "8b0f820be9954c56b51d0a9a2a47e32cce16f4acde7f4a17fd663f6e55f19fd4"
+  },
+  "gc_ftir_raman_spectroscopy": {
+    "codepoint": 57478,
+    "fallback": "\u00c8",
+    "outline_sha256": "32d0c67d509fdb9a0b4f514e98729f76b342cf0e976f7889dbf123b18c4933a3"
+  },
+  "gc_four_acid_total_digest": {
+    "codepoint": 57479,
+    "fallback": "\u00c9",
+    "outline_sha256": "2fb2880085feb4ab72a295eb2c9f4db2e1e46f96761ac8b0d1e9c9ec38fd57a6"
+  },
+  "gc_aqua_regia_partial_digest": {
+    "codepoint": 57480,
+    "fallback": "\u00ca",
+    "outline_sha256": "d91055dc9f7ce8a625be926c7b09147c753c0f72de379ec928887067c6167b0f"
+  },
+  "gc_cyanide_bottle_roll": {
+    "codepoint": 57481,
+    "fallback": "\u00cb",
+    "outline_sha256": "c956ec6b8242e77e258265314dff2b0fb506d491f734ddd85c6d775fb3a838a6"
+  },
+  "gc_sequential_extraction": {
+    "codepoint": 57482,
+    "fallback": "\u00cc",
+    "outline_sha256": "1122280a1999dbf0fb4e0295a479ffcad7d2013b812c914531377fb69aa24bd7"
+  },
+  "gc_gas_chromatography_ms": {
+    "codepoint": 57483,
+    "fallback": "\u00cd",
+    "outline_sha256": "745247ddb218d29a58f73687c405a133d390f818aea976fe7ace7ac88e4b5d51"
+  },
+  "gc_sims_shrimp_microprobe": {
+    "codepoint": 57484,
+    "fallback": "\u00ce",
+    "outline_sha256": "08b42485e045285a86c598253ca5a52c438ca9ec60b95999009da9b380c93267"
+  },
+  "gc_tims_thermal_ionization": {
+    "codepoint": 57485,
+    "fallback": "\u00cf",
+    "outline_sha256": "ce69aecbda2efb21aecee6a25a04aad367261a3e931f5ea91067810d07743531"
+  },
+  "gc_stable_isotope_gas_irms": {
+    "codepoint": 57486,
+    "fallback": "\u00d0",
+    "outline_sha256": "a090becfa328ea0e273b403a779b669b8c171c5f6669e86eaf861023c80a6443"
+  },
+  "gc_fluid_inclusion_microtherm": {
+    "codepoint": 57487,
+    "fallback": "\u00d1",
+    "outline_sha256": "ea2ff4b543c7f7eb8cce76d7fdeeae22eb2a88e399ccc18178af72dff7de58bd"
+  },
+  "gc_radon_emanometry": {
+    "codepoint": 57488,
+    "fallback": "\u00d2",
+    "outline_sha256": "c86af013169341fdd2212b8554344d8aa7d2c77369c667f3b8caa8efe85ea052"
+  },
+  "gc_biogeochem_vegetation": {
+    "codepoint": 57489,
+    "fallback": "\u00d3",
+    "outline_sha256": "a0d394853fad92c10502bc09e197f4f25d0a870d00503726b4bf1899a28a5e7c"
+  },
+  "gc_ree_chondrite_spidergram": {
+    "codepoint": 57490,
+    "fallback": "\u00d4",
+    "outline_sha256": "d4dcfd7e5f5bb82d7ef530fd5da7c05e22112858e8f3c1d1a826a8ed02a99a4f"
+  },
+  "gc_primitive_mantle_spidergram": {
+    "codepoint": 57491,
+    "fallback": "\u00d5",
+    "outline_sha256": "7dd9fae963980b9d98ea855989eccb12d346bae9f41df38297958d2fce2f25b9"
+  },
+  "gc_tas_volcanic_diagram": {
+    "codepoint": 57492,
+    "fallback": "\u00d6",
+    "outline_sha256": "154c24f9d5a921a59c872a1ea162ccbfa788b6221b6365d97c0d1454b4756801"
+  },
+  "gc_qapf_ternary_double": {
+    "codepoint": 57493,
+    "fallback": "\u00d7",
+    "outline_sha256": "ee7a946ec150493da55e14985dbf163863fe3334182603d0a55a0ac99551529d"
+  },
+  "gc_pearce_tectonic_discrimination": {
+    "codepoint": 57494,
+    "fallback": "\u00d8",
+    "outline_sha256": "c0d6c18359b6f9021b03040a2ecc94c29a49116fec0bf516337591a5055e2913"
+  },
+  "gc_activity_activity_diagram": {
+    "codepoint": 57495,
+    "fallback": "\u00d9",
+    "outline_sha256": "bd048cf64d1154395a639109bf9637f9ccb48b42f88d8562958e4c897b03e841"
+  },
+  "gc_zircon_upb_concordia": {
+    "codepoint": 57496,
+    "fallback": "\u00da",
+    "outline_sha256": "69d4c88d2ddff28af77ad8afff6f7140af8bab0db09def841ba86c72fc238abd"
+  },
+  "gc_rb_sr_isochron_diagram": {
+    "codepoint": 57497,
+    "fallback": "\u00db",
+    "outline_sha256": "f267fb3d29d11881c9a367676dbd9aec55c38527b7270ae60afb131103414ca9"
+  },
+  "gc_sulfur_isotope_delta34s": {
+    "codepoint": 57498,
+    "fallback": "\u00dc",
+    "outline_sha256": "bd1541ac453c84efb245aef99a6aabe0439b4ce293e39efb1f6738e219a7cee9"
+  },
+  "gc_swir_mineral_spectral_trough": {
+    "codepoint": 57499,
+    "fallback": "\u00dd",
+    "outline_sha256": "33856110c1f4999f141d643afe39a11870bb71e116cc66c70f82deb06b7d4adb"
+  },
+  "gc_campbell_vectoring_ratio": {
+    "codepoint": 57500,
+    "fallback": "\u00de",
+    "outline_sha256": "2f49de52d70f2c1aad5caee04809a08de2fe54ef496e8c8d132b36e0019e44a7"
+  },
+  "gc_alumina_saturation_asi": {
+    "codepoint": 57501,
+    "fallback": "\u00df",
+    "outline_sha256": "eb3973fcbb12644204c8e57a0e95f6415974c31037af0c68281035a5aa1c885e"
+  },
+  "gc_harker_variation_diagram": {
+    "codepoint": 57502,
+    "fallback": "\u00e0",
+    "outline_sha256": "33aa723e651b89b889a1ae3e3001079b4112a904270d6356d0c8bd30301dec39"
+  },
+  "gc_water_solubility_melt": {
+    "codepoint": 57503,
+    "fallback": "\u00e1",
+    "outline_sha256": "8434ec271ce21e971ca25b8708a0754928b989a5b16ce7196d5a342edd3b4afc"
+  },
+  "gc_oxygen_isotope_delta18o": {
+    "codepoint": 57504,
+    "fallback": "\u00e2",
+    "outline_sha256": "eae3c8fdf3e7691e0fb77952cc4e8da2c19ee7d357f2f33ddd160c00b23c03df"
+  },
+  "gc_hydrothermal_boiling_immiscibility": {
+    "codepoint": 57505,
+    "fallback": "\u00e3",
+    "outline_sha256": "1231971e6fb0445ad18bf4674ea17868505a23fdf72e1c97c28eb948ed6e5485"
+  },
+  "gc_sulfide_melt_immiscibility": {
+    "codepoint": 57506,
+    "fallback": "\u00e4",
+    "outline_sha256": "bb48b1a90cd6c40511d472b845a4db267397dee64451126a1cec7ff4dc5c08b5"
+  },
+  "gc_fluid_rock_metasomatism": {
+    "codepoint": 57507,
+    "fallback": "\u00e5",
+    "outline_sha256": "afbbf84d03b1abc7400e0aee7127d2a1b5e0cdd01018ee9a33bfa06b19dde959"
+  },
+  "gc_bacterial_sulfate_reduction": {
+    "codepoint": 57508,
+    "fallback": "\u00e6",
+    "outline_sha256": "ce90f16611520e4c1a73d01140540aafc5fb8f3a2a302df50fcbb6bbc2b56aa8"
+  },
+  "gc_heavy_mineral_placer": {
+    "codepoint": 57509,
+    "fallback": "\u00e7",
+    "outline_sha256": "c765f8208024f4e3c4f62ac1c7f314bf744e97cf2cd231cd921636781a9b9bd8"
+  },
+  "gc_gossan_boxwork_weathering": {
+    "codepoint": 57510,
+    "fallback": "\u00e8",
+    "outline_sha256": "f344108808275ae4f836e8d4bd7f126fbf67d2b860b38c20a5b5e4be0e128841"
+  },
+  "gc_fumarolic_gas_exsolution": {
+    "codepoint": 57511,
+    "fallback": "\u00e9",
+    "outline_sha256": "714463dde07fcab6628e9552ecbacfa57bddbca67dec9e5d6af6534f823d456f"
+  },
+  "gc_clay_adsorption_cec": {
+    "codepoint": 57512,
+    "fallback": "\u00ea",
+    "outline_sha256": "af0464cd59efcf59c3683746993ad808322cd2648544fbcdf0dad25d290446a2"
+  },
+  "gc_metal_chloride_complexation": {
+    "codepoint": 57513,
+    "fallback": "\u00eb",
+    "outline_sha256": "1e5d0f3c1408b7ca743490ff0c486e413cfb5cc2c09e6b5a8bef7384c5ce28f4"
+  },
+  "gc_hydrocarbon_catagenesis": {
+    "codepoint": 57514,
+    "fallback": "\u00ec",
+    "outline_sha256": "d301b1b8ca217f394ebbb1ffc27414501621a2128eb094a5999876b7a8f31463"
+  },
+  "gc_colloid_flocculation": {
+    "codepoint": 57515,
+    "fallback": "\u00ed",
+    "outline_sha256": "fb3c13f858819a1928d1390b70e838153fea39cd2c8cf9a604f72fd12f7d1733"
+  },
+  "gc_gibbs_free_energy": {
+    "codepoint": 57516,
+    "fallback": "\u00ee",
+    "outline_sha256": "c9721e604caac4094f782488d738dec0373fe4a7dea3d5b086afeb9f12c083a4"
+  },
+  "gc_chemical_elements": {
+    "codepoint": 57517,
+    "fallback": "\u00ef",
+    "outline_sha256": "0af9a50113b4712800c1563b704c44b100edbeda39c1bafda547521edaad6b4c"
+  },
+  "gl_minerals_specimen": {
+    "codepoint": 57518,
+    "fallback": "\u00f0",
+    "outline_sha256": "e8d496a5dbdbc7a29ca68f03d016d6f86a872d51bded64d8c8d0595eb94c8661"
+  },
+  "gc_element_diff_wtpct": {
+    "codepoint": 57519,
+    "fallback": "\u00f1",
+    "outline_sha256": "979e561240390fe5cd563e7193a74c1bad249d501a8ea9b1aa7ada59ed3299b3"
+  },
+  "gc_temperature_thermo": {
+    "codepoint": 57520,
+    "fallback": "\u00f2",
+    "outline_sha256": "5a32880fb13f34f431cc99025e114e4da7a59f265d7007b36498f2de5b4422fd"
+  },
+  "gc_pressure_gauge": {
+    "codepoint": 57521,
+    "fallback": "\u00f3",
+    "outline_sha256": "3eda88c285377ac8122d75a45b61fd87a1dbaa92eaf9772450791f3d412d5512"
+  },
+  "gc_gradient_perturbation_factor": {
+    "codepoint": 57522,
+    "fallback": "\u00f4",
+    "outline_sha256": "94e5951968e872a968026373e4851d8494026cfd07eef0b63174ca0e12500e78"
+  },
+  "gc_l1_norm_regularization": {
+    "codepoint": 57523,
+    "fallback": "\u00f5",
+    "outline_sha256": "e6b690b64eee915f3d3ba4a49ffe5fdd9d692093eaec21624e030b463aa7488b"
+  },
+  "gc_n_iterations_loop": {
+    "codepoint": 57524,
+    "fallback": "\u00f6",
+    "outline_sha256": "0a12936bde13e45ce73f76b15066438049ebe5e11e8b7370aacc7ae4443c6d00"
+  },
+  "gc_thermodynamics_system": {
+    "codepoint": 57525,
+    "fallback": "\u00f7",
+    "outline_sha256": "780ba5ebacaa9c1680e3631d6a9a0ebaaf2fe1c22769bc94eba1068b9982ebd4"
+  },
+  "gp_petrophysics_core_matrix": {
+    "codepoint": 57526,
+    "fallback": "\u00f8",
+    "outline_sha256": "b716e74a817521b5dc2990eab5981c3a229443fb5425bccfb06701442b90ef43"
+  },
+  "gl_positions_spatial_coords": {
+    "codepoint": 57527,
+    "fallback": "\u00f9",
+    "outline_sha256": "685b64e7b897ed8281d40872fb4f04c895ebd7d331a0bb0f817504d163c004aa"
+  },
+  "gc_volatiles_degassing": {
+    "codepoint": 57528,
+    "fallback": "\u00fa",
+    "outline_sha256": "e8ea2d58fd40c12b2b2a48efeee0f4ee67f39ece7b925a0ea4881fac79109a39"
+  },
+  "gc_water_activity_ah2o": {
+    "codepoint": 57529,
+    "fallback": "\u00fb",
+    "outline_sha256": "6bd4b791d21e85ee7c38a814fccc10bd82153e4cf77ce711d50175dec3319c79"
+  },
+  "gc_fluid_xco2_mole_fraction": {
+    "codepoint": 57530,
+    "fallback": "\u00fc",
+    "outline_sha256": "c37b1fb85b00d07bb5fbc79ca7269a124b675072966823ff9d429e67d1c25b61"
+  },
+  "gc_oxygen_fugacity_fo2": {
+    "codepoint": 57531,
+    "fallback": "\u00fd",
+    "outline_sha256": "36126656930e74935ff1608bb5de7c96c5f494dff6671d0ab0c15dd3f6a69426"
+  },
+  "gc_major_element_oxides": {
+    "codepoint": 57532,
+    "fallback": "\u00fe",
+    "outline_sha256": "6f100912220c9e03b6b49634ef1535440091972004c24bbb4cf0c6294a9dbdb0"
+  },
+  "gc_gradient_initial_step": {
+    "codepoint": 57533,
+    "fallback": "\u00ff",
+    "outline_sha256": "edf30d6ea8c5e973f988864dee01fbee2c114390cff57e3d1e7cff44497c31b8"
+  },
+  "gc_sensitivity_jacobian": {
+    "codepoint": 57534,
+    "fallback": "\u0100",
+    "outline_sha256": "daeffa654214f61f837c4cf9664c94445d8fb2a66b4bccbd619b28f6bf70998e"
+  },
+  "gp_specific_gravity_balance": {
+    "codepoint": 57535,
+    "fallback": "\u0101",
+    "outline_sha256": "b686346416594e9a29c37afcdc0cc65a202a7f5ad69e021b3d75d3113a435829"
+  },
+  "gc_log_error_residuals": {
+    "codepoint": 57536,
+    "fallback": "\u0102",
+    "outline_sha256": "76478bfd0a830ac5b51733a86be6e41fc7620bbd6ec6d4d6189e4ebe66a8e787"
+  },
+  "gl_geological_tagging_domain": {
+    "codepoint": 57537,
+    "fallback": "\u0103",
+    "outline_sha256": "f5c18b7aceef62fe4a5044c942fbbfb543d53646fc3c5f334a21260d1351a266"
+  }
+}

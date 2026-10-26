@@ -1,11 +1,12 @@
 'use strict';
+const RELEASE = '2.2.0';
 const $ = id => document.getElementById(id);
 const state = {icons: [], style: new URLSearchParams(location.search).get('style') === 'flat' ? 'flat' : 'detailed', domain: 'all', selected: null};
 const labels = {Geophysical:'Geophysics',Geological:'Geology',Geochemical:'Geochemistry',Geotechnical:'Geotechnical'};
 const featuredIds = ['gp_seismic_reflection','gl_minerals_specimen','gp_magnetic_survey','gc_chemical_elements','gc_temperature_thermo','gl_block_model_3d','gc_aqua_regia_partial_digest','gl_strike_dip_mapping','gp_electromagnetic_em','gl_rock_type_igneous','gc_pressure_gauge','gl_geological_tagging_domain'];
 let toastTimer;
 function preview(icon,style=state.style){
-  if(style==='flat'){const img=document.createElement('img');img.src='assets/'+icon.svg_file;img.alt='';img.loading='lazy';img.width=img.height=96;return img;}
+  if(style==='flat'){const img=document.createElement('img');img.src='assets/'+icon.svg_file+'?v='+RELEASE;img.alt='';img.loading='lazy';img.width=img.height=96;return img;}
   const glyph=document.createElement('span');glyph.className='glyph';glyph.setAttribute('aria-hidden','true');glyph.textContent=String.fromCodePoint(icon.codepoint_int);return glyph;
 }
 function render(){
@@ -43,4 +44,4 @@ $('close-detail').addEventListener('click',()=>$('detail').close());$('detail').
 $('detail').addEventListener('click',event=>{const box=$('detail').getBoundingClientRect();if(event.target===$('detail')&&(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom))$('detail').close();});
 $('snippet-type').addEventListener('change',snippet);$('copy-snippet').addEventListener('click',()=>copy($('detail-snippet').textContent,'Code copied'));$('copy-character').addEventListener('click',()=>copy(String.fromCodePoint(state.selected.codepoint_int),'Glyph copied'));
 document.addEventListener('keydown',event=>{if(event.key==='/'&&!$('detail').open&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){event.preventDefault();$('search').focus();}});
-fetch('assets/geoscience-icons.json').then(response=>{if(!response.ok)throw new Error('Unable to load icons');return response.json();}).then(catalog=>{state.icons=catalog.icons;for(const id of featuredIds){const icon=state.icons.find(item=>item.id===id);if(!icon)continue;const tile=document.createElement('div');tile.className='featured-item';tile.title=icon.name;const index=document.createElement('small');index.textContent=String(icon.index).padStart(3,'0');tile.append(index,preview(icon,'detailed'));$('featured').append(tile);}render();}).catch(()=>{$('result-count').textContent='The icon library could not load. Refresh to try again.';$('empty').hidden=false;});
+fetch('assets/geoscience-icons.json?v='+RELEASE).then(response=>{if(!response.ok)throw new Error('Unable to load icons');return response.json();}).then(catalog=>{state.icons=catalog.icons;document.querySelectorAll('[data-total]').forEach(item=>item.textContent=state.icons.length);document.querySelectorAll('[data-domain]').forEach(button=>{const count=button.querySelector('span');if(count)count.textContent=state.icons.filter(icon=>button.dataset.domain==='all'||icon.domain===button.dataset.domain).length;});for(const id of featuredIds){const icon=state.icons.find(item=>item.id===id);if(!icon)continue;const tile=document.createElement('div');tile.className='featured-item';tile.title=icon.name;const index=document.createElement('small');index.textContent=String(icon.index).padStart(3,'0');tile.append(index,preview(icon,'detailed'));$('featured').append(tile);}render();}).catch(()=>{$('result-count').textContent='The icon library could not load. Refresh to try again.';$('empty').hidden=false;});

@@ -17,7 +17,7 @@ import opus.base.properties.OpusProperty;
 import opus.base.resources.OpusResources;
 
 /**
- * GeoScienceIcons TrueType glyph font (193 icons) covering Geophysical, Geotechnical,
+ * GeoScienceIcons TrueType glyph font (273 icons) covering Geophysical, Geotechnical,
  * Geological, and Geochemical methods, earth model types, and processes.
  * Includes dedicated suites for Inversion, Thermodynamics, Petrophysics, and Geochemistry,
  * aligned with opus.geo.geochemistry, opus.geo.petrophysics, and opus.geo.geotechnical.
@@ -221,6 +221,86 @@ public class GeoScienceIcons extends GlyphFont {
 		GP_SPECIFIC_GRAVITY_BALANCE('\ue0bf'), // Specific Gravity & Hydrostatic Balance (Geophysical - Methods)
 		GC_LOG_ERROR_RESIDUALS('\ue0c0'), // Logarithmic Residual Error (Geophysical - Methods)
 		GL_GEOLOGICAL_TAGGING_DOMAIN('\ue0c1'), // Geological Domain Tagging (Geological - Methods)
+		GP_AIRBORNE_EM_AEM('\ue0c2'), // Airborne Electromagnetics (AEM) (Geophysical - Methods)
+		GP_FIXED_WING_AEM('\ue0c3'), // Fixed-Wing AEM & Towed Bird (Geophysical - Methods)
+		GP_FREQUENCY_DOMAIN_EM_FDEM('\ue0c4'), // Frequency-Domain EM (FDEM) (Geophysical - Methods)
+		GP_TIME_DOMAIN_EM_TDEM('\ue0c5'), // Time-Domain EM (TDEM) (Geophysical - Methods)
+		GP_CSEM_MARINE('\ue0c6'), // Marine Controlled-Source EM (CSEM) (Geophysical - Methods)
+		GP_CSEM_LAND('\ue0c7'), // Land Controlled-Source EM (CSEM) (Geophysical - Methods)
+		GP_CSAMT('\ue0c8'), // Controlled-Source Audio-MT (CSAMT) (Geophysical - Methods)
+		GP_GROUND_TEM('\ue0c9'), // Ground TEM Survey (Geophysical - Methods)
+		GP_TEM_FIXED_LOOP('\ue0ca'), // Fixed-Loop TEM (Geophysical - Methods)
+		GP_TEM_MOVING_LOOP('\ue0cb'), // Moving-Loop TEM (Geophysical - Methods)
+		GP_TEM_CENTRAL_LOOP('\ue0cc'), // Central-Loop TEM (Geophysical - Methods)
+		GP_TEM_IN_LOOP('\ue0cd'), // In-Loop TEM (Geophysical - Methods)
+		GP_TEM_LOTEM('\ue0ce'), // Long-Offset TEM (LOTEM) (Geophysical - Methods)
+		GP_LOUPE_TEM('\ue0cf'), // Loupe Portable TEM (Geophysical - Methods)
+		GP_VTEM('\ue0d0'), // VTEM Airborne TEM (Geophysical - Methods)
+		GP_SKYTEM('\ue0d1'), // SkyTEM Dual-Moment AEM (Geophysical - Methods)
+		GP_SLINGRAM_EM('\ue0d2'), // Slingram Ground EM (Geophysical - Methods)
+		GP_VLF_EM('\ue0d3'), // Very Low Frequency EM (VLF) (Geophysical - Methods)
+		GP_AIRBORNE_MAGNETICS('\ue0d4'), // Airborne Magnetic Survey (Geophysical - Methods)
+		GP_GROUND_MAGNETICS('\ue0d5'), // Ground Magnetic Survey (Geophysical - Methods)
+		GP_MAGNETIC_GRADIOMETRY('\ue0d6'), // Magnetic Gradiometry (Geophysical - Methods)
+		GP_ELECTRICAL_IP_CHARGEABILITY('\ue0d7'), // Time-Domain Induced Polarization (Geophysical - Methods)
+		GP_IP_SPECTRAL('\ue0d8'), // Spectral Induced Polarization (SIP) (Geophysical - Methods)
+		GP_TEM_DECAY_GATES('\ue0d9'), // TEM Decay & Time Gates (Geophysical - Processes)
+		GP_GPR_B_SCAN('\ue0da'), // GPR Radargram / B-Scan (Geophysical - Methods)
+		GP_GPR_TIME_SLICE('\ue0db'), // GPR Time / Depth Slice (Geophysical - Methods)
+		GP_GPR_VOLUME_3D('\ue0dc'), // 3D GPR Volume (Geophysical - Methods)
+		GP_GPR_CMP_VELOCITY('\ue0dd'), // GPR CMP / WARR Velocity (Geophysical - Methods)
+		GP_GPR_UTILITY_DETECTION('\ue0de'), // GPR Utility Detection (Geophysical - Methods)
+		GP_GPR_CONCRETE_REBAR('\ue0df'), // GPR Concrete & Rebar Scan (Geophysical - Methods)
+		GP_GPR_BOREHOLE('\ue0e0'), // Borehole / Crosshole Radar (Geophysical - Methods)
+		GP_GPR_ANTENNA('\ue0e1'), // GPR Shielded Antenna (Geophysical - Methods)
+		GP_RADIOMETRICS_TOTAL('\ue0e2'), // Radiometrics — Total Count (Geophysical - Methods)
+		GP_RADIOMETRICS_POTASSIUM_K('\ue0e3'), // Radiometrics — Potassium (K) (Geophysical - Methods)
+		GP_RADIOMETRICS_URANIUM_U('\ue0e4'), // Radiometrics — Uranium (eU) (Geophysical - Methods)
+		GP_RADIOMETRICS_THORIUM_TH('\ue0e5'), // Radiometrics — Thorium (eTh) (Geophysical - Methods)
+		GP_RADIOMETRICS_TERNARY('\ue0e6'), // Radiometric K–U–Th Ternary (Geophysical - Methods)
+		GP_AIRBORNE_RADIOMETRICS('\ue0e7'), // Airborne Gamma Spectrometry (Geophysical - Methods)
+		GP_SEISMIC_CROSSHOLE('\ue0e8'), // Crosshole Seismic Survey (Geophysical - Methods)
+		GP_SEISMIC_DOWNHOLE('\ue0e9'), // Downhole Seismic Survey (Geophysical - Methods)
+		GP_SEISMIC_UPHOLE('\ue0ea'), // Uphole Seismic Survey (Geophysical - Methods)
+		GP_SEISMIC_VSP('\ue0eb'), // Vertical Seismic Profile (VSP) (Geophysical - Methods)
+		GP_SEISMIC_REFRACTION('\ue0ec'), // Seismic Refraction Survey (Geophysical - Methods)
+		GP_SEISMIC_MASW('\ue0ed'), // Surface-Wave Seismics (MASW) (Geophysical - Methods)
+		GP_SEISMIC_HVSR('\ue0ee'), // Passive Seismic H/V (HVSR) (Geophysical - Methods)
+		GP_BOREHOLE_EM_BHEM('\ue0ef'), // Borehole EM (BHEM / DHEM) (Geophysical - Methods)
+		GP_BOREHOLE_INDUCTION_LOG('\ue0f0'), // Borehole Induction Conductivity (Geophysical - Methods)
+		GP_BOREHOLE_RESISTIVITY_LOG('\ue0f1'), // Borehole Resistivity Log (Geophysical - Methods)
+		GP_BOREHOLE_IP_LOG('\ue0f2'), // Borehole IP Log (Geophysical - Methods)
+		GP_BOREHOLE_SP_LOG('\ue0f3'), // Borehole Self-Potential (SP) (Geophysical - Methods)
+		GP_BOREHOLE_MAGNETIC_SUSCEPTIBILITY('\ue0f4'), // Borehole Magnetic Susceptibility (Geophysical - Methods)
+		GP_BOREHOLE_MAGNETOMETER('\ue0f5'), // Borehole Magnetometer (Geophysical - Methods)
+		GP_BOREHOLE_NATURAL_GAMMA('\ue0f6'), // Borehole Natural Gamma (Geophysical - Methods)
+		GP_BOREHOLE_SPECTRAL_GAMMA('\ue0f7'), // Borehole Spectral Gamma (Geophysical - Methods)
+		GP_BOREHOLE_DENSITY_LOG('\ue0f8'), // Borehole Gamma-Gamma Density (Geophysical - Methods)
+		GP_BOREHOLE_NEUTRON_POROSITY('\ue0f9'), // Borehole Neutron Porosity (Geophysical - Methods)
+		GP_BOREHOLE_SONIC_LOG('\ue0fa'), // Borehole Sonic / Full Waveform (Geophysical - Methods)
+		GP_BOREHOLE_ACOUSTIC_TELEVIEWER('\ue0fb'), // Acoustic Borehole Televiewer (Geophysical - Methods)
+		GP_BOREHOLE_OPTICAL_TELEVIEWER('\ue0fc'), // Optical Borehole Televiewer (Geophysical - Methods)
+		GP_BOREHOLE_CALIPER('\ue0fd'), // Borehole Caliper (Geophysical - Methods)
+		GP_BOREHOLE_TEMPERATURE('\ue0fe'), // Borehole Temperature Log (Geophysical - Methods)
+		GP_BOREHOLE_FLUID_CONDUCTIVITY('\ue0ff'), // Borehole Fluid Conductivity (Geophysical - Methods)
+		GP_BOREHOLE_FLOWMETER('\ue100'), // Borehole Flowmeter (Geophysical - Methods)
+		GP_BOREHOLE_NMR('\ue101'), // Borehole NMR Log (Geophysical - Methods)
+		GP_BOREHOLE_GRAVITY('\ue102'), // Borehole Gravimetry (Geophysical - Methods)
+		GP_CROSSHOLE_ERT('\ue103'), // Crosshole Electrical Tomography (Geophysical - Methods)
+		GP_CROSSHOLE_EM_TOMOGRAPHY('\ue104'), // Crosshole EM Tomography (Geophysical - Methods)
+		GP_CROSSHOLE_SEISMIC_TOMOGRAPHY('\ue105'), // Crosshole Seismic Tomography (Geophysical - Methods)
+		GP_PROPERTY_CONDUCTIVITY('\ue106'), // Electrical Conductivity (Geophysical - Petrophysical Quantities)
+		GP_PROPERTY_RESISTIVITY('\ue107'), // Electrical Resistivity (Geophysical - Petrophysical Quantities)
+		GP_PROPERTY_DENSITY('\ue108'), // Bulk Density (Geophysical - Petrophysical Quantities)
+		GP_PROPERTY_MAGNETIC_SUSCEPTIBILITY('\ue109'), // Magnetic Susceptibility (Geophysical - Petrophysical Quantities)
+		GP_PROPERTY_REMANENT_MAGNETIZATION('\ue10a'), // Remanent Magnetization (Geophysical - Petrophysical Quantities)
+		GP_PROPERTY_CHARGEABILITY('\ue10b'), // IP Chargeability (Geophysical - Petrophysical Quantities)
+		GP_PROPERTY_VP('\ue10c'), // P-Wave Velocity (Vp) (Geophysical - Petrophysical Quantities)
+		GP_PROPERTY_VS('\ue10d'), // S-Wave Velocity (Vs) (Geophysical - Petrophysical Quantities)
+		GP_PROPERTY_POROSITY('\ue10e'), // Porosity (Geophysical - Petrophysical Quantities)
+		GP_PROPERTY_PERMEABILITY('\ue10f'), // Permeability (Geophysical - Petrophysical Quantities)
+		GP_PROPERTY_DIELECTRIC_PERMITTIVITY('\ue110'), // Dielectric Permittivity (Geophysical - Petrophysical Quantities)
+		GP_PROPERTY_THERMAL_CONDUCTIVITY('\ue111'), // Thermal Conductivity (Geophysical - Petrophysical Quantities)
         ;
 
         private final char ch;
@@ -453,6 +533,86 @@ public class GeoScienceIcons extends GlyphFont {
 			case "gp_specific_gravity_balance" -> Glyph.GP_SPECIFIC_GRAVITY_BALANCE;
 			case "gc_log_error_residuals" -> Glyph.GC_LOG_ERROR_RESIDUALS;
 			case "gl_geological_tagging_domain" -> Glyph.GL_GEOLOGICAL_TAGGING_DOMAIN;
+			case "gp_airborne_em_aem" -> Glyph.GP_AIRBORNE_EM_AEM;
+			case "gp_fixed_wing_aem" -> Glyph.GP_FIXED_WING_AEM;
+			case "gp_frequency_domain_em_fdem" -> Glyph.GP_FREQUENCY_DOMAIN_EM_FDEM;
+			case "gp_time_domain_em_tdem" -> Glyph.GP_TIME_DOMAIN_EM_TDEM;
+			case "gp_csem_marine" -> Glyph.GP_CSEM_MARINE;
+			case "gp_csem_land" -> Glyph.GP_CSEM_LAND;
+			case "gp_csamt" -> Glyph.GP_CSAMT;
+			case "gp_ground_tem" -> Glyph.GP_GROUND_TEM;
+			case "gp_tem_fixed_loop" -> Glyph.GP_TEM_FIXED_LOOP;
+			case "gp_tem_moving_loop" -> Glyph.GP_TEM_MOVING_LOOP;
+			case "gp_tem_central_loop" -> Glyph.GP_TEM_CENTRAL_LOOP;
+			case "gp_tem_in_loop" -> Glyph.GP_TEM_IN_LOOP;
+			case "gp_tem_lotem" -> Glyph.GP_TEM_LOTEM;
+			case "gp_loupe_tem" -> Glyph.GP_LOUPE_TEM;
+			case "gp_vtem" -> Glyph.GP_VTEM;
+			case "gp_skytem" -> Glyph.GP_SKYTEM;
+			case "gp_slingram_em" -> Glyph.GP_SLINGRAM_EM;
+			case "gp_vlf_em" -> Glyph.GP_VLF_EM;
+			case "gp_airborne_magnetics" -> Glyph.GP_AIRBORNE_MAGNETICS;
+			case "gp_ground_magnetics" -> Glyph.GP_GROUND_MAGNETICS;
+			case "gp_magnetic_gradiometry" -> Glyph.GP_MAGNETIC_GRADIOMETRY;
+			case "gp_electrical_ip_chargeability" -> Glyph.GP_ELECTRICAL_IP_CHARGEABILITY;
+			case "gp_ip_spectral" -> Glyph.GP_IP_SPECTRAL;
+			case "gp_tem_decay_gates" -> Glyph.GP_TEM_DECAY_GATES;
+			case "gp_gpr_b_scan" -> Glyph.GP_GPR_B_SCAN;
+			case "gp_gpr_time_slice" -> Glyph.GP_GPR_TIME_SLICE;
+			case "gp_gpr_volume_3d" -> Glyph.GP_GPR_VOLUME_3D;
+			case "gp_gpr_cmp_velocity" -> Glyph.GP_GPR_CMP_VELOCITY;
+			case "gp_gpr_utility_detection" -> Glyph.GP_GPR_UTILITY_DETECTION;
+			case "gp_gpr_concrete_rebar" -> Glyph.GP_GPR_CONCRETE_REBAR;
+			case "gp_gpr_borehole" -> Glyph.GP_GPR_BOREHOLE;
+			case "gp_gpr_antenna" -> Glyph.GP_GPR_ANTENNA;
+			case "gp_radiometrics_total" -> Glyph.GP_RADIOMETRICS_TOTAL;
+			case "gp_radiometrics_potassium_k" -> Glyph.GP_RADIOMETRICS_POTASSIUM_K;
+			case "gp_radiometrics_uranium_u" -> Glyph.GP_RADIOMETRICS_URANIUM_U;
+			case "gp_radiometrics_thorium_th" -> Glyph.GP_RADIOMETRICS_THORIUM_TH;
+			case "gp_radiometrics_ternary" -> Glyph.GP_RADIOMETRICS_TERNARY;
+			case "gp_airborne_radiometrics" -> Glyph.GP_AIRBORNE_RADIOMETRICS;
+			case "gp_seismic_crosshole" -> Glyph.GP_SEISMIC_CROSSHOLE;
+			case "gp_seismic_downhole" -> Glyph.GP_SEISMIC_DOWNHOLE;
+			case "gp_seismic_uphole" -> Glyph.GP_SEISMIC_UPHOLE;
+			case "gp_seismic_vsp" -> Glyph.GP_SEISMIC_VSP;
+			case "gp_seismic_refraction" -> Glyph.GP_SEISMIC_REFRACTION;
+			case "gp_seismic_masw" -> Glyph.GP_SEISMIC_MASW;
+			case "gp_seismic_hvsr" -> Glyph.GP_SEISMIC_HVSR;
+			case "gp_borehole_em_bhem" -> Glyph.GP_BOREHOLE_EM_BHEM;
+			case "gp_borehole_induction_log" -> Glyph.GP_BOREHOLE_INDUCTION_LOG;
+			case "gp_borehole_resistivity_log" -> Glyph.GP_BOREHOLE_RESISTIVITY_LOG;
+			case "gp_borehole_ip_log" -> Glyph.GP_BOREHOLE_IP_LOG;
+			case "gp_borehole_sp_log" -> Glyph.GP_BOREHOLE_SP_LOG;
+			case "gp_borehole_magnetic_susceptibility" -> Glyph.GP_BOREHOLE_MAGNETIC_SUSCEPTIBILITY;
+			case "gp_borehole_magnetometer" -> Glyph.GP_BOREHOLE_MAGNETOMETER;
+			case "gp_borehole_natural_gamma" -> Glyph.GP_BOREHOLE_NATURAL_GAMMA;
+			case "gp_borehole_spectral_gamma" -> Glyph.GP_BOREHOLE_SPECTRAL_GAMMA;
+			case "gp_borehole_density_log" -> Glyph.GP_BOREHOLE_DENSITY_LOG;
+			case "gp_borehole_neutron_porosity" -> Glyph.GP_BOREHOLE_NEUTRON_POROSITY;
+			case "gp_borehole_sonic_log" -> Glyph.GP_BOREHOLE_SONIC_LOG;
+			case "gp_borehole_acoustic_televiewer" -> Glyph.GP_BOREHOLE_ACOUSTIC_TELEVIEWER;
+			case "gp_borehole_optical_televiewer" -> Glyph.GP_BOREHOLE_OPTICAL_TELEVIEWER;
+			case "gp_borehole_caliper" -> Glyph.GP_BOREHOLE_CALIPER;
+			case "gp_borehole_temperature" -> Glyph.GP_BOREHOLE_TEMPERATURE;
+			case "gp_borehole_fluid_conductivity" -> Glyph.GP_BOREHOLE_FLUID_CONDUCTIVITY;
+			case "gp_borehole_flowmeter" -> Glyph.GP_BOREHOLE_FLOWMETER;
+			case "gp_borehole_nmr" -> Glyph.GP_BOREHOLE_NMR;
+			case "gp_borehole_gravity" -> Glyph.GP_BOREHOLE_GRAVITY;
+			case "gp_crosshole_ert" -> Glyph.GP_CROSSHOLE_ERT;
+			case "gp_crosshole_em_tomography" -> Glyph.GP_CROSSHOLE_EM_TOMOGRAPHY;
+			case "gp_crosshole_seismic_tomography" -> Glyph.GP_CROSSHOLE_SEISMIC_TOMOGRAPHY;
+			case "gp_property_conductivity" -> Glyph.GP_PROPERTY_CONDUCTIVITY;
+			case "gp_property_resistivity" -> Glyph.GP_PROPERTY_RESISTIVITY;
+			case "gp_property_density" -> Glyph.GP_PROPERTY_DENSITY;
+			case "gp_property_magnetic_susceptibility" -> Glyph.GP_PROPERTY_MAGNETIC_SUSCEPTIBILITY;
+			case "gp_property_remanent_magnetization" -> Glyph.GP_PROPERTY_REMANENT_MAGNETIZATION;
+			case "gp_property_chargeability" -> Glyph.GP_PROPERTY_CHARGEABILITY;
+			case "gp_property_vp" -> Glyph.GP_PROPERTY_VP;
+			case "gp_property_vs" -> Glyph.GP_PROPERTY_VS;
+			case "gp_property_porosity" -> Glyph.GP_PROPERTY_POROSITY;
+			case "gp_property_permeability" -> Glyph.GP_PROPERTY_PERMEABILITY;
+			case "gp_property_dielectric_permittivity" -> Glyph.GP_PROPERTY_DIELECTRIC_PERMITTIVITY;
+			case "gp_property_thermal_conductivity" -> Glyph.GP_PROPERTY_THERMAL_CONDUCTIVITY;
             default -> null;
         };
     }

@@ -6,6 +6,7 @@ HTML interactive specimen, and FreeType-rendered PNG verification sheet.
 import json
 import os
 import argparse
+from collections import Counter
 from html import escape
 from pathlib import Path
 from typing import Dict, Any, List
@@ -23,7 +24,8 @@ from icons_geochemical import GEOCHEMICAL_ICONS
 from icons_opus_geology import OPUS_GEOLOGY_ICONS
 from icons_geochemical_expanded import EXPANDED_GEOCHEMISTRY_ICONS
 from icons_mineralis_inversion import MINERALIS_INVERSION_ICONS
-from icon_artwork import artwork, svg_document, build_recipes
+from icon_artwork import artwork, svg_document
+from icon_catalog import ALL_ICONS
 from font_artwork import detailed_font_geometry
 from icon_specimen import build_catalog, render_flat_sheet, render_style_preview, render_material_preview
 
@@ -32,11 +34,11 @@ ASCENT = 880
 DESCENT = -120
 Y_OFFSET = -120  # Maps canvas [0, 1000] -> font Y [-120, 880]
 
-# 193+ printable fallback characters across ASCII, Latin-1 Supplement, and Latin Extended-A
+# Append-only fallback keys across ASCII, Latin-1 Supplement and Latin Extended-A.
 printable_chars = [chr(c) for c in range(0x0021, 0x007F)] + [
     chr(c) for c in range(0x00A1, 0x0100)
 ] + [chr(c) for c in range(0x0100, 0x0180)]
-ASCII_KEYS = printable_chars[:193]
+ASCII_KEYS = printable_chars
 
 
 def polygons_to_ttglyph(polys: List[Polygon]):
@@ -103,19 +105,12 @@ def build_all(install_opus: bool = False):
     svg_dir.mkdir(parents=True, exist_ok=True)
     mono_dir.mkdir(parents=True, exist_ok=True)
 
-    all_icons: List[Dict[str, Any]] = (
-        GEOPHYSICAL_ICONS
-        + GEOTECHNICAL_ICONS
-        + GEOLOGICAL_ICONS
-        + GEOCHEMICAL_ICONS
-        + OPUS_GEOLOGY_ICONS
-        + EXPANDED_GEOCHEMISTRY_ICONS
-        + MINERALIS_INVERSION_ICONS
-    )
-    assert len(all_icons) == 193, f"Expected 193 icons, got {len(all_icons)}"
+    all_icons: List[Dict[str, Any]] = ALL_ICONS
     expected_ids = {icon["id"] for icon in all_icons}
-    if set(build_recipes()) != expected_ids:
-        raise ValueError(f"Artwork IDs differ: missing={expected_ids - set(build_recipes())}, extra={set(build_recipes()) - expected_ids}")
+    if len(expected_ids) != len(all_icons) or len({icon['codepoint'] for icon in all_icons}) != len(all_icons):
+        raise ValueError('Icon IDs and codepoints must be unique')
+    if len(ASCII_KEYS) < len(all_icons):
+        raise ValueError('Insufficient stable printable fallback keys')
 
     glyph_order = [".notdef", "space"]
     cmap: Dict[int, str] = {0x0020: "space", 0x00A0: "space"}
@@ -198,10 +193,10 @@ def build_all(install_opus: bool = False):
         {
             "familyName": "GeoScience Icons",
             "styleName": "Regular",
-            "uniqueFontIdentifier": "GeoScienceIcons-Regular-2.1",
+            "uniqueFontIdentifier": "GeoScienceIcons-Regular-2.2",
             "fullName": "GeoScience Icons Regular",
             "psName": "GeoScienceIcons-Regular",
-            "version": "Version 2.100",
+            "version": "Version 2.200",
             "copyright": "Copyright (c) 2026 GeoScience Icon Set. Open License.",
             "description": "Comprehensive TrueType icon font covering Geophysical, Geotechnical, Geological, and Geochemical methods, earth model types, and processes.",
         }
@@ -217,7 +212,7 @@ def build_all(install_opus: bool = False):
         fsType=0,  # Installable embedding allowed
     )
     fb.setupPost(isFixedPitch=1)
-    fb.font["head"].fontRevision = 2.1
+    fb.font["head"].fontRevision = 2.2
 
     ttf_dist_path = dist_dir / "GeoScienceIcons.ttf"
     ttf_root_path = root_dir / "GeoScienceIcons.ttf"
@@ -236,7 +231,7 @@ def build_all(install_opus: bool = False):
     json_data = {
         "fontFamily": "GeoScience Icons",
         "postScriptName": "GeoScienceIcons-Regular",
-        "version": "2.1.0",
+        "version": "2.2.0",
         "svgStyle": "detailed-flat-natural-materials",
         "fontStyle": "detailed-technical-line",
         "unitsPerEm": UPM,
@@ -244,7 +239,7 @@ def build_all(install_opus: bool = False):
         "descent": DESCENT,
         "totalIcons": len(catalog_entries),
         "domains": ["Geophysical", "Geotechnical", "Geological", "Geochemical"],
-        "categories": ["Methods", "Earth Model Types", "Processes"],
+        "categories": list(dict.fromkeys(icon['category'] for icon in all_icons)),
         "icons": catalog_entries,
     }
     json_path.write_text(json.dumps(json_data, indent=2), encoding="utf-8")
@@ -252,14 +247,14 @@ def build_all(install_opus: bool = False):
     # Write CSS stylesheet
     css_lines = [
         "/**",
-        " * GeoScience Icons v2.1.0",
+        " * GeoScience Icons v2.2.0",
         " * Domains: Geophysical, Geotechnical, Geological, Geochemical",
         " * Categories: Methods, Earth Model Types, Processes",
         " */",
         "@font-face {",
         "  font-family: 'GeoScience Icons';",
-        "  src: url('GeoScienceIcons.woff') format('woff'),",
-        "       url('GeoScienceIcons.ttf') format('truetype');",
+        "  src: url('GeoScienceIcons.woff?v=2.2.0') format('woff'),",
+        "       url('GeoScienceIcons.ttf?v=2.2.0') format('truetype');",
         "  font-weight: normal;",
         "  font-style: normal;",
         "  font-display: block;",
@@ -293,6 +288,8 @@ def build_all(install_opus: bool = False):
     render_flat_sheet(dist_dir / "flat_specimen_sheet.png", all_icons)
     render_style_preview(dist_dir / "style_preview.png", all_icons, ttf_dist_path)
     render_material_preview(dist_dir / "natural_colour_preview.png", all_icons)
+    from icons_geophysics_expanded import EXPANDED_GEOPHYSICS_ICONS
+    render_flat_sheet(dist_dir / 'geophysics_expansion_sheet.png', EXPANDED_GEOPHYSICS_ICONS)
 
     # Generate Java GlyphFont class for Opus
     java_code = build_java_glyph_class(catalog_entries)
@@ -341,7 +338,7 @@ import opus.base.properties.OpusProperty;
 import opus.base.resources.OpusResources;
 
 /**
- * GeoScienceIcons TrueType glyph font (193 icons) covering Geophysical, Geotechnical,
+ * GeoScienceIcons TrueType glyph font ({len(catalog)} icons) covering Geophysical, Geotechnical,
  * Geological, and Geochemical methods, earth model types, and processes.
  * Includes dedicated suites for Inversion, Thermodynamics, Petrophysics, and Geochemistry,
  * aligned with opus.geo.geochemistry, opus.geo.petrophysics, and opus.geo.geotechnical.
@@ -431,7 +428,7 @@ def render_specimen_png(ttf_path: Path, png_path: Path, catalog: List[Dict[str, 
     draw.text((28, 18), f"GeoScienceIcons.ttf — TrueType Font Contact Sheet ({len(catalog)} Icons)", fill=(248, 250, 252), font=title_font)
     draw.text(
         (28, 52),
-        "Geophysical (39) • Geotechnical (22) • Geological (59) • Geochemical (73) — Methods (59), Earth Models (85), Processes (49)",
+        ' • '.join(f'{domain} ({count})' for domain, count in Counter(item['domain'] for item in catalog).items()),
         fill=(148, 163, 184),
         font=sub_font,
     )
@@ -460,7 +457,7 @@ def render_specimen_png(ttf_path: Path, png_path: Path, catalog: List[Dict[str, 
 
         # Domain & Category header
         dom_color = domain_palette.get(item["domain"], (200, 200, 200))
-        cat_abbr = {"Methods": "Method", "Earth Model Types": "Model", "Processes": "Process"}[item["category"]]
+        cat_abbr = {"Methods": "Method", "Earth Model Types": "Model", "Processes": "Process", "Petrophysical Quantities": "Property"}[item["category"]]
         draw.text((x0 + 8, y0 + 8), f"{item['domain'][:6]} • {cat_abbr}", fill=dom_color, font=label_font)
         draw.text((x0 + cell_w - 54, y0 + 8), item["codepoint_hex"], fill=(148, 163, 184), font=label_font)
 

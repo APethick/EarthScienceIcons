@@ -204,4 +204,7 @@ def _artwork(identifier, builder):
 
 
 def artwork(icon):
+    from icons_geophysics_expanded import EXPANDED_IDS, flat_artwork
+    if icon['id'] in EXPANDED_IDS:
+        return flat_artwork(icon)
     return _artwork(icon['id'], icon['builder'])

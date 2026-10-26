@@ -1,12 +1,12 @@
 /**
- * GeoScience Icons v2.1.0
+ * GeoScience Icons v2.2.0
  * Domains: Geophysical, Geotechnical, Geological, Geochemical
  * Categories: Methods, Earth Model Types, Processes
  */
 @font-face {
   font-family: 'GeoScience Icons';
-  src: url('GeoScienceIcons.woff') format('woff'),
-       url('GeoScienceIcons.ttf') format('truetype');
+  src: url('GeoScienceIcons.woff?v=2.2.0') format('woff'),
+       url('GeoScienceIcons.ttf?v=2.2.0') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -218,3 +218,83 @@
 .gi-gp-specific-gravity-balance::before { content: "\e0bf"; } /* Specific Gravity & Hydrostatic Balance (U+E0BF) */
 .gi-gc-log-error-residuals::before { content: "\e0c0"; } /* Logarithmic Residual Error (U+E0C0) */
 .gi-gl-geological-tagging-domain::before { content: "\e0c1"; } /* Geological Domain Tagging (U+E0C1) */
+.gi-gp-airborne-em-aem::before { content: "\e0c2"; } /* Airborne Electromagnetics (AEM) (U+E0C2) */
+.gi-gp-fixed-wing-aem::before { content: "\e0c3"; } /* Fixed-Wing AEM & Towed Bird (U+E0C3) */
+.gi-gp-frequency-domain-em-fdem::before { content: "\e0c4"; } /* Frequency-Domain EM (FDEM) (U+E0C4) */
+.gi-gp-time-domain-em-tdem::before { content: "\e0c5"; } /* Time-Domain EM (TDEM) (U+E0C5) */
+.gi-gp-csem-marine::before { content: "\e0c6"; } /* Marine Controlled-Source EM (CSEM) (U+E0C6) */
+.gi-gp-csem-land::before { content: "\e0c7"; } /* Land Controlled-Source EM (CSEM) (U+E0C7) */
+.gi-gp-csamt::before { content: "\e0c8"; } /* Controlled-Source Audio-MT (CSAMT) (U+E0C8) */
+.gi-gp-ground-tem::before { content: "\e0c9"; } /* Ground TEM Survey (U+E0C9) */
+.gi-gp-tem-fixed-loop::before { content: "\e0ca"; } /* Fixed-Loop TEM (U+E0CA) */
+.gi-gp-tem-moving-loop::before { content: "\e0cb"; } /* Moving-Loop TEM (U+E0CB) */
+.gi-gp-tem-central-loop::before { content: "\e0cc"; } /* Central-Loop TEM (U+E0CC) */
+.gi-gp-tem-in-loop::before { content: "\e0cd"; } /* In-Loop TEM (U+E0CD) */
+.gi-gp-tem-lotem::before { content: "\e0ce"; } /* Long-Offset TEM (LOTEM) (U+E0CE) */
+.gi-gp-loupe-tem::before { content: "\e0cf"; } /* Loupe Portable TEM (U+E0CF) */
+.gi-gp-vtem::before { content: "\e0d0"; } /* VTEM Airborne TEM (U+E0D0) */
+.gi-gp-skytem::before { content: "\e0d1"; } /* SkyTEM Dual-Moment AEM (U+E0D1) */
+.gi-gp-slingram-em::before { content: "\e0d2"; } /* Slingram Ground EM (U+E0D2) */
+.gi-gp-vlf-em::before { content: "\e0d3"; } /* Very Low Frequency EM (VLF) (U+E0D3) */
+.gi-gp-airborne-magnetics::before { content: "\e0d4"; } /* Airborne Magnetic Survey (U+E0D4) */
+.gi-gp-ground-magnetics::before { content: "\e0d5"; } /* Ground Magnetic Survey (U+E0D5) */
+.gi-gp-magnetic-gradiometry::before { content: "\e0d6"; } /* Magnetic Gradiometry (U+E0D6) */
+.gi-gp-electrical-ip-chargeability::before { content: "\e0d7"; } /* Time-Domain Induced Polarization (U+E0D7) */
+.gi-gp-ip-spectral::before { content: "\e0d8"; } /* Spectral Induced Polarization (SIP) (U+E0D8) */
+.gi-gp-tem-decay-gates::before { content: "\e0d9"; } /* TEM Decay & Time Gates (U+E0D9) */
+.gi-gp-gpr-b-scan::before { content: "\e0da"; } /* GPR Radargram / B-Scan (U+E0DA) */
+.gi-gp-gpr-time-slice::before { content: "\e0db"; } /* GPR Time / Depth Slice (U+E0DB) */
+.gi-gp-gpr-volume-3d::before { content: "\e0dc"; } /* 3D GPR Volume (U+E0DC) */
+.gi-gp-gpr-cmp-velocity::before { content: "\e0dd"; } /* GPR CMP / WARR Velocity (U+E0DD) */
+.gi-gp-gpr-utility-detection::before { content: "\e0de"; } /* GPR Utility Detection (U+E0DE) */
+.gi-gp-gpr-concrete-rebar::before { content: "\e0df"; } /* GPR Concrete & Rebar Scan (U+E0DF) */
+.gi-gp-gpr-borehole::before { content: "\e0e0"; } /* Borehole / Crosshole Radar (U+E0E0) */
+.gi-gp-gpr-antenna::before { content: "\e0e1"; } /* GPR Shielded Antenna (U+E0E1) */
+.gi-gp-radiometrics-total::before { content: "\e0e2"; } /* Radiometrics — Total Count (U+E0E2) */
+.gi-gp-radiometrics-potassium-k::before { content: "\e0e3"; } /* Radiometrics — Potassium (K) (U+E0E3) */
+.gi-gp-radiometrics-uranium-u::before { content: "\e0e4"; } /* Radiometrics — Uranium (eU) (U+E0E4) */
+.gi-gp-radiometrics-thorium-th::before { content: "\e0e5"; } /* Radiometrics — Thorium (eTh) (U+E0E5) */
+.gi-gp-radiometrics-ternary::before { content: "\e0e6"; } /* Radiometric K–U–Th Ternary (U+E0E6) */
+.gi-gp-airborne-radiometrics::before { content: "\e0e7"; } /* Airborne Gamma Spectrometry (U+E0E7) */
+.gi-gp-seismic-crosshole::before { content: "\e0e8"; } /* Crosshole Seismic Survey (U+E0E8) */
+.gi-gp-seismic-downhole::before { content: "\e0e9"; } /* Downhole Seismic Survey (U+E0E9) */
+.gi-gp-seismic-uphole::before { content: "\e0ea"; } /* Uphole Seismic Survey (U+E0EA) */
+.gi-gp-seismic-vsp::before { content: "\e0eb"; } /* Vertical Seismic Profile (VSP) (U+E0EB) */
+.gi-gp-seismic-refraction::before { content: "\e0ec"; } /* Seismic Refraction Survey (U+E0EC) */
+.gi-gp-seismic-masw::before { content: "\e0ed"; } /* Surface-Wave Seismics (MASW) (U+E0ED) */
+.gi-gp-seismic-hvsr::before { content: "\e0ee"; } /* Passive Seismic H/V (HVSR) (U+E0EE) */
+.gi-gp-borehole-em-bhem::before { content: "\e0ef"; } /* Borehole EM (BHEM / DHEM) (U+E0EF) */
+.gi-gp-borehole-induction-log::before { content: "\e0f0"; } /* Borehole Induction Conductivity (U+E0F0) */
+.gi-gp-borehole-resistivity-log::before { content: "\e0f1"; } /* Borehole Resistivity Log (U+E0F1) */
+.gi-gp-borehole-ip-log::before { content: "\e0f2"; } /* Borehole IP Log (U+E0F2) */
+.gi-gp-borehole-sp-log::before { content: "\e0f3"; } /* Borehole Self-Potential (SP) (U+E0F3) */
+.gi-gp-borehole-magnetic-susceptibility::before { content: "\e0f4"; } /* Borehole Magnetic Susceptibility (U+E0F4) */
+.gi-gp-borehole-magnetometer::before { content: "\e0f5"; } /* Borehole Magnetometer (U+E0F5) */
+.gi-gp-borehole-natural-gamma::before { content: "\e0f6"; } /* Borehole Natural Gamma (U+E0F6) */
+.gi-gp-borehole-spectral-gamma::before { content: "\e0f7"; } /* Borehole Spectral Gamma (U+E0F7) */
+.gi-gp-borehole-density-log::before { content: "\e0f8"; } /* Borehole Gamma-Gamma Density (U+E0F8) */
+.gi-gp-borehole-neutron-porosity::before { content: "\e0f9"; } /* Borehole Neutron Porosity (U+E0F9) */
+.gi-gp-borehole-sonic-log::before { content: "\e0fa"; } /* Borehole Sonic / Full Waveform (U+E0FA) */
+.gi-gp-borehole-acoustic-televiewer::before { content: "\e0fb"; } /* Acoustic Borehole Televiewer (U+E0FB) */
+.gi-gp-borehole-optical-televiewer::before { content: "\e0fc"; } /* Optical Borehole Televiewer (U+E0FC) */
+.gi-gp-borehole-caliper::before { content: "\e0fd"; } /* Borehole Caliper (U+E0FD) */
+.gi-gp-borehole-temperature::before { content: "\e0fe"; } /* Borehole Temperature Log (U+E0FE) */
+.gi-gp-borehole-fluid-conductivity::before { content: "\e0ff"; } /* Borehole Fluid Conductivity (U+E0FF) */
+.gi-gp-borehole-flowmeter::before { content: "\e100"; } /* Borehole Flowmeter (U+E100) */
+.gi-gp-borehole-nmr::before { content: "\e101"; } /* Borehole NMR Log (U+E101) */
+.gi-gp-borehole-gravity::before { content: "\e102"; } /* Borehole Gravimetry (U+E102) */
+.gi-gp-crosshole-ert::before { content: "\e103"; } /* Crosshole Electrical Tomography (U+E103) */
+.gi-gp-crosshole-em-tomography::before { content: "\e104"; } /* Crosshole EM Tomography (U+E104) */
+.gi-gp-crosshole-seismic-tomography::before { content: "\e105"; } /* Crosshole Seismic Tomography (U+E105) */
+.gi-gp-property-conductivity::before { content: "\e106"; } /* Electrical Conductivity (U+E106) */
+.gi-gp-property-resistivity::before { content: "\e107"; } /* Electrical Resistivity (U+E107) */
+.gi-gp-property-density::before { content: "\e108"; } /* Bulk Density (U+E108) */
+.gi-gp-property-magnetic-susceptibility::before { content: "\e109"; } /* Magnetic Susceptibility (U+E109) */
+.gi-gp-property-remanent-magnetization::before { content: "\e10a"; } /* Remanent Magnetization (U+E10A) */
+.gi-gp-property-chargeability::before { content: "\e10b"; } /* IP Chargeability (U+E10B) */
+.gi-gp-property-vp::before { content: "\e10c"; } /* P-Wave Velocity (Vp) (U+E10C) */
+.gi-gp-property-vs::before { content: "\e10d"; } /* S-Wave Velocity (Vs) (U+E10D) */
+.gi-gp-property-porosity::before { content: "\e10e"; } /* Porosity (U+E10E) */
+.gi-gp-property-permeability::before { content: "\e10f"; } /* Permeability (U+E10F) */
+.gi-gp-property-dielectric-permittivity::before { content: "\e110"; } /* Dielectric Permittivity (U+E110) */
+.gi-gp-property-thermal-conductivity::before { content: "\e111"; } /* Thermal Conductivity (U+E111) */
