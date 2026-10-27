@@ -38,6 +38,8 @@ Y_OFFSET = -120  # Maps canvas [0, 1000] -> font Y [-120, 880]
 printable_chars = [chr(c) for c in range(0x0021, 0x007F)] + [
     chr(c) for c in range(0x00A1, 0x0100)
 ] + [chr(c) for c in range(0x0100, 0x0180)]
+# Append Latin Extended-B without changing any published fallback.
+printable_chars += [chr(c) for c in range(0x0180, 0x0250)]
 ASCII_KEYS = printable_chars
 
 
@@ -193,10 +195,10 @@ def build_all(install_opus: bool = False):
         {
             "familyName": "GeoScience Icons",
             "styleName": "Regular",
-            "uniqueFontIdentifier": "GeoScienceIcons-Regular-2.4",
+            "uniqueFontIdentifier": "GeoScienceIcons-Regular-2.6",
             "fullName": "GeoScience Icons Regular",
             "psName": "GeoScienceIcons-Regular",
-            "version": "Version 2.400",
+            "version": "Version 2.600",
             "copyright": "Copyright (c) 2026 GeoScience Icon Set. Open License.",
             "description": "Comprehensive TrueType icon font covering Geophysical, Geotechnical, Geological, and Geochemical methods, earth model types, and processes.",
         }
@@ -231,7 +233,7 @@ def build_all(install_opus: bool = False):
     json_data = {
         "fontFamily": "GeoScience Icons",
         "postScriptName": "GeoScienceIcons-Regular",
-        "version": "2.4.0",
+        "version": "2.6.0",
         "svgStyle": "detailed-flat-natural-materials",
         "fontStyle": "detailed-technical-line",
         "unitsPerEm": UPM,
@@ -247,14 +249,14 @@ def build_all(install_opus: bool = False):
     # Write CSS stylesheet
     css_lines = [
         "/**",
-        " * GeoScience Icons v2.4.0",
+        " * GeoScience Icons v2.6.0",
         " * Domains: Geophysical, Geotechnical, Geological, Geochemical",
         " * Categories: Methods, Earth Model Types, Processes",
         " */",
         "@font-face {",
         "  font-family: 'GeoScience Icons';",
-        "  src: url('GeoScienceIcons.woff?v=2.4.0') format('woff'),",
-        "       url('GeoScienceIcons.ttf?v=2.4.0') format('truetype');",
+        "  src: url('GeoScienceIcons.woff?v=2.6.0') format('woff'),",
+        "       url('GeoScienceIcons.ttf?v=2.6.0') format('truetype');",
         "  font-weight: normal;",
         "  font-style: normal;",
         "  font-display: block;",
@@ -294,6 +296,11 @@ def build_all(install_opus: bool = False):
     render_petrophysics_preview(dist_dir / 'petrophysics_preview.png', all_icons, ttf_dist_path)
     render_logging_preview(dist_dir / 'petrophysics_logging_preview.png', all_icons, ttf_dist_path)
 
+    from preview_mt_icons import render_mt_suite, render_geochemistry_suite
+    render_mt_suite(dist_dir, all_icons, ttf_dist_path)
+
+    render_geochemistry_suite(dist_dir, all_icons, ttf_dist_path)
+
     # Generate Java GlyphFont class for Opus
     java_code = build_java_glyph_class(catalog_entries)
     (dist_dir / "GeoScienceIcons.java").write_text(java_code, encoding="utf-8")
@@ -312,6 +319,10 @@ def build_all(install_opus: bool = False):
         (opus_icons_dir / "GeoScienceIcons.java").write_text(java_code, encoding="utf-8")
         print(f"Copied TTF & Java class to Opus icons: {opus_icons_dir / 'GeoScienceIcons.java'}")
 
+    if install_opus and opus_fonts_dir.exists():
+        from install_opus_icons import install
+        install(dist_dir, opus_fonts_dir.parents[2])
+
 
 def build_java_glyph_class(catalog: List[Dict[str, Any]]) -> str:
     glyph_enums = []
@@ -321,6 +332,10 @@ def build_java_glyph_class(catalog: List[Dict[str, Any]]) -> str:
         ch_hex = f"\\u{item['codepoint_int']:04x}"
         glyph_enums.append(f"\t\t{enum_const}('{ch_hex}'), // {item['name']} ({item['domain']} - {item['category']})")
         lookup_cases.append(f"\t\t\tcase \"{item['id']}\" -> Glyph.{enum_const};")
+
+    from icons_alteration import PROPERTY_ALIASES
+    for alias, identifier in PROPERTY_ALIASES.items():
+        lookup_cases.append(f'\t\t\tcase "{alias}" -> Glyph.{identifier.upper()};')
 
     code = f"""package opus.base.icons;
 
@@ -381,6 +396,9 @@ public class GeoScienceIcons extends GlyphFont {{
     }}
 
     private static InputStream getBufferedStream() {{
+        InputStream bundled = GeoScienceIcons.class.getResourceAsStream("/fonts/GeoScienceIcons.ttf");
+        if (bundled == null) bundled = GeoScienceIcons.class.getResourceAsStream("GeoScienceIcons.ttf");
+        if (bundled != null) return new BufferedInputStream(bundled);
         try {{
             return new BufferedInputStream(new FileInputStream(new File(OpusResources.getResourcePath("fonts/GeoScienceIcons.ttf"))));
         }} catch (Exception e) {{
@@ -391,10 +409,15 @@ public class GeoScienceIcons extends GlyphFont {{
 
     public static Glyph forIconId(String iconId) {{
         if (iconId == null) return null;
-        return switch (iconId.toLowerCase().trim()) {{
+        return switch (iconId.toLowerCase(java.util.Locale.ROOT).trim()) {{
 {chr(10).join(lookup_cases)}
             default -> null;
         }};
+    }}
+
+    /** Resolve an Opus quantity or geological descriptor by its stable ID. */
+    public static Glyph forProperty(OpusProperty property) {{
+        return property == null ? null : forIconId(property.id());
     }}
 
     public static org.controlsfx.glyphfont.Glyph createGlyph(Glyph glyph, double size) {{

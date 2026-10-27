@@ -17,7 +17,7 @@ import opus.base.properties.OpusProperty;
 import opus.base.resources.OpusResources;
 
 /**
- * GeoScienceIcons TrueType glyph font (273 icons) covering Geophysical, Geotechnical,
+ * GeoScienceIcons TrueType glyph font (323 icons) covering Geophysical, Geotechnical,
  * Geological, and Geochemical methods, earth model types, and processes.
  * Includes dedicated suites for Inversion, Thermodynamics, Petrophysics, and Geochemistry,
  * aligned with opus.geo.geochemistry, opus.geo.petrophysics, and opus.geo.geotechnical.
@@ -301,6 +301,56 @@ public class GeoScienceIcons extends GlyphFont {
 		GP_PROPERTY_PERMEABILITY('\ue10f'), // Permeability (Geophysical - Petrophysical Quantities)
 		GP_PROPERTY_DIELECTRIC_PERMITTIVITY('\ue110'), // Dielectric Permittivity (Geophysical - Petrophysical Quantities)
 		GP_PROPERTY_THERMAL_CONDUCTIVITY('\ue111'), // Thermal Conductivity (Geophysical - Petrophysical Quantities)
+		GP_ELECTRIC_FIELD('\ue112'), // Electric Field (Geophysical - Processes)
+		GP_ELECTRIC_FIELD_X('\ue113'), // Electric Field Ex (Geophysical - Processes)
+		GP_ELECTRIC_FIELD_Y('\ue114'), // Electric Field Ey (Geophysical - Processes)
+		GP_ELECTRIC_FIELD_Z('\ue115'), // Electric Field Ez (Geophysical - Processes)
+		GP_MAGNETIC_FIELD('\ue116'), // Magnetic Field (Geophysical - Processes)
+		GP_MAGNETIC_FIELD_X('\ue117'), // Magnetic Field Hx (Geophysical - Processes)
+		GP_MAGNETIC_FIELD_Y('\ue118'), // Magnetic Field Hy (Geophysical - Processes)
+		GP_MAGNETIC_FIELD_Z('\ue119'), // Magnetic Field Hz (Geophysical - Processes)
+		GP_POYNTING_VECTOR('\ue11a'), // Poynting Vector (Geophysical - Processes)
+		GP_SIGNAL_SPECTRUM('\ue11b'), // Recording Spectrum (Geophysical - Processes)
+		GP_FFT_TRANSFORM('\ue11c'), // Fourier Transform FFT (Geophysical - Processes)
+		GP_SIGNAL_SPECTROGRAM('\ue11d'), // Recording Spectrogram (Geophysical - Processes)
+		GP_RAW_WAVEFORM('\ue11e'), // Raw Time Series (Geophysical - Processes)
+		GP_CROSS_POWER('\ue11f'), // Cross Power (Geophysical - Processes)
+		GP_SIGNAL_COHERENCE('\ue120'), // Signal Coherence (Geophysical - Processes)
+		GP_SENSOR_CALIBRATION('\ue121'), // Sensor Calibration Response (Geophysical - Processes)
+		GP_REMOTE_REFERENCE('\ue122'), // Remote Reference Pair (Geophysical - Processes)
+		GP_MT_IMPEDANCE_TENSOR('\ue123'), // MT Impedance Tensor (Geophysical - Processes)
+		GP_MT_PHASE_TENSOR('\ue124'), // MT Phase Tensor (Geophysical - Processes)
+		GP_MT_TIPPER('\ue125'), // MT Tipper (Geophysical - Processes)
+		GC_GEOCHEMICAL_VECTORING('\ue126'), // Geochemical Vectoring (Geochemical - Processes)
+		GC_HYDROTHERMAL_ALTERATION('\ue127'), // Hydrothermal Alteration (Geochemical - Processes)
+		GC_MAGMATIC_INTRUSION('\ue128'), // Magmatic Intrusion (Geochemical - Processes)
+		GC_DEHYDRATION('\ue129'), // Dehydration (Geochemical - Processes)
+		GC_REDUCING_ENVIRONMENT('\ue12a'), // Reducing Environment (Geochemical - Processes)
+		GC_OXIDIZING_ENVIRONMENT('\ue12b'), // Oxidizing Environment (Geochemical - Processes)
+		GC_SAUSSURITISED('\ue12c'), // Saussuritised (Geochemical - Processes)
+		GC_SERPENTINISATION('\ue12d'), // Serpentinisation (Geochemical - Processes)
+		GC_EPIDOTE_ALTERATION('\ue12e'), // Epidote alteration (Geochemical - Processes)
+		GC_SILICIFICATION('\ue12f'), // Silicification (Geochemical - Processes)
+		GC_CARBONATE_ALTERATION('\ue130'), // Carbonate alteration (Geochemical - Processes)
+		GC_CALCSILICATE_ALTERATION('\ue131'), // Calcsilicate alteration (Geochemical - Processes)
+		GC_GREISEN('\ue132'), // Greisen (Geochemical - Processes)
+		GC_ALBITIC_ALTERATION('\ue133'), // Albitic alteration (Geochemical - Processes)
+		GC_ADVANCED_ARGILLIC_ALTERATION('\ue134'), // Advanced argillic alteration (Geochemical - Processes)
+		GC_NOT_ALTERED('\ue135'), // Not altered (Geochemical - Processes)
+		GC_CHLORITIC_ALTERATION('\ue136'), // Chloritic alteration (Geochemical - Processes)
+		GC_ZEOLITIC_ALTERATION('\ue137'), // Zeolitic alteration (Geochemical - Processes)
+		GC_PROPYLITIC_ALTERATION('\ue138'), // Propylitic alteration (Geochemical - Processes)
+		GC_POTASSIC_ALTERATION('\ue139'), // Potassic alteration (Geochemical - Processes)
+		GC_ALTERATION_NOT_SPECIFIED('\ue13a'), // Alteration type not specified (Geochemical - Processes)
+		GC_KAOLINITIC_ALTERATION('\ue13b'), // Kaolinitic alteration (Geochemical - Processes)
+		GC_SERICITIC_ALTERATION('\ue13c'), // Sericitic alteration (Geochemical - Processes)
+		GC_ARGILLIC_ALTERATION('\ue13d'), // Argillic alteration (Geochemical - Processes)
+		GC_ALUNITIC_ALTERATION('\ue13e'), // Alunitic alteration (Geochemical - Processes)
+		GC_HEMATITIC_ALTERATION('\ue13f'), // Hematitic alteration (Geochemical - Processes)
+		GC_PYRITIC_ALTERATION('\ue140'), // Pyritic alteration (Geochemical - Processes)
+		GC_DEUTERIC_ALTERATION('\ue141'), // Deuteric alteration (Geochemical - Processes)
+		GC_URALITISATION('\ue142'), // Uralitisation (Geochemical - Processes)
+		GC_RED_ROCK_ALTERATION('\ue143'), // Red rock alteration (Geochemical - Processes)
         ;
 
         private final char ch;
@@ -329,6 +379,9 @@ public class GeoScienceIcons extends GlyphFont {
     }
 
     private static InputStream getBufferedStream() {
+        InputStream bundled = GeoScienceIcons.class.getResourceAsStream("/fonts/GeoScienceIcons.ttf");
+        if (bundled == null) bundled = GeoScienceIcons.class.getResourceAsStream("GeoScienceIcons.ttf");
+        if (bundled != null) return new BufferedInputStream(bundled);
         try {
             return new BufferedInputStream(new FileInputStream(new File(OpusResources.getResourcePath("fonts/GeoScienceIcons.ttf"))));
         } catch (Exception e) {
@@ -339,7 +392,7 @@ public class GeoScienceIcons extends GlyphFont {
 
     public static Glyph forIconId(String iconId) {
         if (iconId == null) return null;
-        return switch (iconId.toLowerCase().trim()) {
+        return switch (iconId.toLowerCase(java.util.Locale.ROOT).trim()) {
 			case "gp_seismic_reflection" -> Glyph.GP_SEISMIC_REFLECTION;
 			case "gp_gravity_survey" -> Glyph.GP_GRAVITY_SURVEY;
 			case "gp_magnetic_survey" -> Glyph.GP_MAGNETIC_SURVEY;
@@ -613,8 +666,100 @@ public class GeoScienceIcons extends GlyphFont {
 			case "gp_property_permeability" -> Glyph.GP_PROPERTY_PERMEABILITY;
 			case "gp_property_dielectric_permittivity" -> Glyph.GP_PROPERTY_DIELECTRIC_PERMITTIVITY;
 			case "gp_property_thermal_conductivity" -> Glyph.GP_PROPERTY_THERMAL_CONDUCTIVITY;
+			case "gp_electric_field" -> Glyph.GP_ELECTRIC_FIELD;
+			case "gp_electric_field_x" -> Glyph.GP_ELECTRIC_FIELD_X;
+			case "gp_electric_field_y" -> Glyph.GP_ELECTRIC_FIELD_Y;
+			case "gp_electric_field_z" -> Glyph.GP_ELECTRIC_FIELD_Z;
+			case "gp_magnetic_field" -> Glyph.GP_MAGNETIC_FIELD;
+			case "gp_magnetic_field_x" -> Glyph.GP_MAGNETIC_FIELD_X;
+			case "gp_magnetic_field_y" -> Glyph.GP_MAGNETIC_FIELD_Y;
+			case "gp_magnetic_field_z" -> Glyph.GP_MAGNETIC_FIELD_Z;
+			case "gp_poynting_vector" -> Glyph.GP_POYNTING_VECTOR;
+			case "gp_signal_spectrum" -> Glyph.GP_SIGNAL_SPECTRUM;
+			case "gp_fft_transform" -> Glyph.GP_FFT_TRANSFORM;
+			case "gp_signal_spectrogram" -> Glyph.GP_SIGNAL_SPECTROGRAM;
+			case "gp_raw_waveform" -> Glyph.GP_RAW_WAVEFORM;
+			case "gp_cross_power" -> Glyph.GP_CROSS_POWER;
+			case "gp_signal_coherence" -> Glyph.GP_SIGNAL_COHERENCE;
+			case "gp_sensor_calibration" -> Glyph.GP_SENSOR_CALIBRATION;
+			case "gp_remote_reference" -> Glyph.GP_REMOTE_REFERENCE;
+			case "gp_mt_impedance_tensor" -> Glyph.GP_MT_IMPEDANCE_TENSOR;
+			case "gp_mt_phase_tensor" -> Glyph.GP_MT_PHASE_TENSOR;
+			case "gp_mt_tipper" -> Glyph.GP_MT_TIPPER;
+			case "gc_geochemical_vectoring" -> Glyph.GC_GEOCHEMICAL_VECTORING;
+			case "gc_hydrothermal_alteration" -> Glyph.GC_HYDROTHERMAL_ALTERATION;
+			case "gc_magmatic_intrusion" -> Glyph.GC_MAGMATIC_INTRUSION;
+			case "gc_dehydration" -> Glyph.GC_DEHYDRATION;
+			case "gc_reducing_environment" -> Glyph.GC_REDUCING_ENVIRONMENT;
+			case "gc_oxidizing_environment" -> Glyph.GC_OXIDIZING_ENVIRONMENT;
+			case "gc_saussuritised" -> Glyph.GC_SAUSSURITISED;
+			case "gc_serpentinisation" -> Glyph.GC_SERPENTINISATION;
+			case "gc_epidote_alteration" -> Glyph.GC_EPIDOTE_ALTERATION;
+			case "gc_silicification" -> Glyph.GC_SILICIFICATION;
+			case "gc_carbonate_alteration" -> Glyph.GC_CARBONATE_ALTERATION;
+			case "gc_calcsilicate_alteration" -> Glyph.GC_CALCSILICATE_ALTERATION;
+			case "gc_greisen" -> Glyph.GC_GREISEN;
+			case "gc_albitic_alteration" -> Glyph.GC_ALBITIC_ALTERATION;
+			case "gc_advanced_argillic_alteration" -> Glyph.GC_ADVANCED_ARGILLIC_ALTERATION;
+			case "gc_not_altered" -> Glyph.GC_NOT_ALTERED;
+			case "gc_chloritic_alteration" -> Glyph.GC_CHLORITIC_ALTERATION;
+			case "gc_zeolitic_alteration" -> Glyph.GC_ZEOLITIC_ALTERATION;
+			case "gc_propylitic_alteration" -> Glyph.GC_PROPYLITIC_ALTERATION;
+			case "gc_potassic_alteration" -> Glyph.GC_POTASSIC_ALTERATION;
+			case "gc_alteration_not_specified" -> Glyph.GC_ALTERATION_NOT_SPECIFIED;
+			case "gc_kaolinitic_alteration" -> Glyph.GC_KAOLINITIC_ALTERATION;
+			case "gc_sericitic_alteration" -> Glyph.GC_SERICITIC_ALTERATION;
+			case "gc_argillic_alteration" -> Glyph.GC_ARGILLIC_ALTERATION;
+			case "gc_alunitic_alteration" -> Glyph.GC_ALUNITIC_ALTERATION;
+			case "gc_hematitic_alteration" -> Glyph.GC_HEMATITIC_ALTERATION;
+			case "gc_pyritic_alteration" -> Glyph.GC_PYRITIC_ALTERATION;
+			case "gc_deuteric_alteration" -> Glyph.GC_DEUTERIC_ALTERATION;
+			case "gc_uralitisation" -> Glyph.GC_URALITISATION;
+			case "gc_red_rock_alteration" -> Glyph.GC_RED_ROCK_ALTERATION;
+			case "saussuritised" -> Glyph.GC_SAUSSURITISED;
+			case "serpentinisation" -> Glyph.GC_SERPENTINISATION;
+			case "epidote_alteration" -> Glyph.GC_EPIDOTE_ALTERATION;
+			case "silicification" -> Glyph.GC_SILICIFICATION;
+			case "carbonate_alteration" -> Glyph.GC_CARBONATE_ALTERATION;
+			case "calcsilicate_alteration" -> Glyph.GC_CALCSILICATE_ALTERATION;
+			case "greisen" -> Glyph.GC_GREISEN;
+			case "albitic_alteration" -> Glyph.GC_ALBITIC_ALTERATION;
+			case "advanced_argillic_alteration" -> Glyph.GC_ADVANCED_ARGILLIC_ALTERATION;
+			case "not_altered" -> Glyph.GC_NOT_ALTERED;
+			case "chloritic_alteration" -> Glyph.GC_CHLORITIC_ALTERATION;
+			case "zeolitic_alteration" -> Glyph.GC_ZEOLITIC_ALTERATION;
+			case "propylitic_alteration" -> Glyph.GC_PROPYLITIC_ALTERATION;
+			case "potassic_alteration" -> Glyph.GC_POTASSIC_ALTERATION;
+			case "alteration_not_specified" -> Glyph.GC_ALTERATION_NOT_SPECIFIED;
+			case "kaolinitic_alteration" -> Glyph.GC_KAOLINITIC_ALTERATION;
+			case "sericitic_alteration" -> Glyph.GC_SERICITIC_ALTERATION;
+			case "argillic_alteration" -> Glyph.GC_ARGILLIC_ALTERATION;
+			case "alunitic_alteration" -> Glyph.GC_ALUNITIC_ALTERATION;
+			case "hematitic_alteration" -> Glyph.GC_HEMATITIC_ALTERATION;
+			case "pyritic_alteration" -> Glyph.GC_PYRITIC_ALTERATION;
+			case "deuteric_alteration" -> Glyph.GC_DEUTERIC_ALTERATION;
+			case "uralitisation" -> Glyph.GC_URALITISATION;
+			case "red_rock_alteration" -> Glyph.GC_RED_ROCK_ALTERATION;
+			case "geochemical_vectoring" -> Glyph.GC_GEOCHEMICAL_VECTORING;
+			case "hydrothermal_alteration" -> Glyph.GC_HYDROTHERMAL_ALTERATION;
+			case "magmatic_intrusion" -> Glyph.GC_MAGMATIC_INTRUSION;
+			case "dehydration" -> Glyph.GC_DEHYDRATION;
+			case "reducing_environment" -> Glyph.GC_REDUCING_ENVIRONMENT;
+			case "oxidizing_environment" -> Glyph.GC_OXIDIZING_ENVIRONMENT;
+			case "vectoring" -> Glyph.GC_GEOCHEMICAL_VECTORING;
+			case "alteration" -> Glyph.GC_HYDROTHERMAL_ALTERATION;
+			case "intrusion" -> Glyph.GC_MAGMATIC_INTRUSION;
+			case "dehydrating" -> Glyph.GC_DEHYDRATION;
+			case "reducing" -> Glyph.GC_REDUCING_ENVIRONMENT;
+			case "oxidizing" -> Glyph.GC_OXIDIZING_ENVIRONMENT;
+			case "oxidising" -> Glyph.GC_OXIDIZING_ENVIRONMENT;
             default -> null;
         };
+    }
+
+    /** Resolve an Opus quantity or geological descriptor by its stable ID. */
+    public static Glyph forProperty(OpusProperty property) {
+        return property == null ? null : forIconId(property.id());
     }
 
     public static org.controlsfx.glyphfont.Glyph createGlyph(Glyph glyph, double size) {

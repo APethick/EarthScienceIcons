@@ -4,11 +4,11 @@
 
 **A visual language for Earth science.**
 
-273 specialist icons for geophysics, geology, geochemistry and geotechnical engineering.
+323 specialist icons for geophysics, geology, geochemistry and geotechnical engineering.
 
 **Detailed linework · Flat colour · SVG · TTF · WOFF · Public domain**
 
-[**Explore every icon →**](https://APethick.github.io/EarthScienceIcons/) · [Download the set](https://APethick.github.io/EarthScienceIcons/assets/EarthScienceIcons.zip?v=2.4.0) · [TTF font](dist/GeoScienceIcons.ttf) · [Icon manifest](dist/geoscience-icons.json)
+[**Explore every icon →**](https://APethick.github.io/EarthScienceIcons/) · [Download the set](https://APethick.github.io/EarthScienceIcons/assets/EarthScienceIcons.zip?v=2.6.0) · [TTF font](dist/GeoScienceIcons.ttf) · [Icon manifest](dist/geoscience-icons.json)
 
 ![Flat colour SVGs and detailed technical font glyphs](dist/style_preview.png)
 
@@ -20,17 +20,17 @@ The library covers field and laboratory methods, Earth models and scientific pro
 
 | Discipline | Icons | Examples |
 | --- | ---: | --- |
-| Geophysical | 119 | Seismic reflection, magnetotellurics, gravity, GPR, petrophysics |
+| Geophysical | 139 | Seismic reflection, magnetotellurics, gravity, GPR, petrophysics |
 | Geological | 59 | Mapping, drilling, stratigraphy, faults, folds, minerals |
-| Geochemical | 73 | XRF, ICP-MS, assays, geochemical diagrams, thermodynamics |
+| Geochemical | 103 | XRF, ICP-MS, assays, geochemical diagrams, thermodynamics |
 | Geotechnical | 22 | SPT, CPT, triaxial testing, rock quality, slope stability |
-| **Total** | **273** | **126 methods · 85 Earth model types · 50 processes · 12 petrophysical quantities** |
+| **Total** | **323** | **126 methods · 85 Earth model types · 100 processes · 12 petrophysical quantities** |
 
 The [interactive library](https://APethick.github.io/EarthScienceIcons/) shows every icon. Search names and keywords, filter by discipline or category, compare both styles, change the preview size, and copy integration code.
 
 ## Geophysics expansion
 
-The collection includes **119 geophysics icons**, with 80 additions covering:
+The collection includes **139 geophysics icons**, with 80 additions covering:
 
 - AEM, fixed-wing systems, VTEM, SkyTEM, Loupe, FDEM, TDEM, ground TEM loop arrangements, LOTEM, terrestrial/marine CSEM and CSAMT.
 - GPR radargrams, time slices, volumes, CMP/WARR velocity analysis, utility/rebar detection, borehole radar and antennas.
@@ -38,7 +38,7 @@ The collection includes **119 geophysics icons**, with 80 additions covering:
 - Crosshole, downhole, uphole, VSP, refraction, MASW and passive H/V seismic methods; a broad borehole logging and tomography suite.
 - Conductivity, resistivity, density, magnetic susceptibility, remanence, chargeability, Vp, Vs, porosity, permeability, dielectric permittivity and thermal conductivity.
 
-The original 193 IDs, codepoints, fallback keys and glyph drawings are preserved. SP was already present and remains at `U+E03D`; a separate borehole SP icon is now included. New glyphs occupy `U+E0C2`–`U+E111`.
+The original 193 IDs, codepoints and fallback keys are preserved. The MT acquisition symbol was deliberately simplified from a user-supplied field-layout reference; all other original drawings are preserved. SP was already present and remains at `U+E03D`; a separate borehole SP icon is now included. New glyphs occupy `U+E0C2`–`U+E111`.
 
 [View the new geophysics catalog and references](docs/geophysics.md).
 
@@ -86,7 +86,7 @@ Copy `geoscience-icons.css`, `GeoScienceIcons.woff` and `GeoScienceIcons.ttf` fr
 
 Pair decorative glyphs with visible text. Give icon-only buttons accessible names. Detailed glyphs reveal more internal structure at 32 px and above; check the size that suits your interface.
 
-The family name is `GeoScience Icons`. Codepoints span `U+E001`–`U+E111`. Existing IDs, CSS classes, printable fallback keys and codepoints are preserved. The manifest contains every mapping, description and keyword.
+The family name is `GeoScience Icons`. Codepoints span `U+E001`–`U+E143`. Existing IDs, CSS classes, printable fallback keys and codepoints are preserved. The manifest contains every mapping, description and keyword.
 
 ### Java / Opus
 
@@ -148,3 +148,15 @@ Electric features are blue, magnetic features are red, and receivers are yellow 
 ## Licence
 
 Public domain under the [Unlicense](LICENSE). Use, modify and distribute the icons in personal, academic and commercial work.
+
+## MT fields and processing (2.5)
+
+Twenty text-free icons cover E/H fields and their spatial components, Poynting flux, spectrum, FFT, spectrogram, sampled waveforms, cross power, coherence, coil calibration, remote references, impedance tensor, phase tensor and tipper. Existing IDs remain stable. Electric is blue, magnetic red, Poynting yellow; receivers are yellow with black outlines. Copper, ferrite, soil, glass and metal use representative material colours.
+
+![MT colour and font specimens](dist/mt_processing_preview.png)
+
+## Geochemistry and alteration (2.6)
+
+Thirty additions cover geochemical vectoring, hydrothermal alteration, magmatic intrusion, dehydration, reducing and oxidizing environments, and every one of the 24 Opus AlterationType descriptors, including not altered and alteration not specified. Copper, quartz, feldspar, epidote, chlorite, clay, pyrite and hematite use representative natural mineral colours. Habit, texture, reaction rims and assemblages distinguish the monochrome versions; no lettering is drawn inside the icons. Bare descriptor IDs resolve through the Java lookup; `GeoScienceIcons.forProperty(alteration)` accepts the existing Opus enum.
+
+![Geochemistry colour and font specimens](dist/geochemistry_preview.png)

@@ -1,12 +1,12 @@
 /**
- * GeoScience Icons v2.4.0
+ * GeoScience Icons v2.6.0
  * Domains: Geophysical, Geotechnical, Geological, Geochemical
  * Categories: Methods, Earth Model Types, Processes
  */
 @font-face {
   font-family: 'GeoScience Icons';
-  src: url('GeoScienceIcons.woff?v=2.4.0') format('woff'),
-       url('GeoScienceIcons.ttf?v=2.4.0') format('truetype');
+  src: url('GeoScienceIcons.woff?v=2.6.0') format('woff'),
+       url('GeoScienceIcons.ttf?v=2.6.0') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -298,3 +298,53 @@
 .gi-gp-property-permeability::before { content: "\e10f"; } /* Permeability (U+E10F) */
 .gi-gp-property-dielectric-permittivity::before { content: "\e110"; } /* Dielectric Permittivity (U+E110) */
 .gi-gp-property-thermal-conductivity::before { content: "\e111"; } /* Thermal Conductivity (U+E111) */
+.gi-gp-electric-field::before { content: "\e112"; } /* Electric Field (U+E112) */
+.gi-gp-electric-field-x::before { content: "\e113"; } /* Electric Field Ex (U+E113) */
+.gi-gp-electric-field-y::before { content: "\e114"; } /* Electric Field Ey (U+E114) */
+.gi-gp-electric-field-z::before { content: "\e115"; } /* Electric Field Ez (U+E115) */
+.gi-gp-magnetic-field::before { content: "\e116"; } /* Magnetic Field (U+E116) */
+.gi-gp-magnetic-field-x::before { content: "\e117"; } /* Magnetic Field Hx (U+E117) */
+.gi-gp-magnetic-field-y::before { content: "\e118"; } /* Magnetic Field Hy (U+E118) */
+.gi-gp-magnetic-field-z::before { content: "\e119"; } /* Magnetic Field Hz (U+E119) */
+.gi-gp-poynting-vector::before { content: "\e11a"; } /* Poynting Vector (U+E11A) */
+.gi-gp-signal-spectrum::before { content: "\e11b"; } /* Recording Spectrum (U+E11B) */
+.gi-gp-fft-transform::before { content: "\e11c"; } /* Fourier Transform FFT (U+E11C) */
+.gi-gp-signal-spectrogram::before { content: "\e11d"; } /* Recording Spectrogram (U+E11D) */
+.gi-gp-raw-waveform::before { content: "\e11e"; } /* Raw Time Series (U+E11E) */
+.gi-gp-cross-power::before { content: "\e11f"; } /* Cross Power (U+E11F) */
+.gi-gp-signal-coherence::before { content: "\e120"; } /* Signal Coherence (U+E120) */
+.gi-gp-sensor-calibration::before { content: "\e121"; } /* Sensor Calibration Response (U+E121) */
+.gi-gp-remote-reference::before { content: "\e122"; } /* Remote Reference Pair (U+E122) */
+.gi-gp-mt-impedance-tensor::before { content: "\e123"; } /* MT Impedance Tensor (U+E123) */
+.gi-gp-mt-phase-tensor::before { content: "\e124"; } /* MT Phase Tensor (U+E124) */
+.gi-gp-mt-tipper::before { content: "\e125"; } /* MT Tipper (U+E125) */
+.gi-gc-geochemical-vectoring::before { content: "\e126"; } /* Geochemical Vectoring (U+E126) */
+.gi-gc-hydrothermal-alteration::before { content: "\e127"; } /* Hydrothermal Alteration (U+E127) */
+.gi-gc-magmatic-intrusion::before { content: "\e128"; } /* Magmatic Intrusion (U+E128) */
+.gi-gc-dehydration::before { content: "\e129"; } /* Dehydration (U+E129) */
+.gi-gc-reducing-environment::before { content: "\e12a"; } /* Reducing Environment (U+E12A) */
+.gi-gc-oxidizing-environment::before { content: "\e12b"; } /* Oxidizing Environment (U+E12B) */
+.gi-gc-saussuritised::before { content: "\e12c"; } /* Saussuritised (U+E12C) */
+.gi-gc-serpentinisation::before { content: "\e12d"; } /* Serpentinisation (U+E12D) */
+.gi-gc-epidote-alteration::before { content: "\e12e"; } /* Epidote alteration (U+E12E) */
+.gi-gc-silicification::before { content: "\e12f"; } /* Silicification (U+E12F) */
+.gi-gc-carbonate-alteration::before { content: "\e130"; } /* Carbonate alteration (U+E130) */
+.gi-gc-calcsilicate-alteration::before { content: "\e131"; } /* Calcsilicate alteration (U+E131) */
+.gi-gc-greisen::before { content: "\e132"; } /* Greisen (U+E132) */
+.gi-gc-albitic-alteration::before { content: "\e133"; } /* Albitic alteration (U+E133) */
+.gi-gc-advanced-argillic-alteration::before { content: "\e134"; } /* Advanced argillic alteration (U+E134) */
+.gi-gc-not-altered::before { content: "\e135"; } /* Not altered (U+E135) */
+.gi-gc-chloritic-alteration::before { content: "\e136"; } /* Chloritic alteration (U+E136) */
+.gi-gc-zeolitic-alteration::before { content: "\e137"; } /* Zeolitic alteration (U+E137) */
+.gi-gc-propylitic-alteration::before { content: "\e138"; } /* Propylitic alteration (U+E138) */
+.gi-gc-potassic-alteration::before { content: "\e139"; } /* Potassic alteration (U+E139) */
+.gi-gc-alteration-not-specified::before { content: "\e13a"; } /* Alteration type not specified (U+E13A) */
+.gi-gc-kaolinitic-alteration::before { content: "\e13b"; } /* Kaolinitic alteration (U+E13B) */
+.gi-gc-sericitic-alteration::before { content: "\e13c"; } /* Sericitic alteration (U+E13C) */
+.gi-gc-argillic-alteration::before { content: "\e13d"; } /* Argillic alteration (U+E13D) */
+.gi-gc-alunitic-alteration::before { content: "\e13e"; } /* Alunitic alteration (U+E13E) */
+.gi-gc-hematitic-alteration::before { content: "\e13f"; } /* Hematitic alteration (U+E13F) */
+.gi-gc-pyritic-alteration::before { content: "\e140"; } /* Pyritic alteration (U+E140) */
+.gi-gc-deuteric-alteration::before { content: "\e141"; } /* Deuteric alteration (U+E141) */
+.gi-gc-uralitisation::before { content: "\e142"; } /* Uralitisation (U+E142) */
+.gi-gc-red-rock-alteration::before { content: "\e143"; } /* Red rock alteration (U+E143) */

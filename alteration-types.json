@@ -1,0 +1,122 @@
+[
+  {
+    "id": "saussuritised",
+    "name": "saussuritised",
+    "description": "Hydrothermal alteration of plagioclase feldspar into a fine-grained assemblage of zoisite, epidote, albite, calcite, and sericite."
+  },
+  {
+    "id": "serpentinisation",
+    "name": "serpentinisation",
+    "description": "Hydration and metamorphic transformation of ultramafic rocks, converting olivine and pyroxene into serpentine minerals."
+  },
+  {
+    "id": "epidote_alteration",
+    "name": "epidote alteration",
+    "description": "Replacement of primary rock minerals, typically plagioclase or mafic minerals, by epidote."
+  },
+  {
+    "id": "silicification",
+    "name": "silicification",
+    "description": "Introduction of, or replacement by, silica (quartz, chalcedony, or opal) into the rock."
+  },
+  {
+    "id": "carbonate_alteration",
+    "name": "carbonate alteration",
+    "description": "Introduction of carbonate minerals such as calcite, dolomite, ankerite, or siderite into a rock."
+  },
+  {
+    "id": "calcsilicate_alteration",
+    "name": "calcsilicate alteration",
+    "description": "Formation of calcium-bearing silicate minerals, such as garnet and pyroxene, often in skarn or contact metamorphic environments."
+  },
+  {
+    "id": "greisen",
+    "name": "greisen",
+    "description": "Pneumatolytic alteration of granitic rock characterized by the formation of quartz, muscovite, and halogen-bearing minerals like topaz and fluorite."
+  },
+  {
+    "id": "albitic_alteration",
+    "name": "albitic alteration",
+    "description": "Sodium metasomatism resulting in the replacement of K-feldspar or calcic plagioclase by albite."
+  },
+  {
+    "id": "advanced_argillic_alteration",
+    "name": "advanced argillic alteration",
+    "description": "Intense acidic hydrothermal alteration characterized by the leaching of alkalis and the formation of kaolinite, dickite, pyrophyllite, and alunite."
+  },
+  {
+    "id": "not_altered",
+    "name": "not altered",
+    "description": "Rock or sediment not altered."
+  },
+  {
+    "id": "chloritic_alteration",
+    "name": "chloritic alteration",
+    "description": "Replacement of primary mafic minerals (like pyroxene or biotite) or glassy matrix by chlorite."
+  },
+  {
+    "id": "zeolitic_alteration",
+    "name": "zeolitic alteration",
+    "description": "Low-temperature hydrothermal alteration or diagenesis resulting in the formation of zeolite minerals."
+  },
+  {
+    "id": "propylitic_alteration",
+    "name": "propylitic alteration",
+    "description": "Low-temperature, low-to-medium grade alteration characterized by the assemblage of chlorite, epidote, calcite, and albite."
+  },
+  {
+    "id": "potassic_alteration",
+    "name": "potassic alteration",
+    "description": "High-temperature alteration characterized by the introduction of potassium, forming secondary K-feldspar and/or biotite."
+  },
+  {
+    "id": "alteration_not_specified",
+    "name": "alteration type not specified",
+    "description": "Rock is altered, but type not specified. Any alteration type allowed."
+  },
+  {
+    "id": "kaolinitic_alteration",
+    "name": "kaolinitic alteration",
+    "description": "Hydrothermal alteration or severe weathering producing kaolinite group minerals, typically from the breakdown of feldspars."
+  },
+  {
+    "id": "sericitic_alteration",
+    "name": "sericitic alteration",
+    "description": "Phyllic alteration characterized by the breakdown of feldspars into fine-grained white mica (sericite) and quartz, often with pyrite."
+  },
+  {
+    "id": "argillic_alteration",
+    "name": "argillic alteration",
+    "description": "Hydrothermal alteration forming clay minerals such as smectite and illite, typically representing lower temperatures or less acidic conditions than advanced argillic."
+  },
+  {
+    "id": "alunitic_alteration",
+    "name": "alunitic alteration",
+    "description": "A specific type of advanced argillic alteration dominated by the sulfate mineral alunite, indicating highly acidic and oxidizing conditions."
+  },
+  {
+    "id": "hematitic_alteration",
+    "name": "hematitic alteration",
+    "description": "Oxidation of iron-bearing minerals to form hematite, often giving rocks a distinctive red or reddish-brown color."
+  },
+  {
+    "id": "pyritic_alteration",
+    "name": "pyritic alteration",
+    "description": "Introduction of pyrite into a rock, typically as a result of sulfur-rich hydrothermal fluids reacting with iron-bearing minerals."
+  },
+  {
+    "id": "deuteric_alteration",
+    "name": "deuteric alteration",
+    "description": "Late-stage magmatic alteration where the residual fluids from a crystallizing magma alter the early-formed minerals within the same igneous body."
+  },
+  {
+    "id": "uralitisation",
+    "name": "uralitisation",
+    "description": "Late-magmatic or metamorphic alteration of primary pyroxene into fibrous amphibole (actinolite-tremolite series)."
+  },
+  {
+    "id": "red_rock_alteration",
+    "name": "red rock alteration",
+    "description": "Widespread hematite dusting or staining of feldspars, often associated with oxidized, saline hydrothermal fluids."
+  }
+]

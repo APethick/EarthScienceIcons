@@ -1,5 +1,5 @@
 'use strict';
-const RELEASE = '2.4.0';
+const RELEASE = '2.6.0';
 const $ = id => document.getElementById(id);
 const state = {icons: [], style: new URLSearchParams(location.search).get('style') === 'flat' ? 'flat' : 'detailed', domain: 'all', selected: null};
 const labels = {Geophysical:'Geophysics',Geological:'Geology',Geochemical:'Geochemistry',Geotechnical:'Geotechnical'};

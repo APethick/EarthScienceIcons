@@ -204,6 +204,12 @@ def _artwork(identifier, builder):
 
 
 def artwork(icon):
+    from icons_alteration import GEOCHEM_IDS, flat_artwork as geochem_artwork
+    if icon["id"] in GEOCHEM_IDS:
+        return geochem_artwork(icon["id"])
+    from icons_mt import MT_IDS, flat_artwork as mt_artwork
+    if icon["id"] in MT_IDS:
+        return mt_artwork(icon["id"])
     from icons_geophysics_expanded import EXPANDED_IDS, flat_artwork
     if icon['id'] in EXPANDED_IDS:
         return flat_artwork(icon)

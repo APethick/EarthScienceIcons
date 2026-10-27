@@ -18,11 +18,11 @@ def verify():
     assets = root / 'docs' / 'assets'
     catalog = json.loads((dist / 'geoscience-icons.json').read_text(encoding='utf-8'))
     icons = catalog['icons']
-    assert len(icons) == catalog['totalIcons'] == 273
+    assert len(icons) == catalog['totalIcons'] == 323
     assert len({icon['id'] for icon in icons}) == len(icons)
     assert len({icon['codepoint_int'] for icon in icons}) == len(icons)
     assert len({icon['ascii_key'] for icon in icons}) == len(icons)
-    assert sum(icon['domain'] == 'Geophysical' for icon in icons) == 119
+    assert sum(icon['domain'] == 'Geophysical' for icon in icons) == 139
     assert sum(icon['category'] == 'Petrophysical Quantities' for icon in icons) == 12
     original = json.loads((root / 'tests' / 'compatibility-193.json').read_text(encoding='utf-8'))
     font = TTFont(dist / 'GeoScienceIcons.ttf')
@@ -44,7 +44,9 @@ def verify():
             saved = original[identifier]
             assert codepoint == saved['codepoint'], identifier
             assert icon['ascii_key'] == saved['fallback'], identifier
-            assert outline == saved['outline_sha256'], identifier
+            # MT was deliberately redrawn from the user reference in 2.5.
+            if identifier != "gp_magnetotellurics_mt":
+                assert outline == saved['outline_sha256'], identifier
         else:
             assert outline not in added_hashes, identifier
             added_hashes.add(outline)
@@ -54,7 +56,7 @@ def verify():
             assert svg.tag == '{http://www.w3.org/2000/svg}svg', identifier
             assert svg.findall('.//{http://www.w3.org/2000/svg}path'), identifier
             assert path.read_bytes() == (assets / icon[field]).read_bytes(), identifier
-    assert len(original) == 193 and len(added_hashes) == 80
+    assert len(original) == 193 and len(added_hashes) == 130
     for name in ('GeoScienceIcons.ttf', 'GeoScienceIcons.woff', 'geoscience-icons.css', 'geoscience-icons.json'):
         assert (dist / name).read_bytes() == (assets / name).read_bytes(), name
     assert (root / 'GeoScienceIcons.ttf').read_bytes() == (dist / 'GeoScienceIcons.ttf').read_bytes()
@@ -63,7 +65,7 @@ def verify():
         for path in dist.rglob('*'):
             if path.is_file():
                 assert archive.read(path.relative_to(dist).as_posix()) == path.read_bytes(), str(path)
-    print('PASS: 273 glyphs, 546 SVGs, webfont, Pages assets and ZIP; all 193 published outlines and mappings preserved.')
+    print('PASS: 323 glyphs, 646 SVGs, webfont, Pages assets and ZIP; 192 original outlines preserved; MT intentionally redrawn; all published mappings preserved.')
 
 
 if __name__ == '__main__':
