@@ -6,6 +6,12 @@ The EM equipment drawings were refined in version 2.3.0. Portable systems show c
 
 ![Refined EM equipment: flat SVG and detailed TTF](../dist/em_equipment_preview.png)
 
+Version 2.4.0 refines all 12 petrophysical quantity icons and 10 associated logging tools. Rock texture, pore geometry, fluid pathways and measurement components distinguish the quantities. Logging illustrations show formation layers, borehole fluid, source/receiver or electrode arrangements, and response tracks.
+
+![Petrophysical quantities: flat SVG and detailed TTF](../dist/petrophysics_preview.png)
+
+[Petrophysical logging tools: flat SVG and detailed TTF](../dist/petrophysics_logging_preview.png)
+
 ![Detailed new geophysics icons](../dist/geophysics_expansion_sheet.png)
 
 | Codepoint | Icon | ID |

@@ -27,7 +27,7 @@ from icons_mineralis_inversion import MINERALIS_INVERSION_ICONS
 from icon_artwork import artwork, svg_document
 from icon_catalog import ALL_ICONS
 from font_artwork import detailed_font_geometry
-from icon_specimen import build_catalog, render_flat_sheet, render_style_preview, render_material_preview, render_em_preview
+from icon_specimen import build_catalog, render_flat_sheet, render_style_preview, render_material_preview, render_em_preview, render_petrophysics_preview, render_logging_preview
 
 UPM = 1000
 ASCENT = 880
@@ -193,10 +193,10 @@ def build_all(install_opus: bool = False):
         {
             "familyName": "GeoScience Icons",
             "styleName": "Regular",
-            "uniqueFontIdentifier": "GeoScienceIcons-Regular-2.3",
+            "uniqueFontIdentifier": "GeoScienceIcons-Regular-2.4",
             "fullName": "GeoScience Icons Regular",
             "psName": "GeoScienceIcons-Regular",
-            "version": "Version 2.300",
+            "version": "Version 2.400",
             "copyright": "Copyright (c) 2026 GeoScience Icon Set. Open License.",
             "description": "Comprehensive TrueType icon font covering Geophysical, Geotechnical, Geological, and Geochemical methods, earth model types, and processes.",
         }
@@ -212,7 +212,7 @@ def build_all(install_opus: bool = False):
         fsType=0,  # Installable embedding allowed
     )
     fb.setupPost(isFixedPitch=1)
-    fb.font["head"].fontRevision = 2.3
+    fb.font["head"].fontRevision = 2.4
 
     ttf_dist_path = dist_dir / "GeoScienceIcons.ttf"
     ttf_root_path = root_dir / "GeoScienceIcons.ttf"
@@ -231,7 +231,7 @@ def build_all(install_opus: bool = False):
     json_data = {
         "fontFamily": "GeoScience Icons",
         "postScriptName": "GeoScienceIcons-Regular",
-        "version": "2.3.0",
+        "version": "2.4.0",
         "svgStyle": "detailed-flat-natural-materials",
         "fontStyle": "detailed-technical-line",
         "unitsPerEm": UPM,
@@ -247,14 +247,14 @@ def build_all(install_opus: bool = False):
     # Write CSS stylesheet
     css_lines = [
         "/**",
-        " * GeoScience Icons v2.3.0",
+        " * GeoScience Icons v2.4.0",
         " * Domains: Geophysical, Geotechnical, Geological, Geochemical",
         " * Categories: Methods, Earth Model Types, Processes",
         " */",
         "@font-face {",
         "  font-family: 'GeoScience Icons';",
-        "  src: url('GeoScienceIcons.woff?v=2.3.0') format('woff'),",
-        "       url('GeoScienceIcons.ttf?v=2.3.0') format('truetype');",
+        "  src: url('GeoScienceIcons.woff?v=2.4.0') format('woff'),",
+        "       url('GeoScienceIcons.ttf?v=2.4.0') format('truetype');",
         "  font-weight: normal;",
         "  font-style: normal;",
         "  font-display: block;",
@@ -291,6 +291,8 @@ def build_all(install_opus: bool = False):
     from icons_geophysics_expanded import EXPANDED_GEOPHYSICS_ICONS
     render_flat_sheet(dist_dir / 'geophysics_expansion_sheet.png', EXPANDED_GEOPHYSICS_ICONS)
     render_em_preview(dist_dir / 'em_equipment_preview.png', all_icons, ttf_dist_path)
+    render_petrophysics_preview(dist_dir / 'petrophysics_preview.png', all_icons, ttf_dist_path)
+    render_logging_preview(dist_dir / 'petrophysics_logging_preview.png', all_icons, ttf_dist_path)
 
     # Generate Java GlyphFont class for Opus
     java_code = build_java_glyph_class(catalog_entries)

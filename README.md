@@ -8,7 +8,7 @@
 
 **Detailed linework · Flat colour · SVG · TTF · WOFF · Public domain**
 
-[**Explore every icon →**](https://APethick.github.io/EarthScienceIcons/) · [Download the set](https://APethick.github.io/EarthScienceIcons/assets/EarthScienceIcons.zip?v=2.3.0) · [TTF font](dist/GeoScienceIcons.ttf) · [Icon manifest](dist/geoscience-icons.json)
+[**Explore every icon →**](https://APethick.github.io/EarthScienceIcons/) · [Download the set](https://APethick.github.io/EarthScienceIcons/assets/EarthScienceIcons.zip?v=2.4.0) · [TTF font](dist/GeoScienceIcons.ttf) · [Icon manifest](dist/geoscience-icons.json)
 
 ![Flat colour SVGs and detailed technical font glyphs](dist/style_preview.png)
 
@@ -49,6 +49,14 @@ The original 193 IDs, codepoints, fallback keys and glyph drawings are preserved
 The EM suite uses equipment-led drawings: clothed field operators with backpack instruments and tablets, airframes with cockpit and rotor detail, suspension bridles, distinct VTEM and SkyTEM coil frames, and ground loops with cables, controllers and receivers. Both styles share the same compositions. Existing IDs and Unicode mappings remain stable.
 
 ![EM equipment in flat colour and the detailed TTF](dist/em_equipment_preview.png)
+
+### Detailed petrophysics
+
+All 12 quantity icons use physical specimens and measurement detail: electrode contacts and core textures, density balance and dimensions, magnetic coils and oriented domains, polarization decay, ultrasonic source/receiver ends, isolated versus connected pore spaces, dielectric plates, and thermal contacts. Ten related borehole tools include layered formations, fluid-filled holes, sonde components and log tracks. Both styles share the drawings; names and codepoints remain stable.
+
+![Petrophysical quantities in flat colour and the detailed TTF](dist/petrophysics_preview.png)
+
+[View the detailed logging-tool preview](dist/petrophysics_logging_preview.png).
 
 ## Using the icons
 
@@ -114,6 +122,7 @@ Open `http://localhost:8080`. The website is static, with no npm build or extern
 | `icons_*.py` | Scientific metadata and detailed discipline builders |
 | `font_artwork.py` | Detailed glyph corrections, cleanup and optical fit |
 | `em_artwork.py` | Detailed EM equipment, operators, aircraft and acquisition layouts |
+| `petrophysics_artwork.py` | Rock specimens, property measurements and petrophysical logging tools |
 | `detailed_flat.py` | Flat material-colour layers from the detailed font builders |
 | `icon_materials.py` | Object-specific material assignments |
 | `icon_artwork.py` | SVG conversion and original simplified recipes |

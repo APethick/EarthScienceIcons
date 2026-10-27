@@ -138,11 +138,29 @@ def render_material_preview(path, icons):
 def render_em_preview(path, icons, ttf_path):
     selected = ['gp_loupe_tem', 'gp_slingram_em', 'gp_ground_tem', 'gp_vtem',
                 'gp_skytem', 'gp_csem_marine', 'gp_fixed_wing_aem', 'gp_frequency_domain_em_fdem']
+    _render_comparison(path, icons, ttf_path, selected, 'EARTHSCIENCE ICONS / EM EQUIPMENT',
+                       'Detailed field equipment in natural colours, with matching technical TTF glyphs.')
+
+
+def render_petrophysics_preview(path, icons, ttf_path):
+    selected = [icon['id'] for icon in icons if icon['category'] == 'Petrophysical Quantities']
+    _render_comparison(path, icons, ttf_path, selected, 'EARTHSCIENCE ICONS / PETROPHYSICS',
+                       'Rock specimens, pores, fluids and measurement hardware. Flat colour and detailed TTF.')
+
+
+def render_logging_preview(path, icons, ttf_path):
+    from icons_geophysics_expanded import PETROPHYSICAL_LOGGING_KINDS
+    selected = [icon['id'] for icon in icons if icon.get('kind') in PETROPHYSICAL_LOGGING_KINDS]
+    _render_comparison(path, icons, ttf_path, selected, 'EARTHSCIENCE ICONS / PETROPHYSICAL LOGGING',
+                       'Detailed sondes, formation layers and measurement responses. Matching SVG and TTF.')
+
+
+def _render_comparison(path, icons, ttf_path, selected, title, subtitle):
     lookup = {icon['id']: icon for icon in icons}
-    result = Image.new('RGB', (1600, 1010), '#EDF1F1')
+    result = Image.new('RGB', (1600, 150+math.ceil(len(selected)/4)*430), '#EDF1F1')
     draw = ImageDraw.Draw(result)
-    draw.text((42, 26), 'EARTHSCIENCE ICONS / EM EQUIPMENT', font=font(26, True), fill=INK)
-    draw.text((42, 70), 'Detailed field equipment in natural colours, with matching technical TTF glyphs.', font=font(20), fill='#596F76')
+    draw.text((42, 26), title, font=font(26, True), fill=INK)
+    draw.text((42, 70), subtitle, font=font(20), fill='#596F76')
     glyph_font = ImageFont.truetype(str(ttf_path), 168)
     for index, identifier in enumerate(selected):
         icon = lookup[identifier]

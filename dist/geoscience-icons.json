@@ -1,7 +1,7 @@
 {
   "fontFamily": "GeoScience Icons",
   "postScriptName": "GeoScienceIcons-Regular",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "svgStyle": "detailed-flat-natural-materials",
   "fontStyle": "detailed-technical-line",
   "unitsPerEm": 1000,
@@ -5744,7 +5744,9 @@
         "induction",
         "conductivity",
         "log",
-        "em"
+        "em",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_borehole_induction_log.svg",
       "svg_mono_file": "svg-mono/gp_borehole_induction_log.svg"
@@ -5768,7 +5770,9 @@
         "resistivity",
         "normal",
         "laterolog",
-        "electrodes"
+        "electrodes",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_borehole_resistivity_log.svg",
       "svg_mono_file": "svg-mono/gp_borehole_resistivity_log.svg"
@@ -5792,7 +5796,9 @@
         "ip",
         "chargeability",
         "induced",
-        "polarization"
+        "polarization",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_borehole_ip_log.svg",
       "svg_mono_file": "svg-mono/gp_borehole_ip_log.svg"
@@ -5843,7 +5849,9 @@
         "susceptibility",
         "kappa",
         "chi",
-        "log"
+        "log",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_borehole_magnetic_susceptibility.svg",
       "svg_mono_file": "svg-mono/gp_borehole_magnetic_susceptibility.svg"
@@ -5943,7 +5951,9 @@
         "density",
         "compensated",
         "density",
-        "log"
+        "log",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_borehole_density_log.svg",
       "svg_mono_file": "svg-mono/gp_borehole_density_log.svg"
@@ -5967,7 +5977,9 @@
         "neutron",
         "porosity",
         "hydrogen",
-        "log"
+        "log",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_borehole_neutron_porosity.svg",
       "svg_mono_file": "svg-mono/gp_borehole_neutron_porosity.svg"
@@ -5994,7 +6006,9 @@
         "waveform",
         "p",
         "s",
-        "velocity"
+        "velocity",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_borehole_sonic_log.svg",
       "svg_mono_file": "svg-mono/gp_borehole_sonic_log.svg"
@@ -6093,7 +6107,9 @@
         "temperature",
         "geothermal",
         "thermal",
-        "log"
+        "log",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_borehole_temperature.svg",
       "svg_mono_file": "svg-mono/gp_borehole_temperature.svg"
@@ -6118,7 +6134,9 @@
         "conductivity",
         "resistivity",
         "water",
-        "log"
+        "log",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_borehole_fluid_conductivity.svg",
       "svg_mono_file": "svg-mono/gp_borehole_fluid_conductivity.svg"
@@ -6168,7 +6186,9 @@
         "nuclear",
         "magnetic",
         "resonance",
-        "porosity"
+        "porosity",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_borehole_nmr.svg",
       "svg_mono_file": "svg-mono/gp_borehole_nmr.svg"
@@ -6287,7 +6307,9 @@
         "electrical",
         "bulk",
         "formation",
-        "property"
+        "property",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_property_conductivity.svg",
       "svg_mono_file": "svg-mono/gp_property_conductivity.svg"
@@ -6311,7 +6333,9 @@
         "electrical",
         "bulk",
         "rock",
-        "property"
+        "property",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_property_resistivity.svg",
       "svg_mono_file": "svg-mono/gp_property_resistivity.svg"
@@ -6336,7 +6360,9 @@
         "mass",
         "volume",
         "rock",
-        "property"
+        "property",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_property_density.svg",
       "svg_mono_file": "svg-mono/gp_property_density.svg"
@@ -6361,7 +6387,9 @@
         "susceptibility",
         "chi",
         "kappa",
-        "property"
+        "property",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_property_magnetic_susceptibility.svg",
       "svg_mono_file": "svg-mono/gp_property_magnetic_susceptibility.svg"
@@ -6386,7 +6414,9 @@
         "nrm",
         "jr",
         "magnetic",
-        "property"
+        "property",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_property_remanent_magnetization.svg",
       "svg_mono_file": "svg-mono/gp_property_remanent_magnetization.svg"
@@ -6409,7 +6439,9 @@
         "ip",
         "m",
         "polarization",
-        "property"
+        "property",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_property_chargeability.svg",
       "svg_mono_file": "svg-mono/gp_property_chargeability.svg"
@@ -6434,7 +6466,9 @@
         "velocity",
         "compressional",
         "seismic",
-        "property"
+        "property",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_property_vp.svg",
       "svg_mono_file": "svg-mono/gp_property_vp.svg"
@@ -6459,7 +6493,9 @@
         "velocity",
         "shear",
         "seismic",
-        "property"
+        "property",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_property_vs.svg",
       "svg_mono_file": "svg-mono/gp_property_vs.svg"
@@ -6483,7 +6519,9 @@
         "pore",
         "void",
         "fraction",
-        "property"
+        "property",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_property_porosity.svg",
       "svg_mono_file": "svg-mono/gp_property_porosity.svg"
@@ -6506,7 +6544,9 @@
         "k",
         "hydraulic",
         "flow",
-        "property"
+        "property",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_property_permeability.svg",
       "svg_mono_file": "svg-mono/gp_property_permeability.svg"
@@ -6531,7 +6571,9 @@
         "relative",
         "dielectric",
         "gpr",
-        "property"
+        "property",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_property_dielectric_permittivity.svg",
       "svg_mono_file": "svg-mono/gp_property_dielectric_permittivity.svg"
@@ -6555,7 +6597,9 @@
         "heat",
         "k",
         "lambda",
-        "property"
+        "property",
+        "petrophysics",
+        "petrophysical"
       ],
       "svg_file": "svg/gp_property_thermal_conductivity.svg",
       "svg_mono_file": "svg-mono/gp_property_thermal_conductivity.svg"

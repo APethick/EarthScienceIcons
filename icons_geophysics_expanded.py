@@ -26,6 +26,13 @@ RED = '#E35D65'
 YELLOW = '#F2C94C'
 WHITE = '#F8FAF7'
 
+PETROPHYSICAL_LOGGING_KINDS = {
+    'borehole_induction_log', 'borehole_resistivity_log',
+    'borehole_magnetic_susceptibility', 'borehole_density_log',
+    'borehole_neutron_porosity', 'borehole_sonic_log', 'borehole_nmr',
+    'borehole_fluid_conductivity', 'borehole_temperature', 'borehole_ip_log',
+}
+
 
 @dataclass
 class Part:
@@ -267,6 +274,9 @@ def seismic_scene(kind):
 
 
 def borehole_scene(kind):
+    if kind in PETROPHYSICAL_LOGGING_KINDS:
+        from petrophysics_artwork import scene
+        return scene(kind)
     d=Diagram().ground(7)
     if kind in {'crosshole_ert','crosshole_em_tomography'}:
         for x in (6,36):d.rect(x,8,6,36,SAND,.3)
@@ -383,71 +393,8 @@ def symbol(d, name, x=25, y=8, size=9):
 
 
 def property_scene(kind):
-    d=Diagram()
-    if kind in {'property_conductivity','property_resistivity'}:
-        d.rect(8,21,32,20,ROCK,1)
-        d.line([(4,31),(11,31)],BLUE).line([(37,31),(44,31)],BLUE)
-        d.rect(10,27,3,8,STEEL,.3).rect(35,27,3,8,STEEL,.3)
-        if kind=='property_conductivity':
-            d.arrow(17,31,31,31,BLUE);symbol(d,'sigma',24,4,9)
-        else:
-            d.line([(15,31),(18,27),(22,35),(26,27),(30,35),(33,31)],BLUE)
-            symbol(d,'rho',24,3,8)
-    elif kind=='property_density':
-        d.poly([(25,17),(40,25),(25,34),(10,25)],ROCK)
-        d.poly([(10,25),(25,34),(25,44),(10,35)],SOIL)
-        d.poly([(25,34),(40,25),(40,35),(25,44)],STEEL)
-        for x,y in ((16,29),(20,34),(30,35),(35,30)):d.circle(x,y,.7,INK,solid=True)
-        symbol(d,'rho',24,2,8)
-    elif kind in {'property_magnetic_susceptibility','property_remanent_magnetization'}:
-        d.rect(12,19,25,24,ROCK)
-        if kind=='property_magnetic_susceptibility':
-            symbol(d,'chi',24,3,9)
-            for x in (18,25,32):d.arrow(x,37,x,25,RED)
-            d.arrow(5,38,5,22,RED).arrow(43,38,43,22,RED)
-        else:
-            d.word('M',23,3,1.5)
-            d.arrow(17,38,32,24,RED).arrow(17,38,17,24,STEEL)
-            d.line([(32,24),(32,38),(17,38)],STEEL,.8)
-    elif kind=='property_chargeability':
-        pulse(d,5,6,19,8);decay(d,27,6,15,12,True)
-        d.rect(6,27,21,14,ROCK)
-        d.line([(9,24),(9,35)],BLUE).line([(24,24),(24,35)],BLUE)
-        d.circle(36,33,8,WHITE).line([(36,28),(36,33),(40,35)])
-    elif kind in {'property_vp','property_vs'}:
-        d.word('VP' if kind=='property_vp' else 'VS',17,3,1.6)
-        d.arrow(5,39,43,39)
-        if kind=='property_vp':
-            for index,x in enumerate((6,10,13,16,24,32,35,38,42)):
-                d.line([(x,21),(x,32)],STEEL,1.3)
-            d.arrow(15,17,23,17,BLUE)
-        else:
-            d.wave(5,43,26,6,2,BLUE)
-            d.arrow(24,18,24,33,BLUE)
-    elif kind in {'property_porosity','property_permeability'}:
-        d.rect(5,17,38,27,SAND)
-        if kind=='property_porosity':
-            symbol(d,'phi',24,2,9)
-            for x,y,r in ((13,25,3),(31,24,4),(24,36,3.5),(37,37,2)):
-                d.circle(x,y,r,WHITE)
-        else:
-            d.word('K',23,3,1.6)
-            for x,y in ((13,24),(34,24),(12,38),(35,38)):d.circle(x,y,4,ROCK)
-            d.arrow(6,31,42,31,WATER)
-    elif kind=='property_dielectric_permittivity':
-        symbol(d,'epsilon',24,2,9)
-        d.rect(9,19,4,24,STEEL,.2).rect(35,19,4,24,STEEL,.2)
-        for y in (24,36):
-            d.circle(21,y,1.6,BLUE,BLUE).circle(29,y,1.6,RED,RED)
-            d.line([(23,y),(27,y)],STEEL,.9)
-        d.line([(4,31),(9,31)],BLUE).line([(39,31),(44,31)],BLUE)
-    elif kind=='property_thermal_conductivity':
-        d.word('K',23,3,1.6)
-        d.rect(10,19,28,24,ROCK)
-        for x in (16,24,32):d.arrow(x,39,x,23,RED)
-        d.line([(5,44),(43,44)],RED,2).line([(5,17),(43,17)],BLUE,2)
-    else:raise ValueError(f'Unknown property: {kind}')
-    return d
+    from petrophysics_artwork import scene
+    return scene(kind)
 
 
 # category | identifier suffix | readable name | meaning | search synonyms
@@ -555,7 +502,7 @@ for offset, row in enumerate(CATALOG_ROWS.strip().splitlines()):
     EXPANDED_GEOPHYSICS_ICONS.append({
         'id': 'gp_'+kind, 'codepoint': 0xE0C2+offset, 'name': name,
         'domain': 'Geophysical', 'category': category,
-        'description': description, 'keywords': synonyms.split(),
+        'description': description, 'keywords': synonyms.split() + (['petrophysics', 'petrophysical'] if kind.startswith('property_') or kind in PETROPHYSICAL_LOGGING_KINDS else []),
         'builder': partial(build_geometry, kind), 'kind': kind,
     })
 EXPANDED_IDS = {icon['id'] for icon in EXPANDED_GEOPHYSICS_ICONS}
