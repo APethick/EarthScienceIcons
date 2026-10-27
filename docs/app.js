@@ -1,5 +1,5 @@
 'use strict';
-const RELEASE = '2.2.0';
+const RELEASE = '2.3.0';
 const $ = id => document.getElementById(id);
 const state = {icons: [], style: new URLSearchParams(location.search).get('style') === 'flat' ? 'flat' : 'detailed', domain: 'all', selected: null};
 const labels = {Geophysical:'Geophysics',Geological:'Geology',Geochemical:'Geochemistry',Geotechnical:'Geotechnical'};
@@ -29,7 +29,7 @@ function snippet(){
 }
 function openDetail(icon){
   state.selected=icon;$('detail-preview').replaceChildren(preview(icon));$('detail-title').textContent=icon.name;$('detail-domain').textContent=labels[icon.domain]+' / '+(state.style==='flat'?'Flat colour':'Detailed line');$('detail-description').textContent=icon.description;$('detail-codepoint').textContent=icon.codepoint_hex;$('detail-category').textContent=icon.category;
-  const file=state.style==='flat'?icon.svg_file:icon.svg_mono_file;$('download-svg').href='assets/'+file;$('download-svg').download=icon.id+'.svg';$('source-link').href='https://github.com/APethick/EarthScienceIcons/blob/main/dist/'+file;snippet();$('detail').showModal();document.body.classList.add('modal-open');
+  const file=state.style==='flat'?icon.svg_file:icon.svg_mono_file;$('download-svg').href='assets/'+file+'?v='+RELEASE;$('download-svg').download=icon.id+'.svg';$('source-link').href='https://github.com/APethick/EarthScienceIcons/blob/main/dist/'+file;snippet();$('detail').showModal();document.body.classList.add('modal-open');
 }
 function toast(message){clearTimeout(toastTimer);$('toast').textContent=message;$('toast').classList.add('show');toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2400);}
 async function copy(text,label){try{if(navigator.clipboard&&window.isSecureContext)await navigator.clipboard.writeText(text);else{const input=document.createElement('textarea');input.value=text;input.style.position='fixed';input.style.opacity='0';($('detail').open?$('detail'):document.body).append(input);input.select();const success=document.execCommand('copy');input.remove();if(!success)throw new Error('Clipboard unavailable');}toast(label);}catch{toast('Clipboard unavailable. Select and copy the code above.');}}

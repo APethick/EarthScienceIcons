@@ -8,7 +8,7 @@
 
 **Detailed linework · Flat colour · SVG · TTF · WOFF · Public domain**
 
-[**Explore every icon →**](https://APethick.github.io/EarthScienceIcons/) · [Download the set](https://APethick.github.io/EarthScienceIcons/assets/EarthScienceIcons.zip?v=2.2.0) · [TTF font](dist/GeoScienceIcons.ttf) · [Icon manifest](dist/geoscience-icons.json)
+[**Explore every icon →**](https://APethick.github.io/EarthScienceIcons/) · [Download the set](https://APethick.github.io/EarthScienceIcons/assets/EarthScienceIcons.zip?v=2.3.0) · [TTF font](dist/GeoScienceIcons.ttf) · [Icon manifest](dist/geoscience-icons.json)
 
 ![Flat colour SVGs and detailed technical font glyphs](dist/style_preview.png)
 
@@ -43,6 +43,12 @@ The original 193 IDs, codepoints, fallback keys and glyph drawings are preserved
 [View the new geophysics catalog and references](docs/geophysics.md).
 
 ![80 new detailed geophysics icons in natural colours](dist/geophysics_expansion_sheet.png)
+
+### Detailed EM equipment
+
+The EM suite uses equipment-led drawings: clothed field operators with backpack instruments and tablets, airframes with cockpit and rotor detail, suspension bridles, distinct VTEM and SkyTEM coil frames, and ground loops with cables, controllers and receivers. Both styles share the same compositions. Existing IDs and Unicode mappings remain stable.
+
+![EM equipment in flat colour and the detailed TTF](dist/em_equipment_preview.png)
 
 ## Using the icons
 
@@ -107,6 +113,7 @@ Open `http://localhost:8080`. The website is static, with no npm build or extern
 | --- | --- |
 | `icons_*.py` | Scientific metadata and detailed discipline builders |
 | `font_artwork.py` | Detailed glyph corrections, cleanup and optical fit |
+| `em_artwork.py` | Detailed EM equipment, operators, aircraft and acquisition layouts |
 | `detailed_flat.py` | Flat material-colour layers from the detailed font builders |
 | `icon_materials.py` | Object-specific material assignments |
 | `icon_artwork.py` | SVG conversion and original simplified recipes |

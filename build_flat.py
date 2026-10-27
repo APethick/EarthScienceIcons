@@ -7,7 +7,7 @@ from icon_catalog import ALL_ICONS
 from icons_geophysics_expanded import EXPANDED_IDS
 from icon_artwork import artwork, svg_document
 from icon_materials import ICON_MATERIALS
-from icon_specimen import build_catalog, render_flat_sheet, render_style_preview, render_material_preview
+from icon_specimen import build_catalog, render_flat_sheet, render_style_preview, render_material_preview, render_em_preview
 
 
 def build_flat():
@@ -28,6 +28,7 @@ def build_flat():
     render_flat_sheet(dist / 'flat_specimen_sheet.png', icons)
     render_style_preview(dist / 'style_preview.png', icons, dist / 'GeoScienceIcons.ttf')
     render_material_preview(dist / 'natural_colour_preview.png', icons)
+    render_em_preview(dist / 'em_equipment_preview.png', icons, dist / 'GeoScienceIcons.ttf')
     print(f'Updated {len(icons)} flat SVGs with object/material colours. Detailed fonts and monochrome SVGs were not rebuilt.')
 
 

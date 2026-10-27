@@ -91,15 +91,6 @@ class Diagram:
         self.line([(x-rx,y),(x-rx,y+2)], colour)
         return self
 
-    def person(self, x, y, scale=1):
-        self.circle(x,y,1.6*scale,STEEL,solid=True)
-        self.line([(x,y+2.4*scale),(x,y+10*scale)], INK, 1.8*scale)
-        self.line([(x,y+6*scale),(x-3*scale,y+10*scale)])
-        self.line([(x,y+10*scale),(x-3*scale,y+15*scale)])
-        self.line([(x,y+10*scale),(x+3*scale,y+14*scale)])
-        self.rect(x+1*scale,y+3*scale,3*scale,5*scale,ALU,.5)
-        return self
-
     def word(self, text, x, y, scale=1, colour=INK):
         alphabet = {
             'A': [[(0,5),(1.5,0),(3,5)],[(.6,3),(2.4,3)]],
@@ -139,18 +130,6 @@ def native(geometry):
     return affinity.translate(geometry,yoff=1000)
 
 
-def helicopter(d):
-    d.line([(10,4),(34,4)]).line([(23,4),(23,8)])
-    d.poly([(15,9),(28,8),(34,13),(29,17),(16,16)],ALU)
-    d.line([(16,12),(6,10),(4,6)]).line([(5,8),(2,8)])
-    d.line([(20,18),(18,20),(32,20)]).line([(29,16),(30,20)])
-    d.line([(28,9),(28,14),(33,14)],STEEL)
-
-
-def plane(d, y=10):
-    d.poly([(4,y),(18,y),(27,y-7),(31,y-7),(27,y),(41,y),(44,y+2),(28,y+3),(34,y+9),(30,y+9),(20,y+3),(5,y+3)],ALU)
-
-
 def pulse(d, x=5, y=6, width=18, height=6):
     d.line([(x,y+height),(x+width*.2,y+height),(x+width*.2,y),(x+width*.6,y),(x+width*.6,y+height),(x+width,y+height)],BLUE)
 
@@ -164,137 +143,8 @@ def decay(d, x=27, y=8, width=16, height=10, gates=False):
 
 
 def em_scene(kind):
-    d=Diagram()
-    if kind in {'airborne_em_aem','vtem','skytem'}:
-        helicopter(d)
-        d.line([(18,20),(12,31)]).line([(30,20),(37,31)])
-        if kind=='skytem':
-            d.poly([(9,34),(14,30),(35,30),(41,35),(36,39),(14,39)],None,BLUE)
-            d.receiver(41,36,1.5)
-            pulse(d,5,43,11,2.2);pulse(d,23,41,15,4.2)
-        elif kind=='vtem':
-            d.ellipse(24,34,15,5,None,BLUE).receiver(24,34,2.1)
-            d.arc(24,32,11,30,150,RED)
-            d.arc(24,32,15,36,144,RED)
-        else:
-            d.rect(14,30,22,6,ALU,2)
-            for x in (18,24,30):d.coil(x,33,2,4,BLUE)
-            d.arc(24,32,11,35,145,RED)
-        return d
-    if kind in {'fixed_wing_aem','airborne_magnetics','airborne_radiometrics'}:
-        plane(d)
-        if kind=='fixed_wing_aem':
-            d.line([(39,13),(43,25),(28,32)])
-            d.rect(12,31,20,4,STEEL,1.5)
-            for x in (16,23,29):d.ellipse(x,33,2,3,None,BLUE)
-            d.arc(23,33,9,20,160,RED)
-        elif kind=='airborne_magnetics':
-            d.line([(41,12),(43,24),(32,29)])
-            d.rect(22,28,12,4,STEEL,2)
-            d.wave(5,40,40,3,1,RED)
-            d.line([(7,45),(41,45)],SOIL,.9)
-        else:
-            d.poly([(21,23),(8,43),(39,43)],SAND,STEEL)
-            for x,word in ((12,'K'),(22,'U'),(32,'TH')):d.word(word,x,34,.8)
-            d.line([(24,18),(24,25)],STEEL)
-        return d
-    if kind in {'csem_marine','csem_land','csamt'}:
-        if kind=='csem_marine':
-            d.poly([(3,7),(20,7),(17,12),(6,12)],ALU).rect(8,3,7,4,STEEL)
-            d.wave(3,45,14,1,3,WATER)
-            d.line([(17,11),(22,22),(32,25)],STEEL)
-            d.line([(27,25),(42,25)],BLUE,2)
-            d.circle(27,25,1,BLUE,solid=True).circle(42,25,1,BLUE,solid=True)
-            d.line([(3,37),(17,36),(29,39),(45,36)],SOIL)
-            d.receiver(9,36).receiver(25,37.8).receiver(40,36.8)
-            d.line([(31,27),(24,43),(9,37)],BLUE)
-        else:
-            d.ground(17)
-            d.rect(6,7,8,5,ALU).word('+',8.2,7.5,.8)
-            d.line([(3,17),(3,10),(6,10)],BLUE).line([(14,10),(20,10),(20,17)],BLUE)
-            d.line([(4,17),(4,22)],BLUE).line([(20,17),(20,22)],BLUE)
-            d.receiver(34,15).receiver(43,15)
-            if kind=='csamt':
-                d.wave(25,45,7,1.3,2,BLUE)
-                d.arrow(35,23,35,38,BLUE).arrow(43,23,43,38,RED)
-            else:
-                d.line([(4,22),(16,39),(34,18)],BLUE).line([(20,22),(27,33),(43,18)],BLUE)
-        return d
-    if kind in {'loupe_tem','slingram_em'}:
-        d.person(11,10).person(35,10)
-        d.line([(14,18),(18,23),(28,23),(34,18)],STEEL,.9)
-        if kind=='loupe_tem':
-            d.coil(15,19,4,1.8,BLUE)
-            d.receiver(39,20,2.8)
-            d.line([(39,15),(39,25)],RED,.85).line([(35,20),(43,20)],RED,.85)
-            d.arc(25,25,13,35,145,RED)
-        else:
-            d.coil(6,24,4,2,BLUE).receiver(30,25,2.3)
-            d.wave(8,32,34,2,2,BLUE)
-        d.ground(41)
-        return d
-    if kind in {'ground_magnetics','magnetic_gradiometry'}:
-        if kind=='ground_magnetics':
-            d.person(13,10,1.25).line([(17,21),(29,21),(29,10)],STEEL)
-            d.rect(26,4,6,7,ALU,2).arc(29,8,9,200,340,RED)
-        else:
-            d.line([(24,5),(24,35)],STEEL,2)
-            d.rect(20,5,8,7,ALU,2).rect(20,25,8,7,ALU,2)
-            d.arrow(35,11,35,25,RED).word('-',39,15,1)
-        d.wave(3,45,41,2,1,RED)
-        return d
-    if kind=='vlf_em':
-        d.poly([(4,23),(10,4),(16,23)],STEEL).line([(7,13),(13,13)])
-        d.arc(10,8,9,-60,60,BLUE).arc(10,8,15,-50,50,BLUE)
-        d.person(34,20).receiver(39,28)
-        d.ground(41)
-        return d
-    if kind=='frequency_domain_em_fdem':
-        d.coil(10,12,7,3,BLUE).receiver(38,12,4)
-        d.wave(17,31,12,2,2,BLUE)
-        d.ground(22)
-        d.arc(24,22,10,15,165,RED).arc(24,22,17,20,160,RED)
-        return d
-    if kind in {'time_domain_em_tdem','electrical_ip_chargeability','ip_spectral','tem_decay_gates'}:
-        pulse(d,4,5,17,8)
-        if kind=='ip_spectral':
-            d.line([(6,23),(6,43),(43,43)],STEEL)
-            d.line([(9,39),(17,38),(25,29),(32,25),(41,25)],BLUE)
-            d.arc(30,41,11,185,355,RED)
-        elif kind=='electrical_ip_chargeability':
-            d.ground(25);d.line([(7,25),(7,31)],BLUE).line([(20,25),(20,31)],BLUE)
-            decay(d,27,27,15,14,True)
-        else:
-            decay(d,27,5,15,13,True)
-            if kind=='tem_decay_gates':
-                for x in (8,18,28,38):d.rect(x,29,4,12,GLASS,.2)
-                d.arrow(5,44,44,44)
-            else:
-                d.poly([(6,30),(31,27),(43,33),(17,37)],None,BLUE).receiver(25,32)
-                d.arc(25,30,12,25,155,RED)
-        return d
-    # Ground TEM arrangements share the loop but differ in transmitter geometry,
-    # receiver position and survey movement rather than only a text badge.
-    d.poly([(5,13),(32,7),(43,20),(16,28)],None,BLUE)
-    if kind=='tem_central_loop':
-        d.coil(24,18,5,2,RED).receiver(24,18,1.5)
-    elif kind=='tem_in_loop':
-        d.receiver(15,17).line([(15,17),(24,18)],STEEL,.85)
-    elif kind=='tem_fixed_loop':
-        for x,y in ((12,34),(25,34),(38,34)):d.receiver(x,y)
-        d.line([(7,39),(42,39)],STEEL,.9)
-    elif kind=='tem_moving_loop':
-        d.receiver(24,18).arrow(6,36,41,36)
-        d.line([(8,40),(16,40)],STEEL,.8).line([(25,40),(33,40)],STEEL,.8)
-    elif kind=='tem_lotem':
-        d=Diagram().ground(13)
-        d.line([(3,13),(3,6),(19,6),(19,13)],BLUE).receiver(40,12)
-        d.line([(5,16),(18,37),(40,16)],BLUE)
-        d.line([(20,13),(20,18)],BLUE)
-    else:
-        d.receiver(24,18);decay(d,29,31,14,12)
-        d.arc(21,24,10,30,150,RED)
-    return d
+    from em_artwork import scene
+    return scene(kind)
 
 
 def gpr_scene(kind):

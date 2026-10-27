@@ -135,6 +135,41 @@ def render_material_preview(path, icons):
     save_png(result, path)
 
 
+def render_em_preview(path, icons, ttf_path):
+    selected = ['gp_loupe_tem', 'gp_slingram_em', 'gp_ground_tem', 'gp_vtem',
+                'gp_skytem', 'gp_csem_marine', 'gp_fixed_wing_aem', 'gp_frequency_domain_em_fdem']
+    lookup = {icon['id']: icon for icon in icons}
+    result = Image.new('RGB', (1600, 1010), '#EDF1F1')
+    draw = ImageDraw.Draw(result)
+    draw.text((42, 26), 'EARTHSCIENCE ICONS / EM EQUIPMENT', font=font(26, True), fill=INK)
+    draw.text((42, 70), 'Detailed field equipment in natural colours, with matching technical TTF glyphs.', font=font(20), fill='#596F76')
+    glyph_font = ImageFont.truetype(str(ttf_path), 168)
+    for index, identifier in enumerate(selected):
+        icon = lookup[identifier]
+        x, y = 32 + index % 4 * 384, 126 + index // 4 * 430
+        draw.rounded_rectangle((x, y, x+368, y+408), 16, fill='white')
+        flat = render_icon(icon, 168)
+        result.paste(flat, (x+12, y+24), flat)
+        character = chr(icon['codepoint'])
+        bounds = draw.textbbox((0, 0), character, font=glyph_font)
+        draw.text((x+272-(bounds[0]+bounds[2])/2, y+108-(bounds[1]+bounds[3])/2), character, font=glyph_font, fill=INK)
+        draw.text((x+49, y+217), 'FLAT COLOUR', font=font(12, True), fill='#596F76')
+        draw.text((x+227, y+217), 'DETAILED TTF', font=font(12, True), fill='#596F76')
+        current, lines = '', []
+        for word in icon['name'].split():
+            trial = (current+' '+word).strip()
+            if draw.textlength(trial, font=font(19, True)) > 328 and current:
+                lines.append(current)
+                current = word
+            else:
+                current = trial
+        lines.append(current)
+        for row, text in enumerate(lines):
+            draw.text((x+20, y+268+row*26), text, font=font(19, True), fill=INK)
+        draw.text((x+20, y+371), f'U+{icon["codepoint"]:04X}', font=font(14), fill='#596F76')
+    save_png(result, path)
+
+
 def build_catalog(path, catalog):
     cards = []
     for item in catalog:

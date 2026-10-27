@@ -2,6 +2,10 @@
 
 80 additions. The original 193 icon mappings and glyphs are preserved.
 
+The EM equipment drawings were refined in version 2.3.0. Portable systems show clothed operators, backpacks, harnesses, tablets and distinct transmitter/receiver hardware. Airborne systems include airframe, rotor, cockpit, bridle and coil-frame detail; ground systems include controllers, cables and receiver housings. The flat SVGs and technical font use the same drawings.
+
+![Refined EM equipment: flat SVG and detailed TTF](../dist/em_equipment_preview.png)
+
 ![Detailed new geophysics icons](../dist/geophysics_expansion_sheet.png)
 
 | Codepoint | Icon | ID |
@@ -92,6 +96,7 @@
 Drawings are schematic compositions based on acquisition geometry and measurement principles. Natural colours describe materials; blue electric features, red magnetic features and yellow receivers retain the library conventions.
 
 - [Loupe Geophysics: portable TEM](https://www.loupegeophysics.com.au/) — two-person walking transmitter/receiver system.
+- [Design + Industry: Loupe equipment design](https://www.design-industry.com.au/loupe) — backpack hardware, operator tablets and the transmitter loop positioned behind the operator.
 - [Geotech: VTEM](https://www.geotech.ca/services/electromagnetic/vtem-versatile-time-domain-electromagnetic-system/) — coincident transmitter/receiver configuration.
 - [SkyTEM: system overview](https://skytem.com/wp-content/uploads/2024/06/SkyTEM_Systems.pdf) — rigid frames, offset receiver and low/high moments.
 - [EMGS: marine CSEM](https://emgs.com/technology/a-guide-to-marine-em/csem/) — towed horizontal electric dipole and seabed receivers.
