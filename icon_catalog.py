@@ -9,11 +9,12 @@ from icons_mineralis_inversion import MINERALIS_INVERSION_ICONS
 from icons_geophysics_expanded import EXPANDED_GEOPHYSICS_ICONS
 from icons_mt import MT_ICONS, mt_survey
 from icons_alteration import GEOCHEM_ICONS
+from icons_field_manual import FGM_ICONS
 
 ALL_ICONS = (GEOPHYSICAL_ICONS + GEOTECHNICAL_ICONS + GEOLOGICAL_ICONS +
              GEOCHEMICAL_ICONS + OPUS_GEOLOGY_ICONS +
              EXPANDED_GEOCHEMISTRY_ICONS + MINERALIS_INVERSION_ICONS +
-             EXPANDED_GEOPHYSICS_ICONS + MT_ICONS + GEOCHEM_ICONS)
+             EXPANDED_GEOPHYSICS_ICONS + MT_ICONS + GEOCHEM_ICONS + FGM_ICONS)
 
 # User-approved MT acquisition layout replacement; stable ID and codepoint.
 ALL_ICONS = [dict(icon, builder=lambda: mt_survey().geometry(),

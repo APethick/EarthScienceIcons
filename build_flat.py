@@ -5,6 +5,9 @@ from pathlib import Path
 from build_font import polygons_to_svg_path
 from icon_catalog import ALL_ICONS
 from icons_geophysics_expanded import EXPANDED_IDS
+from icons_mt import MT_IDS
+from icons_alteration import GEOCHEM_IDS
+from icons_field_manual import FGM_IDS
 from icon_artwork import artwork, svg_document
 from icon_materials import ICON_MATERIALS
 from icon_specimen import build_catalog, render_flat_sheet, render_style_preview, render_material_preview, render_em_preview, render_petrophysics_preview, render_logging_preview
@@ -14,7 +17,7 @@ def build_flat():
     dist = Path(__file__).resolve().parent / 'dist'
     icons = ALL_ICONS
     expected = {icon['id'] for icon in icons}
-    available = set(ICON_MATERIALS) | EXPANDED_IDS
+    available = set(ICON_MATERIALS) | EXPANDED_IDS | MT_IDS | GEOCHEM_IDS | FGM_IDS
     if expected != available:
         raise ValueError(f'Material assignments differ: {expected ^ available}')
     for icon in icons:

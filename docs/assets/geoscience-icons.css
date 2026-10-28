@@ -1,12 +1,12 @@
 /**
- * GeoScience Icons v2.6.0
+ * GeoScience Icons v2.7.0
  * Domains: Geophysical, Geotechnical, Geological, Geochemical
  * Categories: Methods, Earth Model Types, Processes
  */
 @font-face {
   font-family: 'GeoScience Icons';
-  src: url('GeoScienceIcons.woff?v=2.6.0') format('woff'),
-       url('GeoScienceIcons.ttf?v=2.6.0') format('truetype');
+  src: url('GeoScienceIcons.woff?v=2.7.0') format('woff'),
+       url('GeoScienceIcons.ttf?v=2.7.0') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -348,3 +348,151 @@
 .gi-gc-deuteric-alteration::before { content: "\e141"; } /* Deuteric alteration (U+E141) */
 .gi-gc-uralitisation::before { content: "\e142"; } /* Uralitisation (U+E142) */
 .gi-gc-red-rock-alteration::before { content: "\e143"; } /* Red rock alteration (U+E143) */
+.gi-gl-granite-post-kinematic::before { content: "\e144"; } /* Post-Kinematic Granite (U+E144) */
+.gi-gl-granite-late-post-kinematic::before { content: "\e145"; } /* Late- to Post-Kinematic Granite (U+E145) */
+.gi-gl-granite-syn-late-kinematic::before { content: "\e146"; } /* Syn- to Late-Kinematic Granite (U+E146) */
+.gi-gl-granite-syn-kinematic-foliated::before { content: "\e147"; } /* Syn-Kinematic Foliated Granite (U+E147) */
+.gi-gl-granite-gneissic-anatectic::before { content: "\e148"; } /* Gneissic Anatectic Granite (U+E148) */
+.gi-gl-gabbro-diorite-orogenic::before { content: "\e149"; } /* Orogenic Gabbro-Diorite (U+E149) */
+.gi-gl-porphyry-pattern::before { content: "\e14a"; } /* Porphyry Pattern (U+E14A) */
+.gi-gl-island-arc-volcanics::before { content: "\e14b"; } /* Island-Arc Volcanics (U+E14B) */
+.gi-gl-felsic-volcanics-rare-basics::before { content: "\e14c"; } /* Rift Felsic Volcanics with Rare Basics (U+E14C) */
+.gi-gl-rhyolite-dacite-volcanics::before { content: "\e14d"; } /* Rhyolite and Dacite Volcanics (U+E14D) */
+.gi-gl-felsic-volcanics-with-granite::before { content: "\e14e"; } /* Felsic Volcanics Associated with Granite (U+E14E) */
+.gi-gl-flood-basalt::before { content: "\e14f"; } /* Flood Basalt and Trap (U+E14F) */
+.gi-gl-dolerite-granophyre::before { content: "\e150"; } /* Dolerite-Granophyre (U+E150) */
+.gi-gl-keratophyre::before { content: "\e151"; } /* Keratophyre (U+E151) */
+.gi-gl-granite-intruding-craton::before { content: "\e152"; } /* Granite Intruding Craton (U+E152) */
+.gi-gl-layered-intrusion::before { content: "\e153"; } /* Layered Mafic-Ultramafic Intrusion (U+E153) */
+.gi-gl-alkaline-intrusive::before { content: "\e154"; } /* Alkaline Intrusive (U+E154) */
+.gi-gl-kimberlite-lamproite::before { content: "\e155"; } /* Kimberlite and Lamproite (U+E155) */
+.gi-gl-carbonatite::before { content: "\e156"; } /* Carbonatite (U+E156) */
+.gi-gl-slate-phyllite::before { content: "\e157"; } /* Slate and Phyllite Pattern (U+E157) */
+.gi-gl-schist-gneiss-high-grade::before { content: "\e158"; } /* High-Grade Schist and Gneiss Pattern (U+E158) */
+.gi-gl-sandy-slate-interbedded::before { content: "\e159"; } /* Sandy Slate and Interbedded Sediments (U+E159) */
+.gi-gl-hornfels-massive::before { content: "\e15a"; } /* Massive Hornfels Pattern (U+E15A) */
+.gi-gl-basic-plutonic-hypabyssal::before { content: "\e15b"; } /* Basic Plutonic and Hypabyssal Pattern (U+E15B) */
+.gi-gl-bedded-lavas::before { content: "\e15c"; } /* Bedded Lavas Pattern (U+E15C) */
+.gi-gl-tuff-tuffaceous-sandstone::before { content: "\e15d"; } /* Tuff and Tuffaceous Sandstone (U+E15D) */
+.gi-gl-bedded-tuff::before { content: "\e15e"; } /* Bedded Tuff and Tuffaceous Shale (U+E15E) */
+.gi-gl-breccia-pattern::before { content: "\e15f"; } /* Breccia Pattern (U+E15F) */
+.gi-gl-scree-brecciated-rock::before { content: "\e160"; } /* Brecciated Rock and Scree (U+E160) */
+.gi-gl-soil-cover::before { content: "\e161"; } /* Soil Cover Pattern (U+E161) */
+.gi-gl-alluvium::before { content: "\e162"; } /* Alluvium Pattern (U+E162) */
+.gi-gl-gossan-ore::before { content: "\e163"; } /* Gossan and Ore Outcrop Pattern (U+E163) */
+.gi-gl-conglomerate-pattern::before { content: "\e164"; } /* Conglomerate Pattern (U+E164) */
+.gi-gl-sandstone-pattern::before { content: "\e165"; } /* Sandstone Pattern (U+E165) */
+.gi-gl-pebbly-sandstone::before { content: "\e166"; } /* Pebbly Sandstone Pattern (U+E166) */
+.gi-gl-cross-bedded-sandstone::before { content: "\e167"; } /* Cross-Bedded Sandstone Pattern (U+E167) */
+.gi-gl-limestone-pattern::before { content: "\e168"; } /* Limestone Pattern (U+E168) */
+.gi-gl-dolomite-pattern::before { content: "\e169"; } /* Dolomite Pattern (U+E169) */
+.gi-gl-sandy-limestone::before { content: "\e16a"; } /* Sandy Limestone Pattern (U+E16A) */
+.gi-gl-shale-pattern::before { content: "\e16b"; } /* Shale Pattern (U+E16B) */
+.gi-gl-sandy-shale::before { content: "\e16c"; } /* Sandy Shale Pattern (U+E16C) */
+.gi-gl-bedded-chert::before { content: "\e16d"; } /* Bedded Chert Pattern (U+E16D) */
+.gi-gl-massive-chert::before { content: "\e16e"; } /* Massive Chert Pattern (U+E16E) */
+.gi-gl-coal-undifferentiated::before { content: "\e16f"; } /* Undifferentiated Coal Pattern (U+E16F) */
+.gi-gl-broken-coal::before { content: "\e170"; } /* Broken Coal Pattern (U+E170) */
+.gi-gl-coal-with-shale-bands::before { content: "\e171"; } /* Coal with Shale Bands (U+E171) */
+.gi-gl-shale-with-coal-bands::before { content: "\e172"; } /* Shale with Coal Bands (U+E172) */
+.gi-gl-cannel-coal::before { content: "\e173"; } /* Cannel Coal Pattern (U+E173) */
+.gi-gl-cannel-shale::before { content: "\e174"; } /* Cannel Shale Pattern (U+E174) */
+.gi-gl-carbonaceous-shale::before { content: "\e175"; } /* Carbonaceous Shale Pattern (U+E175) */
+.gi-gl-brown-coal::before { content: "\e176"; } /* Brown Coal Pattern (U+E176) */
+.gi-gl-oil-shale::before { content: "\e177"; } /* Oil Shale Pattern (U+E177) */
+.gi-gl-thin-seam::before { content: "\e178"; } /* Thin Dipping Coal Seam (U+E178) */
+.gi-gl-coal-bright::before { content: "\e179"; } /* Bright Coal Seam (>90% Bright) (U+E179) */
+.gi-gl-coal-bright-dull-bands::before { content: "\e17a"; } /* Bright Coal with Dull Bands (60-90%) (U+E17A) */
+.gi-gl-coal-interbanded::before { content: "\e17b"; } /* Interbanded Dull and Bright Coal (40-60%) (U+E17B) */
+.gi-gl-coal-dull-bright-bands::before { content: "\e17c"; } /* Mainly Dull Coal with Bright Bands (10-40%) (U+E17C) */
+.gi-gl-coal-dull-minor-bright::before { content: "\e17d"; } /* Dull Coal with Minor Bright Bands (1-10%) (U+E17D) */
+.gi-gl-coal-dull::before { content: "\e17e"; } /* Dull Coal (Up to 1% Bright) (U+E17E) */
+.gi-gl-coal-canneloid::before { content: "\e17f"; } /* Canneloid Dull Conchoidal Coal (U+E17F) */
+.gi-gl-coal-fibrous::before { content: "\e180"; } /* Fibrous Coal (Fusain) (U+E180) */
+.gi-gl-coal-weathered::before { content: "\e181"; } /* Weathered Coal Seam (U+E181) */
+.gi-gl-coal-heat-altered::before { content: "\e182"; } /* Heat-Altered (Cindered) Coal Seam (U+E182) */
+.gi-gl-non-coal::before { content: "\e183"; } /* Undifferentiated Non-Coal Seam Parting (U+E183) */
+.gi-gl-coal-interlayered-non-coal::before { content: "\e184"; } /* Coal Interlayered with Non-Coal (U+E184) */
+.gi-gl-non-coal-interlayered-coal::before { content: "\e185"; } /* Non-Coal Interlayered with Coal (U+E185) */
+.gi-gl-stony-coal::before { content: "\e186"; } /* Stony Coal Seam (U+E186) */
+.gi-gl-mudstone-pattern::before { content: "\e187"; } /* Mudstone Pattern (U+E187) */
+.gi-gl-coal-seam-log::before { content: "\e188"; } /* Graphic Coal Seam Column (U+E188) */
+.gi-gl-fold-upright-horizontal::before { content: "\e189"; } /* Upright Horizontal Fold (U+E189) */
+.gi-gl-fold-upright-plunging::before { content: "\e18a"; } /* Upright Plunging Fold (U+E18A) */
+.gi-gl-fold-vertical::before { content: "\e18b"; } /* Vertical Fold (U+E18B) */
+.gi-gl-fold-inclined-plunging::before { content: "\e18c"; } /* Inclined Plunging Fold (U+E18C) */
+.gi-gl-fold-overturned-horizontal::before { content: "\e18d"; } /* Overturned Horizontal Fold (U+E18D) */
+.gi-gl-fold-overturned-plunging::before { content: "\e18e"; } /* Overturned Plunging Fold (U+E18E) */
+.gi-gl-fold-recumbent::before { content: "\e18f"; } /* Recumbent Fold (U+E18F) */
+.gi-gl-fold-reclined::before { content: "\e190"; } /* Reclined Fold (U+E190) */
+.gi-gl-monocline::before { content: "\e191"; } /* Monocline (U+E191) */
+.gi-gl-fold-vergence::before { content: "\e192"; } /* Fold Vergence (U+E192) */
+.gi-gl-superposed-folds::before { content: "\e193"; } /* Superposed Folds (U+E193) */
+.gi-gl-fold-class-1a::before { content: "\e194"; } /* Fold Class 1A (Strongly Convergent) (U+E194) */
+.gi-gl-fold-class-1b::before { content: "\e195"; } /* Fold Class 1B (Parallel) (U+E195) */
+.gi-gl-fold-class-1c::before { content: "\e196"; } /* Fold Class 1C (Weakly Convergent) (U+E196) */
+.gi-gl-fold-class-2::before { content: "\e197"; } /* Fold Class 2 (Similar) (U+E197) */
+.gi-gl-fold-class-3::before { content: "\e198"; } /* Fold Class 3 (Divergent) (U+E198) */
+.gi-gl-dip-isogon-construction::before { content: "\e199"; } /* Dip Isogon Construction (U+E199) */
+.gi-gl-fold-attitude-grid::before { content: "\e19a"; } /* Fold Attitude Triangular Grid (U+E19A) */
+.gi-gl-fold-attitude-classification::before { content: "\e19b"; } /* Fold Attitude Classification Triangle (U+E19B) */
+.gi-gl-orthographic-net::before { content: "\e19c"; } /* Orthographic Stereonet (U+E19C) */
+.gi-gl-wulff-net::before { content: "\e19d"; } /* Wulff Equal-Angle Stereonet (U+E19D) */
+.gi-gl-schmidt-net::before { content: "\e19e"; } /* Schmidt Equal-Area Stereonet (U+E19E) */
+.gi-gl-stereonet-contouring-device::before { content: "\e19f"; } /* Stereonet Contouring Device (U+E19F) */
+.gi-gl-rock-fall::before { content: "\e1a0"; } /* Rock Fall (U+E1A0) */
+.gi-gl-rock-topple::before { content: "\e1a1"; } /* Rock Topple (U+E1A1) */
+.gi-gl-rock-slump::before { content: "\e1a2"; } /* Rock Slump (U+E1A2) */
+.gi-gl-rock-block-slide::before { content: "\e1a3"; } /* Rock Block Slide (U+E1A3) */
+.gi-gl-rock-lateral-spread::before { content: "\e1a4"; } /* Rock Lateral Spread (U+E1A4) */
+.gi-gl-rock-creep-sackung::before { content: "\e1a5"; } /* Rock Creep (Sackung) (U+E1A5) */
+.gi-gl-rock-fall-debris-flow::before { content: "\e1a6"; } /* Rock Fall–Debris Flow (U+E1A6) */
+.gi-gl-slump-topple::before { content: "\e1a7"; } /* Slump and Topple (U+E1A7) */
+.gi-gl-rock-slide-rock-fall::before { content: "\e1a8"; } /* Rock Slide–Rock Fall (U+E1A8) */
+.gi-gl-debris-fall::before { content: "\e1a9"; } /* Debris Fall (U+E1A9) */
+.gi-gl-debris-topple::before { content: "\e1aa"; } /* Debris Topple (U+E1AA) */
+.gi-gl-debris-slump::before { content: "\e1ab"; } /* Debris Slump (U+E1AB) */
+.gi-gl-debris-slide::before { content: "\e1ac"; } /* Debris Slide (U+E1AC) */
+.gi-gl-debris-flow::before { content: "\e1ad"; } /* Debris Flow (U+E1AD) */
+.gi-gl-debris-avalanche::before { content: "\e1ae"; } /* Debris Avalanche (U+E1AE) */
+.gi-gl-block-stream::before { content: "\e1af"; } /* Block Stream (U+E1AF) */
+.gi-gl-solifluction::before { content: "\e1b0"; } /* Solifluction (U+E1B0) */
+.gi-gl-soil-creep::before { content: "\e1b1"; } /* Soil Creep (U+E1B1) */
+.gi-gl-cambering-valley-bulging::before { content: "\e1b2"; } /* Cambering and Valley Bulging (U+E1B2) */
+.gi-gl-slump-earth-flow::before { content: "\e1b3"; } /* Slump–Earth Flow (U+E1B3) */
+.gi-gl-earth-fall::before { content: "\e1b4"; } /* Earth Fall (U+E1B4) */
+.gi-gl-earth-topple::before { content: "\e1b5"; } /* Earth Topple (U+E1B5) */
+.gi-gl-earth-slump::before { content: "\e1b6"; } /* Earth Slump (U+E1B6) */
+.gi-gl-earth-block-slide::before { content: "\e1b7"; } /* Earth Block Slide (U+E1B7) */
+.gi-gl-earth-lateral-spread::before { content: "\e1b8"; } /* Earth Lateral Spread (U+E1B8) */
+.gi-gl-wet-sand-silt-flow::before { content: "\e1b9"; } /* Wet Sand or Silt Flow (U+E1B9) */
+.gi-gl-quick-clay-flow::before { content: "\e1ba"; } /* Quick Clay Flow (U+E1BA) */
+.gi-gl-earth-flow::before { content: "\e1bb"; } /* Earth Flow (U+E1BB) */
+.gi-gl-loess-flow::before { content: "\e1bc"; } /* Loess Flow (U+E1BC) */
+.gi-gl-dry-sand-flow::before { content: "\e1bd"; } /* Dry Sand Flow (U+E1BD) */
+.gi-gl-qapf-plutonic-diagram::before { content: "\e1be"; } /* QAPF Plutonic Rock Diagram (U+E1BE) */
+.gi-gl-gabbroic-plag-px-ol::before { content: "\e1bf"; } /* Gabbroic Rocks (Plag-Px-Ol) (U+E1BF) */
+.gi-gl-gabbroic-plag-px-hbl::before { content: "\e1c0"; } /* Gabbroic Rocks (Plag-Px-Hbl) (U+E1C0) */
+.gi-gl-gabbroic-plag-opx-cpx::before { content: "\e1c1"; } /* Gabbroic Rocks (Plag-Opx-Cpx) (U+E1C1) */
+.gi-gl-metamorphic-facies-diagram::before { content: "\e1c2"; } /* Metamorphic Facies Diagram (P-T) (U+E1C2) */
+.gi-gl-roundness-very-angular::before { content: "\e1c3"; } /* Roundness: Very Angular (U+E1C3) */
+.gi-gl-roundness-angular::before { content: "\e1c4"; } /* Roundness: Angular (U+E1C4) */
+.gi-gl-roundness-subangular::before { content: "\e1c5"; } /* Roundness: Subangular (U+E1C5) */
+.gi-gl-roundness-subrounded::before { content: "\e1c6"; } /* Roundness: Subrounded (U+E1C6) */
+.gi-gl-roundness-rounded::before { content: "\e1c7"; } /* Roundness: Rounded (U+E1C7) */
+.gi-gl-roundness-well-rounded::before { content: "\e1c8"; } /* Roundness: Well-Rounded (U+E1C8) */
+.gi-gl-grain-percent-01::before { content: "\e1c9"; } /* Grain Percentage: 1% (U+E1C9) */
+.gi-gl-grain-percent-02::before { content: "\e1ca"; } /* Grain Percentage: 2% (U+E1CA) */
+.gi-gl-grain-percent-03::before { content: "\e1cb"; } /* Grain Percentage: 3% (U+E1CB) */
+.gi-gl-grain-percent-05::before { content: "\e1cc"; } /* Grain Percentage: 5% (U+E1CC) */
+.gi-gl-grain-percent-07::before { content: "\e1cd"; } /* Grain Percentage: 7% (U+E1CD) */
+.gi-gl-grain-percent-10::before { content: "\e1ce"; } /* Grain Percentage: 10% (U+E1CE) */
+.gi-gl-grain-percent-15::before { content: "\e1cf"; } /* Grain Percentage: 15% (U+E1CF) */
+.gi-gl-grain-percent-20::before { content: "\e1d0"; } /* Grain Percentage: 20% (U+E1D0) */
+.gi-gl-grain-percent-25::before { content: "\e1d1"; } /* Grain Percentage: 25% (U+E1D1) */
+.gi-gl-grain-percent-30::before { content: "\e1d2"; } /* Grain Percentage: 30% (U+E1D2) */
+.gi-gl-grain-percent-40::before { content: "\e1d3"; } /* Grain Percentage: 40% (U+E1D3) */
+.gi-gl-grain-percent-50::before { content: "\e1d4"; } /* Grain Percentage: 50% (U+E1D4) */
+.gi-gl-unit-stratotype::before { content: "\e1d5"; } /* Unit Stratotype (U+E1D5) */
+.gi-gl-boundary-stratotype::before { content: "\e1d6"; } /* Boundary Stratotype (U+E1D6) */
+.gi-gl-earthquake-magnitude-energy::before { content: "\e1d7"; } /* Earthquake Magnitude vs Energy (U+E1D7) */

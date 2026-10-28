@@ -4,11 +4,11 @@
 
 **A visual language for Earth science.**
 
-323 specialist icons for geophysics, geology, geochemistry and geotechnical engineering.
+471 specialist icons for geophysics, geology, geochemistry and geotechnical engineering.
 
 **Detailed linework · Flat colour · SVG · TTF · WOFF · Public domain**
 
-[**Explore every icon →**](https://APethick.github.io/EarthScienceIcons/) · [Download the set](https://APethick.github.io/EarthScienceIcons/assets/EarthScienceIcons.zip?v=2.6.0) · [TTF font](dist/GeoScienceIcons.ttf) · [Icon manifest](dist/geoscience-icons.json)
+[**Explore every icon →**](https://APethick.github.io/EarthScienceIcons/) · [Download the set](https://APethick.github.io/EarthScienceIcons/assets/EarthScienceIcons.zip?v=2.7.0) · [TTF font](dist/GeoScienceIcons.ttf) · [Icon manifest](dist/geoscience-icons.json)
 
 ![Flat colour SVGs and detailed technical font glyphs](dist/style_preview.png)
 
@@ -21,10 +21,10 @@ The library covers field and laboratory methods, Earth models and scientific pro
 | Discipline | Icons | Examples |
 | --- | ---: | --- |
 | Geophysical | 139 | Seismic reflection, magnetotellurics, gravity, GPR, petrophysics |
-| Geological | 59 | Mapping, drilling, stratigraphy, faults, folds, minerals |
+| Geological | 207 | Mapping, stratigraphy, folds, lithological patterns, mass movements, QAPF & stereonets |
 | Geochemical | 103 | XRF, ICP-MS, assays, geochemical diagrams, thermodynamics |
 | Geotechnical | 22 | SPT, CPT, triaxial testing, rock quality, slope stability |
-| **Total** | **323** | **126 methods · 85 Earth model types · 100 processes · 12 petrophysical quantities** |
+| **Total** | **471** | **145 methods · 182 Earth model types · 132 processes · 12 petrophysical quantities** |
 
 The [interactive library](https://APethick.github.io/EarthScienceIcons/) shows every icon. Search names and keywords, filter by discipline or category, compare both styles, change the preview size, and copy integration code.
 
@@ -86,7 +86,7 @@ Copy `geoscience-icons.css`, `GeoScienceIcons.woff` and `GeoScienceIcons.ttf` fr
 
 Pair decorative glyphs with visible text. Give icon-only buttons accessible names. Detailed glyphs reveal more internal structure at 32 px and above; check the size that suits your interface.
 
-The family name is `GeoScience Icons`. Codepoints span `U+E001`–`U+E143`. Existing IDs, CSS classes, printable fallback keys and codepoints are preserved. The manifest contains every mapping, description and keyword.
+The family name is `GeoScience Icons`. Codepoints span `U+E001`–`U+E1D7`. Existing IDs, CSS classes, printable fallback keys and codepoints are preserved. The manifest contains every mapping, description, reference and keyword.
 
 ### Java / Opus
 
@@ -160,3 +160,14 @@ Twenty text-free icons cover E/H fields and their spatial components, Poynting f
 Thirty additions cover geochemical vectoring, hydrothermal alteration, magmatic intrusion, dehydration, reducing and oxidizing environments, and every one of the 24 Opus AlterationType descriptors, including not altered and alteration not specified. Copper, quartz, feldspar, epidote, chlorite, clay, pyrite and hematite use representative natural mineral colours. Habit, texture, reaction rims and assemblages distinguish the monochrome versions; no lettering is drawn inside the icons. Bare descriptor IDs resolve through the Java lookup; `GeoScienceIcons.forProperty(alteration)` accepts the existing Opus enum.
 
 ![Geochemistry colour and font specimens](dist/geochemistry_preview.png)
+
+## Field Geologists' Manual — Geology expansion (2.7)
+
+148 text-free geological icons (`U+E144`–`U+E1D7`) under the `Geological` (`gl_`) banner reference D. A. Berkman (ed.), *Field Geologists' Manual*, 4th ed., AusIMM Monograph 9:
+
+- **Tectonic & lithological map patterns (§19.4–19.6 & §5.6.2)**: post-/late-/syn-kinematic and gneissic granites, gabbro-diorite, porphyry, island-arc/rift/calc-alkaline/alkaline volcanics, flood basalts, dolerite-granophyre, keratophyre, layered mafic-ultramafic intrusions, kimberlite, carbonatite, slate/phyllite, high-grade schist/gneiss, hornfels, tuffs, breccias, gossan, clastic and carbonate patterns, cherts, coal lithotype patterns and graphic coal seam columns.
+- **Structural geology & stereonets (§5.1, §5.10, §5.14–5.15, §6.10)**: 3D fold attitude block diagrams (upright horizontal through recumbent and reclined), monocline, fold vergence, superposed folds, Ramsay dip-isogon classes (1A, 1B, 1C, 2, 3) and construction with protractor, Fleuty/Rickard fold attitude triangular diagrams, Orthographic/Wulff/Schmidt stereonets and stereonet contouring devices.
+- **Mass movement & landslides (after Varnes)**: 30 cross-sectional block diagrams spanning bedrock, debris, earth and complex falls, topples, rotational slumps, planar slides, lateral spreads, creeps, cambering/valley bulging, wet sand/silt flows, quick clay flows, earth flows, loess flows and dry sand flows.
+- **Petrology, sedimentology & stratigraphy (§1, §2.4.1, §2.6, §9.9)**: IUGS QAPF plutonic double triangle and gabbroic rock ternaries with mineral habit glyphs, P-T metamorphic facies diagram, 6 roundness/sphericity classes, 12 visual percentage estimation charts (1%–50%), unit and boundary stratotypes (GSSP), and earthquake magnitude vs energy comparison.
+
+![Field Geologists' Manual colour and font specimens](dist/field_manual_preview.png)

@@ -204,6 +204,9 @@ def _artwork(identifier, builder):
 
 
 def artwork(icon):
+    from icons_field_manual import FGM_IDS, flat_artwork as fgm_artwork
+    if icon["id"] in FGM_IDS:
+        return fgm_artwork(icon["id"])
     from icons_alteration import GEOCHEM_IDS, flat_artwork as geochem_artwork
     if icon["id"] in GEOCHEM_IDS:
         return geochem_artwork(icon["id"])

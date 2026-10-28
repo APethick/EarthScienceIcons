@@ -178,6 +178,7 @@ def build_all(install_opus: bool = False):
                 "html_entity": f"&#x{codepoint:04X};",
                 "ascii_key": ascii_char,
                 "description": icon["description"],
+                **({"reference": icon["reference"]} if "reference" in icon else {}),
                 "keywords": icon["keywords"],
                 "svg_file": f"svg/{glyph_name}.svg",
                 "svg_mono_file": f"svg-mono/{glyph_name}.svg",
@@ -195,10 +196,10 @@ def build_all(install_opus: bool = False):
         {
             "familyName": "GeoScience Icons",
             "styleName": "Regular",
-            "uniqueFontIdentifier": "GeoScienceIcons-Regular-2.6",
+            "uniqueFontIdentifier": "GeoScienceIcons-Regular-2.7",
             "fullName": "GeoScience Icons Regular",
             "psName": "GeoScienceIcons-Regular",
-            "version": "Version 2.600",
+            "version": "Version 2.700",
             "copyright": "Copyright (c) 2026 GeoScience Icon Set. Open License.",
             "description": "Comprehensive TrueType icon font covering Geophysical, Geotechnical, Geological, and Geochemical methods, earth model types, and processes.",
         }
@@ -214,7 +215,7 @@ def build_all(install_opus: bool = False):
         fsType=0,  # Installable embedding allowed
     )
     fb.setupPost(isFixedPitch=1)
-    fb.font["head"].fontRevision = 2.4
+    fb.font["head"].fontRevision = 2.7
 
     ttf_dist_path = dist_dir / "GeoScienceIcons.ttf"
     ttf_root_path = root_dir / "GeoScienceIcons.ttf"
@@ -233,7 +234,7 @@ def build_all(install_opus: bool = False):
     json_data = {
         "fontFamily": "GeoScience Icons",
         "postScriptName": "GeoScienceIcons-Regular",
-        "version": "2.6.0",
+        "version": "2.7.0",
         "svgStyle": "detailed-flat-natural-materials",
         "fontStyle": "detailed-technical-line",
         "unitsPerEm": UPM,
@@ -249,14 +250,14 @@ def build_all(install_opus: bool = False):
     # Write CSS stylesheet
     css_lines = [
         "/**",
-        " * GeoScience Icons v2.6.0",
+        " * GeoScience Icons v2.7.0",
         " * Domains: Geophysical, Geotechnical, Geological, Geochemical",
         " * Categories: Methods, Earth Model Types, Processes",
         " */",
         "@font-face {",
         "  font-family: 'GeoScience Icons';",
-        "  src: url('GeoScienceIcons.woff?v=2.6.0') format('woff'),",
-        "       url('GeoScienceIcons.ttf?v=2.6.0') format('truetype');",
+        "  src: url('GeoScienceIcons.woff?v=2.7.0') format('woff'),",
+        "       url('GeoScienceIcons.ttf?v=2.7.0') format('truetype');",
         "  font-weight: normal;",
         "  font-style: normal;",
         "  font-display: block;",
@@ -296,10 +297,11 @@ def build_all(install_opus: bool = False):
     render_petrophysics_preview(dist_dir / 'petrophysics_preview.png', all_icons, ttf_dist_path)
     render_logging_preview(dist_dir / 'petrophysics_logging_preview.png', all_icons, ttf_dist_path)
 
-    from preview_mt_icons import render_mt_suite, render_geochemistry_suite
+    from preview_mt_icons import render_mt_suite, render_geochemistry_suite, render_field_manual_suite
     render_mt_suite(dist_dir, all_icons, ttf_dist_path)
 
     render_geochemistry_suite(dist_dir, all_icons, ttf_dist_path)
+    render_field_manual_suite(dist_dir, all_icons, ttf_dist_path)
 
     # Generate Java GlyphFont class for Opus
     java_code = build_java_glyph_class(catalog_entries)
@@ -334,8 +336,12 @@ def build_java_glyph_class(catalog: List[Dict[str, Any]]) -> str:
         lookup_cases.append(f"\t\t\tcase \"{item['id']}\" -> Glyph.{enum_const};")
 
     from icons_alteration import PROPERTY_ALIASES
-    for alias, identifier in PROPERTY_ALIASES.items():
-        lookup_cases.append(f'\t\t\tcase "{alias}" -> Glyph.{identifier.upper()};')
+    from icons_field_manual import FGM_ALIASES
+    seen_keys = {item["id"] for item in catalog}
+    for alias, identifier in list(PROPERTY_ALIASES.items()) + list(FGM_ALIASES.items()):
+        if alias not in seen_keys:
+            seen_keys.add(alias)
+            lookup_cases.append(f'\t\t\tcase "{alias}" -> Glyph.{identifier.upper()};')
 
     code = f"""package opus.base.icons;
 

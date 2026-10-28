@@ -17,7 +17,7 @@ import opus.base.properties.OpusProperty;
 import opus.base.resources.OpusResources;
 
 /**
- * GeoScienceIcons TrueType glyph font (323 icons) covering Geophysical, Geotechnical,
+ * GeoScienceIcons TrueType glyph font (471 icons) covering Geophysical, Geotechnical,
  * Geological, and Geochemical methods, earth model types, and processes.
  * Includes dedicated suites for Inversion, Thermodynamics, Petrophysics, and Geochemistry,
  * aligned with opus.geo.geochemistry, opus.geo.petrophysics, and opus.geo.geotechnical.
@@ -351,6 +351,154 @@ public class GeoScienceIcons extends GlyphFont {
 		GC_DEUTERIC_ALTERATION('\ue141'), // Deuteric alteration (Geochemical - Processes)
 		GC_URALITISATION('\ue142'), // Uralitisation (Geochemical - Processes)
 		GC_RED_ROCK_ALTERATION('\ue143'), // Red rock alteration (Geochemical - Processes)
+		GL_GRANITE_POST_KINEMATIC('\ue144'), // Post-Kinematic Granite (Geological - Earth Model Types)
+		GL_GRANITE_LATE_POST_KINEMATIC('\ue145'), // Late- to Post-Kinematic Granite (Geological - Earth Model Types)
+		GL_GRANITE_SYN_LATE_KINEMATIC('\ue146'), // Syn- to Late-Kinematic Granite (Geological - Earth Model Types)
+		GL_GRANITE_SYN_KINEMATIC_FOLIATED('\ue147'), // Syn-Kinematic Foliated Granite (Geological - Earth Model Types)
+		GL_GRANITE_GNEISSIC_ANATECTIC('\ue148'), // Gneissic Anatectic Granite (Geological - Earth Model Types)
+		GL_GABBRO_DIORITE_OROGENIC('\ue149'), // Orogenic Gabbro-Diorite (Geological - Earth Model Types)
+		GL_PORPHYRY_PATTERN('\ue14a'), // Porphyry Pattern (Geological - Earth Model Types)
+		GL_ISLAND_ARC_VOLCANICS('\ue14b'), // Island-Arc Volcanics (Geological - Earth Model Types)
+		GL_FELSIC_VOLCANICS_RARE_BASICS('\ue14c'), // Rift Felsic Volcanics with Rare Basics (Geological - Earth Model Types)
+		GL_RHYOLITE_DACITE_VOLCANICS('\ue14d'), // Rhyolite and Dacite Volcanics (Geological - Earth Model Types)
+		GL_FELSIC_VOLCANICS_WITH_GRANITE('\ue14e'), // Felsic Volcanics Associated with Granite (Geological - Earth Model Types)
+		GL_FLOOD_BASALT('\ue14f'), // Flood Basalt and Trap (Geological - Earth Model Types)
+		GL_DOLERITE_GRANOPHYRE('\ue150'), // Dolerite-Granophyre (Geological - Earth Model Types)
+		GL_KERATOPHYRE('\ue151'), // Keratophyre (Geological - Earth Model Types)
+		GL_GRANITE_INTRUDING_CRATON('\ue152'), // Granite Intruding Craton (Geological - Earth Model Types)
+		GL_LAYERED_INTRUSION('\ue153'), // Layered Mafic-Ultramafic Intrusion (Geological - Earth Model Types)
+		GL_ALKALINE_INTRUSIVE('\ue154'), // Alkaline Intrusive (Geological - Earth Model Types)
+		GL_KIMBERLITE_LAMPROITE('\ue155'), // Kimberlite and Lamproite (Geological - Earth Model Types)
+		GL_CARBONATITE('\ue156'), // Carbonatite (Geological - Earth Model Types)
+		GL_SLATE_PHYLLITE('\ue157'), // Slate and Phyllite Pattern (Geological - Earth Model Types)
+		GL_SCHIST_GNEISS_HIGH_GRADE('\ue158'), // High-Grade Schist and Gneiss Pattern (Geological - Earth Model Types)
+		GL_SANDY_SLATE_INTERBEDDED('\ue159'), // Sandy Slate and Interbedded Sediments (Geological - Earth Model Types)
+		GL_HORNFELS_MASSIVE('\ue15a'), // Massive Hornfels Pattern (Geological - Earth Model Types)
+		GL_BASIC_PLUTONIC_HYPABYSSAL('\ue15b'), // Basic Plutonic and Hypabyssal Pattern (Geological - Earth Model Types)
+		GL_BEDDED_LAVAS('\ue15c'), // Bedded Lavas Pattern (Geological - Earth Model Types)
+		GL_TUFF_TUFFACEOUS_SANDSTONE('\ue15d'), // Tuff and Tuffaceous Sandstone (Geological - Earth Model Types)
+		GL_BEDDED_TUFF('\ue15e'), // Bedded Tuff and Tuffaceous Shale (Geological - Earth Model Types)
+		GL_BRECCIA_PATTERN('\ue15f'), // Breccia Pattern (Geological - Earth Model Types)
+		GL_SCREE_BRECCIATED_ROCK('\ue160'), // Brecciated Rock and Scree (Geological - Earth Model Types)
+		GL_SOIL_COVER('\ue161'), // Soil Cover Pattern (Geological - Earth Model Types)
+		GL_ALLUVIUM('\ue162'), // Alluvium Pattern (Geological - Earth Model Types)
+		GL_GOSSAN_ORE('\ue163'), // Gossan and Ore Outcrop Pattern (Geological - Earth Model Types)
+		GL_CONGLOMERATE_PATTERN('\ue164'), // Conglomerate Pattern (Geological - Earth Model Types)
+		GL_SANDSTONE_PATTERN('\ue165'), // Sandstone Pattern (Geological - Earth Model Types)
+		GL_PEBBLY_SANDSTONE('\ue166'), // Pebbly Sandstone Pattern (Geological - Earth Model Types)
+		GL_CROSS_BEDDED_SANDSTONE('\ue167'), // Cross-Bedded Sandstone Pattern (Geological - Earth Model Types)
+		GL_LIMESTONE_PATTERN('\ue168'), // Limestone Pattern (Geological - Earth Model Types)
+		GL_DOLOMITE_PATTERN('\ue169'), // Dolomite Pattern (Geological - Earth Model Types)
+		GL_SANDY_LIMESTONE('\ue16a'), // Sandy Limestone Pattern (Geological - Earth Model Types)
+		GL_SHALE_PATTERN('\ue16b'), // Shale Pattern (Geological - Earth Model Types)
+		GL_SANDY_SHALE('\ue16c'), // Sandy Shale Pattern (Geological - Earth Model Types)
+		GL_BEDDED_CHERT('\ue16d'), // Bedded Chert Pattern (Geological - Earth Model Types)
+		GL_MASSIVE_CHERT('\ue16e'), // Massive Chert Pattern (Geological - Earth Model Types)
+		GL_COAL_UNDIFFERENTIATED('\ue16f'), // Undifferentiated Coal Pattern (Geological - Earth Model Types)
+		GL_BROKEN_COAL('\ue170'), // Broken Coal Pattern (Geological - Earth Model Types)
+		GL_COAL_WITH_SHALE_BANDS('\ue171'), // Coal with Shale Bands (Geological - Earth Model Types)
+		GL_SHALE_WITH_COAL_BANDS('\ue172'), // Shale with Coal Bands (Geological - Earth Model Types)
+		GL_CANNEL_COAL('\ue173'), // Cannel Coal Pattern (Geological - Earth Model Types)
+		GL_CANNEL_SHALE('\ue174'), // Cannel Shale Pattern (Geological - Earth Model Types)
+		GL_CARBONACEOUS_SHALE('\ue175'), // Carbonaceous Shale Pattern (Geological - Earth Model Types)
+		GL_BROWN_COAL('\ue176'), // Brown Coal Pattern (Geological - Earth Model Types)
+		GL_OIL_SHALE('\ue177'), // Oil Shale Pattern (Geological - Earth Model Types)
+		GL_THIN_SEAM('\ue178'), // Thin Dipping Coal Seam (Geological - Earth Model Types)
+		GL_COAL_BRIGHT('\ue179'), // Bright Coal Seam (>90% Bright) (Geological - Earth Model Types)
+		GL_COAL_BRIGHT_DULL_BANDS('\ue17a'), // Bright Coal with Dull Bands (60-90%) (Geological - Earth Model Types)
+		GL_COAL_INTERBANDED('\ue17b'), // Interbanded Dull and Bright Coal (40-60%) (Geological - Earth Model Types)
+		GL_COAL_DULL_BRIGHT_BANDS('\ue17c'), // Mainly Dull Coal with Bright Bands (10-40%) (Geological - Earth Model Types)
+		GL_COAL_DULL_MINOR_BRIGHT('\ue17d'), // Dull Coal with Minor Bright Bands (1-10%) (Geological - Earth Model Types)
+		GL_COAL_DULL('\ue17e'), // Dull Coal (Up to 1% Bright) (Geological - Earth Model Types)
+		GL_COAL_CANNELOID('\ue17f'), // Canneloid Dull Conchoidal Coal (Geological - Earth Model Types)
+		GL_COAL_FIBROUS('\ue180'), // Fibrous Coal (Fusain) (Geological - Earth Model Types)
+		GL_COAL_WEATHERED('\ue181'), // Weathered Coal Seam (Geological - Earth Model Types)
+		GL_COAL_HEAT_ALTERED('\ue182'), // Heat-Altered (Cindered) Coal Seam (Geological - Earth Model Types)
+		GL_NON_COAL('\ue183'), // Undifferentiated Non-Coal Seam Parting (Geological - Earth Model Types)
+		GL_COAL_INTERLAYERED_NON_COAL('\ue184'), // Coal Interlayered with Non-Coal (Geological - Earth Model Types)
+		GL_NON_COAL_INTERLAYERED_COAL('\ue185'), // Non-Coal Interlayered with Coal (Geological - Earth Model Types)
+		GL_STONY_COAL('\ue186'), // Stony Coal Seam (Geological - Earth Model Types)
+		GL_MUDSTONE_PATTERN('\ue187'), // Mudstone Pattern (Geological - Earth Model Types)
+		GL_COAL_SEAM_LOG('\ue188'), // Graphic Coal Seam Column (Geological - Earth Model Types)
+		GL_FOLD_UPRIGHT_HORIZONTAL('\ue189'), // Upright Horizontal Fold (Geological - Earth Model Types)
+		GL_FOLD_UPRIGHT_PLUNGING('\ue18a'), // Upright Plunging Fold (Geological - Earth Model Types)
+		GL_FOLD_VERTICAL('\ue18b'), // Vertical Fold (Geological - Earth Model Types)
+		GL_FOLD_INCLINED_PLUNGING('\ue18c'), // Inclined Plunging Fold (Geological - Earth Model Types)
+		GL_FOLD_OVERTURNED_HORIZONTAL('\ue18d'), // Overturned Horizontal Fold (Geological - Earth Model Types)
+		GL_FOLD_OVERTURNED_PLUNGING('\ue18e'), // Overturned Plunging Fold (Geological - Earth Model Types)
+		GL_FOLD_RECUMBENT('\ue18f'), // Recumbent Fold (Geological - Earth Model Types)
+		GL_FOLD_RECLINED('\ue190'), // Reclined Fold (Geological - Earth Model Types)
+		GL_MONOCLINE('\ue191'), // Monocline (Geological - Earth Model Types)
+		GL_FOLD_VERGENCE('\ue192'), // Fold Vergence (Geological - Processes)
+		GL_SUPERPOSED_FOLDS('\ue193'), // Superposed Folds (Geological - Earth Model Types)
+		GL_FOLD_CLASS_1A('\ue194'), // Fold Class 1A (Strongly Convergent) (Geological - Earth Model Types)
+		GL_FOLD_CLASS_1B('\ue195'), // Fold Class 1B (Parallel) (Geological - Earth Model Types)
+		GL_FOLD_CLASS_1C('\ue196'), // Fold Class 1C (Weakly Convergent) (Geological - Earth Model Types)
+		GL_FOLD_CLASS_2('\ue197'), // Fold Class 2 (Similar) (Geological - Earth Model Types)
+		GL_FOLD_CLASS_3('\ue198'), // Fold Class 3 (Divergent) (Geological - Earth Model Types)
+		GL_DIP_ISOGON_CONSTRUCTION('\ue199'), // Dip Isogon Construction (Geological - Methods)
+		GL_FOLD_ATTITUDE_GRID('\ue19a'), // Fold Attitude Triangular Grid (Geological - Methods)
+		GL_FOLD_ATTITUDE_CLASSIFICATION('\ue19b'), // Fold Attitude Classification Triangle (Geological - Methods)
+		GL_ORTHOGRAPHIC_NET('\ue19c'), // Orthographic Stereonet (Geological - Methods)
+		GL_WULFF_NET('\ue19d'), // Wulff Equal-Angle Stereonet (Geological - Methods)
+		GL_SCHMIDT_NET('\ue19e'), // Schmidt Equal-Area Stereonet (Geological - Methods)
+		GL_STEREONET_CONTOURING_DEVICE('\ue19f'), // Stereonet Contouring Device (Geological - Methods)
+		GL_ROCK_FALL('\ue1a0'), // Rock Fall (Geological - Processes)
+		GL_ROCK_TOPPLE('\ue1a1'), // Rock Topple (Geological - Processes)
+		GL_ROCK_SLUMP('\ue1a2'), // Rock Slump (Geological - Processes)
+		GL_ROCK_BLOCK_SLIDE('\ue1a3'), // Rock Block Slide (Geological - Processes)
+		GL_ROCK_LATERAL_SPREAD('\ue1a4'), // Rock Lateral Spread (Geological - Processes)
+		GL_ROCK_CREEP_SACKUNG('\ue1a5'), // Rock Creep (Sackung) (Geological - Processes)
+		GL_ROCK_FALL_DEBRIS_FLOW('\ue1a6'), // Rock Fall–Debris Flow (Geological - Processes)
+		GL_SLUMP_TOPPLE('\ue1a7'), // Slump and Topple (Geological - Processes)
+		GL_ROCK_SLIDE_ROCK_FALL('\ue1a8'), // Rock Slide–Rock Fall (Geological - Processes)
+		GL_DEBRIS_FALL('\ue1a9'), // Debris Fall (Geological - Processes)
+		GL_DEBRIS_TOPPLE('\ue1aa'), // Debris Topple (Geological - Processes)
+		GL_DEBRIS_SLUMP('\ue1ab'), // Debris Slump (Geological - Processes)
+		GL_DEBRIS_SLIDE('\ue1ac'), // Debris Slide (Geological - Processes)
+		GL_DEBRIS_FLOW('\ue1ad'), // Debris Flow (Geological - Processes)
+		GL_DEBRIS_AVALANCHE('\ue1ae'), // Debris Avalanche (Geological - Processes)
+		GL_BLOCK_STREAM('\ue1af'), // Block Stream (Geological - Processes)
+		GL_SOLIFLUCTION('\ue1b0'), // Solifluction (Geological - Processes)
+		GL_SOIL_CREEP('\ue1b1'), // Soil Creep (Geological - Processes)
+		GL_CAMBERING_VALLEY_BULGING('\ue1b2'), // Cambering and Valley Bulging (Geological - Processes)
+		GL_SLUMP_EARTH_FLOW('\ue1b3'), // Slump–Earth Flow (Geological - Processes)
+		GL_EARTH_FALL('\ue1b4'), // Earth Fall (Geological - Processes)
+		GL_EARTH_TOPPLE('\ue1b5'), // Earth Topple (Geological - Processes)
+		GL_EARTH_SLUMP('\ue1b6'), // Earth Slump (Geological - Processes)
+		GL_EARTH_BLOCK_SLIDE('\ue1b7'), // Earth Block Slide (Geological - Processes)
+		GL_EARTH_LATERAL_SPREAD('\ue1b8'), // Earth Lateral Spread (Geological - Processes)
+		GL_WET_SAND_SILT_FLOW('\ue1b9'), // Wet Sand or Silt Flow (Geological - Processes)
+		GL_QUICK_CLAY_FLOW('\ue1ba'), // Quick Clay Flow (Geological - Processes)
+		GL_EARTH_FLOW('\ue1bb'), // Earth Flow (Geological - Processes)
+		GL_LOESS_FLOW('\ue1bc'), // Loess Flow (Geological - Processes)
+		GL_DRY_SAND_FLOW('\ue1bd'), // Dry Sand Flow (Geological - Processes)
+		GL_QAPF_PLUTONIC_DIAGRAM('\ue1be'), // QAPF Plutonic Rock Diagram (Geological - Earth Model Types)
+		GL_GABBROIC_PLAG_PX_OL('\ue1bf'), // Gabbroic Rocks (Plag-Px-Ol) (Geological - Earth Model Types)
+		GL_GABBROIC_PLAG_PX_HBL('\ue1c0'), // Gabbroic Rocks (Plag-Px-Hbl) (Geological - Earth Model Types)
+		GL_GABBROIC_PLAG_OPX_CPX('\ue1c1'), // Gabbroic Rocks (Plag-Opx-Cpx) (Geological - Earth Model Types)
+		GL_METAMORPHIC_FACIES_DIAGRAM('\ue1c2'), // Metamorphic Facies Diagram (P-T) (Geological - Earth Model Types)
+		GL_ROUNDNESS_VERY_ANGULAR('\ue1c3'), // Roundness: Very Angular (Geological - Earth Model Types)
+		GL_ROUNDNESS_ANGULAR('\ue1c4'), // Roundness: Angular (Geological - Earth Model Types)
+		GL_ROUNDNESS_SUBANGULAR('\ue1c5'), // Roundness: Subangular (Geological - Earth Model Types)
+		GL_ROUNDNESS_SUBROUNDED('\ue1c6'), // Roundness: Subrounded (Geological - Earth Model Types)
+		GL_ROUNDNESS_ROUNDED('\ue1c7'), // Roundness: Rounded (Geological - Earth Model Types)
+		GL_ROUNDNESS_WELL_ROUNDED('\ue1c8'), // Roundness: Well-Rounded (Geological - Earth Model Types)
+		GL_GRAIN_PERCENT_01('\ue1c9'), // Grain Percentage: 1% (Geological - Methods)
+		GL_GRAIN_PERCENT_02('\ue1ca'), // Grain Percentage: 2% (Geological - Methods)
+		GL_GRAIN_PERCENT_03('\ue1cb'), // Grain Percentage: 3% (Geological - Methods)
+		GL_GRAIN_PERCENT_05('\ue1cc'), // Grain Percentage: 5% (Geological - Methods)
+		GL_GRAIN_PERCENT_07('\ue1cd'), // Grain Percentage: 7% (Geological - Methods)
+		GL_GRAIN_PERCENT_10('\ue1ce'), // Grain Percentage: 10% (Geological - Methods)
+		GL_GRAIN_PERCENT_15('\ue1cf'), // Grain Percentage: 15% (Geological - Methods)
+		GL_GRAIN_PERCENT_20('\ue1d0'), // Grain Percentage: 20% (Geological - Methods)
+		GL_GRAIN_PERCENT_25('\ue1d1'), // Grain Percentage: 25% (Geological - Methods)
+		GL_GRAIN_PERCENT_30('\ue1d2'), // Grain Percentage: 30% (Geological - Methods)
+		GL_GRAIN_PERCENT_40('\ue1d3'), // Grain Percentage: 40% (Geological - Methods)
+		GL_GRAIN_PERCENT_50('\ue1d4'), // Grain Percentage: 50% (Geological - Methods)
+		GL_UNIT_STRATOTYPE('\ue1d5'), // Unit Stratotype (Geological - Earth Model Types)
+		GL_BOUNDARY_STRATOTYPE('\ue1d6'), // Boundary Stratotype (Geological - Earth Model Types)
+		GL_EARTHQUAKE_MAGNITUDE_ENERGY('\ue1d7'), // Earthquake Magnitude vs Energy (Geological - Processes)
         ;
 
         private final char ch;
@@ -716,6 +864,154 @@ public class GeoScienceIcons extends GlyphFont {
 			case "gc_deuteric_alteration" -> Glyph.GC_DEUTERIC_ALTERATION;
 			case "gc_uralitisation" -> Glyph.GC_URALITISATION;
 			case "gc_red_rock_alteration" -> Glyph.GC_RED_ROCK_ALTERATION;
+			case "gl_granite_post_kinematic" -> Glyph.GL_GRANITE_POST_KINEMATIC;
+			case "gl_granite_late_post_kinematic" -> Glyph.GL_GRANITE_LATE_POST_KINEMATIC;
+			case "gl_granite_syn_late_kinematic" -> Glyph.GL_GRANITE_SYN_LATE_KINEMATIC;
+			case "gl_granite_syn_kinematic_foliated" -> Glyph.GL_GRANITE_SYN_KINEMATIC_FOLIATED;
+			case "gl_granite_gneissic_anatectic" -> Glyph.GL_GRANITE_GNEISSIC_ANATECTIC;
+			case "gl_gabbro_diorite_orogenic" -> Glyph.GL_GABBRO_DIORITE_OROGENIC;
+			case "gl_porphyry_pattern" -> Glyph.GL_PORPHYRY_PATTERN;
+			case "gl_island_arc_volcanics" -> Glyph.GL_ISLAND_ARC_VOLCANICS;
+			case "gl_felsic_volcanics_rare_basics" -> Glyph.GL_FELSIC_VOLCANICS_RARE_BASICS;
+			case "gl_rhyolite_dacite_volcanics" -> Glyph.GL_RHYOLITE_DACITE_VOLCANICS;
+			case "gl_felsic_volcanics_with_granite" -> Glyph.GL_FELSIC_VOLCANICS_WITH_GRANITE;
+			case "gl_flood_basalt" -> Glyph.GL_FLOOD_BASALT;
+			case "gl_dolerite_granophyre" -> Glyph.GL_DOLERITE_GRANOPHYRE;
+			case "gl_keratophyre" -> Glyph.GL_KERATOPHYRE;
+			case "gl_granite_intruding_craton" -> Glyph.GL_GRANITE_INTRUDING_CRATON;
+			case "gl_layered_intrusion" -> Glyph.GL_LAYERED_INTRUSION;
+			case "gl_alkaline_intrusive" -> Glyph.GL_ALKALINE_INTRUSIVE;
+			case "gl_kimberlite_lamproite" -> Glyph.GL_KIMBERLITE_LAMPROITE;
+			case "gl_carbonatite" -> Glyph.GL_CARBONATITE;
+			case "gl_slate_phyllite" -> Glyph.GL_SLATE_PHYLLITE;
+			case "gl_schist_gneiss_high_grade" -> Glyph.GL_SCHIST_GNEISS_HIGH_GRADE;
+			case "gl_sandy_slate_interbedded" -> Glyph.GL_SANDY_SLATE_INTERBEDDED;
+			case "gl_hornfels_massive" -> Glyph.GL_HORNFELS_MASSIVE;
+			case "gl_basic_plutonic_hypabyssal" -> Glyph.GL_BASIC_PLUTONIC_HYPABYSSAL;
+			case "gl_bedded_lavas" -> Glyph.GL_BEDDED_LAVAS;
+			case "gl_tuff_tuffaceous_sandstone" -> Glyph.GL_TUFF_TUFFACEOUS_SANDSTONE;
+			case "gl_bedded_tuff" -> Glyph.GL_BEDDED_TUFF;
+			case "gl_breccia_pattern" -> Glyph.GL_BRECCIA_PATTERN;
+			case "gl_scree_brecciated_rock" -> Glyph.GL_SCREE_BRECCIATED_ROCK;
+			case "gl_soil_cover" -> Glyph.GL_SOIL_COVER;
+			case "gl_alluvium" -> Glyph.GL_ALLUVIUM;
+			case "gl_gossan_ore" -> Glyph.GL_GOSSAN_ORE;
+			case "gl_conglomerate_pattern" -> Glyph.GL_CONGLOMERATE_PATTERN;
+			case "gl_sandstone_pattern" -> Glyph.GL_SANDSTONE_PATTERN;
+			case "gl_pebbly_sandstone" -> Glyph.GL_PEBBLY_SANDSTONE;
+			case "gl_cross_bedded_sandstone" -> Glyph.GL_CROSS_BEDDED_SANDSTONE;
+			case "gl_limestone_pattern" -> Glyph.GL_LIMESTONE_PATTERN;
+			case "gl_dolomite_pattern" -> Glyph.GL_DOLOMITE_PATTERN;
+			case "gl_sandy_limestone" -> Glyph.GL_SANDY_LIMESTONE;
+			case "gl_shale_pattern" -> Glyph.GL_SHALE_PATTERN;
+			case "gl_sandy_shale" -> Glyph.GL_SANDY_SHALE;
+			case "gl_bedded_chert" -> Glyph.GL_BEDDED_CHERT;
+			case "gl_massive_chert" -> Glyph.GL_MASSIVE_CHERT;
+			case "gl_coal_undifferentiated" -> Glyph.GL_COAL_UNDIFFERENTIATED;
+			case "gl_broken_coal" -> Glyph.GL_BROKEN_COAL;
+			case "gl_coal_with_shale_bands" -> Glyph.GL_COAL_WITH_SHALE_BANDS;
+			case "gl_shale_with_coal_bands" -> Glyph.GL_SHALE_WITH_COAL_BANDS;
+			case "gl_cannel_coal" -> Glyph.GL_CANNEL_COAL;
+			case "gl_cannel_shale" -> Glyph.GL_CANNEL_SHALE;
+			case "gl_carbonaceous_shale" -> Glyph.GL_CARBONACEOUS_SHALE;
+			case "gl_brown_coal" -> Glyph.GL_BROWN_COAL;
+			case "gl_oil_shale" -> Glyph.GL_OIL_SHALE;
+			case "gl_thin_seam" -> Glyph.GL_THIN_SEAM;
+			case "gl_coal_bright" -> Glyph.GL_COAL_BRIGHT;
+			case "gl_coal_bright_dull_bands" -> Glyph.GL_COAL_BRIGHT_DULL_BANDS;
+			case "gl_coal_interbanded" -> Glyph.GL_COAL_INTERBANDED;
+			case "gl_coal_dull_bright_bands" -> Glyph.GL_COAL_DULL_BRIGHT_BANDS;
+			case "gl_coal_dull_minor_bright" -> Glyph.GL_COAL_DULL_MINOR_BRIGHT;
+			case "gl_coal_dull" -> Glyph.GL_COAL_DULL;
+			case "gl_coal_canneloid" -> Glyph.GL_COAL_CANNELOID;
+			case "gl_coal_fibrous" -> Glyph.GL_COAL_FIBROUS;
+			case "gl_coal_weathered" -> Glyph.GL_COAL_WEATHERED;
+			case "gl_coal_heat_altered" -> Glyph.GL_COAL_HEAT_ALTERED;
+			case "gl_non_coal" -> Glyph.GL_NON_COAL;
+			case "gl_coal_interlayered_non_coal" -> Glyph.GL_COAL_INTERLAYERED_NON_COAL;
+			case "gl_non_coal_interlayered_coal" -> Glyph.GL_NON_COAL_INTERLAYERED_COAL;
+			case "gl_stony_coal" -> Glyph.GL_STONY_COAL;
+			case "gl_mudstone_pattern" -> Glyph.GL_MUDSTONE_PATTERN;
+			case "gl_coal_seam_log" -> Glyph.GL_COAL_SEAM_LOG;
+			case "gl_fold_upright_horizontal" -> Glyph.GL_FOLD_UPRIGHT_HORIZONTAL;
+			case "gl_fold_upright_plunging" -> Glyph.GL_FOLD_UPRIGHT_PLUNGING;
+			case "gl_fold_vertical" -> Glyph.GL_FOLD_VERTICAL;
+			case "gl_fold_inclined_plunging" -> Glyph.GL_FOLD_INCLINED_PLUNGING;
+			case "gl_fold_overturned_horizontal" -> Glyph.GL_FOLD_OVERTURNED_HORIZONTAL;
+			case "gl_fold_overturned_plunging" -> Glyph.GL_FOLD_OVERTURNED_PLUNGING;
+			case "gl_fold_recumbent" -> Glyph.GL_FOLD_RECUMBENT;
+			case "gl_fold_reclined" -> Glyph.GL_FOLD_RECLINED;
+			case "gl_monocline" -> Glyph.GL_MONOCLINE;
+			case "gl_fold_vergence" -> Glyph.GL_FOLD_VERGENCE;
+			case "gl_superposed_folds" -> Glyph.GL_SUPERPOSED_FOLDS;
+			case "gl_fold_class_1a" -> Glyph.GL_FOLD_CLASS_1A;
+			case "gl_fold_class_1b" -> Glyph.GL_FOLD_CLASS_1B;
+			case "gl_fold_class_1c" -> Glyph.GL_FOLD_CLASS_1C;
+			case "gl_fold_class_2" -> Glyph.GL_FOLD_CLASS_2;
+			case "gl_fold_class_3" -> Glyph.GL_FOLD_CLASS_3;
+			case "gl_dip_isogon_construction" -> Glyph.GL_DIP_ISOGON_CONSTRUCTION;
+			case "gl_fold_attitude_grid" -> Glyph.GL_FOLD_ATTITUDE_GRID;
+			case "gl_fold_attitude_classification" -> Glyph.GL_FOLD_ATTITUDE_CLASSIFICATION;
+			case "gl_orthographic_net" -> Glyph.GL_ORTHOGRAPHIC_NET;
+			case "gl_wulff_net" -> Glyph.GL_WULFF_NET;
+			case "gl_schmidt_net" -> Glyph.GL_SCHMIDT_NET;
+			case "gl_stereonet_contouring_device" -> Glyph.GL_STEREONET_CONTOURING_DEVICE;
+			case "gl_rock_fall" -> Glyph.GL_ROCK_FALL;
+			case "gl_rock_topple" -> Glyph.GL_ROCK_TOPPLE;
+			case "gl_rock_slump" -> Glyph.GL_ROCK_SLUMP;
+			case "gl_rock_block_slide" -> Glyph.GL_ROCK_BLOCK_SLIDE;
+			case "gl_rock_lateral_spread" -> Glyph.GL_ROCK_LATERAL_SPREAD;
+			case "gl_rock_creep_sackung" -> Glyph.GL_ROCK_CREEP_SACKUNG;
+			case "gl_rock_fall_debris_flow" -> Glyph.GL_ROCK_FALL_DEBRIS_FLOW;
+			case "gl_slump_topple" -> Glyph.GL_SLUMP_TOPPLE;
+			case "gl_rock_slide_rock_fall" -> Glyph.GL_ROCK_SLIDE_ROCK_FALL;
+			case "gl_debris_fall" -> Glyph.GL_DEBRIS_FALL;
+			case "gl_debris_topple" -> Glyph.GL_DEBRIS_TOPPLE;
+			case "gl_debris_slump" -> Glyph.GL_DEBRIS_SLUMP;
+			case "gl_debris_slide" -> Glyph.GL_DEBRIS_SLIDE;
+			case "gl_debris_flow" -> Glyph.GL_DEBRIS_FLOW;
+			case "gl_debris_avalanche" -> Glyph.GL_DEBRIS_AVALANCHE;
+			case "gl_block_stream" -> Glyph.GL_BLOCK_STREAM;
+			case "gl_solifluction" -> Glyph.GL_SOLIFLUCTION;
+			case "gl_soil_creep" -> Glyph.GL_SOIL_CREEP;
+			case "gl_cambering_valley_bulging" -> Glyph.GL_CAMBERING_VALLEY_BULGING;
+			case "gl_slump_earth_flow" -> Glyph.GL_SLUMP_EARTH_FLOW;
+			case "gl_earth_fall" -> Glyph.GL_EARTH_FALL;
+			case "gl_earth_topple" -> Glyph.GL_EARTH_TOPPLE;
+			case "gl_earth_slump" -> Glyph.GL_EARTH_SLUMP;
+			case "gl_earth_block_slide" -> Glyph.GL_EARTH_BLOCK_SLIDE;
+			case "gl_earth_lateral_spread" -> Glyph.GL_EARTH_LATERAL_SPREAD;
+			case "gl_wet_sand_silt_flow" -> Glyph.GL_WET_SAND_SILT_FLOW;
+			case "gl_quick_clay_flow" -> Glyph.GL_QUICK_CLAY_FLOW;
+			case "gl_earth_flow" -> Glyph.GL_EARTH_FLOW;
+			case "gl_loess_flow" -> Glyph.GL_LOESS_FLOW;
+			case "gl_dry_sand_flow" -> Glyph.GL_DRY_SAND_FLOW;
+			case "gl_qapf_plutonic_diagram" -> Glyph.GL_QAPF_PLUTONIC_DIAGRAM;
+			case "gl_gabbroic_plag_px_ol" -> Glyph.GL_GABBROIC_PLAG_PX_OL;
+			case "gl_gabbroic_plag_px_hbl" -> Glyph.GL_GABBROIC_PLAG_PX_HBL;
+			case "gl_gabbroic_plag_opx_cpx" -> Glyph.GL_GABBROIC_PLAG_OPX_CPX;
+			case "gl_metamorphic_facies_diagram" -> Glyph.GL_METAMORPHIC_FACIES_DIAGRAM;
+			case "gl_roundness_very_angular" -> Glyph.GL_ROUNDNESS_VERY_ANGULAR;
+			case "gl_roundness_angular" -> Glyph.GL_ROUNDNESS_ANGULAR;
+			case "gl_roundness_subangular" -> Glyph.GL_ROUNDNESS_SUBANGULAR;
+			case "gl_roundness_subrounded" -> Glyph.GL_ROUNDNESS_SUBROUNDED;
+			case "gl_roundness_rounded" -> Glyph.GL_ROUNDNESS_ROUNDED;
+			case "gl_roundness_well_rounded" -> Glyph.GL_ROUNDNESS_WELL_ROUNDED;
+			case "gl_grain_percent_01" -> Glyph.GL_GRAIN_PERCENT_01;
+			case "gl_grain_percent_02" -> Glyph.GL_GRAIN_PERCENT_02;
+			case "gl_grain_percent_03" -> Glyph.GL_GRAIN_PERCENT_03;
+			case "gl_grain_percent_05" -> Glyph.GL_GRAIN_PERCENT_05;
+			case "gl_grain_percent_07" -> Glyph.GL_GRAIN_PERCENT_07;
+			case "gl_grain_percent_10" -> Glyph.GL_GRAIN_PERCENT_10;
+			case "gl_grain_percent_15" -> Glyph.GL_GRAIN_PERCENT_15;
+			case "gl_grain_percent_20" -> Glyph.GL_GRAIN_PERCENT_20;
+			case "gl_grain_percent_25" -> Glyph.GL_GRAIN_PERCENT_25;
+			case "gl_grain_percent_30" -> Glyph.GL_GRAIN_PERCENT_30;
+			case "gl_grain_percent_40" -> Glyph.GL_GRAIN_PERCENT_40;
+			case "gl_grain_percent_50" -> Glyph.GL_GRAIN_PERCENT_50;
+			case "gl_unit_stratotype" -> Glyph.GL_UNIT_STRATOTYPE;
+			case "gl_boundary_stratotype" -> Glyph.GL_BOUNDARY_STRATOTYPE;
+			case "gl_earthquake_magnitude_energy" -> Glyph.GL_EARTHQUAKE_MAGNITUDE_ENERGY;
 			case "saussuritised" -> Glyph.GC_SAUSSURITISED;
 			case "serpentinisation" -> Glyph.GC_SERPENTINISATION;
 			case "epidote_alteration" -> Glyph.GC_EPIDOTE_ALTERATION;
@@ -753,6 +1049,154 @@ public class GeoScienceIcons extends GlyphFont {
 			case "reducing" -> Glyph.GC_REDUCING_ENVIRONMENT;
 			case "oxidizing" -> Glyph.GC_OXIDIZING_ENVIRONMENT;
 			case "oxidising" -> Glyph.GC_OXIDIZING_ENVIRONMENT;
+			case "granite_post_kinematic" -> Glyph.GL_GRANITE_POST_KINEMATIC;
+			case "granite_late_post_kinematic" -> Glyph.GL_GRANITE_LATE_POST_KINEMATIC;
+			case "granite_syn_late_kinematic" -> Glyph.GL_GRANITE_SYN_LATE_KINEMATIC;
+			case "granite_syn_kinematic_foliated" -> Glyph.GL_GRANITE_SYN_KINEMATIC_FOLIATED;
+			case "granite_gneissic_anatectic" -> Glyph.GL_GRANITE_GNEISSIC_ANATECTIC;
+			case "gabbro_diorite_orogenic" -> Glyph.GL_GABBRO_DIORITE_OROGENIC;
+			case "porphyry_pattern" -> Glyph.GL_PORPHYRY_PATTERN;
+			case "island_arc_volcanics" -> Glyph.GL_ISLAND_ARC_VOLCANICS;
+			case "felsic_volcanics_rare_basics" -> Glyph.GL_FELSIC_VOLCANICS_RARE_BASICS;
+			case "rhyolite_dacite_volcanics" -> Glyph.GL_RHYOLITE_DACITE_VOLCANICS;
+			case "felsic_volcanics_with_granite" -> Glyph.GL_FELSIC_VOLCANICS_WITH_GRANITE;
+			case "flood_basalt" -> Glyph.GL_FLOOD_BASALT;
+			case "dolerite_granophyre" -> Glyph.GL_DOLERITE_GRANOPHYRE;
+			case "keratophyre" -> Glyph.GL_KERATOPHYRE;
+			case "granite_intruding_craton" -> Glyph.GL_GRANITE_INTRUDING_CRATON;
+			case "layered_intrusion" -> Glyph.GL_LAYERED_INTRUSION;
+			case "alkaline_intrusive" -> Glyph.GL_ALKALINE_INTRUSIVE;
+			case "kimberlite_lamproite" -> Glyph.GL_KIMBERLITE_LAMPROITE;
+			case "carbonatite" -> Glyph.GL_CARBONATITE;
+			case "slate_phyllite" -> Glyph.GL_SLATE_PHYLLITE;
+			case "schist_gneiss_high_grade" -> Glyph.GL_SCHIST_GNEISS_HIGH_GRADE;
+			case "sandy_slate_interbedded" -> Glyph.GL_SANDY_SLATE_INTERBEDDED;
+			case "hornfels_massive" -> Glyph.GL_HORNFELS_MASSIVE;
+			case "basic_plutonic_hypabyssal" -> Glyph.GL_BASIC_PLUTONIC_HYPABYSSAL;
+			case "bedded_lavas" -> Glyph.GL_BEDDED_LAVAS;
+			case "tuff_tuffaceous_sandstone" -> Glyph.GL_TUFF_TUFFACEOUS_SANDSTONE;
+			case "bedded_tuff" -> Glyph.GL_BEDDED_TUFF;
+			case "breccia_pattern" -> Glyph.GL_BRECCIA_PATTERN;
+			case "scree_brecciated_rock" -> Glyph.GL_SCREE_BRECCIATED_ROCK;
+			case "soil_cover" -> Glyph.GL_SOIL_COVER;
+			case "alluvium" -> Glyph.GL_ALLUVIUM;
+			case "gossan_ore" -> Glyph.GL_GOSSAN_ORE;
+			case "conglomerate_pattern" -> Glyph.GL_CONGLOMERATE_PATTERN;
+			case "sandstone_pattern" -> Glyph.GL_SANDSTONE_PATTERN;
+			case "pebbly_sandstone" -> Glyph.GL_PEBBLY_SANDSTONE;
+			case "cross_bedded_sandstone" -> Glyph.GL_CROSS_BEDDED_SANDSTONE;
+			case "limestone_pattern" -> Glyph.GL_LIMESTONE_PATTERN;
+			case "dolomite_pattern" -> Glyph.GL_DOLOMITE_PATTERN;
+			case "sandy_limestone" -> Glyph.GL_SANDY_LIMESTONE;
+			case "shale_pattern" -> Glyph.GL_SHALE_PATTERN;
+			case "sandy_shale" -> Glyph.GL_SANDY_SHALE;
+			case "bedded_chert" -> Glyph.GL_BEDDED_CHERT;
+			case "massive_chert" -> Glyph.GL_MASSIVE_CHERT;
+			case "coal_undifferentiated" -> Glyph.GL_COAL_UNDIFFERENTIATED;
+			case "broken_coal" -> Glyph.GL_BROKEN_COAL;
+			case "coal_with_shale_bands" -> Glyph.GL_COAL_WITH_SHALE_BANDS;
+			case "shale_with_coal_bands" -> Glyph.GL_SHALE_WITH_COAL_BANDS;
+			case "cannel_coal" -> Glyph.GL_CANNEL_COAL;
+			case "cannel_shale" -> Glyph.GL_CANNEL_SHALE;
+			case "carbonaceous_shale" -> Glyph.GL_CARBONACEOUS_SHALE;
+			case "brown_coal" -> Glyph.GL_BROWN_COAL;
+			case "oil_shale" -> Glyph.GL_OIL_SHALE;
+			case "thin_seam" -> Glyph.GL_THIN_SEAM;
+			case "coal_bright" -> Glyph.GL_COAL_BRIGHT;
+			case "coal_bright_dull_bands" -> Glyph.GL_COAL_BRIGHT_DULL_BANDS;
+			case "coal_interbanded" -> Glyph.GL_COAL_INTERBANDED;
+			case "coal_dull_bright_bands" -> Glyph.GL_COAL_DULL_BRIGHT_BANDS;
+			case "coal_dull_minor_bright" -> Glyph.GL_COAL_DULL_MINOR_BRIGHT;
+			case "coal_dull" -> Glyph.GL_COAL_DULL;
+			case "coal_canneloid" -> Glyph.GL_COAL_CANNELOID;
+			case "coal_fibrous" -> Glyph.GL_COAL_FIBROUS;
+			case "coal_weathered" -> Glyph.GL_COAL_WEATHERED;
+			case "coal_heat_altered" -> Glyph.GL_COAL_HEAT_ALTERED;
+			case "non_coal" -> Glyph.GL_NON_COAL;
+			case "coal_interlayered_non_coal" -> Glyph.GL_COAL_INTERLAYERED_NON_COAL;
+			case "non_coal_interlayered_coal" -> Glyph.GL_NON_COAL_INTERLAYERED_COAL;
+			case "stony_coal" -> Glyph.GL_STONY_COAL;
+			case "mudstone_pattern" -> Glyph.GL_MUDSTONE_PATTERN;
+			case "coal_seam_log" -> Glyph.GL_COAL_SEAM_LOG;
+			case "fold_upright_horizontal" -> Glyph.GL_FOLD_UPRIGHT_HORIZONTAL;
+			case "fold_upright_plunging" -> Glyph.GL_FOLD_UPRIGHT_PLUNGING;
+			case "fold_vertical" -> Glyph.GL_FOLD_VERTICAL;
+			case "fold_inclined_plunging" -> Glyph.GL_FOLD_INCLINED_PLUNGING;
+			case "fold_overturned_horizontal" -> Glyph.GL_FOLD_OVERTURNED_HORIZONTAL;
+			case "fold_overturned_plunging" -> Glyph.GL_FOLD_OVERTURNED_PLUNGING;
+			case "fold_recumbent" -> Glyph.GL_FOLD_RECUMBENT;
+			case "fold_reclined" -> Glyph.GL_FOLD_RECLINED;
+			case "monocline" -> Glyph.GL_MONOCLINE;
+			case "fold_vergence" -> Glyph.GL_FOLD_VERGENCE;
+			case "superposed_folds" -> Glyph.GL_SUPERPOSED_FOLDS;
+			case "fold_class_1a" -> Glyph.GL_FOLD_CLASS_1A;
+			case "fold_class_1b" -> Glyph.GL_FOLD_CLASS_1B;
+			case "fold_class_1c" -> Glyph.GL_FOLD_CLASS_1C;
+			case "fold_class_2" -> Glyph.GL_FOLD_CLASS_2;
+			case "fold_class_3" -> Glyph.GL_FOLD_CLASS_3;
+			case "dip_isogon_construction" -> Glyph.GL_DIP_ISOGON_CONSTRUCTION;
+			case "fold_attitude_grid" -> Glyph.GL_FOLD_ATTITUDE_GRID;
+			case "fold_attitude_classification" -> Glyph.GL_FOLD_ATTITUDE_CLASSIFICATION;
+			case "orthographic_net" -> Glyph.GL_ORTHOGRAPHIC_NET;
+			case "wulff_net" -> Glyph.GL_WULFF_NET;
+			case "schmidt_net" -> Glyph.GL_SCHMIDT_NET;
+			case "stereonet_contouring_device" -> Glyph.GL_STEREONET_CONTOURING_DEVICE;
+			case "rock_fall" -> Glyph.GL_ROCK_FALL;
+			case "rock_topple" -> Glyph.GL_ROCK_TOPPLE;
+			case "rock_slump" -> Glyph.GL_ROCK_SLUMP;
+			case "rock_block_slide" -> Glyph.GL_ROCK_BLOCK_SLIDE;
+			case "rock_lateral_spread" -> Glyph.GL_ROCK_LATERAL_SPREAD;
+			case "rock_creep_sackung" -> Glyph.GL_ROCK_CREEP_SACKUNG;
+			case "rock_fall_debris_flow" -> Glyph.GL_ROCK_FALL_DEBRIS_FLOW;
+			case "slump_topple" -> Glyph.GL_SLUMP_TOPPLE;
+			case "rock_slide_rock_fall" -> Glyph.GL_ROCK_SLIDE_ROCK_FALL;
+			case "debris_fall" -> Glyph.GL_DEBRIS_FALL;
+			case "debris_topple" -> Glyph.GL_DEBRIS_TOPPLE;
+			case "debris_slump" -> Glyph.GL_DEBRIS_SLUMP;
+			case "debris_slide" -> Glyph.GL_DEBRIS_SLIDE;
+			case "debris_flow" -> Glyph.GL_DEBRIS_FLOW;
+			case "debris_avalanche" -> Glyph.GL_DEBRIS_AVALANCHE;
+			case "block_stream" -> Glyph.GL_BLOCK_STREAM;
+			case "solifluction" -> Glyph.GL_SOLIFLUCTION;
+			case "soil_creep" -> Glyph.GL_SOIL_CREEP;
+			case "cambering_valley_bulging" -> Glyph.GL_CAMBERING_VALLEY_BULGING;
+			case "slump_earth_flow" -> Glyph.GL_SLUMP_EARTH_FLOW;
+			case "earth_fall" -> Glyph.GL_EARTH_FALL;
+			case "earth_topple" -> Glyph.GL_EARTH_TOPPLE;
+			case "earth_slump" -> Glyph.GL_EARTH_SLUMP;
+			case "earth_block_slide" -> Glyph.GL_EARTH_BLOCK_SLIDE;
+			case "earth_lateral_spread" -> Glyph.GL_EARTH_LATERAL_SPREAD;
+			case "wet_sand_silt_flow" -> Glyph.GL_WET_SAND_SILT_FLOW;
+			case "quick_clay_flow" -> Glyph.GL_QUICK_CLAY_FLOW;
+			case "earth_flow" -> Glyph.GL_EARTH_FLOW;
+			case "loess_flow" -> Glyph.GL_LOESS_FLOW;
+			case "dry_sand_flow" -> Glyph.GL_DRY_SAND_FLOW;
+			case "qapf_plutonic_diagram" -> Glyph.GL_QAPF_PLUTONIC_DIAGRAM;
+			case "gabbroic_plag_px_ol" -> Glyph.GL_GABBROIC_PLAG_PX_OL;
+			case "gabbroic_plag_px_hbl" -> Glyph.GL_GABBROIC_PLAG_PX_HBL;
+			case "gabbroic_plag_opx_cpx" -> Glyph.GL_GABBROIC_PLAG_OPX_CPX;
+			case "metamorphic_facies_diagram" -> Glyph.GL_METAMORPHIC_FACIES_DIAGRAM;
+			case "roundness_very_angular" -> Glyph.GL_ROUNDNESS_VERY_ANGULAR;
+			case "roundness_angular" -> Glyph.GL_ROUNDNESS_ANGULAR;
+			case "roundness_subangular" -> Glyph.GL_ROUNDNESS_SUBANGULAR;
+			case "roundness_subrounded" -> Glyph.GL_ROUNDNESS_SUBROUNDED;
+			case "roundness_rounded" -> Glyph.GL_ROUNDNESS_ROUNDED;
+			case "roundness_well_rounded" -> Glyph.GL_ROUNDNESS_WELL_ROUNDED;
+			case "grain_percent_01" -> Glyph.GL_GRAIN_PERCENT_01;
+			case "grain_percent_02" -> Glyph.GL_GRAIN_PERCENT_02;
+			case "grain_percent_03" -> Glyph.GL_GRAIN_PERCENT_03;
+			case "grain_percent_05" -> Glyph.GL_GRAIN_PERCENT_05;
+			case "grain_percent_07" -> Glyph.GL_GRAIN_PERCENT_07;
+			case "grain_percent_10" -> Glyph.GL_GRAIN_PERCENT_10;
+			case "grain_percent_15" -> Glyph.GL_GRAIN_PERCENT_15;
+			case "grain_percent_20" -> Glyph.GL_GRAIN_PERCENT_20;
+			case "grain_percent_25" -> Glyph.GL_GRAIN_PERCENT_25;
+			case "grain_percent_30" -> Glyph.GL_GRAIN_PERCENT_30;
+			case "grain_percent_40" -> Glyph.GL_GRAIN_PERCENT_40;
+			case "grain_percent_50" -> Glyph.GL_GRAIN_PERCENT_50;
+			case "unit_stratotype" -> Glyph.GL_UNIT_STRATOTYPE;
+			case "boundary_stratotype" -> Glyph.GL_BOUNDARY_STRATOTYPE;
+			case "earthquake_magnitude_energy" -> Glyph.GL_EARTHQUAKE_MAGNITUDE_ENERGY;
             default -> null;
         };
     }

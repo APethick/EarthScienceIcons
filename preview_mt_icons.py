@@ -8,7 +8,10 @@ def render_dark(icon, size):
     """Lift technical ink for dark surfaces; preserve material and E/H colours."""
     from icons_mt import flat_artwork as mt_artwork
     from icons_alteration import GEOCHEM_IDS, flat_artwork as geochem_artwork
-    flat_artwork = geochem_artwork if icon['id'] in GEOCHEM_IDS else mt_artwork
+    from icons_field_manual import FGM_IDS, flat_artwork as fgm_artwork
+    flat_artwork = (fgm_artwork if icon['id'] in FGM_IDS
+                    else geochem_artwork if icon['id'] in GEOCHEM_IDS
+                    else mt_artwork)
     colours = {'#303A40': '#DEE6EA', '#BEC8CC': '#778A93', '#B0B7B7': '#9BA9AF'}
     result = Image.new('RGBA', (size*3, size*3))
     scale = size*3/24
@@ -37,6 +40,31 @@ def render_geochemistry_suite(dist, icons, ttf):
     from icons_alteration import GEOCHEM_IDS
     suite = [icon for icon in icons if icon['id'] in GEOCHEM_IDS]
     render_suite(dist, suite, ttf, 'geochemistry', 'geochemistry_preview', 'GEOCHEMISTRY + ALTERATION')
+
+
+def render_field_manual_suite(dist, icons, ttf):
+    from icons_field_manual import FGM_IDS
+    suite = [icon for icon in icons if icon['id'] in FGM_IDS]
+    cols, width, height, header = 6, 310, 195, 110
+    rows = (len(suite) + cols - 1) // cols
+    sheet = Image.new('RGB', (cols * width + 48, rows * height + header + 20), '#F2F4F5')
+    draw = ImageDraw.Draw(sheet)
+    draw.text((30, 20), "FIELD GEOLOGISTS' MANUAL — GEOLOGY SUITE (148 ICONS)", font=font(28, True), fill='#263238')
+    draw.text((30, 62), "Berkman (ed.), AusIMM Monograph 9, 4th ed.  /  Natural colour SVG + compiled TTF outlines  /  Text-free", font=font(17), fill='#617279')
+    glyph_font = ImageFont.truetype(str(ttf), 92)
+    for index, icon in enumerate(suite):
+        x, y = 24 + index % cols * width, header + index // cols * height
+        draw.rounded_rectangle((x + 4, y + 4, x + width - 6, y + height - 8), radius=9, fill='white', outline='#D5DDE0')
+        title = icon['name'] if len(icon['name']) <= 28 else icon['name'][:26] + '..'
+        draw.text((x + 14, y + 12), title, font=font(15, True), fill='#263238')
+        colour = render_icon(icon, 102)
+        sheet.paste(colour, (x + 18, y + 44), colour)
+        char = chr(icon['codepoint'])
+        bounds = draw.textbbox((0, 0), char, font=glyph_font)
+        draw.text((x + 172 - bounds[0], y + 48 - bounds[1]), char, font=glyph_font, fill='#303A40')
+        draw.text((x + 18, y + 162), 'FLAT SVG', font=font(11), fill='#617279')
+        draw.text((x + 172, y + 162), f'TTF  U+{icon["codepoint"]:04X}', font=font(11), fill='#617279')
+    save_png(sheet, dist / 'field_manual_preview.png')
 
 
 def render_suite(dist, suite, ttf, prefix, preview, heading):
