@@ -26,7 +26,7 @@ from icons_geochemical_expanded import EXPANDED_GEOCHEMISTRY_ICONS
 from icons_mineralis_inversion import MINERALIS_INVERSION_ICONS
 from icon_artwork import artwork, svg_document
 from icon_catalog import ALL_ICONS
-from font_artwork import detailed_font_geometry
+from font_artwork import detailed_font_geometry, FOLD_ATTITUDE_IDS
 from icon_specimen import build_catalog, render_flat_sheet, render_style_preview, render_material_preview, render_em_preview, render_petrophysics_preview, render_logging_preview
 
 UPM = 1000
@@ -137,7 +137,7 @@ def build_all(install_opus: bool = False):
         raw_geom = detailed_font_geometry(icon)
         if raw_geom.is_empty or not raw_geom.is_valid or not box(0, 0, UPM, UPM).covers(raw_geom):
             raise ValueError(f"Invalid or clipped glyph: {glyph_name} {raw_geom.bounds}")
-        polys = clean_for_ttf(raw_geom, simplify_tol=0.6)
+        polys = clean_for_ttf(raw_geom, simplify_tol=0.6, repair=glyph_name not in FOLD_ATTITUDE_IDS)
         tt_glyph = polygons_to_ttglyph(polys)
         svg_path_d = polygons_to_svg_path(polys)
 
@@ -196,10 +196,10 @@ def build_all(install_opus: bool = False):
         {
             "familyName": "GeoScience Icons",
             "styleName": "Regular",
-            "uniqueFontIdentifier": "GeoScienceIcons-Regular-2.7.1",
+            "uniqueFontIdentifier": "GeoScienceIcons-Regular-2.7.2",
             "fullName": "GeoScience Icons Regular",
             "psName": "GeoScienceIcons-Regular",
-            "version": "Version 2.701",
+            "version": "Version 2.702",
             "copyright": "Copyright (c) 2026 GeoScience Icon Set. Open License.",
             "description": "Comprehensive TrueType icon font covering Geophysical, Geotechnical, Geological, and Geochemical methods, earth model types, and processes.",
         }
@@ -215,7 +215,7 @@ def build_all(install_opus: bool = False):
         fsType=0,  # Installable embedding allowed
     )
     fb.setupPost(isFixedPitch=1)
-    fb.font["head"].fontRevision = 2.701
+    fb.font["head"].fontRevision = 2.702
 
     ttf_dist_path = dist_dir / "GeoScienceIcons.ttf"
     ttf_root_path = root_dir / "GeoScienceIcons.ttf"
@@ -234,7 +234,7 @@ def build_all(install_opus: bool = False):
     json_data = {
         "fontFamily": "GeoScience Icons",
         "postScriptName": "GeoScienceIcons-Regular",
-        "version": "2.7.1",
+        "version": "2.7.2",
         "svgStyle": "detailed-flat-natural-materials",
         "fontStyle": "detailed-technical-line",
         "unitsPerEm": UPM,
@@ -250,14 +250,14 @@ def build_all(install_opus: bool = False):
     # Write CSS stylesheet
     css_lines = [
         "/**",
-        " * GeoScience Icons v2.7.1",
+        " * GeoScience Icons v2.7.2",
         " * Domains: Geophysical, Geotechnical, Geological, Geochemical",
         " * Categories: Methods, Earth Model Types, Processes",
         " */",
         "@font-face {",
         "  font-family: 'GeoScience Icons';",
-        "  src: url('GeoScienceIcons.woff?v=2.7.1') format('woff'),",
-        "       url('GeoScienceIcons.ttf?v=2.7.1') format('truetype');",
+        "  src: url('GeoScienceIcons.woff?v=2.7.2') format('woff'),",
+        "       url('GeoScienceIcons.ttf?v=2.7.2') format('truetype');",
         "  font-weight: normal;",
         "  font-style: normal;",
         "  font-display: block;",

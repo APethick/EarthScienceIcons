@@ -65,19 +65,25 @@ OVERRIDES = {
 }
 
 
+FOLD_ATTITUDE_IDS = {
+    'gl_fold_upright_horizontal', 'gl_fold_upright_plunging',
+    'gl_fold_vertical', 'gl_fold_inclined_plunging',
+    'gl_fold_overturned_horizontal', 'gl_fold_overturned_plunging',
+    'gl_fold_recumbent', 'gl_fold_reclined',
+}
+
+
 def detailed_font_geometry(icon):
     builder = OVERRIDES.get(icon["id"], icon["builder"])
-    geometry = builder().buffer(0)
+    geometry = builder()
+    if icon['id'] not in FOLD_ATTITUDE_IDS:
+        geometry = geometry.buffer(0)
     if geometry.is_empty or not geometry.is_valid:
         raise ValueError(f"Invalid detailed artwork: {icon['id']}")
     # Sub-unit corner cleanup removes brittle polygon tips without thinning
     # instrument marks, plot ticks, dashed paths or fine lithological textures.
-    if icon['id'] not in {
-        'gl_fold_upright_horizontal', 'gl_fold_upright_plunging',
-        'gl_fold_vertical', 'gl_fold_inclined_plunging',
-        'gl_fold_overturned_horizontal', 'gl_fold_overturned_plunging',
-        'gl_fold_recumbent', 'gl_fold_reclined',
-    }:
+    # Repair can incorrectly fill gaps in these detailed fold traces.
+    if icon['id'] not in FOLD_ATTITUDE_IDS:
         geometry = geometry.buffer(.65, quad_segs=4, join_style=1).buffer(-.65, quad_segs=4, join_style=1)
     x0, y0, x1, y1 = geometry.bounds
     factor = 880 / max(x1 - x0, y1 - y0)

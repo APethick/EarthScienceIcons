@@ -305,15 +305,15 @@ def sine_wave(
     return stroke(pts, width=width, cap="round")
 
 
-def clean_for_ttf(geom: GeomType, simplify_tol: float = 0.75) -> List[Polygon]:
+def clean_for_ttf(geom: GeomType, simplify_tol: float = 0.75, repair: bool = True) -> List[Polygon]:
     """
     Normalize arbitrary shapely geometry into a list of clean, non-self-intersecting
     Polygons oriented for TrueType (exterior CW, interiors CCW).
     """
     if geom is None or geom.is_empty:
         return []
-    g = geom.buffer(0)
-    if simplify_tol > 0:
+    g = geom.buffer(0) if repair else geom
+    if simplify_tol > 0 and repair:
         g = g.simplify(simplify_tol, preserve_topology=True).buffer(0)
 
     polys: List[Polygon] = []
