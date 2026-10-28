@@ -8,7 +8,7 @@
 
 **Detailed linework · Flat colour · SVG · TTF · WOFF · Public domain**
 
-[**Explore every icon →**](https://APethick.github.io/EarthScienceIcons/) · [Download the set](https://APethick.github.io/EarthScienceIcons/assets/EarthScienceIcons.zip?v=2.7.0) · [TTF font](dist/GeoScienceIcons.ttf) · [Icon manifest](dist/geoscience-icons.json)
+[**Explore every icon →**](https://APethick.github.io/EarthScienceIcons/) · [Download the set](https://APethick.github.io/EarthScienceIcons/assets/EarthScienceIcons.zip?v=2.7.1) · [TTF font](dist/GeoScienceIcons.ttf) · [Icon manifest](dist/geoscience-icons.json)
 
 ![Flat colour SVGs and detailed technical font glyphs](dist/style_preview.png)
 
@@ -134,6 +134,8 @@ Open `http://localhost:8080`. The website is static, with no npm build or extern
 | `tests/` | Distribution checks and published glyph compatibility fixture |
 
 The normal build only writes inside the repository. `python build_font.py --install-opus` also copies the font and Java binding into an existing `C:\projects\opus\opus.base` checkout.
+
+On Windows, run `build_and_push.bat` from this folder to build and verify the distribution, merge generated glyph mappings into `C:\projects\opus\opus.base`, update both Opus font copies, and commit and push the icon repository's `main` branch. The script requires Python 3.10+, the packages in `requirements.txt`, Git access to `origin`, and an existing Opus checkout. It stops on failure or if the Git index already contains staged changes. It stages icon source, documentation, tests, and generated distribution and website assets. Opus changes remain in the Opus working tree.
 
 ## GitHub Pages
 

@@ -20,236 +20,125 @@ from fgm_common import (
 # 1-8. Fold Attitude Block Diagrams (FGM 5.1, ref/08.png)
 # ---------------------------------------------------------------------------
 
-def _box_point(u, v, w):
-    """Map normalized 3D block coordinates (u, v, w) in [0, 1]^3 to 2D canvas.
-
-    u: 0..1 along front-right cross-section face (from front vertical edge to right edge)
-    v: 0..1 along front-left face (from front vertical edge to back-left edge)
-    w: 0..1 vertically from bottom (0) to top (1)
-    """
-    x = 21.0 + 22.0 * u - 16.0 * v
-    y = 41.0 - 7.0 * u - 7.0 * v - 22.0 * w
-    return (x, y)
-
-
-def _draw_box_back(d):
-    """Subtle block background and rear wireframe edges."""
-    p000 = _box_point(0, 0, 0)
-    p100 = _box_point(1, 0, 0)
-    p101 = _box_point(1, 0, 1)
-    p111 = _box_point(1, 1, 1)
-    p011 = _box_point(0, 1, 1)
-    p010 = _box_point(0, 1, 0)
-    p110 = _box_point(1, 1, 0)
-    hull = [p000, p100, p101, p111, p011, p010]
-    d.poly(hull, PAPER, STEEL)
-    d.line([p010, p110, p100], GRID, .55)
-    d.line([p110, p111], GRID, .55)
-
-
-def _draw_box_front(d):
-    """Foreground wireframe edges of the reference block."""
-    p000 = _box_point(0, 0, 0)
-    p001 = _box_point(0, 0, 1)
-    p100 = _box_point(1, 0, 0)
-    p101 = _box_point(1, 0, 1)
-    p111 = _box_point(1, 1, 1)
-    p011 = _box_point(0, 1, 1)
-    p010 = _box_point(0, 1, 0)
-    d.line([p011, p001, p101], STEEL, .7)
-    d.line([p001, p000], STEEL, .7)
-    d.line([p010, p011, p111, p101, p100, p000, p010], INK, .85)
-
-
 def _axial_plane(d, points, angle=90, spacing=1.85):
     """Draw a hatched axial surface polygon."""
     poly = Polygon(points).buffer(0)
-    d.shape(poly, QUARTZ, INK, width=.8)
-    d.hatch(poly.buffer(-.25), angle=angle, spacing=spacing, colour=INK, width=.52)
-
-
-def _bold_band(d, outer_pts, inner_pts=None, fill=COAL, width=2.2):
-    """Draw the bold folded marker bed cut edge on the block faces."""
-    if inner_pts is not None:
-        poly = Polygon(list(outer_pts) + list(reversed(inner_pts))).buffer(0)
-    else:
-        poly = LineString(outer_pts).buffer(width / 2, cap_style=2, join_style=2)
-    d.shape(poly, fill, INK)
+    d.shape(poly, QUARTZ, INK, width=0)
+    d.hatch(poly.buffer(-.8), angle=angle, spacing=spacing, colour=INK, width=.35)
 
 
 def fold_attitude(kind):
+    """Draw the eight fold-attitude blocks from the FGM 5.1 reference.
+
+    Traces are defined independently for each block: their vertices follow the
+    bold bed in the reference, including its turn at a plunging hinge. Fine
+    lines are block edges; the ruled region is the axial surface.
+    """
+    diagrams = {
+        'upright_horizontal': {
+            'bounds': (60, 30, 396, 215),
+            'hull': [(60, 48), (220, 30), (396, 48), (396, 155), (241, 215), (60, 149)],
+            'front': (241, 84),
+            'surface': [[(322, 68), (322, 185), (270, 176)]],
+            'hatch': 90,
+            'thin': [[(135, 39), (60, 149)]],
+            'bed': [[(241, 215), (322, 68), (395, 155)]],
+        },
+        'upright_plunging': {
+            'bounds': (673, 29, 1009, 217),
+            'hull': [(673, 48), (835, 29), (1009, 48), (1009, 155), (849, 217), (673, 153)],
+            'front': (849, 82),
+            'surface': [[(752, 38), (866, 53), (804, 82), (752, 69)],
+                        [(889, 69), (932, 62), (932, 185), (867, 169)]],
+            'hatch': 90,
+            'thin': [[(673, 153), (741, 135), (849, 217)],
+                     [(741, 135), (751, 105), (866, 53)]],
+            'bed': [[(849, 216), (890, 69), (866, 53), (972, 53), (1008, 155)]],
+        },
+        'vertical': {
+            'bounds': (1277, 28, 1610, 216),
+            'hull': [(1277, 47), (1437, 28), (1610, 47), (1610, 155), (1456, 216), (1277, 149)],
+            'front': (1456, 81),
+            'surface': [[(1360, 36), (1604, 47), (1456, 80)],
+                        [(1456, 80), (1536, 64), (1536, 184), (1456, 168)]],
+            'hatch': 90,
+            'thin': [[(1360, 36), (1360, 127), (1456, 216)],
+                     [(1277, 149), (1360, 127)]],
+            'bed': [[(1360, 36), (1456, 80), (1604, 47)],
+                    [(1456, 80), (1456, 215)], [(1604, 47), (1604, 155)]],
+        },
+        'inclined_plunging': {
+            'bounds': (503, 301, 832, 492),
+            'hull': [(503, 324), (661, 301), (832, 324), (832, 431), (679, 492), (503, 424)],
+            'front': (679, 359),
+            'surface': [[(592, 313), (702, 330), (643, 351), (566, 374)],
+                        [(716, 352), (759, 337), (704, 480), (559, 446), (679, 414)]],
+            'hatch': 108,
+            'thin': [[(503, 424), (546, 380), (702, 330)]],
+            'bed': [[(559, 446), (679, 414), (716, 352), (702, 330), (782, 335), (829, 430)]],
+        },
+        'overturned_horizontal': {
+            'bounds': (54, 498, 388, 689),
+            'hull': [(54, 518), (212, 498), (388, 518), (388, 625), (235, 689), (54, 625)],
+            'front': (235, 553),
+            'surface': [[(95, 578), (235, 612), (380, 543), (267, 674), (87, 613)]],
+            'hatch': 130,
+            'thin': [[(54, 625), (212, 583)], [(267, 674), (388, 625)]],
+            'bed': [[(54, 568), (235, 612), (380, 543), (349, 643)]],
+        },
+        'overturned_plunging': {
+            'bounds': (884, 553, 1218, 742),
+            'hull': [(884, 573), (1044, 553), (1218, 573), (1218, 679), (1063, 742), (884, 675)],
+            'front': (1063, 610),
+            'surface': [[(971, 560), (1084, 577), (1030, 606), (947, 625)],
+                        [(1103, 595), (1148, 579), (1088, 732), (925, 689), (1063, 649)]],
+            'hatch': 108,
+            'thin': [[(884, 675), (926, 625), (1084, 577)]],
+            'bed': [[(925, 689), (1063, 649), (1103, 595), (1083, 577), (1190, 577), (1172, 699)]],
+        },
+        'recumbent': {
+            'bounds': (82, 870, 421, 1054),
+            'hull': [(82, 891), (243, 870), (421, 891), (421, 994), (266, 1054), (82, 987)],
+            'front': (266, 927),
+            'surface': [[(84, 944), (256, 987), (415, 940), (246, 920)]],
+            'hatch': 164,
+            'thin': [[(82, 987), (243, 941)], [(266, 1054), (421, 994)]],
+            'bed': [[(83, 893), (414, 940), (266, 1054), (82, 987)]],
+        },
+        'reclined': {
+            'bounds': (1278, 805, 1602, 991),
+            'hull': [(1278, 822), (1434, 805), (1602, 828), (1602, 929), (1443, 991), (1278, 929)],
+            'front': (1443, 861),
+            'surface': [[(1361, 814), (1525, 832), (1440, 921), (1280, 889), (1455, 853)]],
+            'hatch': 137,
+            'thin': [[(1361, 814), (1278, 929)], [(1278, 929), (1443, 991)]],
+            'bed': [[(1360, 814), (1455, 853), (1279, 889), (1443, 990), (1594, 828), (1360, 814)]],
+        },
+    }
+    if kind not in diagrams:
+        raise ValueError(f'Unknown fold attitude: {kind}')
+    diagram = diagrams[kind]
+    x0, y0, x1, y1 = diagram['bounds']
+
+    def point(p):
+        return (4 + 40 * (p[0] - x0) / (x1 - x0),
+                10 + 28 * (p[1] - y0) / (y1 - y0))
+
+    def points(vertices):
+        return [point(vertex) for vertex in vertices]
+
     d = FieldDrawing()
-    _draw_box_back(d)
-    P = _box_point
-
-    if kind == 'upright_horizontal':
-        # Right 3D limb surface (behind crest)
-        d.poly([P(.48, 0, .95), P(.48, 1, .95), P(1, 1, 0), P(1, 0, 0)], LIMESTONE, INK)
-        # Core under arch on front-right face: vertical hatched axial surface
-        _axial_plane(d, [P(.48, 0, .92), P(.48, 0, 0), P(.88, 0, 0), P(.88, 0, .22)], angle=90)
-        d.line([P(.48, 0, .92), P(.48, 0, 0)], INK, .95)
-        # Left 3D limb surface (SANDSTONE) extending horizontally from front to back
-        d.poly([P(0, 0, 0), P(.48, 0, .95), P(.48, 1, .95), P(0, 1, 0)], SANDSTONE, INK)
-        # Bold marker bed cross-section on front-right face
-        _bold_band(
-            d,
-            [P(0, 0, 0), P(.48, 0, .95), P(1, 0, 0)],
-            [P(.09, 0, 0), P(.48, 0, .77), P(.91, 0, 0)],
-        )
-
-    elif kind == 'upright_plunging':
-        # Vertical axial plane protruding above plunging hinge in back-left
-        _axial_plane(d, [P(.48, .22, .94), P(.48, 1, .94), P(.48, 1, .32), P(.48, .22, .94)], angle=90)
-        # Right 3D limb surface
-        d.poly([P(.48, .22, .94), P(.82, .22, .90), P(1, 0, 0), P(.48, 0, .86)], LIMESTONE, INK)
-        # Vertical hatched axial plane inside the front-right arch
-        _axial_plane(d, [P(.48, 0, .84), P(.48, 0, 0), P(.90, 0, 0), P(.78, 0, .84)], angle=90)
-        d.line([P(.48, 0, .86), P(.48, 0, 0)], INK, .95)
-        # Left plunging 3D limb surface (SANDSTONE)
-        d.poly([P(0, 0, 0), P(.48, 0, .86), P(.48, .22, .94), P(.48, 1, .32), P(0, 1, 0)], SANDSTONE, INK)
-        # Bold marker bed cut edge on front-right and top faces
-        _bold_band(
-            d,
-            [P(0, 0, 0), P(.48, 0, .86), P(.48, .22, .94), P(.82, .22, .90), P(1, 0, 0)],
-            [P(.09, 0, 0), P(.48, 0, .68), P(.53, .16, .82), P(.75, .16, .79), P(.91, 0, 0)],
-        )
-
-    elif kind == 'vertical':
-        # Back-right limb inner wall
-        d.poly([P(.32, .35, 1), P(.48, 1, 1), P(1, 0, 1), P(1, 0, 0), P(.32, .35, 0)], LIMESTONE, INK)
-        # Vertical axial plane with vertical hinge and vertical hatching
-        _axial_plane(d, [P(.32, .35, 1), P(.82, .35, 1), P(.82, .35, 0), P(.32, .35, 0)], angle=90)
-        # Front-left limb vertical wall (SANDSTONE) closing at vertical hinge
-        d.poly([P(.32, .35, 1), P(.32, .35, 0), P(0, 1, .35), P(0, 1, 1)], SANDSTONE, INK)
-        # Bold marker bed on top face (horizontal V-closure) + vertical hinge column + right vertical edge
-        _bold_band(
-            d,
-            [P(.48, 1, 1), P(.24, .32, 1), P(1, 0, 1)],
-            [P(.58, 1, 1), P(.37, .36, 1), P(.90, 0, 1)],
-        )
-        _bold_band(
-            d,
-            [P(.24, .32, 1), P(.24, .32, 0)],
-            [P(.35, .32, 1), P(.35, .32, 0)],
-        )
-        _bold_band(
-            d,
-            [P(.92, 0, 1), P(.92, 0, 0)],
-            [P(1.0, 0, 1), P(1.0, 0, 0)],
-        )
-
-    elif kind == 'inclined_plunging':
-        # Inclined axial plane sticking up above plunging limb (tilted hatching angle=62)
-        _axial_plane(
-            d,
-            [P(.56, .20, .94), P(.56, 1, .94), P(.22, 1, .18), P(.22, .20, .38)],
-            angle=62,
-        )
-        # Steep right limb 3D surface
-        d.poly([P(.56, .20, .94), P(.82, .20, .88), P(1, 0, 0), P(.56, 0, .84)], LIMESTONE, INK)
-        # Inclined hatched axial plane inside the front-right arch
-        _axial_plane(
-            d,
-            [P(.56, 0, .84), P(.22, 0, 0), P(.90, 0, 0), P(.78, 0, .80)],
-            angle=62,
-        )
-        d.line([P(.56, 0, .84), P(.22, 0, 0)], INK, .95)
-        # Asymmetric gently-dipping plunging left limb (SANDSTONE)
-        d.poly(
-            [P(0, 0, .12), P(.35, 0, .32), P(.56, 0, .84), P(.56, .20, .94), P(.22, 1, .18), P(0, .75, .12)],
-            SANDSTONE, INK,
-        )
-        # Bold marker bed cut edge
-        _bold_band(
-            d,
-            [P(0, 0, .12), P(.35, 0, .32), P(.56, 0, .84), P(.56, .20, .94), P(.82, .20, .88), P(1, 0, 0)],
-            [P(.06, 0, .04), P(.41, 0, .24), P(.58, 0, .68), P(.60, .14, .81), P(.76, .14, .77), P(.91, 0, 0)],
-        )
-
-    elif kind == 'overturned_horizontal':
-        # Overturned lower limb in background
-        d.poly([P(.96, 0, .74), P(.76, 0, 0), P(.76, 1, 0), P(.96, 1, .74)], LIMESTONE, INK)
-        # Moderately inclined hatched axial plane (dipping ~35 deg to left)
-        _axial_plane(
-            d,
-            [P(.96, 0, .74), P(0, 0, .12), P(.38, 0, 0), P(.76, 0, 0)],
-            angle=36,
-        )
-        d.line([P(.96, 0, .74), P(0, 0, .12)], INK, .95)
-        # Upper normal limb 3D surface (SANDSTONE) dipping gently left, hinge horizontal
-        d.poly([P(0, 0, .42), P(.96, 0, .74), P(.96, 1, .74), P(0, 1, .42)], SANDSTONE, INK)
-        # Bold overturned marker bed on front-right and front-left faces (both limbs dip left!)
-        _bold_band(
-            d,
-            [P(0, 1, .42), P(0, 0, .42), P(.96, 0, .74), P(.76, 0, 0)],
-            [P(0, 1, .32), P(0, 0, .32), P(.84, 0, .60), P(.66, 0, 0)],
-        )
-
-    elif kind == 'overturned_plunging':
-        # Inclined axial plane above the plunging upper limb
-        _axial_plane(
-            d,
-            [P(.58, .22, .94), P(.58, 1, .94), P(.15, 1, .16), P(.15, .22, .35)],
-            angle=45,
-        )
-        # Steep overturned right limb (dipping left, same direction as left limb!)
-        d.poly([P(.58, .22, .94), P(.94, .22, .90), P(.76, 0, 0), P(.58, 0, .82)], LIMESTONE, INK)
-        # Inclined hatched axial plane inside the overturned arch
-        _axial_plane(
-            d,
-            [P(.58, 0, .82), P(0, 0, 0), P(.76, 0, 0), P(.86, .15, .80)],
-            angle=45,
-        )
-        d.line([P(.58, 0, .82), P(0, 0, 0)], INK, .95)
-        # Plunging upper limb surface (SANDSTONE)
-        d.poly(
-            [P(0, 0, .10), P(.38, 0, .35), P(.58, 0, .82), P(.58, .22, .94), P(.15, 1, .16), P(0, .72, .10)],
-            SANDSTONE, INK,
-        )
-        # Bold marker bed edge (both limbs dip left + plunging S-hook at top)
-        _bold_band(
-            d,
-            [P(0, 0, .10), P(.38, 0, .35), P(.58, 0, .82), P(.58, .22, .94), P(.94, .22, .90), P(.76, 0, 0)],
-            [P(.06, 0, .02), P(.44, 0, .27), P(.62, 0, .68), P(.64, .16, .82), P(.84, .16, .79), P(.66, 0, 0)],
-        )
-
-    elif kind == 'recumbent':
-        # Lower inverted limb surface
-        d.poly([P(0, 0, 0), P(.98, 0, .50), P(.98, 1, .50), P(0, 1, 0)], LIMESTONE, INK)
-        # Horizontal hatched axial plane slicing across the middle of the recumbent fold
-        _axial_plane(
-            d,
-            [P(0, 0, .50), P(.98, 0, .50), P(.98, 1, .50), P(0, 1, .50)],
-            angle=22,
-        )
-        # Upper horizontal limb surface (SANDSTONE) at the top of the front-left/right faces
-        d.shape(Polygon([P(0, 0, .92), P(.98, 0, .50), P(.98, 1, .50), P(0, 1, .92)]).buffer(0), SANDSTONE, INK)
-        # Bold recumbent marker bed closing sideways at the right edge
-        _bold_band(
-            d,
-            [P(0, 1, .92), P(0, 0, .92), P(.98, 0, .50), P(0, 0, 0), P(0, 1, 0)],
-            [P(0, 1, .82), P(0, 0, .82), P(.84, 0, .50), P(0, 0, .11), P(0, 1, .11)],
-        )
-
-    elif kind == 'reclined':
-        # Lower/right inclined limb surface from front-bottom up to top-right
-        d.poly([P(0, 0, 0), P(.98, 0, .94), P(.28, .28, .85), P(0, 1, .45)], LIMESTONE, INK)
-        # Moderately dipping axial surface hatched along strike/dip, hinge pitching 90 deg down dip
-        _axial_plane(
-            d,
-            [P(.98, 0, .94), P(.28, .28, .85), P(0, 1, .45), P(0, 0, 0)],
-            angle=24,
-        )
-        # Upper back limb surface
-        d.poly([P(.98, 0, .94), P(.45, 1, .96), P(.28, .28, .85)], SANDSTONE, INK)
-        # Bold marker bed tracing the reclined sideways closure and down-dip limbs
-        _bold_band(
-            d,
-            [P(.98, 0, .94), P(.28, .28, .85), P(0, 1, .45), P(0, 0, 0), P(.98, 0, .94)],
-            [P(.86, 0, .84), P(.35, .24, .75), P(.08, .86, .42), P(.08, 0, .12), P(.86, 0, .84)],
-        )
-
-    _draw_box_front(d)
+    hull = diagram['hull']
+    d.poly(points(hull), PAPER, INK)
+    for surface in diagram['surface']:
+        _axial_plane(d, points(surface), angle=diagram['hatch'], spacing=1.9)
+    d.line(points(hull + [hull[0]]), INK, .55)
+    d.line(points([hull[0], diagram['front'], hull[2]]), INK, .45)
+    d.line(points([diagram['front'], hull[4]]), INK, .45)
+    for line in diagram['thin']:
+        d.line(points(line), STEEL, .4)
+    for line in diagram['bed']:
+        d.line(points(line), '#111111', 1.15)
     return d
 
 
