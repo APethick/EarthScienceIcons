@@ -1,0 +1,14 @@
+{
+  "gc_xrd_diffractometer": {
+    "reason": "Separate goniometer, powder mount and diffraction peak inset.",
+    "outline_sha256": "a5e1cc0c4178d871df930a4cc55616ab29fe5400d59a430539b12dee622b4064"
+  },
+  "gc_gibbs_free_energy": {
+    "reason": "Separate Delta-G header from energy curve and equilibrium indicator.",
+    "outline_sha256": "edfc8228fc3c16e017e37e8dbcaf9d9d5baf793acdaa0bc73ce8cf1dd4c6c04f"
+  },
+  "gc_water_activity_ah2o": {
+    "reason": "Replace malformed outline with symmetric curved droplet.",
+    "outline_sha256": "71abdfdc8032af0a69b9d272f5c49e98ab2c24e2f8bc90c788ba78f42ba3de42"
+  }
+}

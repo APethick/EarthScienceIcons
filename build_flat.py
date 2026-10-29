@@ -17,7 +17,8 @@ def build_flat():
     dist = Path(__file__).resolve().parent / 'dist'
     icons = ALL_ICONS
     expected = {icon['id'] for icon in icons}
-    available = set(ICON_MATERIALS) | EXPANDED_IDS | MT_IDS | GEOCHEM_IDS | FGM_IDS
+    from icons_spectroscopy import SPECTROSCOPY_IDS
+    available = SPECTROSCOPY_IDS | set(ICON_MATERIALS) | EXPANDED_IDS | MT_IDS | GEOCHEM_IDS | FGM_IDS
     if expected != available:
         raise ValueError(f'Material assignments differ: {expected ^ available}')
     for icon in icons:

@@ -193,11 +193,11 @@ def build_recipes():
         "gl_structural_stereonet": [C(12, 12, 9, "p"), E(12, 12, 4, 9, "a"), L([(3, 12), (21, 12)], WHITE, 1.2)] + dots([(14, 8), (16, 15)], INK),
         "gl_block_model_3d": cube() + [L([(7.5, 10), (7.5, 19.5)], WHITE, 1), L([(16.5, 10), (16.5, 19.5)], WHITE, 1), L([(3, 12.5), (12, 17.5), (21, 12.5)], WHITE, 1)],
         "gl_wireframe_mesh": [P([(12, 2.5), (21, 9), (18, 21), (5, 20), (3, 8)], "p"), L([(12, 2.5), (9, 12), (18, 21), (21, 9), (9, 12), (5, 20), (3, 8), (9, 12)], "a")],
-        "gl_faulted_stratigraphy": [P([(3, 4), (11, 4), (7, 20), (3, 20)], "a"), P([(14, 7), (21, 7), (21, 21), (10, 21)], "p"), L([(3, 11), (9, 11)]), L([(12, 14), (21, 14)]), L([(12, 3), (8, 21)])],
+        "gl_faulted_stratigraphy": [P([(3, 4), (10, 4), (15, 20), (3, 20)], "p"), P([(11.5, 7), (21, 7), (21, 20), (15, 20)], "a"), L([(3, 10), (11.9, 10)]), L([(3, 15), (13.4, 15)]), L([(13, 12), (21, 12)]), L([(14.5, 17), (21, 17)]), L([(10, 4), (15, 20)], INK, 1.5)],
         "gl_folded_anticline_model": [wave(8, "a", 3, 1), wave(13, INK, 3, 1), wave(18, "a", 3, 1)],
         "gl_intrusive_pluton_model": strata() + [P([(6, 21), (7, 16), (11, 13), (11, 5), (14, 5), (14, 13), (18, 16), (19, 21)], INK)],
         "gl_plate_subduction": [P([(3, 8), (11, 8), (21, 19), (18, 21), (9, 12), (3, 12)], "a"), P([(14, 8), (21, 8), (21, 12), (17, 12)], "p"), A(4, 4, 10, 4), A(21, 4, 15, 4)],
-        "gl_fault_slip_tectonics": [P([(3, 5), (11, 5), (7, 18), (3, 18)], "a"), P([(15, 8), (21, 8), (21, 21), (11, 21)], "p"), A(8, 12, 10, 4), A(14, 12, 12, 20)],
+        "gl_fault_slip_tectonics": [P([(3, 4), (10, 4), (15, 20), (3, 20)], "p"), P([(11.5, 7), (21, 7), (21, 20), (15, 20)], "a"), L([(3, 10), (11.9, 10)]), L([(13, 13), (21, 13)]), L([(10, 4), (15, 20)], INK, 1.4), A(7, 13, 6, 9), A(17, 10, 18, 14)],
         "gl_sedimentation_deposition": [R(3, 16, 18, 5, "p"), L([(3, 18.5), (21, 18.5)]), A(6, 4, 6, 13, "a"), A(12, 3, 12, 13, "a"), A(18, 4, 18, 13, "a")],
         "gl_metamorphism_pt": crystal(12, 12, .75) + [A(2, 12, 6, 12), A(22, 12, 18, 12), A(12, 2, 12, 6), A(12, 22, 12, 18)],
         "gl_weathering_erosion": [P([(3, 21), (5, 7), (12, 4), (16, 12), (12, 21)], "p"), L([(6, 8), (10, 13), (6, 17)])] + dots([(18, 8), (20, 14), (17, 20)], "a", 1.3),
@@ -262,9 +262,9 @@ def build_recipes():
         "gc_melt_chemistry_f02": flask() + [C(12, 12, 1.5, RED, True)],
         "gc_carbon_mineralisation": crystal(12, 14, .7) + [A(12, 2, 12, 8), L([(3, 13), (5, 13)]), L([(19, 13), (21, 13)])],
         "gl_lithology_tensor_anisotropy": [E(12, 12, 10, 5, "p", -30), L([(5, 16), (19, 8)], "a"), L([(9, 5), (15, 19)], INK)],
-        "gl_fault_normal_graben": [P([(3, 5), (8, 5), (12, 17), (3, 17)], "a"), P([(16, 5), (21, 5), (21, 17), (12, 17)], "a"), P([(9, 10), (15, 10), (12, 19)], "p"), A(3, 2, 7, 2), A(21, 2, 17, 2)],
-        "gl_fault_thrust_ramp": [P([(3, 16), (8, 16), (15, 7), (21, 7), (21, 12), (17, 12), (10, 21), (3, 21)], "a"), L([(3, 12), (7, 12), (14, 3), (21, 3)], INK), A(4, 7, 10, 7)],
-        "gl_fault_strike_slip_dextral": [R(3, 3, 8, 18, "p"), R(14, 3, 7, 18, "a"), A(7, 17, 7, 7), A(17, 7, 17, 17)],
+        "gl_fault_normal_graben": [P([(2, 5), (7, 5), (11, 20), (2, 20)], "a"), P([(17, 5), (22, 5), (22, 20), (13, 20)], "a"), P([(8, 10), (16, 10), (13, 20), (11, 20)], "p"), L([(2, 12), (8.9, 12)]), L([(15.1, 12), (22, 12)]), L([(9.5, 16), (14.5, 16)]), L([(7, 5), (11, 20)]), L([(17, 5), (13, 20)])],
+        "gl_fault_thrust_ramp": [P([(2, 16), (8, 16), (15, 8), (22, 8), (22, 13), (17, 13), (11, 20), (2, 20)], "a"), P([(2, 4), (12, 4), (16, 8), (9, 16), (2, 16)], "p"), L([(2, 9), (10, 9), (12, 12)]), L([(2, 13), (8, 13), (9, 14)]), L([(2, 16), (9, 16), (16, 8), (22, 8)], INK, 1.5), A(5, 6, 9, 6)],
+        "gl_fault_strike_slip_dextral": [P([(3, 4), (11, 4), (11, 20), (3, 20)], "p"), P([(13, 4), (21, 4), (21, 20), (13, 20)], "a"), L([(11, 3), (11, 21)], INK, 1.3), L([(13, 3), (13, 21)], INK, 1.3), L([(3, 10), (11, 10)]), L([(13, 14), (21, 14)]), A(8, 16, 8, 12), A(16, 8, 16, 12)],
         "gl_shear_zone_sigmoidal": [L([(3, 4), (21, 4)]), L([(3, 20), (21, 20)]), E(12, 12, 7, 3, "a", -30), A(3, 2, 10, 2), A(21, 22, 14, 22)],
         "gl_chevron_kink_fold": [L([(3, 18), (7, 6), (12, 17), (17, 6), (21, 18)], "a", 2), L([(3, 12), (7, 2), (12, 12), (17, 2), (21, 12)], INK)],
         "gl_ptygmatic_vein_fold": [R(3, 3, 18, 18, "p"), L([(5, 5), (17, 6), (7, 11), (18, 15), (7, 18), (17, 20)], "a", 2)],
@@ -360,7 +360,105 @@ PALETTES = {
 }
 
 
+# Layered fault blocks, drawn in the perspective and lithological colours of
+# the structural geology reference. Coordinates are on the 24-unit canvas.
+def fault_block_artwork(identifier):
+    grey, top, dark, orange = '#a4b4a5', '#dce5d5', '#536c70', '#d5ab75'
+    edge = '#171717'
+    layers = []
+    def face(points, colour):
+        layers.append(P(points, colour, True))
+        layers.append(L(points + [points[0]], edge, .32))
+    def mark(points, width=.3):
+        layers.append(L(points, edge, width))
+    def arrow(points):
+        layers.append(L(points, edge, .48))
+        x0, y0 = points[-2]; x1, y1 = points[-1]
+        dx, dy = x1-x0, y1-y0
+        length = math.hypot(dx, dy); ux, uy = dx/length, dy/length
+        layers.append(P([(x1,y1),(x1-1.45*ux+.65*uy,y1-1.45*uy-.65*ux),
+                         (x1-1.45*ux-.65*uy,y1-1.45*uy+.65*ux)], edge, True))
+    if identifier == 'gl_fault_normal_graben':
+        # Conjugate normal faults bound a down-dropped central block.
+        face([(1,7),(6,7),(9,20),(1,20)], orange)
+        face([(1,7),(6,7),(7,11),(1,11)], grey)
+        face([(1,11),(7,11),(7.7,14),(1,14)], dark)
+        face([(1,7),(3,5),(5,5),(6,7)], top)
+        face([(18,7),(23,7),(23,20),(15,20)], orange)
+        face([(18,7),(23,7),(23,11),(17,11)], grey)
+        face([(17,11),(23,11),(23,14),(16.3,14)], dark)
+        face([(18,7),(20,5),(23,5),(23,7)], top)
+        face([(7.1,11),(16.9,11),(15,20),(9,20)], orange)
+        face([(7.1,11),(16.9,11),(16.1,14.5),(7.9,14.5)], grey)
+        face([(7.9,14.5),(16.1,14.5),(15.5,17),(8.5,17)], dark)
+        face([(7.1,11),(8.5,9.3),(15.5,9.3),(16.9,11)], top)
+        mark([(6,7),(9,20)], .48); mark([(18,7),(15,20)], .48)
+        arrow([(12,11.5),(12,13.6)])
+    elif identifier in ('gl_faulted_stratigraphy', 'gl_fault_slip_tectonics'):
+        # Two exposed blocks: the right hanging wall has dropped along the
+        # diagonal plane, with three corresponding, offset marker horizons.
+        face([(2,7),(10,7),(13.8,20),(2,20)], orange)
+        face([(2,7),(10,7),(11.25,11.2),(2,11.2)], grey)
+        face([(2,11.2),(11.25,11.2),(12.15,14.3),(2,14.3)], dark)
+        face([(2,7),(4.4,5),(9.4,5),(10,7)], top)
+        face([(10,7),(9.4,5),(10.13,7.5),(10.73,9.5)], grey)
+        face([(10.73,9.5),(21,9.5),(21,20),(13.8,20)], orange)
+        face([(10.73,9.5),(21,9.5),(21,12.7),(11.67,12.7)], grey)
+        face([(11.67,12.7),(21,12.7),(21,15.6),(12.51,15.6)], dark)
+        face([(10.73,9.5),(12.43,7.8),(22.5,7.8),(21,9.5)], top)
+        face([(21,9.5),(22.5,7.8),(22.5,18.3),(21,20)], grey)
+        face([(21,12.7),(22.5,11),(22.5,13.9),(21,15.6)], dark)
+        face([(21,15.6),(22.5,13.9),(22.5,18.3),(21,20)], orange)
+        mark([(10,7),(13.8,20)], .55)
+        if identifier == 'gl_fault_slip_tectonics':
+            # Opposing movement parallel to the dipping fault plane.
+            arrow([(8.5,10.4),(8.0,8.7)])
+            arrow([(15.3,10.2),(15.8,11.9)])
+    elif identifier == 'gl_fault_thrust_ramp':
+        # A low-angle ramp puts a layered hanging-wall sheet over the footwall.
+        face([(2,13),(20,13),(22.5,15),(22.5,20),(2,20)], orange)
+        face([(2,13),(20,13),(22.5,15),(22.5,16.6),(2,16.6)], dark)
+        face([(2,6),(20,6),(20,12),(14.5,12),(10.5,14.5),(2,12)], grey)
+        face([(2,6),(4,4.5),(22,4.5),(20,6)], top)
+        face([(20,6),(22,4.5),(22,10.5),(20,12)], grey)
+        face([(2,10.2),(10.4,12.3),(14.3,10.1),(20,10.1),(20,12),(14.5,12),(10.5,14.5),(2,12)], dark)
+        mark([(2,12),(10.5,14.5),(14.5,12),(20,12)], .65)
+        # Teeth sit on the overriding (hanging-wall) side of the ramp.
+        layers.append(P([(11.2,14.1),(11.4,12.8),(12.4,13.3)], edge, True))
+        layers.append(P([(13.2,12.9),(13.3,11.6),(14.4,12.2)], edge, True))
+        arrow([(15.8,8.5),(12.6,8.5)])
+        arrow([(9,18.2),(12.2,18.2)])
+    else:
+        # Two parallel blocks displaced horizontally along their common seam.
+        face([(2,11),(9,11),(9,19),(2,19)], orange)
+        face([(2,11),(9,11),(9,16.5),(2,16.5)], grey)
+        face([(2,15),(9,15),(9,17),(2,17)], dark)
+        face([(2,11),(7,5),(14,5),(9,11)], top)
+        face([(9,11),(14,5),(14,13),(9,19)], grey)
+        face([(10,9),(17,9),(17,17),(10,17)], orange)
+        face([(10,9),(17,9),(17,14.5),(10,14.5)], grey)
+        face([(10,13),(17,13),(17,15),(10,15)], dark)
+        face([(10,9),(15,3),(22,3),(17,9)], top)
+        face([(17,9),(22,3),(22,11),(17,17)], grey)
+        face([(17,13),(22,7),(22,9),(17,15)], dark)
+        face([(17,15),(22,9),(22,11),(17,17)], orange)
+        # Dextral: each block moves right relative to an observer across the seam.
+        arrow([(8,9),(9.6,7)])
+        arrow([(13.4,5.7),(11.8,7.7)])
+    return layers
+
+
+FAULT_BLOCK_IDS = {'gl_faulted_stratigraphy', 'gl_fault_slip_tectonics',
+                   'gl_fault_normal_graben', 'gl_fault_thrust_ramp',
+                   'gl_fault_strike_slip_dextral'}
+
+
 def artwork(icon):
+    from icons_spectroscopy import SPECTROSCOPY_IDS, REPLACEMENTS, flat_artwork
+    if icon["id"] in SPECTROSCOPY_IDS or icon["id"] in REPLACEMENTS:
+        return flat_artwork(icon)
+    if icon["id"] in FAULT_BLOCK_IDS:
+        return fault_block_artwork(icon["id"])
     from detailed_flat import artwork as detailed_artwork
     return detailed_artwork(icon)
 

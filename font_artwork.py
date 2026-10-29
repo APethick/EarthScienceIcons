@@ -75,7 +75,8 @@ FOLD_ATTITUDE_IDS = {
 
 def detailed_font_geometry(icon):
     builder = OVERRIDES.get(icon["id"], icon["builder"])
-    geometry = builder()
+    from icons_spectroscopy import REPLACEMENTS, build_geometry
+    geometry = build_geometry(REPLACEMENTS[icon["id"]]) if icon["id"] in REPLACEMENTS else builder()
     if icon['id'] not in FOLD_ATTITUDE_IDS:
         geometry = geometry.buffer(0)
     if geometry.is_empty or not geometry.is_valid:

@@ -1,12 +1,12 @@
 /**
- * GeoScience Icons v2.7.2
+ * GeoScience Icons v2.8.0
  * Domains: Geophysical, Geotechnical, Geological, Geochemical
  * Categories: Methods, Earth Model Types, Processes
  */
 @font-face {
   font-family: 'GeoScience Icons';
-  src: url('GeoScienceIcons.woff?v=2.7.2') format('woff'),
-       url('GeoScienceIcons.ttf?v=2.7.2') format('truetype');
+  src: url('GeoScienceIcons.woff?v=2.8.0') format('woff'),
+       url('GeoScienceIcons.ttf?v=2.8.0') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -496,3 +496,16 @@
 .gi-gl-unit-stratotype::before { content: "\e1d5"; } /* Unit Stratotype (U+E1D5) */
 .gi-gl-boundary-stratotype::before { content: "\e1d6"; } /* Boundary Stratotype (U+E1D6) */
 .gi-gl-earthquake-magnitude-energy::before { content: "\e1d7"; } /* Earthquake Magnitude vs Energy (U+E1D7) */
+.gi-gp-hyperspectral-lab::before { content: "\e1d8"; } /* Laboratory Hyperspectral Spectroscopy (U+E1D8) */
+.gi-gp-hyperspectral-satellite::before { content: "\e1d9"; } /* Satellite Hyperspectral Imaging (U+E1D9) */
+.gi-gp-hyperspectral-cube::before { content: "\e1da"; } /* Hyperspectral Data Cube (U+E1DA) */
+.gi-gp-hyperspectral-bands::before { content: "\e1db"; } /* Hyperspectral Band Selection (U+E1DB) */
+.gi-gp-hyperspectral-spectrum::before { content: "\e1dc"; } /* Recorded Spectral Signature (U+E1DC) */
+.gi-gp-hyperspectral-uv::before { content: "\e1dd"; } /* Ultraviolet Spectroscopy (UV) (U+E1DD) */
+.gi-gp-hyperspectral-visible::before { content: "\e1de"; } /* Visible Spectroscopy (VIS) (U+E1DE) */
+.gi-gp-hyperspectral-vnir::before { content: "\e1df"; } /* Visible–Near Infrared Spectroscopy (VNIR) (U+E1DF) */
+.gi-gp-hyperspectral-nir::before { content: "\e1e0"; } /* Near Infrared Spectroscopy (NIR) (U+E1E0) */
+.gi-gp-hyperspectral-ir::before { content: "\e1e1"; } /* Infrared Spectroscopy (IR) (U+E1E1) */
+.gi-gp-hyperspectral-swir::before { content: "\e1e2"; } /* Shortwave Infrared Spectroscopy (SWIR) (U+E1E2) */
+.gi-gp-hyperspectral-mwir::before { content: "\e1e3"; } /* Midwave Infrared Spectroscopy (MWIR) (U+E1E3) */
+.gi-gp-hyperspectral-tir::before { content: "\e1e4"; } /* Thermal Infrared Spectroscopy (TIR / LWIR) (U+E1E4) */

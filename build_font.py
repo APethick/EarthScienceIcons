@@ -196,10 +196,10 @@ def build_all(install_opus: bool = False):
         {
             "familyName": "GeoScience Icons",
             "styleName": "Regular",
-            "uniqueFontIdentifier": "GeoScienceIcons-Regular-2.7.2",
+            "uniqueFontIdentifier": "GeoScienceIcons-Regular-2.8.0",
             "fullName": "GeoScience Icons Regular",
             "psName": "GeoScienceIcons-Regular",
-            "version": "Version 2.702",
+            "version": "Version 2.800",
             "copyright": "Copyright (c) 2026 GeoScience Icon Set. Open License.",
             "description": "Comprehensive TrueType icon font covering Geophysical, Geotechnical, Geological, and Geochemical methods, earth model types, and processes.",
         }
@@ -215,7 +215,7 @@ def build_all(install_opus: bool = False):
         fsType=0,  # Installable embedding allowed
     )
     fb.setupPost(isFixedPitch=1)
-    fb.font["head"].fontRevision = 2.702
+    fb.font["head"].fontRevision = 2.800
 
     ttf_dist_path = dist_dir / "GeoScienceIcons.ttf"
     ttf_root_path = root_dir / "GeoScienceIcons.ttf"
@@ -234,7 +234,7 @@ def build_all(install_opus: bool = False):
     json_data = {
         "fontFamily": "GeoScience Icons",
         "postScriptName": "GeoScienceIcons-Regular",
-        "version": "2.7.2",
+        "version": "2.8.0",
         "svgStyle": "detailed-flat-natural-materials",
         "fontStyle": "detailed-technical-line",
         "unitsPerEm": UPM,
@@ -250,14 +250,14 @@ def build_all(install_opus: bool = False):
     # Write CSS stylesheet
     css_lines = [
         "/**",
-        " * GeoScience Icons v2.7.2",
+        " * GeoScience Icons v2.8.0",
         " * Domains: Geophysical, Geotechnical, Geological, Geochemical",
         " * Categories: Methods, Earth Model Types, Processes",
         " */",
         "@font-face {",
         "  font-family: 'GeoScience Icons';",
-        "  src: url('GeoScienceIcons.woff?v=2.7.2') format('woff'),",
-        "       url('GeoScienceIcons.ttf?v=2.7.2') format('truetype');",
+        "  src: url('GeoScienceIcons.woff?v=2.8.0') format('woff'),",
+        "       url('GeoScienceIcons.ttf?v=2.8.0') format('truetype');",
         "  font-weight: normal;",
         "  font-style: normal;",
         "  font-display: block;",

@@ -8,7 +8,7 @@
 
 **Detailed linework · Flat colour · SVG · TTF · WOFF · Public domain**
 
-[**Explore every icon →**](https://APethick.github.io/EarthScienceIcons/) · [Download the set](https://APethick.github.io/EarthScienceIcons/assets/EarthScienceIcons.zip?v=2.7.2) · [TTF font](dist/GeoScienceIcons.ttf) · [Icon manifest](dist/geoscience-icons.json)
+[**Explore every icon →**](https://APethick.github.io/EarthScienceIcons/) · [Download the set](https://APethick.github.io/EarthScienceIcons/assets/EarthScienceIcons.zip?v=2.8.0) · [TTF font](dist/GeoScienceIcons.ttf) · [Icon manifest](dist/geoscience-icons.json)
 
 ![Flat colour SVGs and detailed technical font glyphs](dist/style_preview.png)
 
@@ -173,3 +173,11 @@ Thirty additions cover geochemical vectoring, hydrothermal alteration, magmatic 
 - **Petrology, sedimentology & stratigraphy (§1, §2.4.1, §2.6, §9.9)**: IUGS QAPF plutonic double triangle and gabbroic rock ternaries with mineral habit glyphs, P-T metamorphic facies diagram, 6 roundness/sphericity classes, 12 visual percentage estimation charts (1%–50%), unit and boundary stratotypes (GSSP), and earthquake magnitude vs energy comparison.
 
 ![Field Geologists' Manual colour and font specimens](dist/field_manual_preview.png)
+
+## Spectroscopy expansion (2.8)
+
+The Gibbs free energy icon separates the Delta-G label from its equilibrium curve. Water activity uses a symmetric curved droplet. The existing XRD icon retains its ID and now separates the powder diffraction geometry from its peak trace. These three redraws affect both colour SVGs and monochrome glyphs.
+
+Thirteen appended icons cover laboratory and satellite hyperspectral acquisition, a data cube, contiguous band selection, a recorded spectral signature, UV, VIS, VNIR, NIR, IR, SWIR, MWIR and TIR/LWIR. Spectral windows and curves are schematic: wavelength coverage depends on the instrument. Reflectance troughs indicate absorption; thermal measurements use emitted radiance or emissivity.
+
+Spectral terminology references: [USGS imaging spectroscopy overview](https://pubs.usgs.gov/publication/70240743), [NASA/JPL hyperspectral thermal emission spectrometer](https://hytes.jpl.nasa.gov/).

@@ -17,7 +17,7 @@ import opus.base.properties.OpusProperty;
 import opus.base.resources.OpusResources;
 
 /**
- * GeoScienceIcons TrueType glyph font (471 icons) covering Geophysical, Geotechnical,
+ * GeoScienceIcons TrueType glyph font (484 icons) covering Geophysical, Geotechnical,
  * Geological, and Geochemical methods, earth model types, and processes.
  * Includes dedicated suites for Inversion, Thermodynamics, Petrophysics, and Geochemistry,
  * aligned with opus.geo.geochemistry, opus.geo.petrophysics, and opus.geo.geotechnical.
@@ -499,6 +499,19 @@ public class GeoScienceIcons extends GlyphFont {
 		GL_UNIT_STRATOTYPE('\ue1d5'), // Unit Stratotype (Geological - Earth Model Types)
 		GL_BOUNDARY_STRATOTYPE('\ue1d6'), // Boundary Stratotype (Geological - Earth Model Types)
 		GL_EARTHQUAKE_MAGNITUDE_ENERGY('\ue1d7'), // Earthquake Magnitude vs Energy (Geological - Processes)
+		GP_HYPERSPECTRAL_LAB('\ue1d8'), // Laboratory Hyperspectral Spectroscopy (Geophysical - Methods)
+		GP_HYPERSPECTRAL_SATELLITE('\ue1d9'), // Satellite Hyperspectral Imaging (Geophysical - Methods)
+		GP_HYPERSPECTRAL_CUBE('\ue1da'), // Hyperspectral Data Cube (Geophysical - Methods)
+		GP_HYPERSPECTRAL_BANDS('\ue1db'), // Hyperspectral Band Selection (Geophysical - Methods)
+		GP_HYPERSPECTRAL_SPECTRUM('\ue1dc'), // Recorded Spectral Signature (Geophysical - Methods)
+		GP_HYPERSPECTRAL_UV('\ue1dd'), // Ultraviolet Spectroscopy (UV) (Geophysical - Methods)
+		GP_HYPERSPECTRAL_VISIBLE('\ue1de'), // Visible Spectroscopy (VIS) (Geophysical - Methods)
+		GP_HYPERSPECTRAL_VNIR('\ue1df'), // Visible–Near Infrared Spectroscopy (VNIR) (Geophysical - Methods)
+		GP_HYPERSPECTRAL_NIR('\ue1e0'), // Near Infrared Spectroscopy (NIR) (Geophysical - Methods)
+		GP_HYPERSPECTRAL_IR('\ue1e1'), // Infrared Spectroscopy (IR) (Geophysical - Methods)
+		GP_HYPERSPECTRAL_SWIR('\ue1e2'), // Shortwave Infrared Spectroscopy (SWIR) (Geophysical - Methods)
+		GP_HYPERSPECTRAL_MWIR('\ue1e3'), // Midwave Infrared Spectroscopy (MWIR) (Geophysical - Methods)
+		GP_HYPERSPECTRAL_TIR('\ue1e4'), // Thermal Infrared Spectroscopy (TIR / LWIR) (Geophysical - Methods)
         ;
 
         private final char ch;
@@ -1012,6 +1025,19 @@ public class GeoScienceIcons extends GlyphFont {
 			case "gl_unit_stratotype" -> Glyph.GL_UNIT_STRATOTYPE;
 			case "gl_boundary_stratotype" -> Glyph.GL_BOUNDARY_STRATOTYPE;
 			case "gl_earthquake_magnitude_energy" -> Glyph.GL_EARTHQUAKE_MAGNITUDE_ENERGY;
+			case "gp_hyperspectral_lab" -> Glyph.GP_HYPERSPECTRAL_LAB;
+			case "gp_hyperspectral_satellite" -> Glyph.GP_HYPERSPECTRAL_SATELLITE;
+			case "gp_hyperspectral_cube" -> Glyph.GP_HYPERSPECTRAL_CUBE;
+			case "gp_hyperspectral_bands" -> Glyph.GP_HYPERSPECTRAL_BANDS;
+			case "gp_hyperspectral_spectrum" -> Glyph.GP_HYPERSPECTRAL_SPECTRUM;
+			case "gp_hyperspectral_uv" -> Glyph.GP_HYPERSPECTRAL_UV;
+			case "gp_hyperspectral_visible" -> Glyph.GP_HYPERSPECTRAL_VISIBLE;
+			case "gp_hyperspectral_vnir" -> Glyph.GP_HYPERSPECTRAL_VNIR;
+			case "gp_hyperspectral_nir" -> Glyph.GP_HYPERSPECTRAL_NIR;
+			case "gp_hyperspectral_ir" -> Glyph.GP_HYPERSPECTRAL_IR;
+			case "gp_hyperspectral_swir" -> Glyph.GP_HYPERSPECTRAL_SWIR;
+			case "gp_hyperspectral_mwir" -> Glyph.GP_HYPERSPECTRAL_MWIR;
+			case "gp_hyperspectral_tir" -> Glyph.GP_HYPERSPECTRAL_TIR;
 			case "saussuritised" -> Glyph.GC_SAUSSURITISED;
 			case "serpentinisation" -> Glyph.GC_SERPENTINISATION;
 			case "epidote_alteration" -> Glyph.GC_EPIDOTE_ALTERATION;

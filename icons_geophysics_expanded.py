@@ -211,25 +211,41 @@ def gpr_scene(kind):
 
 
 def radiometric_scene(kind):
-    d=Diagram()
-    if kind=='radiometrics_ternary':
-        d.poly([(24,4),(45,42),(3,42)],None)
-        d.poly([(24,24),(24,4),(3,42)],SOIL,SOIL)
-        d.poly([(24,24),(24,4),(45,42)],ROCK,ROCK)
-        d.poly([(24,24),(3,42),(45,42)],SAND,SAND)
-        d.word('K',2,33,1.1).word('U',40,33,1.1).word('TH',20,4,1)
-        d.circle(24,25,1.5,WHITE,solid=True)
+    d = Diagram()
+    if kind == 'radiometrics_ternary':
+        # Reserve clear margins for the three vertex labels.
+        top, left, right = (24, 11), (7, 37), (41, 37)
+        centre = (24, 28)
+        d.poly([centre, top, left], SOIL, SOIL)
+        d.poly([centre, top, right], ROCK, ROCK)
+        d.poly([centre, left, right], SAND, SAND)
+        d.line([left, top, right, left], INK, 1.2)
+        d.word('K', 22.5, 3, .9)
+        d.word('U', 3, 40, .9)
+        d.word('TH', 37, 40, .8)
+        d.circle(24, 28, 1.3, WHITE, INK, solid=True)
         return d
-    d.rect(4,4,40,39,GLASS,2)
-    # Spectral peaks and a distinct channel window, not four copies of one badge.
-    selected={'radiometrics_total':None,'radiometrics_potassium_k':14,'radiometrics_uranium_u':25,'radiometrics_thorium_th':36}[kind]
-    for x,height in ((14,14),(25,21),(36,28)):
-        colour=YELLOW if selected is None or x==selected else ALU
-        if selected==x:d.rect(x-3,12,6,27,SAND,.3)
-        d.poly([(x-4,38),(x,38-height),(x+4,38)],colour,INK)
-    d.line([(8,39),(41,39)],INK)
-    if selected is None:d.word('T',9,8,1.2).line([(17,11),(38,11)],STEEL)
-    else:d.word('K' if selected==14 else 'U' if selected==25 else 'TH',8,7,1.2)
+    d.rect(3, 3, 42, 42, GLASS, 1.5)
+    selected = {'radiometrics_total': None, 'radiometrics_potassium_k': 14,
+                'radiometrics_uranium_u': 25, 'radiometrics_thorium_th': 36}[kind]
+    # Header is above the plotting area; smooth photopeaks sit on a continuum.
+    label = {None: 'T', 14: 'K', 25: 'U', 36: 'TH'}[selected]
+    d.word(label, 6, 6, .8)
+    d.line([(7, 14), (7, 39), (41, 39)], INK, 1)
+    if selected is not None:
+        d.rect(selected - 3, 16, 6, 22, SAND, .2, SAND)
+    points = []
+    for i in range(137):
+        x = 7 + i * .25
+        continuum = 2.2 + 2.4 * math.exp(-(x - 7) / 9)
+        peaks = sum(height * math.exp(-.5 * ((x - centre) / width) ** 2)
+                    for centre, height, width in ((14, 9, 1.5), (25, 12, 1.7), (36, 16, 1.8)))
+        points.append((x, 38 - continuum - peaks))
+    d.line(points, INK, 1.25)
+    for centre in (14, 25, 36):
+        if selected is None or selected == centre:
+            segment = [point for point in points if abs(point[0] - centre) <= 2.5]
+            d.line(segment, YELLOW, 1.5)
     return d
 
 
@@ -508,9 +524,9 @@ for offset, row in enumerate(CATALOG_ROWS.strip().splitlines()):
 EXPANDED_IDS = {icon['id'] for icon in EXPANDED_GEOPHYSICS_ICONS}
 
 
-def flat_artwork(icon):
+def flat_artwork(icon, drawing=None):
     from detailed_flat import FlatLayer
-    drawing=design(icon['kind'])
+    drawing=design(icon['kind']) if drawing is None else drawing
     native_ink=drawing.geometry()
     cleaned=native_ink.buffer(.65,quad_segs=4,join_style=1).buffer(-.65,quad_segs=4,join_style=1)
     x0,y0,x1,y1=cleaned.bounds

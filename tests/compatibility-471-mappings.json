@@ -1,0 +1,1886 @@
+{
+  "gp_seismic_reflection": [
+    57345,
+    "!"
+  ],
+  "gp_gravity_survey": [
+    57346,
+    "\""
+  ],
+  "gp_magnetic_survey": [
+    57347,
+    "#"
+  ],
+  "gp_electromagnetic_em": [
+    57348,
+    "$"
+  ],
+  "gp_ert_ip": [
+    57349,
+    "%"
+  ],
+  "gp_velocity_model": [
+    57350,
+    "&"
+  ],
+  "gp_density_model": [
+    57351,
+    "'"
+  ],
+  "gp_susceptibility_model": [
+    57352,
+    "("
+  ],
+  "gp_resistivity_section": [
+    57353,
+    ")"
+  ],
+  "gp_seismic_cube_3d": [
+    57354,
+    "*"
+  ],
+  "gp_wave_propagation": [
+    57355,
+    "+"
+  ],
+  "gp_ray_refraction_snell": [
+    57356,
+    ","
+  ],
+  "gp_geophysical_inversion": [
+    57357,
+    "-"
+  ],
+  "gp_signal_deconvolution": [
+    57358,
+    "."
+  ],
+  "gp_nmo_stacking": [
+    57359,
+    "/"
+  ],
+  "gt_spt_test": [
+    57360,
+    "0"
+  ],
+  "gt_cpt_cone": [
+    57361,
+    "1"
+  ],
+  "gt_triaxial_shear": [
+    57362,
+    "2"
+  ],
+  "gt_piezometer_well": [
+    57363,
+    "3"
+  ],
+  "gt_inclinometer_casing": [
+    57364,
+    "4"
+  ],
+  "gt_mohr_coulomb": [
+    57365,
+    "5"
+  ],
+  "gt_rock_mass_rmr_gsi": [
+    57366,
+    "6"
+  ],
+  "gt_slope_stability_grid": [
+    57367,
+    "7"
+  ],
+  "gt_soil_profile_log": [
+    57368,
+    "8"
+  ],
+  "gt_fe_mesh_tunnel": [
+    57369,
+    "9"
+  ],
+  "gt_consolidation_settlement": [
+    57370,
+    ":"
+  ],
+  "gt_soil_liquefaction": [
+    57371,
+    ";"
+  ],
+  "gt_slope_landslide": [
+    57372,
+    "<"
+  ],
+  "gt_seepage_flownet": [
+    57373,
+    "="
+  ],
+  "gt_rock_burst_spalling": [
+    57374,
+    ">"
+  ],
+  "gl_strike_dip_mapping": [
+    57375,
+    "?"
+  ],
+  "gl_diamond_core_drilling": [
+    57376,
+    "@"
+  ],
+  "gl_thin_section_petrography": [
+    57377,
+    "A"
+  ],
+  "gl_stratigraphic_logging": [
+    57378,
+    "B"
+  ],
+  "gl_structural_stereonet": [
+    57379,
+    "C"
+  ],
+  "gl_block_model_3d": [
+    57380,
+    "D"
+  ],
+  "gl_wireframe_mesh": [
+    57381,
+    "E"
+  ],
+  "gl_faulted_stratigraphy": [
+    57382,
+    "F"
+  ],
+  "gl_folded_anticline_model": [
+    57383,
+    "G"
+  ],
+  "gl_intrusive_pluton_model": [
+    57384,
+    "H"
+  ],
+  "gl_plate_subduction": [
+    57385,
+    "I"
+  ],
+  "gl_fault_slip_tectonics": [
+    57386,
+    "J"
+  ],
+  "gl_sedimentation_deposition": [
+    57387,
+    "K"
+  ],
+  "gl_metamorphism_pt": [
+    57388,
+    "L"
+  ],
+  "gl_weathering_erosion": [
+    57389,
+    "M"
+  ],
+  "gc_soil_stream_sampling": [
+    57390,
+    "N"
+  ],
+  "gc_pxrf_analyzer": [
+    57391,
+    "O"
+  ],
+  "gc_icp_ms_spectrometry": [
+    57392,
+    "P"
+  ],
+  "gc_fire_assay": [
+    57393,
+    "Q"
+  ],
+  "gc_isotope_ratio_analysis": [
+    57394,
+    "R"
+  ],
+  "gc_alteration_zonation": [
+    57395,
+    "S"
+  ],
+  "gc_geochem_anomaly_contours": [
+    57396,
+    "T"
+  ],
+  "gc_ternary_classification": [
+    57397,
+    "U"
+  ],
+  "gc_eh_ph_pourbaix": [
+    57398,
+    "V"
+  ],
+  "gc_downhole_geochem_log": [
+    57399,
+    "W"
+  ],
+  "gc_hydrothermal_circulation": [
+    57400,
+    "X"
+  ],
+  "gc_supergene_leaching": [
+    57401,
+    "Y"
+  ],
+  "gc_redox_front_roll": [
+    57402,
+    "Z"
+  ],
+  "gc_magmatic_differentiation": [
+    57403,
+    "["
+  ],
+  "gc_element_dispersion_halo": [
+    57404,
+    "\\"
+  ],
+  "gp_self_potential": [
+    57405,
+    "]"
+  ],
+  "gp_magnetotellurics_mt": [
+    57406,
+    "^"
+  ],
+  "gp_ground_penetrating_radar": [
+    57407,
+    "_"
+  ],
+  "gp_radiometrics_gamma": [
+    57408,
+    "`"
+  ],
+  "gp_nmr_sounding": [
+    57409,
+    "a"
+  ],
+  "gp_thermal_geothermal": [
+    57410,
+    "b"
+  ],
+  "gp_acoustics_sonar": [
+    57411,
+    "c"
+  ],
+  "gp_geodesy_insar_gnss": [
+    57412,
+    "d"
+  ],
+  "gp_remote_sensing_hyperspectral": [
+    57413,
+    "e"
+  ],
+  "gp_matrix_mixing_bounds": [
+    57414,
+    "f"
+  ],
+  "gp_pore_fluid_archie": [
+    57415,
+    "g"
+  ],
+  "gp_ip_cole_cole": [
+    57416,
+    "h"
+  ],
+  "gp_dielectric_permittivity": [
+    57417,
+    "i"
+  ],
+  "gp_koenigsberger_remanence": [
+    57418,
+    "j"
+  ],
+  "gp_gassmann_fluid_sub": [
+    57419,
+    "k"
+  ],
+  "gp_permeability_kozeny": [
+    57420,
+    "l"
+  ],
+  "gt_deere_rqd": [
+    57421,
+    "m"
+  ],
+  "gt_barton_q_tunnel": [
+    57422,
+    "n"
+  ],
+  "gt_bieniawski_rmr": [
+    57423,
+    "o"
+  ],
+  "gt_hoek_brown_criterion": [
+    57424,
+    "p"
+  ],
+  "gt_ucs_from_velocity": [
+    57425,
+    "q"
+  ],
+  "gt_brittleness_index": [
+    57426,
+    "r"
+  ],
+  "gl_rock_type_igneous": [
+    57427,
+    "s"
+  ],
+  "gl_rock_type_sedimentary": [
+    57428,
+    "t"
+  ],
+  "gl_rock_type_metamorphic": [
+    57429,
+    "u"
+  ],
+  "gl_composition_category": [
+    57430,
+    "v"
+  ],
+  "gl_genetic_category": [
+    57431,
+    "w"
+  ],
+  "gl_metamorphic_facies_pt": [
+    57432,
+    "x"
+  ],
+  "gl_consolidation_degree": [
+    57433,
+    "y"
+  ],
+  "gl_deformation_brittle_ductile": [
+    57434,
+    "z"
+  ],
+  "gl_unit_morphology": [
+    57435,
+    "{"
+  ],
+  "gl_style_disseminated": [
+    57436,
+    "|"
+  ],
+  "gl_style_net_textured": [
+    57437,
+    "}"
+  ],
+  "gl_style_massive_sulfide": [
+    57438,
+    "~"
+  ],
+  "gl_style_veined_stringer": [
+    57439,
+    "\u00a1"
+  ],
+  "gl_particle_shape_roundness": [
+    57440,
+    "\u00a2"
+  ],
+  "gl_contact_unconformity": [
+    57441,
+    "\u00a3"
+  ],
+  "gl_foliation_lineation": [
+    57442,
+    "\u00a4"
+  ],
+  "gl_borehole_drilling_methods": [
+    57443,
+    "\u00a5"
+  ],
+  "gl_planar_polarity_overturned": [
+    57444,
+    "\u00a6"
+  ],
+  "gm_acid_rock_drainage": [
+    57445,
+    "\u00a7"
+  ],
+  "gm_comminution_work_index": [
+    57446,
+    "\u00a8"
+  ],
+  "gm_flotation_recovery": [
+    57447,
+    "\u00a9"
+  ],
+  "gc_melt_chemistry_f02": [
+    57448,
+    "\u00aa"
+  ],
+  "gc_carbon_mineralisation": [
+    57449,
+    "\u00ab"
+  ],
+  "gl_lithology_tensor_anisotropy": [
+    57450,
+    "\u00ac"
+  ],
+  "gl_fault_normal_graben": [
+    57451,
+    "\u00ad"
+  ],
+  "gl_fault_thrust_ramp": [
+    57452,
+    "\u00ae"
+  ],
+  "gl_fault_strike_slip_dextral": [
+    57453,
+    "\u00af"
+  ],
+  "gl_shear_zone_sigmoidal": [
+    57454,
+    "\u00b0"
+  ],
+  "gl_chevron_kink_fold": [
+    57455,
+    "\u00b1"
+  ],
+  "gl_ptygmatic_vein_fold": [
+    57456,
+    "\u00b2"
+  ],
+  "gl_columnar_jointing": [
+    57457,
+    "\u00b3"
+  ],
+  "gl_spinifex_texture": [
+    57458,
+    "\u00b4"
+  ],
+  "gl_pillow_lava": [
+    57459,
+    "\u00b5"
+  ],
+  "gl_fiamme_ignimbrite": [
+    57460,
+    "\u00b6"
+  ],
+  "gl_banded_iron_formation": [
+    57461,
+    "\u00b7"
+  ],
+  "gl_hydrothermal_breccia": [
+    57462,
+    "\u00b8"
+  ],
+  "gl_potassic_alteration": [
+    57463,
+    "\u00b9"
+  ],
+  "gl_phyllic_sericitic_alteration": [
+    57464,
+    "\u00ba"
+  ],
+  "gl_advanced_argillic": [
+    57465,
+    "\u00bb"
+  ],
+  "gl_propylitic_chlorite_epidote": [
+    57466,
+    "\u00bc"
+  ],
+  "gl_serpentinite_mesh": [
+    57467,
+    "\u00bd"
+  ],
+  "gl_skarn_calc_silicate": [
+    57468,
+    "\u00be"
+  ],
+  "gl_greisen_cassiterite": [
+    57469,
+    "\u00bf"
+  ],
+  "gl_tourmaline_sun_rosette": [
+    57470,
+    "\u00c0"
+  ],
+  "gl_turbidite_bouma_sequence": [
+    57471,
+    "\u00c1"
+  ],
+  "gl_fluvial_point_bar_channel": [
+    57472,
+    "\u00c2"
+  ],
+  "gc_la_icp_ms_laser": [
+    57473,
+    "\u00c3"
+  ],
+  "gc_epma_wds_microprobe": [
+    57474,
+    "\u00c4"
+  ],
+  "gc_xrd_diffractometer": [
+    57475,
+    "\u00c5"
+  ],
+  "gc_xanes_synchrotron": [
+    57476,
+    "\u00c6"
+  ],
+  "gc_libs_laser_plasma": [
+    57477,
+    "\u00c7"
+  ],
+  "gc_ftir_raman_spectroscopy": [
+    57478,
+    "\u00c8"
+  ],
+  "gc_four_acid_total_digest": [
+    57479,
+    "\u00c9"
+  ],
+  "gc_aqua_regia_partial_digest": [
+    57480,
+    "\u00ca"
+  ],
+  "gc_cyanide_bottle_roll": [
+    57481,
+    "\u00cb"
+  ],
+  "gc_sequential_extraction": [
+    57482,
+    "\u00cc"
+  ],
+  "gc_gas_chromatography_ms": [
+    57483,
+    "\u00cd"
+  ],
+  "gc_sims_shrimp_microprobe": [
+    57484,
+    "\u00ce"
+  ],
+  "gc_tims_thermal_ionization": [
+    57485,
+    "\u00cf"
+  ],
+  "gc_stable_isotope_gas_irms": [
+    57486,
+    "\u00d0"
+  ],
+  "gc_fluid_inclusion_microtherm": [
+    57487,
+    "\u00d1"
+  ],
+  "gc_radon_emanometry": [
+    57488,
+    "\u00d2"
+  ],
+  "gc_biogeochem_vegetation": [
+    57489,
+    "\u00d3"
+  ],
+  "gc_ree_chondrite_spidergram": [
+    57490,
+    "\u00d4"
+  ],
+  "gc_primitive_mantle_spidergram": [
+    57491,
+    "\u00d5"
+  ],
+  "gc_tas_volcanic_diagram": [
+    57492,
+    "\u00d6"
+  ],
+  "gc_qapf_ternary_double": [
+    57493,
+    "\u00d7"
+  ],
+  "gc_pearce_tectonic_discrimination": [
+    57494,
+    "\u00d8"
+  ],
+  "gc_activity_activity_diagram": [
+    57495,
+    "\u00d9"
+  ],
+  "gc_zircon_upb_concordia": [
+    57496,
+    "\u00da"
+  ],
+  "gc_rb_sr_isochron_diagram": [
+    57497,
+    "\u00db"
+  ],
+  "gc_sulfur_isotope_delta34s": [
+    57498,
+    "\u00dc"
+  ],
+  "gc_swir_mineral_spectral_trough": [
+    57499,
+    "\u00dd"
+  ],
+  "gc_campbell_vectoring_ratio": [
+    57500,
+    "\u00de"
+  ],
+  "gc_alumina_saturation_asi": [
+    57501,
+    "\u00df"
+  ],
+  "gc_harker_variation_diagram": [
+    57502,
+    "\u00e0"
+  ],
+  "gc_water_solubility_melt": [
+    57503,
+    "\u00e1"
+  ],
+  "gc_oxygen_isotope_delta18o": [
+    57504,
+    "\u00e2"
+  ],
+  "gc_hydrothermal_boiling_immiscibility": [
+    57505,
+    "\u00e3"
+  ],
+  "gc_sulfide_melt_immiscibility": [
+    57506,
+    "\u00e4"
+  ],
+  "gc_fluid_rock_metasomatism": [
+    57507,
+    "\u00e5"
+  ],
+  "gc_bacterial_sulfate_reduction": [
+    57508,
+    "\u00e6"
+  ],
+  "gc_heavy_mineral_placer": [
+    57509,
+    "\u00e7"
+  ],
+  "gc_gossan_boxwork_weathering": [
+    57510,
+    "\u00e8"
+  ],
+  "gc_fumarolic_gas_exsolution": [
+    57511,
+    "\u00e9"
+  ],
+  "gc_clay_adsorption_cec": [
+    57512,
+    "\u00ea"
+  ],
+  "gc_metal_chloride_complexation": [
+    57513,
+    "\u00eb"
+  ],
+  "gc_hydrocarbon_catagenesis": [
+    57514,
+    "\u00ec"
+  ],
+  "gc_colloid_flocculation": [
+    57515,
+    "\u00ed"
+  ],
+  "gc_gibbs_free_energy": [
+    57516,
+    "\u00ee"
+  ],
+  "gc_chemical_elements": [
+    57517,
+    "\u00ef"
+  ],
+  "gl_minerals_specimen": [
+    57518,
+    "\u00f0"
+  ],
+  "gc_element_diff_wtpct": [
+    57519,
+    "\u00f1"
+  ],
+  "gc_temperature_thermo": [
+    57520,
+    "\u00f2"
+  ],
+  "gc_pressure_gauge": [
+    57521,
+    "\u00f3"
+  ],
+  "gc_gradient_perturbation_factor": [
+    57522,
+    "\u00f4"
+  ],
+  "gc_l1_norm_regularization": [
+    57523,
+    "\u00f5"
+  ],
+  "gc_n_iterations_loop": [
+    57524,
+    "\u00f6"
+  ],
+  "gc_thermodynamics_system": [
+    57525,
+    "\u00f7"
+  ],
+  "gp_petrophysics_core_matrix": [
+    57526,
+    "\u00f8"
+  ],
+  "gl_positions_spatial_coords": [
+    57527,
+    "\u00f9"
+  ],
+  "gc_volatiles_degassing": [
+    57528,
+    "\u00fa"
+  ],
+  "gc_water_activity_ah2o": [
+    57529,
+    "\u00fb"
+  ],
+  "gc_fluid_xco2_mole_fraction": [
+    57530,
+    "\u00fc"
+  ],
+  "gc_oxygen_fugacity_fo2": [
+    57531,
+    "\u00fd"
+  ],
+  "gc_major_element_oxides": [
+    57532,
+    "\u00fe"
+  ],
+  "gc_gradient_initial_step": [
+    57533,
+    "\u00ff"
+  ],
+  "gc_sensitivity_jacobian": [
+    57534,
+    "\u0100"
+  ],
+  "gp_specific_gravity_balance": [
+    57535,
+    "\u0101"
+  ],
+  "gc_log_error_residuals": [
+    57536,
+    "\u0102"
+  ],
+  "gl_geological_tagging_domain": [
+    57537,
+    "\u0103"
+  ],
+  "gp_airborne_em_aem": [
+    57538,
+    "\u0104"
+  ],
+  "gp_fixed_wing_aem": [
+    57539,
+    "\u0105"
+  ],
+  "gp_frequency_domain_em_fdem": [
+    57540,
+    "\u0106"
+  ],
+  "gp_time_domain_em_tdem": [
+    57541,
+    "\u0107"
+  ],
+  "gp_csem_marine": [
+    57542,
+    "\u0108"
+  ],
+  "gp_csem_land": [
+    57543,
+    "\u0109"
+  ],
+  "gp_csamt": [
+    57544,
+    "\u010a"
+  ],
+  "gp_ground_tem": [
+    57545,
+    "\u010b"
+  ],
+  "gp_tem_fixed_loop": [
+    57546,
+    "\u010c"
+  ],
+  "gp_tem_moving_loop": [
+    57547,
+    "\u010d"
+  ],
+  "gp_tem_central_loop": [
+    57548,
+    "\u010e"
+  ],
+  "gp_tem_in_loop": [
+    57549,
+    "\u010f"
+  ],
+  "gp_tem_lotem": [
+    57550,
+    "\u0110"
+  ],
+  "gp_loupe_tem": [
+    57551,
+    "\u0111"
+  ],
+  "gp_vtem": [
+    57552,
+    "\u0112"
+  ],
+  "gp_skytem": [
+    57553,
+    "\u0113"
+  ],
+  "gp_slingram_em": [
+    57554,
+    "\u0114"
+  ],
+  "gp_vlf_em": [
+    57555,
+    "\u0115"
+  ],
+  "gp_airborne_magnetics": [
+    57556,
+    "\u0116"
+  ],
+  "gp_ground_magnetics": [
+    57557,
+    "\u0117"
+  ],
+  "gp_magnetic_gradiometry": [
+    57558,
+    "\u0118"
+  ],
+  "gp_electrical_ip_chargeability": [
+    57559,
+    "\u0119"
+  ],
+  "gp_ip_spectral": [
+    57560,
+    "\u011a"
+  ],
+  "gp_tem_decay_gates": [
+    57561,
+    "\u011b"
+  ],
+  "gp_gpr_b_scan": [
+    57562,
+    "\u011c"
+  ],
+  "gp_gpr_time_slice": [
+    57563,
+    "\u011d"
+  ],
+  "gp_gpr_volume_3d": [
+    57564,
+    "\u011e"
+  ],
+  "gp_gpr_cmp_velocity": [
+    57565,
+    "\u011f"
+  ],
+  "gp_gpr_utility_detection": [
+    57566,
+    "\u0120"
+  ],
+  "gp_gpr_concrete_rebar": [
+    57567,
+    "\u0121"
+  ],
+  "gp_gpr_borehole": [
+    57568,
+    "\u0122"
+  ],
+  "gp_gpr_antenna": [
+    57569,
+    "\u0123"
+  ],
+  "gp_radiometrics_total": [
+    57570,
+    "\u0124"
+  ],
+  "gp_radiometrics_potassium_k": [
+    57571,
+    "\u0125"
+  ],
+  "gp_radiometrics_uranium_u": [
+    57572,
+    "\u0126"
+  ],
+  "gp_radiometrics_thorium_th": [
+    57573,
+    "\u0127"
+  ],
+  "gp_radiometrics_ternary": [
+    57574,
+    "\u0128"
+  ],
+  "gp_airborne_radiometrics": [
+    57575,
+    "\u0129"
+  ],
+  "gp_seismic_crosshole": [
+    57576,
+    "\u012a"
+  ],
+  "gp_seismic_downhole": [
+    57577,
+    "\u012b"
+  ],
+  "gp_seismic_uphole": [
+    57578,
+    "\u012c"
+  ],
+  "gp_seismic_vsp": [
+    57579,
+    "\u012d"
+  ],
+  "gp_seismic_refraction": [
+    57580,
+    "\u012e"
+  ],
+  "gp_seismic_masw": [
+    57581,
+    "\u012f"
+  ],
+  "gp_seismic_hvsr": [
+    57582,
+    "\u0130"
+  ],
+  "gp_borehole_em_bhem": [
+    57583,
+    "\u0131"
+  ],
+  "gp_borehole_induction_log": [
+    57584,
+    "\u0132"
+  ],
+  "gp_borehole_resistivity_log": [
+    57585,
+    "\u0133"
+  ],
+  "gp_borehole_ip_log": [
+    57586,
+    "\u0134"
+  ],
+  "gp_borehole_sp_log": [
+    57587,
+    "\u0135"
+  ],
+  "gp_borehole_magnetic_susceptibility": [
+    57588,
+    "\u0136"
+  ],
+  "gp_borehole_magnetometer": [
+    57589,
+    "\u0137"
+  ],
+  "gp_borehole_natural_gamma": [
+    57590,
+    "\u0138"
+  ],
+  "gp_borehole_spectral_gamma": [
+    57591,
+    "\u0139"
+  ],
+  "gp_borehole_density_log": [
+    57592,
+    "\u013a"
+  ],
+  "gp_borehole_neutron_porosity": [
+    57593,
+    "\u013b"
+  ],
+  "gp_borehole_sonic_log": [
+    57594,
+    "\u013c"
+  ],
+  "gp_borehole_acoustic_televiewer": [
+    57595,
+    "\u013d"
+  ],
+  "gp_borehole_optical_televiewer": [
+    57596,
+    "\u013e"
+  ],
+  "gp_borehole_caliper": [
+    57597,
+    "\u013f"
+  ],
+  "gp_borehole_temperature": [
+    57598,
+    "\u0140"
+  ],
+  "gp_borehole_fluid_conductivity": [
+    57599,
+    "\u0141"
+  ],
+  "gp_borehole_flowmeter": [
+    57600,
+    "\u0142"
+  ],
+  "gp_borehole_nmr": [
+    57601,
+    "\u0143"
+  ],
+  "gp_borehole_gravity": [
+    57602,
+    "\u0144"
+  ],
+  "gp_crosshole_ert": [
+    57603,
+    "\u0145"
+  ],
+  "gp_crosshole_em_tomography": [
+    57604,
+    "\u0146"
+  ],
+  "gp_crosshole_seismic_tomography": [
+    57605,
+    "\u0147"
+  ],
+  "gp_property_conductivity": [
+    57606,
+    "\u0148"
+  ],
+  "gp_property_resistivity": [
+    57607,
+    "\u0149"
+  ],
+  "gp_property_density": [
+    57608,
+    "\u014a"
+  ],
+  "gp_property_magnetic_susceptibility": [
+    57609,
+    "\u014b"
+  ],
+  "gp_property_remanent_magnetization": [
+    57610,
+    "\u014c"
+  ],
+  "gp_property_chargeability": [
+    57611,
+    "\u014d"
+  ],
+  "gp_property_vp": [
+    57612,
+    "\u014e"
+  ],
+  "gp_property_vs": [
+    57613,
+    "\u014f"
+  ],
+  "gp_property_porosity": [
+    57614,
+    "\u0150"
+  ],
+  "gp_property_permeability": [
+    57615,
+    "\u0151"
+  ],
+  "gp_property_dielectric_permittivity": [
+    57616,
+    "\u0152"
+  ],
+  "gp_property_thermal_conductivity": [
+    57617,
+    "\u0153"
+  ],
+  "gp_electric_field": [
+    57618,
+    "\u0154"
+  ],
+  "gp_electric_field_x": [
+    57619,
+    "\u0155"
+  ],
+  "gp_electric_field_y": [
+    57620,
+    "\u0156"
+  ],
+  "gp_electric_field_z": [
+    57621,
+    "\u0157"
+  ],
+  "gp_magnetic_field": [
+    57622,
+    "\u0158"
+  ],
+  "gp_magnetic_field_x": [
+    57623,
+    "\u0159"
+  ],
+  "gp_magnetic_field_y": [
+    57624,
+    "\u015a"
+  ],
+  "gp_magnetic_field_z": [
+    57625,
+    "\u015b"
+  ],
+  "gp_poynting_vector": [
+    57626,
+    "\u015c"
+  ],
+  "gp_signal_spectrum": [
+    57627,
+    "\u015d"
+  ],
+  "gp_fft_transform": [
+    57628,
+    "\u015e"
+  ],
+  "gp_signal_spectrogram": [
+    57629,
+    "\u015f"
+  ],
+  "gp_raw_waveform": [
+    57630,
+    "\u0160"
+  ],
+  "gp_cross_power": [
+    57631,
+    "\u0161"
+  ],
+  "gp_signal_coherence": [
+    57632,
+    "\u0162"
+  ],
+  "gp_sensor_calibration": [
+    57633,
+    "\u0163"
+  ],
+  "gp_remote_reference": [
+    57634,
+    "\u0164"
+  ],
+  "gp_mt_impedance_tensor": [
+    57635,
+    "\u0165"
+  ],
+  "gp_mt_phase_tensor": [
+    57636,
+    "\u0166"
+  ],
+  "gp_mt_tipper": [
+    57637,
+    "\u0167"
+  ],
+  "gc_geochemical_vectoring": [
+    57638,
+    "\u0168"
+  ],
+  "gc_hydrothermal_alteration": [
+    57639,
+    "\u0169"
+  ],
+  "gc_magmatic_intrusion": [
+    57640,
+    "\u016a"
+  ],
+  "gc_dehydration": [
+    57641,
+    "\u016b"
+  ],
+  "gc_reducing_environment": [
+    57642,
+    "\u016c"
+  ],
+  "gc_oxidizing_environment": [
+    57643,
+    "\u016d"
+  ],
+  "gc_saussuritised": [
+    57644,
+    "\u016e"
+  ],
+  "gc_serpentinisation": [
+    57645,
+    "\u016f"
+  ],
+  "gc_epidote_alteration": [
+    57646,
+    "\u0170"
+  ],
+  "gc_silicification": [
+    57647,
+    "\u0171"
+  ],
+  "gc_carbonate_alteration": [
+    57648,
+    "\u0172"
+  ],
+  "gc_calcsilicate_alteration": [
+    57649,
+    "\u0173"
+  ],
+  "gc_greisen": [
+    57650,
+    "\u0174"
+  ],
+  "gc_albitic_alteration": [
+    57651,
+    "\u0175"
+  ],
+  "gc_advanced_argillic_alteration": [
+    57652,
+    "\u0176"
+  ],
+  "gc_not_altered": [
+    57653,
+    "\u0177"
+  ],
+  "gc_chloritic_alteration": [
+    57654,
+    "\u0178"
+  ],
+  "gc_zeolitic_alteration": [
+    57655,
+    "\u0179"
+  ],
+  "gc_propylitic_alteration": [
+    57656,
+    "\u017a"
+  ],
+  "gc_potassic_alteration": [
+    57657,
+    "\u017b"
+  ],
+  "gc_alteration_not_specified": [
+    57658,
+    "\u017c"
+  ],
+  "gc_kaolinitic_alteration": [
+    57659,
+    "\u017d"
+  ],
+  "gc_sericitic_alteration": [
+    57660,
+    "\u017e"
+  ],
+  "gc_argillic_alteration": [
+    57661,
+    "\u017f"
+  ],
+  "gc_alunitic_alteration": [
+    57662,
+    "\u0180"
+  ],
+  "gc_hematitic_alteration": [
+    57663,
+    "\u0181"
+  ],
+  "gc_pyritic_alteration": [
+    57664,
+    "\u0182"
+  ],
+  "gc_deuteric_alteration": [
+    57665,
+    "\u0183"
+  ],
+  "gc_uralitisation": [
+    57666,
+    "\u0184"
+  ],
+  "gc_red_rock_alteration": [
+    57667,
+    "\u0185"
+  ],
+  "gl_granite_post_kinematic": [
+    57668,
+    "\u0186"
+  ],
+  "gl_granite_late_post_kinematic": [
+    57669,
+    "\u0187"
+  ],
+  "gl_granite_syn_late_kinematic": [
+    57670,
+    "\u0188"
+  ],
+  "gl_granite_syn_kinematic_foliated": [
+    57671,
+    "\u0189"
+  ],
+  "gl_granite_gneissic_anatectic": [
+    57672,
+    "\u018a"
+  ],
+  "gl_gabbro_diorite_orogenic": [
+    57673,
+    "\u018b"
+  ],
+  "gl_porphyry_pattern": [
+    57674,
+    "\u018c"
+  ],
+  "gl_island_arc_volcanics": [
+    57675,
+    "\u018d"
+  ],
+  "gl_felsic_volcanics_rare_basics": [
+    57676,
+    "\u018e"
+  ],
+  "gl_rhyolite_dacite_volcanics": [
+    57677,
+    "\u018f"
+  ],
+  "gl_felsic_volcanics_with_granite": [
+    57678,
+    "\u0190"
+  ],
+  "gl_flood_basalt": [
+    57679,
+    "\u0191"
+  ],
+  "gl_dolerite_granophyre": [
+    57680,
+    "\u0192"
+  ],
+  "gl_keratophyre": [
+    57681,
+    "\u0193"
+  ],
+  "gl_granite_intruding_craton": [
+    57682,
+    "\u0194"
+  ],
+  "gl_layered_intrusion": [
+    57683,
+    "\u0195"
+  ],
+  "gl_alkaline_intrusive": [
+    57684,
+    "\u0196"
+  ],
+  "gl_kimberlite_lamproite": [
+    57685,
+    "\u0197"
+  ],
+  "gl_carbonatite": [
+    57686,
+    "\u0198"
+  ],
+  "gl_slate_phyllite": [
+    57687,
+    "\u0199"
+  ],
+  "gl_schist_gneiss_high_grade": [
+    57688,
+    "\u019a"
+  ],
+  "gl_sandy_slate_interbedded": [
+    57689,
+    "\u019b"
+  ],
+  "gl_hornfels_massive": [
+    57690,
+    "\u019c"
+  ],
+  "gl_basic_plutonic_hypabyssal": [
+    57691,
+    "\u019d"
+  ],
+  "gl_bedded_lavas": [
+    57692,
+    "\u019e"
+  ],
+  "gl_tuff_tuffaceous_sandstone": [
+    57693,
+    "\u019f"
+  ],
+  "gl_bedded_tuff": [
+    57694,
+    "\u01a0"
+  ],
+  "gl_breccia_pattern": [
+    57695,
+    "\u01a1"
+  ],
+  "gl_scree_brecciated_rock": [
+    57696,
+    "\u01a2"
+  ],
+  "gl_soil_cover": [
+    57697,
+    "\u01a3"
+  ],
+  "gl_alluvium": [
+    57698,
+    "\u01a4"
+  ],
+  "gl_gossan_ore": [
+    57699,
+    "\u01a5"
+  ],
+  "gl_conglomerate_pattern": [
+    57700,
+    "\u01a6"
+  ],
+  "gl_sandstone_pattern": [
+    57701,
+    "\u01a7"
+  ],
+  "gl_pebbly_sandstone": [
+    57702,
+    "\u01a8"
+  ],
+  "gl_cross_bedded_sandstone": [
+    57703,
+    "\u01a9"
+  ],
+  "gl_limestone_pattern": [
+    57704,
+    "\u01aa"
+  ],
+  "gl_dolomite_pattern": [
+    57705,
+    "\u01ab"
+  ],
+  "gl_sandy_limestone": [
+    57706,
+    "\u01ac"
+  ],
+  "gl_shale_pattern": [
+    57707,
+    "\u01ad"
+  ],
+  "gl_sandy_shale": [
+    57708,
+    "\u01ae"
+  ],
+  "gl_bedded_chert": [
+    57709,
+    "\u01af"
+  ],
+  "gl_massive_chert": [
+    57710,
+    "\u01b0"
+  ],
+  "gl_coal_undifferentiated": [
+    57711,
+    "\u01b1"
+  ],
+  "gl_broken_coal": [
+    57712,
+    "\u01b2"
+  ],
+  "gl_coal_with_shale_bands": [
+    57713,
+    "\u01b3"
+  ],
+  "gl_shale_with_coal_bands": [
+    57714,
+    "\u01b4"
+  ],
+  "gl_cannel_coal": [
+    57715,
+    "\u01b5"
+  ],
+  "gl_cannel_shale": [
+    57716,
+    "\u01b6"
+  ],
+  "gl_carbonaceous_shale": [
+    57717,
+    "\u01b7"
+  ],
+  "gl_brown_coal": [
+    57718,
+    "\u01b8"
+  ],
+  "gl_oil_shale": [
+    57719,
+    "\u01b9"
+  ],
+  "gl_thin_seam": [
+    57720,
+    "\u01ba"
+  ],
+  "gl_coal_bright": [
+    57721,
+    "\u01bb"
+  ],
+  "gl_coal_bright_dull_bands": [
+    57722,
+    "\u01bc"
+  ],
+  "gl_coal_interbanded": [
+    57723,
+    "\u01bd"
+  ],
+  "gl_coal_dull_bright_bands": [
+    57724,
+    "\u01be"
+  ],
+  "gl_coal_dull_minor_bright": [
+    57725,
+    "\u01bf"
+  ],
+  "gl_coal_dull": [
+    57726,
+    "\u01c0"
+  ],
+  "gl_coal_canneloid": [
+    57727,
+    "\u01c1"
+  ],
+  "gl_coal_fibrous": [
+    57728,
+    "\u01c2"
+  ],
+  "gl_coal_weathered": [
+    57729,
+    "\u01c3"
+  ],
+  "gl_coal_heat_altered": [
+    57730,
+    "\u01c4"
+  ],
+  "gl_non_coal": [
+    57731,
+    "\u01c5"
+  ],
+  "gl_coal_interlayered_non_coal": [
+    57732,
+    "\u01c6"
+  ],
+  "gl_non_coal_interlayered_coal": [
+    57733,
+    "\u01c7"
+  ],
+  "gl_stony_coal": [
+    57734,
+    "\u01c8"
+  ],
+  "gl_mudstone_pattern": [
+    57735,
+    "\u01c9"
+  ],
+  "gl_coal_seam_log": [
+    57736,
+    "\u01ca"
+  ],
+  "gl_fold_upright_horizontal": [
+    57737,
+    "\u01cb"
+  ],
+  "gl_fold_upright_plunging": [
+    57738,
+    "\u01cc"
+  ],
+  "gl_fold_vertical": [
+    57739,
+    "\u01cd"
+  ],
+  "gl_fold_inclined_plunging": [
+    57740,
+    "\u01ce"
+  ],
+  "gl_fold_overturned_horizontal": [
+    57741,
+    "\u01cf"
+  ],
+  "gl_fold_overturned_plunging": [
+    57742,
+    "\u01d0"
+  ],
+  "gl_fold_recumbent": [
+    57743,
+    "\u01d1"
+  ],
+  "gl_fold_reclined": [
+    57744,
+    "\u01d2"
+  ],
+  "gl_monocline": [
+    57745,
+    "\u01d3"
+  ],
+  "gl_fold_vergence": [
+    57746,
+    "\u01d4"
+  ],
+  "gl_superposed_folds": [
+    57747,
+    "\u01d5"
+  ],
+  "gl_fold_class_1a": [
+    57748,
+    "\u01d6"
+  ],
+  "gl_fold_class_1b": [
+    57749,
+    "\u01d7"
+  ],
+  "gl_fold_class_1c": [
+    57750,
+    "\u01d8"
+  ],
+  "gl_fold_class_2": [
+    57751,
+    "\u01d9"
+  ],
+  "gl_fold_class_3": [
+    57752,
+    "\u01da"
+  ],
+  "gl_dip_isogon_construction": [
+    57753,
+    "\u01db"
+  ],
+  "gl_fold_attitude_grid": [
+    57754,
+    "\u01dc"
+  ],
+  "gl_fold_attitude_classification": [
+    57755,
+    "\u01dd"
+  ],
+  "gl_orthographic_net": [
+    57756,
+    "\u01de"
+  ],
+  "gl_wulff_net": [
+    57757,
+    "\u01df"
+  ],
+  "gl_schmidt_net": [
+    57758,
+    "\u01e0"
+  ],
+  "gl_stereonet_contouring_device": [
+    57759,
+    "\u01e1"
+  ],
+  "gl_rock_fall": [
+    57760,
+    "\u01e2"
+  ],
+  "gl_rock_topple": [
+    57761,
+    "\u01e3"
+  ],
+  "gl_rock_slump": [
+    57762,
+    "\u01e4"
+  ],
+  "gl_rock_block_slide": [
+    57763,
+    "\u01e5"
+  ],
+  "gl_rock_lateral_spread": [
+    57764,
+    "\u01e6"
+  ],
+  "gl_rock_creep_sackung": [
+    57765,
+    "\u01e7"
+  ],
+  "gl_rock_fall_debris_flow": [
+    57766,
+    "\u01e8"
+  ],
+  "gl_slump_topple": [
+    57767,
+    "\u01e9"
+  ],
+  "gl_rock_slide_rock_fall": [
+    57768,
+    "\u01ea"
+  ],
+  "gl_debris_fall": [
+    57769,
+    "\u01eb"
+  ],
+  "gl_debris_topple": [
+    57770,
+    "\u01ec"
+  ],
+  "gl_debris_slump": [
+    57771,
+    "\u01ed"
+  ],
+  "gl_debris_slide": [
+    57772,
+    "\u01ee"
+  ],
+  "gl_debris_flow": [
+    57773,
+    "\u01ef"
+  ],
+  "gl_debris_avalanche": [
+    57774,
+    "\u01f0"
+  ],
+  "gl_block_stream": [
+    57775,
+    "\u01f1"
+  ],
+  "gl_solifluction": [
+    57776,
+    "\u01f2"
+  ],
+  "gl_soil_creep": [
+    57777,
+    "\u01f3"
+  ],
+  "gl_cambering_valley_bulging": [
+    57778,
+    "\u01f4"
+  ],
+  "gl_slump_earth_flow": [
+    57779,
+    "\u01f5"
+  ],
+  "gl_earth_fall": [
+    57780,
+    "\u01f6"
+  ],
+  "gl_earth_topple": [
+    57781,
+    "\u01f7"
+  ],
+  "gl_earth_slump": [
+    57782,
+    "\u01f8"
+  ],
+  "gl_earth_block_slide": [
+    57783,
+    "\u01f9"
+  ],
+  "gl_earth_lateral_spread": [
+    57784,
+    "\u01fa"
+  ],
+  "gl_wet_sand_silt_flow": [
+    57785,
+    "\u01fb"
+  ],
+  "gl_quick_clay_flow": [
+    57786,
+    "\u01fc"
+  ],
+  "gl_earth_flow": [
+    57787,
+    "\u01fd"
+  ],
+  "gl_loess_flow": [
+    57788,
+    "\u01fe"
+  ],
+  "gl_dry_sand_flow": [
+    57789,
+    "\u01ff"
+  ],
+  "gl_qapf_plutonic_diagram": [
+    57790,
+    "\u0200"
+  ],
+  "gl_gabbroic_plag_px_ol": [
+    57791,
+    "\u0201"
+  ],
+  "gl_gabbroic_plag_px_hbl": [
+    57792,
+    "\u0202"
+  ],
+  "gl_gabbroic_plag_opx_cpx": [
+    57793,
+    "\u0203"
+  ],
+  "gl_metamorphic_facies_diagram": [
+    57794,
+    "\u0204"
+  ],
+  "gl_roundness_very_angular": [
+    57795,
+    "\u0205"
+  ],
+  "gl_roundness_angular": [
+    57796,
+    "\u0206"
+  ],
+  "gl_roundness_subangular": [
+    57797,
+    "\u0207"
+  ],
+  "gl_roundness_subrounded": [
+    57798,
+    "\u0208"
+  ],
+  "gl_roundness_rounded": [
+    57799,
+    "\u0209"
+  ],
+  "gl_roundness_well_rounded": [
+    57800,
+    "\u020a"
+  ],
+  "gl_grain_percent_01": [
+    57801,
+    "\u020b"
+  ],
+  "gl_grain_percent_02": [
+    57802,
+    "\u020c"
+  ],
+  "gl_grain_percent_03": [
+    57803,
+    "\u020d"
+  ],
+  "gl_grain_percent_05": [
+    57804,
+    "\u020e"
+  ],
+  "gl_grain_percent_07": [
+    57805,
+    "\u020f"
+  ],
+  "gl_grain_percent_10": [
+    57806,
+    "\u0210"
+  ],
+  "gl_grain_percent_15": [
+    57807,
+    "\u0211"
+  ],
+  "gl_grain_percent_20": [
+    57808,
+    "\u0212"
+  ],
+  "gl_grain_percent_25": [
+    57809,
+    "\u0213"
+  ],
+  "gl_grain_percent_30": [
+    57810,
+    "\u0214"
+  ],
+  "gl_grain_percent_40": [
+    57811,
+    "\u0215"
+  ],
+  "gl_grain_percent_50": [
+    57812,
+    "\u0216"
+  ],
+  "gl_unit_stratotype": [
+    57813,
+    "\u0217"
+  ],
+  "gl_boundary_stratotype": [
+    57814,
+    "\u0218"
+  ],
+  "gl_earthquake_magnitude_energy": [
+    57815,
+    "\u0219"
+  ]
+}

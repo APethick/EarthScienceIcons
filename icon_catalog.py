@@ -20,3 +20,6 @@ ALL_ICONS = (GEOPHYSICAL_ICONS + GEOTECHNICAL_ICONS + GEOLOGICAL_ICONS +
 ALL_ICONS = [dict(icon, builder=lambda: mt_survey().geometry(),
                   description="Crossed electric dipoles, four electrodes, three orthogonal magnetic sensors and a central acquisition unit.")
              if icon["id"] == "gp_magnetotellurics_mt" else icon for icon in ALL_ICONS]
+
+from icons_spectroscopy import SPECTROSCOPY_ICONS
+ALL_ICONS += SPECTROSCOPY_ICONS
