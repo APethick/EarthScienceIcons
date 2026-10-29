@@ -4,7 +4,7 @@
 
 **A visual language for Earth science.**
 
-471 specialist icons for geophysics, geology, geochemistry and geotechnical engineering.
+527 specialist icons for geophysics, geology, geochemistry and geotechnical engineering.
 
 **Detailed linework · Flat colour · SVG · TTF · WOFF · Public domain**
 
@@ -24,7 +24,7 @@ The library covers field and laboratory methods, Earth models and scientific pro
 | Geological | 207 | Mapping, stratigraphy, folds, lithological patterns, mass movements, QAPF & stereonets |
 | Geochemical | 103 | XRF, ICP-MS, assays, geochemical diagrams, thermodynamics |
 | Geotechnical | 22 | SPT, CPT, triaxial testing, rock quality, slope stability |
-| **Total** | **471** | **145 methods · 182 Earth model types · 132 processes · 12 petrophysical quantities** |
+| **Total** | **527** | **145 methods · 182 Earth model types · 132 processes · 12 petrophysical quantities** |
 
 The [interactive library](https://APethick.github.io/EarthScienceIcons/) shows every icon. Search names and keywords, filter by discipline or category, compare both styles, change the preview size, and copy integration code.
 
@@ -181,3 +181,36 @@ The Gibbs free energy icon separates the Delta-G label from its equilibrium curv
 Thirteen appended icons cover laboratory and satellite hyperspectral acquisition, a data cube, contiguous band selection, a recorded spectral signature, UV, VIS, VNIR, NIR, IR, SWIR, MWIR and TIR/LWIR. Spectral windows and curves are schematic: wavelength coverage depends on the instrument. Reflectance troughs indicate absorption; thermal measurements use emitted radiance or emissivity.
 
 Spectral terminology references: [USGS imaging spectroscopy overview](https://pubs.usgs.gov/publication/70240743), [NASA/JPL hyperspectral thermal emission spectrometer](https://hytes.jpl.nasa.gov/).
+
+## Permanent icon identities (mandatory)
+
+`icon-identities.json` is the append-only ledger of all published IDs, Unicode codepoints and fallback characters. These identities must never change, including during redraws, renames of display labels, refactoring, catalogue reordering or releases. Never recycle a codepoint. Keep deprecated IDs and glyphs available for compatibility.
+
+All font, flat-artwork and site builds validate identities before writing assets. Missing ledgers, changed or removed identities, duplicates and unregistered additions fail the build. The distribution verifier applies the same rule. Do not regenerate the ledger from current sources or generated assets to resolve a failure; correct the source mapping instead.
+
+For additions, append catalogue entries and ledger records without editing existing records. Allocate unused private-use codepoints strictly above the ledger's current maximum, and unused fallback keys. Preserve the published catalogue order because fallback keys are assigned by index. Run `python -m unittest discover -s tests -p test_icon_identity.py` and `python tests/verify_distribution.py` before distributing assets.
+
+## Field instruments, geological scales and matrices
+
+Twenty-one additions cover EM31 and EM38 ground conductivity meters, TEMPEST airborne EM, Jacobian and Hessian matrices, eight geological scales from pores to crust, and eight field tools. The existing sensitivity matrix has its top letter removed, and the MT tipper is simplified to a station and induction arrow. Existing identifiers and character mappings remain unchanged.
+
+
+## Seismic equipment and category PNGs
+
+The seismic suite includes sledgehammer, buried explosive, Betsy gun, ute and skid-steer weight drops, electric vibrator, Vibroseis, air gun, sparker, boomer and land streamer compositions. Receiver symbols cover spiked geophones, wired strings, wireless recorders, INOVA Quantum, SmartSolo, Sercel WiNG and Geospace equipment, three-component sensors and hydrophones. Equipment proportions are schematic; receiver housings follow the library convention of yellow with black outlines rather than manufacturer colours.
+
+`build_font.py` and `build_flat.py` generate **both line and flat-colour PNG sheets** for every discipline and catalogue category, plus focused collections, under `dist/png/`. `index.json` lists all sheets and their membership counts. `build_site.py` copies these to `docs/assets/png/` and includes them in the downloadable ZIP. Line sheets are rendered from the compiled font; colour sheets use the SVG geometry.
+
+The field-tool and scale illustrations were redrawn with instrument components, mineral fabric, bedding, structural folds, mineralised bodies and crustal roots. Published identities are retained.
+
+Equipment references are listed in [the design notes](docs/equipment-design.md).
+
+
+### Individual 256px PNG exports
+
+Every full or flat build also exports each icon individually at **256 x 256 pixels**, with a transparent background and antialiased edges:
+
+- `dist/png/individual/flat-colour/<icon-id>.png`
+- `dist/png/individual/line/<icon-id>.png`
+
+All 527 icons are available in both styles (1,054 PNG files). The existing overview sheets remain available. Website builds copy the individual files into `docs/assets/png/individual/` and include them in `EarthScienceIcons.zip`.

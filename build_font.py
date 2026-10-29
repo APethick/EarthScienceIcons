@@ -39,7 +39,7 @@ printable_chars = [chr(c) for c in range(0x0021, 0x007F)] + [
     chr(c) for c in range(0x00A1, 0x0100)
 ] + [chr(c) for c in range(0x0100, 0x0180)]
 # Append Latin Extended-B without changing any published fallback.
-printable_chars += [chr(c) for c in range(0x0180, 0x0250)]
+printable_chars += [chr(c) for c in range(0x0180, 0x02B0)]
 ASCII_KEYS = printable_chars
 
 
@@ -100,6 +100,8 @@ def make_notdef_glyph():
 
 def build_all(install_opus: bool = False):
     root_dir = Path(__file__).resolve().parent
+    from icon_identity import validate_sources
+    validate_sources(ALL_ICONS, ASCII_KEYS, root_dir)
     dist_dir = root_dir / "dist"
     svg_dir = dist_dir / "svg"
     mono_dir = dist_dir / "svg-mono"
@@ -296,6 +298,9 @@ def build_all(install_opus: bool = False):
     render_em_preview(dist_dir / 'em_equipment_preview.png', all_icons, ttf_dist_path)
     render_petrophysics_preview(dist_dir / 'petrophysics_preview.png', all_icons, ttf_dist_path)
     render_logging_preview(dist_dir / 'petrophysics_logging_preview.png', all_icons, ttf_dist_path)
+    from icon_specimen import render_category_sheets, render_individual_pngs
+    render_category_sheets(dist_dir, all_icons, ttf_dist_path)
+    render_individual_pngs(dist_dir, all_icons, ttf_dist_path)
 
     from preview_mt_icons import render_mt_suite, render_geochemistry_suite, render_field_manual_suite
     render_mt_suite(dist_dir, all_icons, ttf_dist_path)

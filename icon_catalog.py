@@ -23,3 +23,9 @@ ALL_ICONS = [dict(icon, builder=lambda: mt_survey().geometry(),
 
 from icons_spectroscopy import SPECTROSCOPY_ICONS
 ALL_ICONS += SPECTROSCOPY_ICONS
+
+from icons_field_instruments import ICONS as FIELD_INSTRUMENT_ICONS
+ALL_ICONS += FIELD_INSTRUMENT_ICONS
+
+from icons_seismic_equipment import ICONS as SEISMIC_EQUIPMENT_ICONS
+ALL_ICONS += SEISMIC_EQUIPMENT_ICONS

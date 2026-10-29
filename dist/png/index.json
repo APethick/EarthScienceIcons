@@ -1,0 +1,170 @@
+[
+  {
+    "group": "categories/Earth Model Types",
+    "style": "line",
+    "count": 182,
+    "file": "png/categories/earth-model-types-line.png"
+  },
+  {
+    "group": "categories/Earth Model Types",
+    "style": "flat-colour",
+    "count": 182,
+    "file": "png/categories/earth-model-types-flat-colour.png"
+  },
+  {
+    "group": "categories/Methods",
+    "style": "line",
+    "count": 189,
+    "file": "png/categories/methods-line.png"
+  },
+  {
+    "group": "categories/Methods",
+    "style": "flat-colour",
+    "count": 189,
+    "file": "png/categories/methods-flat-colour.png"
+  },
+  {
+    "group": "categories/Petrophysical Quantities",
+    "style": "line",
+    "count": 12,
+    "file": "png/categories/petrophysical-quantities-line.png"
+  },
+  {
+    "group": "categories/Petrophysical Quantities",
+    "style": "flat-colour",
+    "count": 12,
+    "file": "png/categories/petrophysical-quantities-flat-colour.png"
+  },
+  {
+    "group": "categories/Processes",
+    "style": "line",
+    "count": 144,
+    "file": "png/categories/processes-line.png"
+  },
+  {
+    "group": "categories/Processes",
+    "style": "flat-colour",
+    "count": 144,
+    "file": "png/categories/processes-flat-colour.png"
+  },
+  {
+    "group": "collections/EM field processes",
+    "style": "line",
+    "count": 2,
+    "file": "png/collections/em-field-processes-line.png"
+  },
+  {
+    "group": "collections/EM field processes",
+    "style": "flat-colour",
+    "count": 2,
+    "file": "png/collections/em-field-processes-flat-colour.png"
+  },
+  {
+    "group": "collections/EM instruments",
+    "style": "line",
+    "count": 3,
+    "file": "png/collections/em-instruments-line.png"
+  },
+  {
+    "group": "collections/EM instruments",
+    "style": "flat-colour",
+    "count": 3,
+    "file": "png/collections/em-instruments-flat-colour.png"
+  },
+  {
+    "group": "collections/Geological field tools",
+    "style": "line",
+    "count": 8,
+    "file": "png/collections/geological-field-tools-line.png"
+  },
+  {
+    "group": "collections/Geological field tools",
+    "style": "flat-colour",
+    "count": 8,
+    "file": "png/collections/geological-field-tools-flat-colour.png"
+  },
+  {
+    "group": "collections/Geological scales",
+    "style": "line",
+    "count": 8,
+    "file": "png/collections/geological-scales-line.png"
+  },
+  {
+    "group": "collections/Geological scales",
+    "style": "flat-colour",
+    "count": 8,
+    "file": "png/collections/geological-scales-flat-colour.png"
+  },
+  {
+    "group": "collections/Seismic receivers",
+    "style": "line",
+    "count": 9,
+    "file": "png/collections/seismic-receivers-line.png"
+  },
+  {
+    "group": "collections/Seismic receivers",
+    "style": "flat-colour",
+    "count": 9,
+    "file": "png/collections/seismic-receivers-flat-colour.png"
+  },
+  {
+    "group": "collections/Seismic sources",
+    "style": "line",
+    "count": 11,
+    "file": "png/collections/seismic-sources-line.png"
+  },
+  {
+    "group": "collections/Seismic sources",
+    "style": "flat-colour",
+    "count": 11,
+    "file": "png/collections/seismic-sources-flat-colour.png"
+  },
+  {
+    "group": "disciplines/Geochemical",
+    "style": "line",
+    "count": 105,
+    "file": "png/disciplines/geochemical-line.png"
+  },
+  {
+    "group": "disciplines/Geochemical",
+    "style": "flat-colour",
+    "count": 105,
+    "file": "png/disciplines/geochemical-flat-colour.png"
+  },
+  {
+    "group": "disciplines/Geological",
+    "style": "line",
+    "count": 223,
+    "file": "png/disciplines/geological-line.png"
+  },
+  {
+    "group": "disciplines/Geological",
+    "style": "flat-colour",
+    "count": 223,
+    "file": "png/disciplines/geological-flat-colour.png"
+  },
+  {
+    "group": "disciplines/Geophysical",
+    "style": "line",
+    "count": 177,
+    "file": "png/disciplines/geophysical-line.png"
+  },
+  {
+    "group": "disciplines/Geophysical",
+    "style": "flat-colour",
+    "count": 177,
+    "file": "png/disciplines/geophysical-flat-colour.png"
+  },
+  {
+    "group": "disciplines/Geotechnical",
+    "style": "line",
+    "count": 22,
+    "file": "png/disciplines/geotechnical-line.png"
+  },
+  {
+    "group": "disciplines/Geotechnical",
+    "style": "flat-colour",
+    "count": 22,
+    "file": "png/disciplines/geotechnical-flat-colour.png"
+  }
+]

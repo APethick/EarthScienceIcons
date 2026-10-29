@@ -7,7 +7,7 @@
   "unitsPerEm": 1000,
   "ascent": 880,
   "descent": -120,
-  "totalIcons": 484,
+  "totalIcons": 527,
   "domains": [
     "Geophysical",
     "Geotechnical",
@@ -7080,7 +7080,7 @@
       "css_content": "\\e125",
       "html_entity": "&#xE125;",
       "ascii_key": "\u0167",
-      "description": "Vertical magnetic response and horizontal induction arrow over a conductive geological contact.",
+      "description": "Horizontal magnetic induction arrow at a station above a conductive geological contact.",
       "keywords": [
         "MT",
         "tipper",
@@ -13072,6 +13072,888 @@
       ],
       "svg_file": "svg/gp_hyperspectral_tir.svg",
       "svg_mono_file": "svg-mono/gp_hyperspectral_tir.svg"
+    },
+    {
+      "index": 485,
+      "id": "gp_em31",
+      "css_class": "gi-gp-em31",
+      "name": "EM31 Ground Conductivity Meter",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57829,
+      "codepoint_hex": "U+E1E5",
+      "css_content": "\\e1e5",
+      "html_entity": "&#xE1E5;",
+      "ascii_key": "\u0227",
+      "description": "Long boom electromagnetic ground conductivity instrument with end coils.",
+      "keywords": [
+        "em31",
+        "EM31 Ground Conductivity Meter"
+      ],
+      "svg_file": "svg/gp_em31.svg",
+      "svg_mono_file": "svg-mono/gp_em31.svg"
+    },
+    {
+      "index": 486,
+      "id": "gp_em38",
+      "css_class": "gi-gp-em38",
+      "name": "EM38 Ground Conductivity Meter",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57830,
+      "codepoint_hex": "U+E1E6",
+      "css_content": "\\e1e6",
+      "html_entity": "&#xE1E6;",
+      "ascii_key": "\u0228",
+      "description": "Compact electromagnetic ground conductivity instrument with end coils.",
+      "keywords": [
+        "em38",
+        "EM38 Ground Conductivity Meter"
+      ],
+      "svg_file": "svg/gp_em38.svg",
+      "svg_mono_file": "svg-mono/gp_em38.svg"
+    },
+    {
+      "index": 487,
+      "id": "gp_tempest_aem",
+      "css_class": "gi-gp-tempest-aem",
+      "name": "TEMPEST Airborne EM System",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57831,
+      "codepoint_hex": "U+E1E7",
+      "css_content": "\\e1e7",
+      "html_entity": "&#xE1E7;",
+      "ascii_key": "\u0229",
+      "description": "Fixed-wing airborne electromagnetic survey aircraft with towed receiver bird.",
+      "keywords": [
+        "tempest",
+        "TEMPEST Airborne EM System"
+      ],
+      "svg_file": "svg/gp_tempest_aem.svg",
+      "svg_mono_file": "svg-mono/gp_tempest_aem.svg"
+    },
+    {
+      "index": 488,
+      "id": "gc_inversion_jacobian_matrix",
+      "css_class": "gi-gc-inversion-jacobian-matrix",
+      "name": "Jacobian Matrix",
+      "domain": "Geochemical",
+      "category": "Processes",
+      "codepoint_int": 57832,
+      "codepoint_hex": "U+E1E8",
+      "css_content": "\\e1e8",
+      "html_entity": "&#xE1E8;",
+      "ascii_key": "\u022a",
+      "description": "Rectangular matrix of model-to-data first derivatives.",
+      "keywords": [
+        "jacobian",
+        "Jacobian Matrix"
+      ],
+      "svg_file": "svg/gc_inversion_jacobian_matrix.svg",
+      "svg_mono_file": "svg-mono/gc_inversion_jacobian_matrix.svg"
+    },
+    {
+      "index": 489,
+      "id": "gc_inversion_hessian_matrix",
+      "css_class": "gi-gc-inversion-hessian-matrix",
+      "name": "Hessian Matrix",
+      "domain": "Geochemical",
+      "category": "Processes",
+      "codepoint_int": 57833,
+      "codepoint_hex": "U+E1E9",
+      "css_content": "\\e1e9",
+      "html_entity": "&#xE1E9;",
+      "ascii_key": "\u022b",
+      "description": "Symmetric matrix of second derivatives or curvature.",
+      "keywords": [
+        "hessian",
+        "Hessian Matrix"
+      ],
+      "svg_file": "svg/gc_inversion_hessian_matrix.svg",
+      "svg_mono_file": "svg-mono/gc_inversion_hessian_matrix.svg"
+    },
+    {
+      "index": 490,
+      "id": "gl_scale_pore",
+      "css_class": "gi-gl-scale-pore",
+      "name": "Pore Scale",
+      "domain": "Geological",
+      "category": "Processes",
+      "codepoint_int": 57834,
+      "codepoint_hex": "U+E1EA",
+      "css_content": "\\e1ea",
+      "html_entity": "&#xE1EA;",
+      "ascii_key": "\u022c",
+      "description": "Pore spaces between mineral grains.",
+      "keywords": [
+        "scale pore",
+        "Pore Scale"
+      ],
+      "svg_file": "svg/gl_scale_pore.svg",
+      "svg_mono_file": "svg-mono/gl_scale_pore.svg"
+    },
+    {
+      "index": 491,
+      "id": "gl_scale_grain",
+      "css_class": "gi-gl-scale-grain",
+      "name": "Mineral Grain Scale",
+      "domain": "Geological",
+      "category": "Processes",
+      "codepoint_int": 57835,
+      "codepoint_hex": "U+E1EB",
+      "css_content": "\\e1eb",
+      "html_entity": "&#xE1EB;",
+      "ascii_key": "\u022d",
+      "description": "Individual mineral grains and grain boundaries.",
+      "keywords": [
+        "scale grain",
+        "Mineral Grain Scale"
+      ],
+      "svg_file": "svg/gl_scale_grain.svg",
+      "svg_mono_file": "svg-mono/gl_scale_grain.svg"
+    },
+    {
+      "index": 492,
+      "id": "gl_scale_specimen",
+      "css_class": "gi-gl-scale-specimen",
+      "name": "Rock Specimen Scale",
+      "domain": "Geological",
+      "category": "Processes",
+      "codepoint_int": 57836,
+      "codepoint_hex": "U+E1EC",
+      "css_content": "\\e1ec",
+      "html_entity": "&#xE1EC;",
+      "ascii_key": "\u022e",
+      "description": "Hand specimen with internal geological texture.",
+      "keywords": [
+        "scale specimen",
+        "Rock Specimen Scale"
+      ],
+      "svg_file": "svg/gl_scale_specimen.svg",
+      "svg_mono_file": "svg-mono/gl_scale_specimen.svg"
+    },
+    {
+      "index": 493,
+      "id": "gl_scale_outcrop",
+      "css_class": "gi-gl-scale-outcrop",
+      "name": "Outcrop Scale",
+      "domain": "Geological",
+      "category": "Processes",
+      "codepoint_int": 57837,
+      "codepoint_hex": "U+E1ED",
+      "css_content": "\\e1ed",
+      "html_entity": "&#xE1ED;",
+      "ascii_key": "\u022f",
+      "description": "Exposed rock with layers in an outcrop.",
+      "keywords": [
+        "scale outcrop",
+        "Outcrop Scale"
+      ],
+      "svg_file": "svg/gl_scale_outcrop.svg",
+      "svg_mono_file": "svg-mono/gl_scale_outcrop.svg"
+    },
+    {
+      "index": 494,
+      "id": "gl_scale_structure",
+      "css_class": "gi-gl-scale-structure",
+      "name": "Structural Scale",
+      "domain": "Geological",
+      "category": "Processes",
+      "codepoint_int": 57838,
+      "codepoint_hex": "U+E1EE",
+      "css_content": "\\e1ee",
+      "html_entity": "&#xE1EE;",
+      "ascii_key": "\u0230",
+      "description": "Folded geological layers cut by a fault.",
+      "keywords": [
+        "scale structure",
+        "Structural Scale"
+      ],
+      "svg_file": "svg/gl_scale_structure.svg",
+      "svg_mono_file": "svg-mono/gl_scale_structure.svg"
+    },
+    {
+      "index": 495,
+      "id": "gl_scale_deposit",
+      "css_class": "gi-gl-scale-deposit",
+      "name": "Mineral Deposit Scale",
+      "domain": "Geological",
+      "category": "Processes",
+      "codepoint_int": 57839,
+      "codepoint_hex": "U+E1EF",
+      "css_content": "\\e1ef",
+      "html_entity": "&#xE1EF;",
+      "ascii_key": "\u0231",
+      "description": "Mineralised body within host rocks.",
+      "keywords": [
+        "scale deposit",
+        "Mineral Deposit Scale"
+      ],
+      "svg_file": "svg/gl_scale_deposit.svg",
+      "svg_mono_file": "svg-mono/gl_scale_deposit.svg"
+    },
+    {
+      "index": 496,
+      "id": "gl_scale_district",
+      "css_class": "gi-gl-scale-district",
+      "name": "Mining District Scale",
+      "domain": "Geological",
+      "category": "Processes",
+      "codepoint_int": 57840,
+      "codepoint_hex": "U+E1F0",
+      "css_content": "\\e1f0",
+      "html_entity": "&#xE1F0;",
+      "ascii_key": "\u0232",
+      "description": "Map with several mineral occurrences.",
+      "keywords": [
+        "scale district",
+        "Mining District Scale"
+      ],
+      "svg_file": "svg/gl_scale_district.svg",
+      "svg_mono_file": "svg-mono/gl_scale_district.svg"
+    },
+    {
+      "index": 497,
+      "id": "gl_scale_crustal",
+      "css_class": "gi-gl-scale-crustal",
+      "name": "Crustal Scale",
+      "domain": "Geological",
+      "category": "Processes",
+      "codepoint_int": 57841,
+      "codepoint_hex": "U+E1F1",
+      "css_content": "\\e1f1",
+      "html_entity": "&#xE1F1;",
+      "ascii_key": "\u0233",
+      "description": "Cross section through layered continental crust.",
+      "keywords": [
+        "scale crust",
+        "Crustal Scale"
+      ],
+      "svg_file": "svg/gl_scale_crustal.svg",
+      "svg_mono_file": "svg-mono/gl_scale_crustal.svg"
+    },
+    {
+      "index": 498,
+      "id": "gl_tool_compass",
+      "css_class": "gi-gl-tool-compass",
+      "name": "Geological Compass",
+      "domain": "Geological",
+      "category": "Methods",
+      "codepoint_int": 57842,
+      "codepoint_hex": "U+E1F2",
+      "css_content": "\\e1f2",
+      "html_entity": "&#xE1F2;",
+      "ascii_key": "\u0234",
+      "description": "Field compass for orientation and geological mapping.",
+      "keywords": [
+        "compass",
+        "Geological Compass"
+      ],
+      "svg_file": "svg/gl_tool_compass.svg",
+      "svg_mono_file": "svg-mono/gl_tool_compass.svg"
+    },
+    {
+      "index": 499,
+      "id": "gl_tool_clinometer",
+      "css_class": "gi-gl-tool-clinometer",
+      "name": "Geological Clinometer",
+      "domain": "Geological",
+      "category": "Methods",
+      "codepoint_int": 57843,
+      "codepoint_hex": "U+E1F3",
+      "css_content": "\\e1f3",
+      "html_entity": "&#xE1F3;",
+      "ascii_key": "\u0235",
+      "description": "Inclination gauge for measuring geological dip.",
+      "keywords": [
+        "clinometer",
+        "Geological Clinometer"
+      ],
+      "svg_file": "svg/gl_tool_clinometer.svg",
+      "svg_mono_file": "svg-mono/gl_tool_clinometer.svg"
+    },
+    {
+      "index": 500,
+      "id": "gl_tool_rock_hammer",
+      "css_class": "gi-gl-tool-rock-hammer",
+      "name": "Geological Rock Hammer",
+      "domain": "Geological",
+      "category": "Methods",
+      "codepoint_int": 57844,
+      "codepoint_hex": "U+E1F4",
+      "css_content": "\\e1f4",
+      "html_entity": "&#xE1F4;",
+      "ascii_key": "\u0236",
+      "description": "Geologist hammer for exposing and collecting rock.",
+      "keywords": [
+        "hammer",
+        "Geological Rock Hammer"
+      ],
+      "svg_file": "svg/gl_tool_rock_hammer.svg",
+      "svg_mono_file": "svg-mono/gl_tool_rock_hammer.svg"
+    },
+    {
+      "index": 501,
+      "id": "gl_tool_hand_lens",
+      "css_class": "gi-gl-tool-hand-lens",
+      "name": "Geological Hand Lens",
+      "domain": "Geological",
+      "category": "Methods",
+      "codepoint_int": 57845,
+      "codepoint_hex": "U+E1F5",
+      "css_content": "\\e1f5",
+      "html_entity": "&#xE1F5;",
+      "ascii_key": "\u0237",
+      "description": "Hand lens for examining mineral grains and textures.",
+      "keywords": [
+        "hand lens",
+        "Geological Hand Lens"
+      ],
+      "svg_file": "svg/gl_tool_hand_lens.svg",
+      "svg_mono_file": "svg-mono/gl_tool_hand_lens.svg"
+    },
+    {
+      "index": 502,
+      "id": "gl_tool_field_notebook",
+      "css_class": "gi-gl-tool-field-notebook",
+      "name": "Geological Field Notebook",
+      "domain": "Geological",
+      "category": "Methods",
+      "codepoint_int": 57846,
+      "codepoint_hex": "U+E1F6",
+      "css_content": "\\e1f6",
+      "html_entity": "&#xE1F6;",
+      "ascii_key": "\u0238",
+      "description": "Field notebook for recording observations.",
+      "keywords": [
+        "field notebook",
+        "Geological Field Notebook"
+      ],
+      "svg_file": "svg/gl_tool_field_notebook.svg",
+      "svg_mono_file": "svg-mono/gl_tool_field_notebook.svg"
+    },
+    {
+      "index": 503,
+      "id": "gl_tool_streak_plate",
+      "css_class": "gi-gl-tool-streak-plate",
+      "name": "Mineral Streak Plate",
+      "domain": "Geological",
+      "category": "Methods",
+      "codepoint_int": 57847,
+      "codepoint_hex": "U+E1F7",
+      "css_content": "\\e1f7",
+      "html_entity": "&#xE1F7;",
+      "ascii_key": "\u0239",
+      "description": "Unglazed plate and mineral sample for streak testing.",
+      "keywords": [
+        "streak plate",
+        "Mineral Streak Plate"
+      ],
+      "svg_file": "svg/gl_tool_streak_plate.svg",
+      "svg_mono_file": "svg-mono/gl_tool_streak_plate.svg"
+    },
+    {
+      "index": 504,
+      "id": "gl_tool_sample_bag",
+      "css_class": "gi-gl-tool-sample-bag",
+      "name": "Geological Sample Bag",
+      "domain": "Geological",
+      "category": "Methods",
+      "codepoint_int": 57848,
+      "codepoint_hex": "U+E1F8",
+      "css_content": "\\e1f8",
+      "html_entity": "&#xE1F8;",
+      "ascii_key": "\u023a",
+      "description": "Bag holding a geological specimen.",
+      "keywords": [
+        "sample bag",
+        "Geological Sample Bag"
+      ],
+      "svg_file": "svg/gl_tool_sample_bag.svg",
+      "svg_mono_file": "svg-mono/gl_tool_sample_bag.svg"
+    },
+    {
+      "index": 505,
+      "id": "gl_tool_measuring_tape",
+      "css_class": "gi-gl-tool-measuring-tape",
+      "name": "Field Measuring Tape",
+      "domain": "Geological",
+      "category": "Methods",
+      "codepoint_int": 57849,
+      "codepoint_hex": "U+E1F9",
+      "css_content": "\\e1f9",
+      "html_entity": "&#xE1F9;",
+      "ascii_key": "\u023b",
+      "description": "Tape measure for field observations and geological logging.",
+      "keywords": [
+        "measuring tape",
+        "Field Measuring Tape"
+      ],
+      "svg_file": "svg/gl_tool_measuring_tape.svg",
+      "svg_mono_file": "svg-mono/gl_tool_measuring_tape.svg"
+    },
+    {
+      "index": 506,
+      "id": "gp_seismic_source_hammer",
+      "css_class": "gi-gp-seismic-source-hammer",
+      "name": "Sledgehammer Seismic Source",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57850,
+      "codepoint_hex": "U+E1FA",
+      "css_content": "\\e1fa",
+      "html_entity": "&#xE1FA;",
+      "ascii_key": "\u023c",
+      "description": "Sledgehammer Seismic Source. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Sledgehammer Seismic Source",
+        "hammer",
+        "Seismic sources"
+      ],
+      "svg_file": "svg/gp_seismic_source_hammer.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_source_hammer.svg"
+    },
+    {
+      "index": 507,
+      "id": "gp_seismic_source_explosive",
+      "css_class": "gi-gp-seismic-source-explosive",
+      "name": "Buried Explosive Seismic Source",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57851,
+      "codepoint_hex": "U+E1FB",
+      "css_content": "\\e1fb",
+      "html_entity": "&#xE1FB;",
+      "ascii_key": "\u023d",
+      "description": "Buried Explosive Seismic Source. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Buried Explosive Seismic Source",
+        "explosive",
+        "Seismic sources"
+      ],
+      "svg_file": "svg/gp_seismic_source_explosive.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_source_explosive.svg"
+    },
+    {
+      "index": 508,
+      "id": "gp_seismic_source_betsy",
+      "css_class": "gi-gp-seismic-source-betsy",
+      "name": "Betsy Gun Seismic Source",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57852,
+      "codepoint_hex": "U+E1FC",
+      "css_content": "\\e1fc",
+      "html_entity": "&#xE1FC;",
+      "ascii_key": "\u023e",
+      "description": "Betsy Gun Seismic Source. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Betsy Gun Seismic Source",
+        "betsy",
+        "Seismic sources"
+      ],
+      "svg_file": "svg/gp_seismic_source_betsy.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_source_betsy.svg"
+    },
+    {
+      "index": 509,
+      "id": "gp_seismic_source_weight_drop_ute",
+      "css_class": "gi-gp-seismic-source-weight-drop-ute",
+      "name": "Ute-Mounted Weight Drop",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57853,
+      "codepoint_hex": "U+E1FD",
+      "css_content": "\\e1fd",
+      "html_entity": "&#xE1FD;",
+      "ascii_key": "\u023f",
+      "description": "Ute-Mounted Weight Drop. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Ute-Mounted Weight Drop",
+        "weight drop ute",
+        "Seismic sources"
+      ],
+      "svg_file": "svg/gp_seismic_source_weight_drop_ute.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_source_weight_drop_ute.svg"
+    },
+    {
+      "index": 510,
+      "id": "gp_seismic_source_weight_drop_skid",
+      "css_class": "gi-gp-seismic-source-weight-drop-skid",
+      "name": "Skid-Steer Weight Drop",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57854,
+      "codepoint_hex": "U+E1FE",
+      "css_content": "\\e1fe",
+      "html_entity": "&#xE1FE;",
+      "ascii_key": "\u0240",
+      "description": "Skid-Steer Weight Drop. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Skid-Steer Weight Drop",
+        "weight drop skid",
+        "Seismic sources"
+      ],
+      "svg_file": "svg/gp_seismic_source_weight_drop_skid.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_source_weight_drop_skid.svg"
+    },
+    {
+      "index": 511,
+      "id": "gp_seismic_source_evibe",
+      "css_class": "gi-gp-seismic-source-evibe",
+      "name": "Electric Seismic Vibrator (eVibe)",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57855,
+      "codepoint_hex": "U+E1FF",
+      "css_content": "\\e1ff",
+      "html_entity": "&#xE1FF;",
+      "ascii_key": "\u0241",
+      "description": "Electric Seismic Vibrator (eVibe). Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Electric Seismic Vibrator (eVibe)",
+        "evibe",
+        "Seismic sources"
+      ],
+      "svg_file": "svg/gp_seismic_source_evibe.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_source_evibe.svg"
+    },
+    {
+      "index": 512,
+      "id": "gp_seismic_source_vibroseis",
+      "css_class": "gi-gp-seismic-source-vibroseis",
+      "name": "Vibroseis Truck",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57856,
+      "codepoint_hex": "U+E200",
+      "css_content": "\\e200",
+      "html_entity": "&#xE200;",
+      "ascii_key": "\u0242",
+      "description": "Vibroseis Truck. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Vibroseis Truck",
+        "vibroseis",
+        "Seismic sources"
+      ],
+      "svg_file": "svg/gp_seismic_source_vibroseis.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_source_vibroseis.svg"
+    },
+    {
+      "index": 513,
+      "id": "gp_seismic_source_airgun",
+      "css_class": "gi-gp-seismic-source-airgun",
+      "name": "Marine Air Gun",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57857,
+      "codepoint_hex": "U+E201",
+      "css_content": "\\e201",
+      "html_entity": "&#xE201;",
+      "ascii_key": "\u0243",
+      "description": "Marine Air Gun. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Marine Air Gun",
+        "airgun",
+        "Seismic sources"
+      ],
+      "svg_file": "svg/gp_seismic_source_airgun.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_source_airgun.svg"
+    },
+    {
+      "index": 514,
+      "id": "gp_seismic_source_land_streamer",
+      "css_class": "gi-gp-seismic-source-land-streamer",
+      "name": "Land Streamer",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57858,
+      "codepoint_hex": "U+E202",
+      "css_content": "\\e202",
+      "html_entity": "&#xE202;",
+      "ascii_key": "\u0244",
+      "description": "Land Streamer. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Land Streamer",
+        "land streamer",
+        "Seismic sources"
+      ],
+      "svg_file": "svg/gp_seismic_source_land_streamer.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_source_land_streamer.svg"
+    },
+    {
+      "index": 515,
+      "id": "gp_seismic_source_sparker",
+      "css_class": "gi-gp-seismic-source-sparker",
+      "name": "Marine Sparker",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57859,
+      "codepoint_hex": "U+E203",
+      "css_content": "\\e203",
+      "html_entity": "&#xE203;",
+      "ascii_key": "\u0245",
+      "description": "Marine Sparker. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Marine Sparker",
+        "sparker",
+        "Seismic sources"
+      ],
+      "svg_file": "svg/gp_seismic_source_sparker.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_source_sparker.svg"
+    },
+    {
+      "index": 516,
+      "id": "gp_seismic_source_boomer",
+      "css_class": "gi-gp-seismic-source-boomer",
+      "name": "Marine Boomer",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57860,
+      "codepoint_hex": "U+E204",
+      "css_content": "\\e204",
+      "html_entity": "&#xE204;",
+      "ascii_key": "\u0246",
+      "description": "Marine Boomer. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Marine Boomer",
+        "boomer",
+        "Seismic sources"
+      ],
+      "svg_file": "svg/gp_seismic_source_boomer.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_source_boomer.svg"
+    },
+    {
+      "index": 517,
+      "id": "gp_seismic_receiver_spiked",
+      "css_class": "gi-gp-seismic-receiver-spiked",
+      "name": "Spiked Geophone",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57861,
+      "codepoint_hex": "U+E205",
+      "css_content": "\\e205",
+      "html_entity": "&#xE205;",
+      "ascii_key": "\u0247",
+      "description": "Spiked Geophone. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Spiked Geophone",
+        "spiked",
+        "Seismic receivers"
+      ],
+      "svg_file": "svg/gp_seismic_receiver_spiked.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_receiver_spiked.svg"
+    },
+    {
+      "index": 518,
+      "id": "gp_seismic_receiver_wired",
+      "css_class": "gi-gp-seismic-receiver-wired",
+      "name": "Wired Geophone String",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57862,
+      "codepoint_hex": "U+E206",
+      "css_content": "\\e206",
+      "html_entity": "&#xE206;",
+      "ascii_key": "\u0248",
+      "description": "Wired Geophone String. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Wired Geophone String",
+        "wired",
+        "Seismic receivers"
+      ],
+      "svg_file": "svg/gp_seismic_receiver_wired.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_receiver_wired.svg"
+    },
+    {
+      "index": 519,
+      "id": "gp_seismic_receiver_wireless",
+      "css_class": "gi-gp-seismic-receiver-wireless",
+      "name": "Wireless Seismic Recorder",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57863,
+      "codepoint_hex": "U+E207",
+      "css_content": "\\e207",
+      "html_entity": "&#xE207;",
+      "ascii_key": "\u0249",
+      "description": "Wireless Seismic Recorder. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Wireless Seismic Recorder",
+        "wireless",
+        "Seismic receivers"
+      ],
+      "svg_file": "svg/gp_seismic_receiver_wireless.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_receiver_wireless.svg"
+    },
+    {
+      "index": 520,
+      "id": "gp_seismic_receiver_quantum",
+      "css_class": "gi-gp-seismic-receiver-quantum",
+      "name": "INOVA Quantum Node",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57864,
+      "codepoint_hex": "U+E208",
+      "css_content": "\\e208",
+      "html_entity": "&#xE208;",
+      "ascii_key": "\u024a",
+      "description": "INOVA Quantum Node. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "INOVA Quantum Node",
+        "quantum",
+        "Seismic receivers"
+      ],
+      "svg_file": "svg/gp_seismic_receiver_quantum.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_receiver_quantum.svg"
+    },
+    {
+      "index": 521,
+      "id": "gp_seismic_receiver_smartsolo",
+      "css_class": "gi-gp-seismic-receiver-smartsolo",
+      "name": "SmartSolo IGU Node",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57865,
+      "codepoint_hex": "U+E209",
+      "css_content": "\\e209",
+      "html_entity": "&#xE209;",
+      "ascii_key": "\u024b",
+      "description": "SmartSolo IGU Node. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "SmartSolo IGU Node",
+        "smartsolo",
+        "Seismic receivers"
+      ],
+      "svg_file": "svg/gp_seismic_receiver_smartsolo.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_receiver_smartsolo.svg"
+    },
+    {
+      "index": 522,
+      "id": "gp_seismic_receiver_wing",
+      "css_class": "gi-gp-seismic-receiver-wing",
+      "name": "Sercel WiNG Node",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57866,
+      "codepoint_hex": "U+E20A",
+      "css_content": "\\e20a",
+      "html_entity": "&#xE20A;",
+      "ascii_key": "\u024c",
+      "description": "Sercel WiNG Node. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Sercel WiNG Node",
+        "wing",
+        "Seismic receivers"
+      ],
+      "svg_file": "svg/gp_seismic_receiver_wing.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_receiver_wing.svg"
+    },
+    {
+      "index": 523,
+      "id": "gp_seismic_receiver_geospace",
+      "css_class": "gi-gp-seismic-receiver-geospace",
+      "name": "Geospace Recorder with Geophone",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57867,
+      "codepoint_hex": "U+E20B",
+      "css_content": "\\e20b",
+      "html_entity": "&#xE20B;",
+      "ascii_key": "\u024d",
+      "description": "Geospace Recorder with Geophone. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Geospace Recorder with Geophone",
+        "geospace",
+        "Seismic receivers"
+      ],
+      "svg_file": "svg/gp_seismic_receiver_geospace.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_receiver_geospace.svg"
+    },
+    {
+      "index": 524,
+      "id": "gp_seismic_receiver_three_component",
+      "css_class": "gi-gp-seismic-receiver-three-component",
+      "name": "Three-Component Geophone",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57868,
+      "codepoint_hex": "U+E20C",
+      "css_content": "\\e20c",
+      "html_entity": "&#xE20C;",
+      "ascii_key": "\u024e",
+      "description": "Three-Component Geophone. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Three-Component Geophone",
+        "three component",
+        "Seismic receivers"
+      ],
+      "svg_file": "svg/gp_seismic_receiver_three_component.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_receiver_three_component.svg"
+    },
+    {
+      "index": 525,
+      "id": "gp_seismic_receiver_hydrophone",
+      "css_class": "gi-gp-seismic-receiver-hydrophone",
+      "name": "Hydrophone",
+      "domain": "Geophysical",
+      "category": "Methods",
+      "codepoint_int": 57869,
+      "codepoint_hex": "U+E20D",
+      "css_content": "\\e20d",
+      "html_entity": "&#xE20D;",
+      "ascii_key": "\u024f",
+      "description": "Hydrophone. Equipment illustration; schematic proportions.",
+      "keywords": [
+        "Hydrophone",
+        "hydrophone",
+        "Seismic receivers"
+      ],
+      "svg_file": "svg/gp_seismic_receiver_hydrophone.svg",
+      "svg_mono_file": "svg-mono/gp_seismic_receiver_hydrophone.svg"
+    },
+    {
+      "index": 526,
+      "id": "gp_loop_magnetic_field",
+      "css_class": "gi-gp-loop-magnetic-field",
+      "name": "Magnetic Field Around a Loop",
+      "domain": "Geophysical",
+      "category": "Processes",
+      "codepoint_int": 57870,
+      "codepoint_hex": "U+E20E",
+      "css_content": "\\e20e",
+      "html_entity": "&#xE20E;",
+      "ascii_key": "\u0250",
+      "description": "Closed magnetic flux around a current loop.",
+      "keywords": [
+        "Magnetic Field Around a Loop",
+        "loop field",
+        "EM field processes"
+      ],
+      "svg_file": "svg/gp_loop_magnetic_field.svg",
+      "svg_mono_file": "svg-mono/gp_loop_magnetic_field.svg"
+    },
+    {
+      "index": 527,
+      "id": "gp_em_smoke_ring",
+      "css_class": "gi-gp-em-smoke-ring",
+      "name": "Propagating EM Smoke Ring",
+      "domain": "Geophysical",
+      "category": "Processes",
+      "codepoint_int": 57871,
+      "codepoint_hex": "U+E20F",
+      "css_content": "\\e20f",
+      "html_entity": "&#xE20F;",
+      "ascii_key": "\u0251",
+      "description": "Induced current rings expanding and diffusing downwards after transmitter shutoff.",
+      "keywords": [
+        "Propagating EM Smoke Ring",
+        "smoke ring",
+        "EM field processes"
+      ],
+      "svg_file": "svg/gp_em_smoke_ring.svg",
+      "svg_mono_file": "svg-mono/gp_em_smoke_ring.svg"
     }
   ]
 }

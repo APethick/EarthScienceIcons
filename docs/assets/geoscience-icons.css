@@ -509,3 +509,46 @@
 .gi-gp-hyperspectral-swir::before { content: "\e1e2"; } /* Shortwave Infrared Spectroscopy (SWIR) (U+E1E2) */
 .gi-gp-hyperspectral-mwir::before { content: "\e1e3"; } /* Midwave Infrared Spectroscopy (MWIR) (U+E1E3) */
 .gi-gp-hyperspectral-tir::before { content: "\e1e4"; } /* Thermal Infrared Spectroscopy (TIR / LWIR) (U+E1E4) */
+.gi-gp-em31::before { content: "\e1e5"; } /* EM31 Ground Conductivity Meter (U+E1E5) */
+.gi-gp-em38::before { content: "\e1e6"; } /* EM38 Ground Conductivity Meter (U+E1E6) */
+.gi-gp-tempest-aem::before { content: "\e1e7"; } /* TEMPEST Airborne EM System (U+E1E7) */
+.gi-gc-inversion-jacobian-matrix::before { content: "\e1e8"; } /* Jacobian Matrix (U+E1E8) */
+.gi-gc-inversion-hessian-matrix::before { content: "\e1e9"; } /* Hessian Matrix (U+E1E9) */
+.gi-gl-scale-pore::before { content: "\e1ea"; } /* Pore Scale (U+E1EA) */
+.gi-gl-scale-grain::before { content: "\e1eb"; } /* Mineral Grain Scale (U+E1EB) */
+.gi-gl-scale-specimen::before { content: "\e1ec"; } /* Rock Specimen Scale (U+E1EC) */
+.gi-gl-scale-outcrop::before { content: "\e1ed"; } /* Outcrop Scale (U+E1ED) */
+.gi-gl-scale-structure::before { content: "\e1ee"; } /* Structural Scale (U+E1EE) */
+.gi-gl-scale-deposit::before { content: "\e1ef"; } /* Mineral Deposit Scale (U+E1EF) */
+.gi-gl-scale-district::before { content: "\e1f0"; } /* Mining District Scale (U+E1F0) */
+.gi-gl-scale-crustal::before { content: "\e1f1"; } /* Crustal Scale (U+E1F1) */
+.gi-gl-tool-compass::before { content: "\e1f2"; } /* Geological Compass (U+E1F2) */
+.gi-gl-tool-clinometer::before { content: "\e1f3"; } /* Geological Clinometer (U+E1F3) */
+.gi-gl-tool-rock-hammer::before { content: "\e1f4"; } /* Geological Rock Hammer (U+E1F4) */
+.gi-gl-tool-hand-lens::before { content: "\e1f5"; } /* Geological Hand Lens (U+E1F5) */
+.gi-gl-tool-field-notebook::before { content: "\e1f6"; } /* Geological Field Notebook (U+E1F6) */
+.gi-gl-tool-streak-plate::before { content: "\e1f7"; } /* Mineral Streak Plate (U+E1F7) */
+.gi-gl-tool-sample-bag::before { content: "\e1f8"; } /* Geological Sample Bag (U+E1F8) */
+.gi-gl-tool-measuring-tape::before { content: "\e1f9"; } /* Field Measuring Tape (U+E1F9) */
+.gi-gp-seismic-source-hammer::before { content: "\e1fa"; } /* Sledgehammer Seismic Source (U+E1FA) */
+.gi-gp-seismic-source-explosive::before { content: "\e1fb"; } /* Buried Explosive Seismic Source (U+E1FB) */
+.gi-gp-seismic-source-betsy::before { content: "\e1fc"; } /* Betsy Gun Seismic Source (U+E1FC) */
+.gi-gp-seismic-source-weight-drop-ute::before { content: "\e1fd"; } /* Ute-Mounted Weight Drop (U+E1FD) */
+.gi-gp-seismic-source-weight-drop-skid::before { content: "\e1fe"; } /* Skid-Steer Weight Drop (U+E1FE) */
+.gi-gp-seismic-source-evibe::before { content: "\e1ff"; } /* Electric Seismic Vibrator (eVibe) (U+E1FF) */
+.gi-gp-seismic-source-vibroseis::before { content: "\e200"; } /* Vibroseis Truck (U+E200) */
+.gi-gp-seismic-source-airgun::before { content: "\e201"; } /* Marine Air Gun (U+E201) */
+.gi-gp-seismic-source-land-streamer::before { content: "\e202"; } /* Land Streamer (U+E202) */
+.gi-gp-seismic-source-sparker::before { content: "\e203"; } /* Marine Sparker (U+E203) */
+.gi-gp-seismic-source-boomer::before { content: "\e204"; } /* Marine Boomer (U+E204) */
+.gi-gp-seismic-receiver-spiked::before { content: "\e205"; } /* Spiked Geophone (U+E205) */
+.gi-gp-seismic-receiver-wired::before { content: "\e206"; } /* Wired Geophone String (U+E206) */
+.gi-gp-seismic-receiver-wireless::before { content: "\e207"; } /* Wireless Seismic Recorder (U+E207) */
+.gi-gp-seismic-receiver-quantum::before { content: "\e208"; } /* INOVA Quantum Node (U+E208) */
+.gi-gp-seismic-receiver-smartsolo::before { content: "\e209"; } /* SmartSolo IGU Node (U+E209) */
+.gi-gp-seismic-receiver-wing::before { content: "\e20a"; } /* Sercel WiNG Node (U+E20A) */
+.gi-gp-seismic-receiver-geospace::before { content: "\e20b"; } /* Geospace Recorder with Geophone (U+E20B) */
+.gi-gp-seismic-receiver-three-component::before { content: "\e20c"; } /* Three-Component Geophone (U+E20C) */
+.gi-gp-seismic-receiver-hydrophone::before { content: "\e20d"; } /* Hydrophone (U+E20D) */
+.gi-gp-loop-magnetic-field::before { content: "\e20e"; } /* Magnetic Field Around a Loop (U+E20E) */
+.gi-gp-em-smoke-ring::before { content: "\e20f"; } /* Propagating EM Smoke Ring (U+E20F) */

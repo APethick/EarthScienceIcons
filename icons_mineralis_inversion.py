@@ -507,9 +507,6 @@ def gc_sensitivity_jacobian():
     for x, y, r in grid:
         parts.append(circle(x, y, r))
 
-    parts.append(arc(220, 840, 30, 0, 360, 22))
-    parts.append(line(245, 840, 245, 890, 22))
-
     return union_all(parts)
 
 

@@ -17,7 +17,7 @@ import opus.base.properties.OpusProperty;
 import opus.base.resources.OpusResources;
 
 /**
- * GeoScienceIcons TrueType glyph font (484 icons) covering Geophysical, Geotechnical,
+ * GeoScienceIcons TrueType glyph font (527 icons) covering Geophysical, Geotechnical,
  * Geological, and Geochemical methods, earth model types, and processes.
  * Includes dedicated suites for Inversion, Thermodynamics, Petrophysics, and Geochemistry,
  * aligned with opus.geo.geochemistry, opus.geo.petrophysics, and opus.geo.geotechnical.
@@ -512,6 +512,49 @@ public class GeoScienceIcons extends GlyphFont {
 		GP_HYPERSPECTRAL_SWIR('\ue1e2'), // Shortwave Infrared Spectroscopy (SWIR) (Geophysical - Methods)
 		GP_HYPERSPECTRAL_MWIR('\ue1e3'), // Midwave Infrared Spectroscopy (MWIR) (Geophysical - Methods)
 		GP_HYPERSPECTRAL_TIR('\ue1e4'), // Thermal Infrared Spectroscopy (TIR / LWIR) (Geophysical - Methods)
+		GP_EM31('\ue1e5'), // EM31 Ground Conductivity Meter (Geophysical - Methods)
+		GP_EM38('\ue1e6'), // EM38 Ground Conductivity Meter (Geophysical - Methods)
+		GP_TEMPEST_AEM('\ue1e7'), // TEMPEST Airborne EM System (Geophysical - Methods)
+		GC_INVERSION_JACOBIAN_MATRIX('\ue1e8'), // Jacobian Matrix (Geochemical - Processes)
+		GC_INVERSION_HESSIAN_MATRIX('\ue1e9'), // Hessian Matrix (Geochemical - Processes)
+		GL_SCALE_PORE('\ue1ea'), // Pore Scale (Geological - Processes)
+		GL_SCALE_GRAIN('\ue1eb'), // Mineral Grain Scale (Geological - Processes)
+		GL_SCALE_SPECIMEN('\ue1ec'), // Rock Specimen Scale (Geological - Processes)
+		GL_SCALE_OUTCROP('\ue1ed'), // Outcrop Scale (Geological - Processes)
+		GL_SCALE_STRUCTURE('\ue1ee'), // Structural Scale (Geological - Processes)
+		GL_SCALE_DEPOSIT('\ue1ef'), // Mineral Deposit Scale (Geological - Processes)
+		GL_SCALE_DISTRICT('\ue1f0'), // Mining District Scale (Geological - Processes)
+		GL_SCALE_CRUSTAL('\ue1f1'), // Crustal Scale (Geological - Processes)
+		GL_TOOL_COMPASS('\ue1f2'), // Geological Compass (Geological - Methods)
+		GL_TOOL_CLINOMETER('\ue1f3'), // Geological Clinometer (Geological - Methods)
+		GL_TOOL_ROCK_HAMMER('\ue1f4'), // Geological Rock Hammer (Geological - Methods)
+		GL_TOOL_HAND_LENS('\ue1f5'), // Geological Hand Lens (Geological - Methods)
+		GL_TOOL_FIELD_NOTEBOOK('\ue1f6'), // Geological Field Notebook (Geological - Methods)
+		GL_TOOL_STREAK_PLATE('\ue1f7'), // Mineral Streak Plate (Geological - Methods)
+		GL_TOOL_SAMPLE_BAG('\ue1f8'), // Geological Sample Bag (Geological - Methods)
+		GL_TOOL_MEASURING_TAPE('\ue1f9'), // Field Measuring Tape (Geological - Methods)
+		GP_SEISMIC_SOURCE_HAMMER('\ue1fa'), // Sledgehammer Seismic Source (Geophysical - Methods)
+		GP_SEISMIC_SOURCE_EXPLOSIVE('\ue1fb'), // Buried Explosive Seismic Source (Geophysical - Methods)
+		GP_SEISMIC_SOURCE_BETSY('\ue1fc'), // Betsy Gun Seismic Source (Geophysical - Methods)
+		GP_SEISMIC_SOURCE_WEIGHT_DROP_UTE('\ue1fd'), // Ute-Mounted Weight Drop (Geophysical - Methods)
+		GP_SEISMIC_SOURCE_WEIGHT_DROP_SKID('\ue1fe'), // Skid-Steer Weight Drop (Geophysical - Methods)
+		GP_SEISMIC_SOURCE_EVIBE('\ue1ff'), // Electric Seismic Vibrator (eVibe) (Geophysical - Methods)
+		GP_SEISMIC_SOURCE_VIBROSEIS('\ue200'), // Vibroseis Truck (Geophysical - Methods)
+		GP_SEISMIC_SOURCE_AIRGUN('\ue201'), // Marine Air Gun (Geophysical - Methods)
+		GP_SEISMIC_SOURCE_LAND_STREAMER('\ue202'), // Land Streamer (Geophysical - Methods)
+		GP_SEISMIC_SOURCE_SPARKER('\ue203'), // Marine Sparker (Geophysical - Methods)
+		GP_SEISMIC_SOURCE_BOOMER('\ue204'), // Marine Boomer (Geophysical - Methods)
+		GP_SEISMIC_RECEIVER_SPIKED('\ue205'), // Spiked Geophone (Geophysical - Methods)
+		GP_SEISMIC_RECEIVER_WIRED('\ue206'), // Wired Geophone String (Geophysical - Methods)
+		GP_SEISMIC_RECEIVER_WIRELESS('\ue207'), // Wireless Seismic Recorder (Geophysical - Methods)
+		GP_SEISMIC_RECEIVER_QUANTUM('\ue208'), // INOVA Quantum Node (Geophysical - Methods)
+		GP_SEISMIC_RECEIVER_SMARTSOLO('\ue209'), // SmartSolo IGU Node (Geophysical - Methods)
+		GP_SEISMIC_RECEIVER_WING('\ue20a'), // Sercel WiNG Node (Geophysical - Methods)
+		GP_SEISMIC_RECEIVER_GEOSPACE('\ue20b'), // Geospace Recorder with Geophone (Geophysical - Methods)
+		GP_SEISMIC_RECEIVER_THREE_COMPONENT('\ue20c'), // Three-Component Geophone (Geophysical - Methods)
+		GP_SEISMIC_RECEIVER_HYDROPHONE('\ue20d'), // Hydrophone (Geophysical - Methods)
+		GP_LOOP_MAGNETIC_FIELD('\ue20e'), // Magnetic Field Around a Loop (Geophysical - Processes)
+		GP_EM_SMOKE_RING('\ue20f'), // Propagating EM Smoke Ring (Geophysical - Processes)
         ;
 
         private final char ch;
@@ -1038,6 +1081,49 @@ public class GeoScienceIcons extends GlyphFont {
 			case "gp_hyperspectral_swir" -> Glyph.GP_HYPERSPECTRAL_SWIR;
 			case "gp_hyperspectral_mwir" -> Glyph.GP_HYPERSPECTRAL_MWIR;
 			case "gp_hyperspectral_tir" -> Glyph.GP_HYPERSPECTRAL_TIR;
+			case "gp_em31" -> Glyph.GP_EM31;
+			case "gp_em38" -> Glyph.GP_EM38;
+			case "gp_tempest_aem" -> Glyph.GP_TEMPEST_AEM;
+			case "gc_inversion_jacobian_matrix" -> Glyph.GC_INVERSION_JACOBIAN_MATRIX;
+			case "gc_inversion_hessian_matrix" -> Glyph.GC_INVERSION_HESSIAN_MATRIX;
+			case "gl_scale_pore" -> Glyph.GL_SCALE_PORE;
+			case "gl_scale_grain" -> Glyph.GL_SCALE_GRAIN;
+			case "gl_scale_specimen" -> Glyph.GL_SCALE_SPECIMEN;
+			case "gl_scale_outcrop" -> Glyph.GL_SCALE_OUTCROP;
+			case "gl_scale_structure" -> Glyph.GL_SCALE_STRUCTURE;
+			case "gl_scale_deposit" -> Glyph.GL_SCALE_DEPOSIT;
+			case "gl_scale_district" -> Glyph.GL_SCALE_DISTRICT;
+			case "gl_scale_crustal" -> Glyph.GL_SCALE_CRUSTAL;
+			case "gl_tool_compass" -> Glyph.GL_TOOL_COMPASS;
+			case "gl_tool_clinometer" -> Glyph.GL_TOOL_CLINOMETER;
+			case "gl_tool_rock_hammer" -> Glyph.GL_TOOL_ROCK_HAMMER;
+			case "gl_tool_hand_lens" -> Glyph.GL_TOOL_HAND_LENS;
+			case "gl_tool_field_notebook" -> Glyph.GL_TOOL_FIELD_NOTEBOOK;
+			case "gl_tool_streak_plate" -> Glyph.GL_TOOL_STREAK_PLATE;
+			case "gl_tool_sample_bag" -> Glyph.GL_TOOL_SAMPLE_BAG;
+			case "gl_tool_measuring_tape" -> Glyph.GL_TOOL_MEASURING_TAPE;
+			case "gp_seismic_source_hammer" -> Glyph.GP_SEISMIC_SOURCE_HAMMER;
+			case "gp_seismic_source_explosive" -> Glyph.GP_SEISMIC_SOURCE_EXPLOSIVE;
+			case "gp_seismic_source_betsy" -> Glyph.GP_SEISMIC_SOURCE_BETSY;
+			case "gp_seismic_source_weight_drop_ute" -> Glyph.GP_SEISMIC_SOURCE_WEIGHT_DROP_UTE;
+			case "gp_seismic_source_weight_drop_skid" -> Glyph.GP_SEISMIC_SOURCE_WEIGHT_DROP_SKID;
+			case "gp_seismic_source_evibe" -> Glyph.GP_SEISMIC_SOURCE_EVIBE;
+			case "gp_seismic_source_vibroseis" -> Glyph.GP_SEISMIC_SOURCE_VIBROSEIS;
+			case "gp_seismic_source_airgun" -> Glyph.GP_SEISMIC_SOURCE_AIRGUN;
+			case "gp_seismic_source_land_streamer" -> Glyph.GP_SEISMIC_SOURCE_LAND_STREAMER;
+			case "gp_seismic_source_sparker" -> Glyph.GP_SEISMIC_SOURCE_SPARKER;
+			case "gp_seismic_source_boomer" -> Glyph.GP_SEISMIC_SOURCE_BOOMER;
+			case "gp_seismic_receiver_spiked" -> Glyph.GP_SEISMIC_RECEIVER_SPIKED;
+			case "gp_seismic_receiver_wired" -> Glyph.GP_SEISMIC_RECEIVER_WIRED;
+			case "gp_seismic_receiver_wireless" -> Glyph.GP_SEISMIC_RECEIVER_WIRELESS;
+			case "gp_seismic_receiver_quantum" -> Glyph.GP_SEISMIC_RECEIVER_QUANTUM;
+			case "gp_seismic_receiver_smartsolo" -> Glyph.GP_SEISMIC_RECEIVER_SMARTSOLO;
+			case "gp_seismic_receiver_wing" -> Glyph.GP_SEISMIC_RECEIVER_WING;
+			case "gp_seismic_receiver_geospace" -> Glyph.GP_SEISMIC_RECEIVER_GEOSPACE;
+			case "gp_seismic_receiver_three_component" -> Glyph.GP_SEISMIC_RECEIVER_THREE_COMPONENT;
+			case "gp_seismic_receiver_hydrophone" -> Glyph.GP_SEISMIC_RECEIVER_HYDROPHONE;
+			case "gp_loop_magnetic_field" -> Glyph.GP_LOOP_MAGNETIC_FIELD;
+			case "gp_em_smoke_ring" -> Glyph.GP_EM_SMOKE_RING;
 			case "saussuritised" -> Glyph.GC_SAUSSURITISED;
 			case "serpentinisation" -> Glyph.GC_SERPENTINISATION;
 			case "epidote_alteration" -> Glyph.GC_EPIDOTE_ALTERATION;

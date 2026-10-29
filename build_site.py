@@ -10,8 +10,10 @@ def build_site():
     root = Path(__file__).resolve().parent
     dist = root / 'dist'
     assets = root / 'docs' / 'assets'
-    assets.mkdir(parents=True, exist_ok=True)
     catalog = json.loads((dist / 'geoscience-icons.json').read_text(encoding='utf-8'))
+    from icon_identity import validate_manifest
+    validate_manifest(catalog, root)
+    assets.mkdir(parents=True, exist_ok=True)
     total, version = catalog['totalIcons'], catalog['version']
     page = root / 'docs' / 'index.html'
     markup = page.read_text(encoding='utf-8')
@@ -23,7 +25,7 @@ def build_site():
     javascript = script.read_text(encoding='utf-8')
     javascript = re.sub(r"const RELEASE = '[^']+';", f"const RELEASE = '{version}';", javascript)
     script.write_text(javascript, encoding='utf-8')
-    for name in ('svg', 'svg-mono'):
+    for name in ('svg', 'svg-mono', 'png'):
         shutil.copytree(dist / name, assets / name, dirs_exist_ok=True)
     for name in ('GeoScienceIcons.ttf', 'GeoScienceIcons.woff', 'geoscience-icons.css', 'geoscience-icons.json'):
         shutil.copy2(dist / name, assets / name)

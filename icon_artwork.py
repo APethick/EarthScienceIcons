@@ -454,6 +454,12 @@ FAULT_BLOCK_IDS = {'gl_faulted_stratigraphy', 'gl_fault_slip_tectonics',
 
 
 def artwork(icon):
+    from icons_seismic_equipment import IDS as SEISMIC_IDS, flat_artwork as seismic_artwork
+    if icon["id"] in SEISMIC_IDS:
+        return seismic_artwork(icon)
+    from icons_field_instruments import IDS, flat_artwork as field_artwork
+    if icon["id"] in IDS:
+        return field_artwork(icon)
     from icons_spectroscopy import SPECTROSCOPY_IDS, REPLACEMENTS, flat_artwork
     if icon["id"] in SPECTROSCOPY_IDS or icon["id"] in REPLACEMENTS:
         return flat_artwork(icon)

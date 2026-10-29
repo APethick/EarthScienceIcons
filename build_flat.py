@@ -15,10 +15,15 @@ from icon_specimen import build_catalog, render_flat_sheet, render_style_preview
 
 def build_flat():
     dist = Path(__file__).resolve().parent / 'dist'
+    from build_font import ASCII_KEYS
+    from icon_identity import validate_sources
     icons = ALL_ICONS
+    validate_sources(icons, ASCII_KEYS)
     expected = {icon['id'] for icon in icons}
     from icons_spectroscopy import SPECTROSCOPY_IDS
-    available = SPECTROSCOPY_IDS | set(ICON_MATERIALS) | EXPANDED_IDS | MT_IDS | GEOCHEM_IDS | FGM_IDS
+    from icons_field_instruments import IDS as FIELD_IDS
+    from icons_seismic_equipment import IDS as SEISMIC_IDS
+    available = SEISMIC_IDS | FIELD_IDS | SPECTROSCOPY_IDS | set(ICON_MATERIALS) | EXPANDED_IDS | MT_IDS | GEOCHEM_IDS | FGM_IDS
     if expected != available:
         raise ValueError(f'Material assignments differ: {expected ^ available}')
     for icon in icons:
@@ -35,6 +40,9 @@ def build_flat():
     render_em_preview(dist / 'em_equipment_preview.png', icons, dist / 'GeoScienceIcons.ttf')
     render_petrophysics_preview(dist / 'petrophysics_preview.png', icons, dist / 'GeoScienceIcons.ttf')
     render_logging_preview(dist / 'petrophysics_logging_preview.png', icons, dist / 'GeoScienceIcons.ttf')
+    from icon_specimen import render_category_sheets, render_individual_pngs
+    render_category_sheets(dist, icons, dist / 'GeoScienceIcons.ttf')
+    render_individual_pngs(dist, icons, dist / 'GeoScienceIcons.ttf')
     print(f'Updated {len(icons)} flat SVGs with object/material colours. Detailed fonts and monochrome SVGs were not rebuilt.')
 
 

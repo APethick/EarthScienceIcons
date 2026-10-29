@@ -208,3 +208,67 @@ byId('size').addEventListener('input',event=>{document.documentElement.style.set
 byId('theme').addEventListener('click',()=>{const dark=document.body.classList.toggle('dark');byId('theme').setAttribute('aria-pressed',dark);byId('theme').textContent=dark?'Light theme':'Dark theme';});
 </script></body></html>'''
     path.write_text(template.replace("193", str(len(catalog))).replace("CARDS", "\n".join(cards)), encoding="utf-8")
+
+def render_category_sheets(dist, icons, ttf_path):
+    """PNG contact sheets for every discipline, catalogue category and equipment group."""
+    import json
+    import re
+    from collections import defaultdict
+    groups = defaultdict(list)
+    for icon in icons:
+        groups['disciplines/' + icon['domain']].append(icon)
+        groups['categories/' + icon['category']].append(icon)
+        group = icon.get('group')
+        if icon['id'].startswith('gl_scale_'): group = 'Geological scales'
+        elif icon['id'].startswith('gl_tool_'): group = 'Geological field tools'
+        elif icon['id'] in ('gp_em31','gp_em38','gp_tempest_aem'): group = 'EM instruments'
+        if group: groups['collections/' + group].append(icon)
+    glyph_font = ImageFont.truetype(str(ttf_path), 96)
+    records = []
+    for group, members in sorted(groups.items()):
+        section, title = group.split('/')
+        slug = re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
+        for style in ('line', 'flat-colour'):
+            width, height, columns = 220, 176, 6
+            sheet = Image.new('RGB', (columns*width, 90+math.ceil(len(members)/columns)*height), '#f4f5f6')
+            draw = ImageDraw.Draw(sheet)
+            draw.text((24,16), title + ' / ' + style, font=font(26,True), fill=INK)
+            draw.text((24,53), str(len(members))+' icons', font=font(15), fill='#667078')
+            for index, icon in enumerate(members):
+                x, y = (index%columns)*width, 90+(index//columns)*height
+                draw.rounded_rectangle((x+5,y+4,x+width-5,y+height-4),8,fill='white')
+                if style=='flat-colour':
+                    tile=render_icon(icon,100);sheet.paste(tile,(x+60,y+10),tile)
+                else:
+                    char=chr(icon['codepoint']);bounds=draw.textbbox((0,0),char,font=glyph_font)
+                    draw.text((x+(width-bounds[2]+bounds[0])/2-bounds[0],y+12-bounds[1]),char,font=glyph_font,fill=INK)
+                words=icon['name'].split();lines=['']
+                for word in words:
+                    candidate=(lines[-1]+' '+word).strip()
+                    if draw.textlength(candidate,font=font(12))>width-20:lines.append(word)
+                    else:lines[-1]=candidate
+                for row,line in enumerate(lines[:3]):draw.text((x+10,y+116+row*15),line,font=font(12),fill=INK)
+            path=dist/'png'/section/(slug+'-'+style+'.png');path.parent.mkdir(parents=True,exist_ok=True);save_png(sheet,path)
+            records.append(dict(group=group,style=style,count=len(members),file=path.relative_to(dist).as_posix()))
+    (dist/'png'/'index.json').write_text(json.dumps(records,indent=2),encoding='utf-8')
+
+
+def render_individual_pngs(dist, icons, ttf_path):
+    """Export every icon as a transparent, antialiased 256px PNG in both styles."""
+    size, supersample = 256, 3
+    canvas = size * supersample
+    glyph_font = ImageFont.truetype(str(ttf_path), canvas)
+    for style in ('flat-colour', 'line'):
+        (dist / 'png' / 'individual' / style).mkdir(parents=True, exist_ok=True)
+    for icon in icons:
+        save_png(render_icon(icon, size),
+                 dist / 'png' / 'individual' / 'flat-colour' / (icon['id'] + '.png'))
+        mask = Image.new('L', (canvas, canvas), 0)
+        # Font canvas is [-120, 880] with 1000 units per em; preserve the SVG frame.
+        ImageDraw.Draw(mask).text((0, canvas * .88), chr(icon['codepoint']),
+                                  font=glyph_font, fill=255, anchor='ls')
+        mask = mask.resize((size, size), Image.Resampling.LANCZOS)
+        result = Image.new('RGBA', (size, size), INK)
+        result.putalpha(mask)
+        save_png(result, dist / 'png' / 'individual' / 'line' / (icon['id'] + '.png'))
+    print(f'Exported {len(icons) * 2} individual transparent 256 x 256 PNGs to {dist / "png" / "individual"}')

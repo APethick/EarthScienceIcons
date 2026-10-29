@@ -333,17 +333,11 @@ def phase_tensor():
 
 def tipper():
     d = Drawing()
-    d.poly([(3, 32), (17, 32), (22, 27), (29, 27), (33, 32), (45, 32),
-            (45, 44), (3, 44)], SAND, SOIL)
-    d.poly([(19, 44), (22, 30), (28, 30), (31, 44)], ROCK, INK)
-    d.rect(8, 28, 10, 3, STEEL, .8)
-    d.rect(12, 21, 3, 9, STEEL, .8)
-    d.line([(7, 15), (30, 15)], RED, 1.1)
-    d.arrow(13, 26, 13, 7, RED)
-    d.arrow(13, 26, 35, 18, RED)
-    d.arc(13, 26, 12, 275, 337, STEEL)
-    d.dash((35, 18), (35, 32), STEEL, 5, .6)
-    d.receiver(37, 29, 2.6)
+    # A station and one horizontal induction arrow above a conductive contact.
+    d.line([(4, 34), (44, 34)], INK, 1.4)
+    d.poly([(25, 34), (30, 34), (35, 44), (20, 44)], ROCK, INK)
+    d.receiver(13, 34, 2.5)
+    d.arrow(13, 25, 37, 25, RED)
     return d
 
 
@@ -363,7 +357,7 @@ ROWS = [
     ('remote_reference', 'Remote Reference Pair', 'Two spatially separated electrode and coil stations with paired traces and a shared reference link.', remote_reference, ['remote', 'reference', 'station', 'pair', 'MT']),
     ('mt_impedance_tensor', 'MT Impedance Tensor', 'Four complex response plots arranged as a two-by-two electric-to-magnetic transfer matrix.', impedance, ['MT', 'impedance', 'tensor', 'Z', 'transfer']),
     ('mt_phase_tensor', 'MT Phase Tensor', 'Rotated phase ellipse with principal directions, azimuth arc and a central station.', phase_tensor, ['MT', 'phase', 'tensor', 'ellipse', 'azimuth']),
-    ('mt_tipper', 'MT Tipper', 'Vertical magnetic response and horizontal induction arrow over a conductive geological contact.', tipper, ['MT', 'tipper', 'induction', 'arrow', 'Hz']),
+    ('mt_tipper', 'MT Tipper', 'Horizontal magnetic induction arrow at a station above a conductive geological contact.', tipper, ['MT', 'tipper', 'induction', 'arrow', 'Hz']),
 ]
 
 MT_ICONS = [dict(id='gp_'+identifier, codepoint=0xE112+index, name=name,
