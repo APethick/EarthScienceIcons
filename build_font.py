@@ -313,6 +313,9 @@ def build_all(install_opus: bool = False):
     (dist_dir / "GeoScienceIcons.java").write_text(java_code, encoding="utf-8")
     print(f"Generated Java GlyphFont class: {dist_dir / 'GeoScienceIcons.java'}")
 
+    from export_mineral_system_resources import export_resources
+    export_resources(dist_dir / 'mineral-system-resources' / 'icons')
+
     # Copy font & java class into C:\projects\opus\opus.base if directory exists
     opus_fonts_dir = Path(r"C:\projects\opus\opus.base\resources\fonts")
     opus_icons_dir = Path(r"C:\projects\opus\opus.base\src\opus\base\icons")
@@ -342,8 +345,9 @@ def build_java_glyph_class(catalog: List[Dict[str, Any]]) -> str:
 
     from icons_alteration import PROPERTY_ALIASES
     from icons_field_manual import FGM_ALIASES
+    from icons_mineral_systems import ALIASES as MINERAL_SYSTEM_ALIASES
     seen_keys = {item["id"] for item in catalog}
-    for alias, identifier in list(PROPERTY_ALIASES.items()) + list(FGM_ALIASES.items()):
+    for alias, identifier in list(PROPERTY_ALIASES.items()) + list(FGM_ALIASES.items()) + list(MINERAL_SYSTEM_ALIASES.items()):
         if alias not in seen_keys:
             seen_keys.add(alias)
             lookup_cases.append(f'\t\t\tcase "{alias}" -> Glyph.{identifier.upper()};')
@@ -494,7 +498,7 @@ def render_specimen_png(ttf_path: Path, png_path: Path, catalog: List[Dict[str, 
 
         # Domain & Category header
         dom_color = domain_palette.get(item["domain"], (200, 200, 200))
-        cat_abbr = {"Methods": "Method", "Earth Model Types": "Model", "Processes": "Process", "Petrophysical Quantities": "Property"}[item["category"]]
+        cat_abbr = {"Methods": "Method", "Earth Model Types": "Model", "Processes": "Process", "Petrophysical Quantities": "Property", "Mineral Systems": "System"}[item["category"]]
         draw.text((x0 + 8, y0 + 8), f"{item['domain'][:6]} • {cat_abbr}", fill=dom_color, font=label_font)
         draw.text((x0 + cell_w - 54, y0 + 8), item["codepoint_hex"], fill=(148, 163, 184), font=label_font)
 

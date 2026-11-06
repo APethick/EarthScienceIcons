@@ -1,0 +1,254 @@
+[
+  {
+    "id": "realm_magmatic",
+    "name": "Magmatic (orthomagmatic)",
+    "parent": null,
+    "level": "realm",
+    "description": "Crystals settle into cumulate layers within a magma chamber."
+  },
+  {
+    "id": "realm_magmatic_hydrothermal",
+    "name": "Magmatic-hydrothermal",
+    "parent": null,
+    "level": "realm",
+    "description": "A cooling intrusion feeds branching veins within an alteration halo."
+  },
+  {
+    "id": "realm_metamorphic_orogenic",
+    "name": "Metamorphic / orogenic hydrothermal",
+    "parent": null,
+    "level": "realm",
+    "description": "Compression folds the host rocks; a shear-controlled quartz vein cuts the sequence."
+  },
+  {
+    "id": "realm_basinal_hydrothermal",
+    "name": "Basinal and diagenetic hydrothermal",
+    "parent": null,
+    "level": "realm",
+    "description": "Brines move through a sedimentary basin toward a fault and stratabound trap."
+  },
+  {
+    "id": "realm_submarine_hydrothermal",
+    "name": "Submarine hydrothermal (seawater-convection driven)",
+    "parent": null,
+    "level": "realm",
+    "description": "Seawater descends beside black smokers above a submarine heat source."
+  },
+  {
+    "id": "realm_sedimentary_chemical",
+    "name": "Sedimentary and chemical-sedimentary",
+    "parent": null,
+    "level": "realm",
+    "description": "Particles precipitate and settle through water into mineral-rich beds."
+  },
+  {
+    "id": "realm_surficial_weathering",
+    "name": "Surficial and weathering",
+    "parent": null,
+    "level": "realm",
+    "description": "Percolating water produces a weathering profile and irregular reaction front."
+  },
+  {
+    "id": "realm_clastic_mechanical",
+    "name": "Clastic / mechanical (placer and palaeoplacer)",
+    "parent": null,
+    "level": "realm",
+    "description": "Flowing water sorts gravel and concentrates dense grains at a channel base."
+  },
+  {
+    "id": "realm_hybrid_industrial",
+    "name": "Hybrid, industrial and other systems",
+    "parent": null,
+    "level": "realm",
+    "description": "A mineral-bearing specimen combines clay sheets, a prism and a faceted gemstone."
+  },
+  {
+    "id": "clan_magmatic_sulfide",
+    "name": "Magmatic sulfide (Ni-Cu-PGE)",
+    "parent": "realm_magmatic",
+    "level": "clan",
+    "description": "A feeder enters a mafic intrusion; immiscible sulfide droplets collect at its base."
+  },
+  {
+    "id": "clan_magmatic_oxide",
+    "name": "Magmatic oxide (Cr, Fe-Ti-V)",
+    "parent": "realm_magmatic",
+    "level": "clan",
+    "description": "Dense oxide layers accumulate within a mafic magma chamber."
+  },
+  {
+    "id": "clan_carbonatite_alkaline",
+    "name": "Carbonatite and alkaline-igneous",
+    "parent": "realm_magmatic",
+    "level": "clan",
+    "description": "A concentric alkaline-carbonatite ring complex with radial dykes."
+  },
+  {
+    "id": "clan_pegmatite",
+    "name": "Granitic pegmatite",
+    "parent": "realm_magmatic",
+    "level": "clan",
+    "description": "A coarse-crystalline dyke with large interlocking prisms and a mica book."
+  },
+  {
+    "id": "clan_kimberlite",
+    "name": "Kimberlite and lamproite",
+    "parent": "realm_magmatic",
+    "level": "clan",
+    "description": "A crater-topped, tapering volcanic pipe carries a deep diamond."
+  },
+  {
+    "id": "clan_porphyry",
+    "name": "Porphyry",
+    "parent": "realm_magmatic_hydrothermal",
+    "level": "clan",
+    "description": "Stockwork veinlets and nested alteration zones surround an intrusive cupola."
+  },
+  {
+    "id": "clan_skarn",
+    "name": "Skarn and carbonate-replacement",
+    "parent": "realm_magmatic_hydrothermal",
+    "level": "clan",
+    "description": "A garnet-bearing reaction zone separates an intrusion from carbonate beds."
+  },
+  {
+    "id": "clan_epithermal",
+    "name": "Epithermal",
+    "parent": "realm_magmatic_hydrothermal",
+    "level": "clan",
+    "description": "A shallow banded vein rises beneath a volcanic surface and sinter terrace."
+  },
+  {
+    "id": "clan_intrusion_related_other",
+    "name": "Other intrusion-related",
+    "parent": "realm_magmatic_hydrothermal",
+    "level": "clan",
+    "description": "Sheeted veins extend above a granitic cupola."
+  },
+  {
+    "id": "clan_iron_oxide",
+    "name": "Iron oxide-alkali-altered",
+    "parent": "realm_magmatic_hydrothermal",
+    "level": "clan",
+    "description": "Angular breccia fragments sit in an iron-oxide-rich matrix with mineralized pathways."
+  },
+  {
+    "id": "clan_orogenic_gold",
+    "name": "Orogenic gold",
+    "parent": "realm_metamorphic_orogenic",
+    "level": "clan",
+    "description": "A quartz-gold shear vein crosses folded host rocks."
+  },
+  {
+    "id": "clan_sediment_hosted_gold",
+    "name": "Sediment-hosted disseminated gold",
+    "parent": "realm_metamorphic_orogenic",
+    "level": "clan",
+    "description": "Fine gold is disseminated through a reactive sedimentary layer above a dark bed."
+  },
+  {
+    "id": "clan_metamorphic_industrial",
+    "name": "Metamorphic industrial minerals",
+    "parent": "realm_metamorphic_orogenic",
+    "level": "clan",
+    "description": "Graphite and pale mineral sheets form books within a folded host."
+  },
+  {
+    "id": "clan_sediment_hosted_zn_pb",
+    "name": "Sediment-hosted Zn-Pb",
+    "parent": "realm_basinal_hydrothermal",
+    "level": "clan",
+    "description": "A fault feeds bedded sulfides with contrasting sulfide crystal habits."
+  },
+  {
+    "id": "clan_sediment_hosted_cu",
+    "name": "Sediment-hosted stratiform Cu",
+    "parent": "realm_basinal_hydrothermal",
+    "level": "clan",
+    "description": "A thin mineralized horizon follows the boundary beneath red beds."
+  },
+  {
+    "id": "clan_basinal_uranium",
+    "name": "Basinal and groundwater uranium",
+    "parent": "realm_basinal_hydrothermal",
+    "level": "clan",
+    "description": "Groundwater flows toward a crescent-shaped roll front in a sandstone aquifer."
+  },
+  {
+    "id": "clan_basinal_vein",
+    "name": "Basinal and polymetallic vein",
+    "parent": "realm_basinal_hydrothermal",
+    "level": "clan",
+    "description": "A branching mineral vein contains a fluorite form and a barite blade."
+  },
+  {
+    "id": "clan_vms",
+    "name": "Volcanogenic massive sulfide",
+    "parent": "realm_submarine_hydrothermal",
+    "level": "clan",
+    "description": "A massive sulfide lens overlies a stringer zone beneath a seafloor chimney."
+  },
+  {
+    "id": "clan_chemical_sediment_fe_mn",
+    "name": "Chemical sediment Fe-Mn",
+    "parent": "realm_sedimentary_chemical",
+    "level": "clan",
+    "description": "Iron-rich and pale bands are paired with a concentric manganese nodule."
+  },
+  {
+    "id": "clan_chemical_sediment_other",
+    "name": "Chemical and biochemical sediment (P, evaporite, black shale)",
+    "parent": "realm_sedimentary_chemical",
+    "level": "clan",
+    "description": "Chemical precipitates and evaporite crystals accumulate above stratified sediment."
+  },
+  {
+    "id": "clan_residual_laterite",
+    "name": "Residual and lateritic",
+    "parent": "realm_surficial_weathering",
+    "level": "clan",
+    "description": "A nodular ferric cap overlies a mottled, mineral-enriched weathering profile."
+  },
+  {
+    "id": "clan_supergene_sulfide",
+    "name": "Supergene sulfide and non-sulfide",
+    "parent": "realm_surficial_weathering",
+    "level": "clan",
+    "description": "Downward leaching forms a secondary enrichment blanket beneath an oxidized cap."
+  },
+  {
+    "id": "clan_evaporative_brine",
+    "name": "Evaporative and brine",
+    "parent": "realm_surficial_weathering",
+    "level": "clan",
+    "description": "Evaporation above a closed basin concentrates brine and salt beneath its surface."
+  },
+  {
+    "id": "clan_placer",
+    "name": "Placer and palaeoplacer",
+    "parent": "realm_clastic_mechanical",
+    "level": "clan",
+    "description": "A meandering river concentrates dense grains on the inside of bends."
+  },
+  {
+    "id": "clan_industrial_minerals",
+    "name": "Industrial minerals and rocks",
+    "parent": "realm_hybrid_industrial",
+    "level": "clan",
+    "description": "Clay sheets, quartz prisms and a carbonate block represent industrial feedstocks."
+  },
+  {
+    "id": "clan_gemstone",
+    "name": "Gemstone systems",
+    "parent": "realm_hybrid_industrial",
+    "level": "clan",
+    "description": "A large faceted gem and contrasting natural crystal prisms."
+  },
+  {
+    "id": "clan_energy_adjacent",
+    "name": "Energy-adjacent and excluded systems",
+    "parent": "realm_hybrid_industrial",
+    "level": "clan",
+    "description": "A dark coal seam and geothermal well represent the corpus cross-reference category."
+  }
+]

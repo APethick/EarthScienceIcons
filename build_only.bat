@@ -30,7 +30,11 @@ if errorlevel 1 (
     exit /b 1
 )
 
-echo Building fonts and SVG icons...
+echo Checking permanent icon identities...
+%ICON_PYTHON% tests\test_icon_identity.py
+if errorlevel 1 goto :failed
+
+echo Building fonts and SVG icons, including mineral systems...
 %ICON_PYTHON% build_font.py
 if errorlevel 1 goto :failed
 echo Building website and download archive...
@@ -43,23 +47,9 @@ echo Updating Opus Java binding and fonts...
 %ICON_PYTHON% sync_opus_icons.py
 if errorlevel 1 goto :failed
 
+echo Build and Opus update completed.
+exit /b 0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+:failed
+echo Build failed. Check the output above.
+exit /b 1

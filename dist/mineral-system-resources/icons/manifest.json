@@ -1,0 +1,218 @@
+[
+  {
+    "taxonomy_id": "realm_magmatic",
+    "icon_id": "gc_ms_realm_magmatic",
+    "light": "realm_magmatic.png",
+    "dark": "realm_magmatic-dark.png"
+  },
+  {
+    "taxonomy_id": "realm_magmatic_hydrothermal",
+    "icon_id": "gc_ms_realm_magmatic_hydrothermal",
+    "light": "realm_magmatic_hydrothermal.png",
+    "dark": "realm_magmatic_hydrothermal-dark.png"
+  },
+  {
+    "taxonomy_id": "realm_metamorphic_orogenic",
+    "icon_id": "gc_ms_realm_metamorphic_orogenic",
+    "light": "realm_metamorphic_orogenic.png",
+    "dark": "realm_metamorphic_orogenic-dark.png"
+  },
+  {
+    "taxonomy_id": "realm_basinal_hydrothermal",
+    "icon_id": "gc_ms_realm_basinal_hydrothermal",
+    "light": "realm_basinal_hydrothermal.png",
+    "dark": "realm_basinal_hydrothermal-dark.png"
+  },
+  {
+    "taxonomy_id": "realm_submarine_hydrothermal",
+    "icon_id": "gc_ms_realm_submarine_hydrothermal",
+    "light": "realm_submarine_hydrothermal.png",
+    "dark": "realm_submarine_hydrothermal-dark.png"
+  },
+  {
+    "taxonomy_id": "realm_sedimentary_chemical",
+    "icon_id": "gc_ms_realm_sedimentary_chemical",
+    "light": "realm_sedimentary_chemical.png",
+    "dark": "realm_sedimentary_chemical-dark.png"
+  },
+  {
+    "taxonomy_id": "realm_surficial_weathering",
+    "icon_id": "gc_ms_realm_surficial_weathering",
+    "light": "realm_surficial_weathering.png",
+    "dark": "realm_surficial_weathering-dark.png"
+  },
+  {
+    "taxonomy_id": "realm_clastic_mechanical",
+    "icon_id": "gc_ms_realm_clastic_mechanical",
+    "light": "realm_clastic_mechanical.png",
+    "dark": "realm_clastic_mechanical-dark.png"
+  },
+  {
+    "taxonomy_id": "realm_hybrid_industrial",
+    "icon_id": "gc_ms_realm_hybrid_industrial",
+    "light": "realm_hybrid_industrial.png",
+    "dark": "realm_hybrid_industrial-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_magmatic_sulfide",
+    "icon_id": "gc_ms_clan_magmatic_sulfide",
+    "light": "clan_magmatic_sulfide.png",
+    "dark": "clan_magmatic_sulfide-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_magmatic_oxide",
+    "icon_id": "gc_ms_clan_magmatic_oxide",
+    "light": "clan_magmatic_oxide.png",
+    "dark": "clan_magmatic_oxide-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_carbonatite_alkaline",
+    "icon_id": "gc_ms_clan_carbonatite_alkaline",
+    "light": "clan_carbonatite_alkaline.png",
+    "dark": "clan_carbonatite_alkaline-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_pegmatite",
+    "icon_id": "gc_ms_clan_pegmatite",
+    "light": "clan_pegmatite.png",
+    "dark": "clan_pegmatite-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_kimberlite",
+    "icon_id": "gc_ms_clan_kimberlite",
+    "light": "clan_kimberlite.png",
+    "dark": "clan_kimberlite-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_porphyry",
+    "icon_id": "gc_ms_clan_porphyry",
+    "light": "clan_porphyry.png",
+    "dark": "clan_porphyry-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_skarn",
+    "icon_id": "gc_ms_clan_skarn",
+    "light": "clan_skarn.png",
+    "dark": "clan_skarn-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_epithermal",
+    "icon_id": "gc_ms_clan_epithermal",
+    "light": "clan_epithermal.png",
+    "dark": "clan_epithermal-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_intrusion_related_other",
+    "icon_id": "gc_ms_clan_intrusion_related_other",
+    "light": "clan_intrusion_related_other.png",
+    "dark": "clan_intrusion_related_other-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_iron_oxide",
+    "icon_id": "gc_ms_clan_iron_oxide",
+    "light": "clan_iron_oxide.png",
+    "dark": "clan_iron_oxide-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_orogenic_gold",
+    "icon_id": "gc_ms_clan_orogenic_gold",
+    "light": "clan_orogenic_gold.png",
+    "dark": "clan_orogenic_gold-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_sediment_hosted_gold",
+    "icon_id": "gc_ms_clan_sediment_hosted_gold",
+    "light": "clan_sediment_hosted_gold.png",
+    "dark": "clan_sediment_hosted_gold-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_metamorphic_industrial",
+    "icon_id": "gc_ms_clan_metamorphic_industrial",
+    "light": "clan_metamorphic_industrial.png",
+    "dark": "clan_metamorphic_industrial-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_sediment_hosted_zn_pb",
+    "icon_id": "gc_ms_clan_sediment_hosted_zn_pb",
+    "light": "clan_sediment_hosted_zn_pb.png",
+    "dark": "clan_sediment_hosted_zn_pb-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_sediment_hosted_cu",
+    "icon_id": "gc_ms_clan_sediment_hosted_cu",
+    "light": "clan_sediment_hosted_cu.png",
+    "dark": "clan_sediment_hosted_cu-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_basinal_uranium",
+    "icon_id": "gc_ms_clan_basinal_uranium",
+    "light": "clan_basinal_uranium.png",
+    "dark": "clan_basinal_uranium-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_basinal_vein",
+    "icon_id": "gc_ms_clan_basinal_vein",
+    "light": "clan_basinal_vein.png",
+    "dark": "clan_basinal_vein-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_vms",
+    "icon_id": "gc_ms_clan_vms",
+    "light": "clan_vms.png",
+    "dark": "clan_vms-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_chemical_sediment_fe_mn",
+    "icon_id": "gc_ms_clan_chemical_sediment_fe_mn",
+    "light": "clan_chemical_sediment_fe_mn.png",
+    "dark": "clan_chemical_sediment_fe_mn-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_chemical_sediment_other",
+    "icon_id": "gc_ms_clan_chemical_sediment_other",
+    "light": "clan_chemical_sediment_other.png",
+    "dark": "clan_chemical_sediment_other-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_residual_laterite",
+    "icon_id": "gc_ms_clan_residual_laterite",
+    "light": "clan_residual_laterite.png",
+    "dark": "clan_residual_laterite-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_supergene_sulfide",
+    "icon_id": "gc_ms_clan_supergene_sulfide",
+    "light": "clan_supergene_sulfide.png",
+    "dark": "clan_supergene_sulfide-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_evaporative_brine",
+    "icon_id": "gc_ms_clan_evaporative_brine",
+    "light": "clan_evaporative_brine.png",
+    "dark": "clan_evaporative_brine-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_placer",
+    "icon_id": "gc_ms_clan_placer",
+    "light": "clan_placer.png",
+    "dark": "clan_placer-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_industrial_minerals",
+    "icon_id": "gc_ms_clan_industrial_minerals",
+    "light": "clan_industrial_minerals.png",
+    "dark": "clan_industrial_minerals-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_gemstone",
+    "icon_id": "gc_ms_clan_gemstone",
+    "light": "clan_gemstone.png",
+    "dark": "clan_gemstone-dark.png"
+  },
+  {
+    "taxonomy_id": "clan_energy_adjacent",
+    "icon_id": "gc_ms_clan_energy_adjacent",
+    "light": "clan_energy_adjacent.png",
+    "dark": "clan_energy_adjacent-dark.png"
+  }
+]

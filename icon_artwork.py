@@ -454,6 +454,15 @@ FAULT_BLOCK_IDS = {'gl_faulted_stratigraphy', 'gl_fault_slip_tectonics',
 
 
 def artwork(icon):
+    from icons_mineral_systems import IDS as MINERAL_SYSTEM_IDS, flat_artwork as mineral_system_artwork
+    if icon['id'] in MINERAL_SYSTEM_IDS:
+        return mineral_system_artwork(icon)
+    from icons_wave_concepts import IDS as WAVE_IDS, flat_artwork as wave_artwork
+    if icon["id"] in WAVE_IDS:
+        return wave_artwork(icon)
+    from icons_mt_equipment import IDS as MT_EQUIPMENT_IDS, flat_artwork as mt_equipment_artwork
+    if icon["id"] in MT_EQUIPMENT_IDS:
+        return mt_equipment_artwork(icon)
     from icons_seismic_equipment import IDS as SEISMIC_IDS, flat_artwork as seismic_artwork
     if icon["id"] in SEISMIC_IDS:
         return seismic_artwork(icon)

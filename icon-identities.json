@@ -2636,6 +2636,261 @@
       "id": "gp_em_smoke_ring",
       "unicode": "E20F",
       "fallback": "\u0251"
+    },
+    {
+      "id": "gp_mt_v8",
+      "unicode": "E210",
+      "fallback": "\u0252"
+    },
+    {
+      "id": "gp_mt_mtu_5c",
+      "unicode": "E211",
+      "fallback": "\u0253"
+    },
+    {
+      "id": "gp_mt_mtu_8a",
+      "unicode": "E212",
+      "fallback": "\u0254"
+    },
+    {
+      "id": "gp_mt_adu_07",
+      "unicode": "E213",
+      "fallback": "\u0255"
+    },
+    {
+      "id": "gp_mt_adu_10e",
+      "unicode": "E214",
+      "fallback": "\u0256"
+    },
+    {
+      "id": "gp_igrf",
+      "unicode": "E215",
+      "fallback": "\u0257"
+    },
+    {
+      "id": "gp_magnetosphere",
+      "unicode": "E216",
+      "fallback": "\u0258"
+    },
+    {
+      "id": "gp_plane_wave",
+      "unicode": "E217",
+      "fallback": "\u0259"
+    },
+    {
+      "id": "gp_wave_diffraction",
+      "unicode": "E218",
+      "fallback": "\u025a"
+    },
+    {
+      "id": "gp_wave_reflection",
+      "unicode": "E219",
+      "fallback": "\u025b"
+    },
+    {
+      "id": "gp_seismic_p_wave",
+      "unicode": "E21A",
+      "fallback": "\u025c"
+    },
+    {
+      "id": "gp_seismic_s_wave",
+      "unicode": "E21B",
+      "fallback": "\u025d"
+    },
+    {
+      "id": "gp_seismic_love_wave",
+      "unicode": "E21C",
+      "fallback": "\u025e"
+    },
+    {
+      "id": "gp_seismic_rayleigh_wave",
+      "unicode": "E21D",
+      "fallback": "\u025f"
+    },
+    {
+      "id": "gp_seismic_tube_wave",
+      "unicode": "E21E",
+      "fallback": "\u0260"
+    },
+    {
+      "id": "gc_ms_realm_magmatic",
+      "unicode": "E21F",
+      "fallback": "\u0261"
+    },
+    {
+      "id": "gc_ms_realm_magmatic_hydrothermal",
+      "unicode": "E220",
+      "fallback": "\u0262"
+    },
+    {
+      "id": "gc_ms_realm_metamorphic_orogenic",
+      "unicode": "E221",
+      "fallback": "\u0263"
+    },
+    {
+      "id": "gc_ms_realm_basinal_hydrothermal",
+      "unicode": "E222",
+      "fallback": "\u0264"
+    },
+    {
+      "id": "gc_ms_realm_submarine_hydrothermal",
+      "unicode": "E223",
+      "fallback": "\u0265"
+    },
+    {
+      "id": "gc_ms_realm_sedimentary_chemical",
+      "unicode": "E224",
+      "fallback": "\u0266"
+    },
+    {
+      "id": "gc_ms_realm_surficial_weathering",
+      "unicode": "E225",
+      "fallback": "\u0267"
+    },
+    {
+      "id": "gc_ms_realm_clastic_mechanical",
+      "unicode": "E226",
+      "fallback": "\u0268"
+    },
+    {
+      "id": "gc_ms_realm_hybrid_industrial",
+      "unicode": "E227",
+      "fallback": "\u0269"
+    },
+    {
+      "id": "gc_ms_clan_magmatic_sulfide",
+      "unicode": "E228",
+      "fallback": "\u026a"
+    },
+    {
+      "id": "gc_ms_clan_magmatic_oxide",
+      "unicode": "E229",
+      "fallback": "\u026b"
+    },
+    {
+      "id": "gc_ms_clan_carbonatite_alkaline",
+      "unicode": "E22A",
+      "fallback": "\u026c"
+    },
+    {
+      "id": "gc_ms_clan_pegmatite",
+      "unicode": "E22B",
+      "fallback": "\u026d"
+    },
+    {
+      "id": "gc_ms_clan_kimberlite",
+      "unicode": "E22C",
+      "fallback": "\u026e"
+    },
+    {
+      "id": "gc_ms_clan_porphyry",
+      "unicode": "E22D",
+      "fallback": "\u026f"
+    },
+    {
+      "id": "gc_ms_clan_skarn",
+      "unicode": "E22E",
+      "fallback": "\u0270"
+    },
+    {
+      "id": "gc_ms_clan_epithermal",
+      "unicode": "E22F",
+      "fallback": "\u0271"
+    },
+    {
+      "id": "gc_ms_clan_intrusion_related_other",
+      "unicode": "E230",
+      "fallback": "\u0272"
+    },
+    {
+      "id": "gc_ms_clan_iron_oxide",
+      "unicode": "E231",
+      "fallback": "\u0273"
+    },
+    {
+      "id": "gc_ms_clan_orogenic_gold",
+      "unicode": "E232",
+      "fallback": "\u0274"
+    },
+    {
+      "id": "gc_ms_clan_sediment_hosted_gold",
+      "unicode": "E233",
+      "fallback": "\u0275"
+    },
+    {
+      "id": "gc_ms_clan_metamorphic_industrial",
+      "unicode": "E234",
+      "fallback": "\u0276"
+    },
+    {
+      "id": "gc_ms_clan_sediment_hosted_zn_pb",
+      "unicode": "E235",
+      "fallback": "\u0277"
+    },
+    {
+      "id": "gc_ms_clan_sediment_hosted_cu",
+      "unicode": "E236",
+      "fallback": "\u0278"
+    },
+    {
+      "id": "gc_ms_clan_basinal_uranium",
+      "unicode": "E237",
+      "fallback": "\u0279"
+    },
+    {
+      "id": "gc_ms_clan_basinal_vein",
+      "unicode": "E238",
+      "fallback": "\u027a"
+    },
+    {
+      "id": "gc_ms_clan_vms",
+      "unicode": "E239",
+      "fallback": "\u027b"
+    },
+    {
+      "id": "gc_ms_clan_chemical_sediment_fe_mn",
+      "unicode": "E23A",
+      "fallback": "\u027c"
+    },
+    {
+      "id": "gc_ms_clan_chemical_sediment_other",
+      "unicode": "E23B",
+      "fallback": "\u027d"
+    },
+    {
+      "id": "gc_ms_clan_residual_laterite",
+      "unicode": "E23C",
+      "fallback": "\u027e"
+    },
+    {
+      "id": "gc_ms_clan_supergene_sulfide",
+      "unicode": "E23D",
+      "fallback": "\u027f"
+    },
+    {
+      "id": "gc_ms_clan_evaporative_brine",
+      "unicode": "E23E",
+      "fallback": "\u0280"
+    },
+    {
+      "id": "gc_ms_clan_placer",
+      "unicode": "E23F",
+      "fallback": "\u0281"
+    },
+    {
+      "id": "gc_ms_clan_industrial_minerals",
+      "unicode": "E240",
+      "fallback": "\u0282"
+    },
+    {
+      "id": "gc_ms_clan_gemstone",
+      "unicode": "E241",
+      "fallback": "\u0283"
+    },
+    {
+      "id": "gc_ms_clan_energy_adjacent",
+      "unicode": "E242",
+      "fallback": "\u0284"
     }
   ]
 }

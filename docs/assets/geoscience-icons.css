@@ -552,3 +552,54 @@
 .gi-gp-seismic-receiver-hydrophone::before { content: "\e20d"; } /* Hydrophone (U+E20D) */
 .gi-gp-loop-magnetic-field::before { content: "\e20e"; } /* Magnetic Field Around a Loop (U+E20E) */
 .gi-gp-em-smoke-ring::before { content: "\e20f"; } /* Propagating EM Smoke Ring (U+E20F) */
+.gi-gp-mt-v8::before { content: "\e210"; } /* Phoenix V8 Magnetotelluric System (U+E210) */
+.gi-gp-mt-mtu-5c::before { content: "\e211"; } /* Phoenix MTU-5C Magnetotelluric Receiver (U+E211) */
+.gi-gp-mt-mtu-8a::before { content: "\e212"; } /* Phoenix MTU-8A Magnetotelluric Receiver (U+E212) */
+.gi-gp-mt-adu-07::before { content: "\e213"; } /* Metronix ADU-07 Magnetotelluric Unit (U+E213) */
+.gi-gp-mt-adu-10e::before { content: "\e214"; } /* Metronix ADU-10e Magnetotelluric Unit (U+E214) */
+.gi-gp-igrf::before { content: "\e215"; } /* International Geomagnetic Reference Field (IGRF) (U+E215) */
+.gi-gp-magnetosphere::before { content: "\e216"; } /* Magnetosphere (U+E216) */
+.gi-gp-plane-wave::before { content: "\e217"; } /* Plane Wave (U+E217) */
+.gi-gp-wave-diffraction::before { content: "\e218"; } /* Wave Diffraction (U+E218) */
+.gi-gp-wave-reflection::before { content: "\e219"; } /* Wave Reflection (U+E219) */
+.gi-gp-seismic-p-wave::before { content: "\e21a"; } /* P Wave (U+E21A) */
+.gi-gp-seismic-s-wave::before { content: "\e21b"; } /* S Wave (U+E21B) */
+.gi-gp-seismic-love-wave::before { content: "\e21c"; } /* Love Wave (U+E21C) */
+.gi-gp-seismic-rayleigh-wave::before { content: "\e21d"; } /* Rayleigh Wave (U+E21D) */
+.gi-gp-seismic-tube-wave::before { content: "\e21e"; } /* Tube Wave (U+E21E) */
+.gi-gc-ms-realm-magmatic::before { content: "\e21f"; } /* Magmatic (orthomagmatic) (U+E21F) */
+.gi-gc-ms-realm-magmatic-hydrothermal::before { content: "\e220"; } /* Magmatic-hydrothermal (U+E220) */
+.gi-gc-ms-realm-metamorphic-orogenic::before { content: "\e221"; } /* Metamorphic / orogenic hydrothermal (U+E221) */
+.gi-gc-ms-realm-basinal-hydrothermal::before { content: "\e222"; } /* Basinal and diagenetic hydrothermal (U+E222) */
+.gi-gc-ms-realm-submarine-hydrothermal::before { content: "\e223"; } /* Submarine hydrothermal (seawater-convection driven) (U+E223) */
+.gi-gc-ms-realm-sedimentary-chemical::before { content: "\e224"; } /* Sedimentary and chemical-sedimentary (U+E224) */
+.gi-gc-ms-realm-surficial-weathering::before { content: "\e225"; } /* Surficial and weathering (U+E225) */
+.gi-gc-ms-realm-clastic-mechanical::before { content: "\e226"; } /* Clastic / mechanical (placer and palaeoplacer) (U+E226) */
+.gi-gc-ms-realm-hybrid-industrial::before { content: "\e227"; } /* Hybrid, industrial and other systems (U+E227) */
+.gi-gc-ms-clan-magmatic-sulfide::before { content: "\e228"; } /* Magmatic sulfide (Ni-Cu-PGE) (U+E228) */
+.gi-gc-ms-clan-magmatic-oxide::before { content: "\e229"; } /* Magmatic oxide (Cr, Fe-Ti-V) (U+E229) */
+.gi-gc-ms-clan-carbonatite-alkaline::before { content: "\e22a"; } /* Carbonatite and alkaline-igneous (U+E22A) */
+.gi-gc-ms-clan-pegmatite::before { content: "\e22b"; } /* Granitic pegmatite (U+E22B) */
+.gi-gc-ms-clan-kimberlite::before { content: "\e22c"; } /* Kimberlite and lamproite (U+E22C) */
+.gi-gc-ms-clan-porphyry::before { content: "\e22d"; } /* Porphyry (U+E22D) */
+.gi-gc-ms-clan-skarn::before { content: "\e22e"; } /* Skarn and carbonate-replacement (U+E22E) */
+.gi-gc-ms-clan-epithermal::before { content: "\e22f"; } /* Epithermal (U+E22F) */
+.gi-gc-ms-clan-intrusion-related-other::before { content: "\e230"; } /* Other intrusion-related (U+E230) */
+.gi-gc-ms-clan-iron-oxide::before { content: "\e231"; } /* Iron oxide-alkali-altered (U+E231) */
+.gi-gc-ms-clan-orogenic-gold::before { content: "\e232"; } /* Orogenic gold (U+E232) */
+.gi-gc-ms-clan-sediment-hosted-gold::before { content: "\e233"; } /* Sediment-hosted disseminated gold (U+E233) */
+.gi-gc-ms-clan-metamorphic-industrial::before { content: "\e234"; } /* Metamorphic industrial minerals (U+E234) */
+.gi-gc-ms-clan-sediment-hosted-zn-pb::before { content: "\e235"; } /* Sediment-hosted Zn-Pb (U+E235) */
+.gi-gc-ms-clan-sediment-hosted-cu::before { content: "\e236"; } /* Sediment-hosted stratiform Cu (U+E236) */
+.gi-gc-ms-clan-basinal-uranium::before { content: "\e237"; } /* Basinal and groundwater uranium (U+E237) */
+.gi-gc-ms-clan-basinal-vein::before { content: "\e238"; } /* Basinal and polymetallic vein (U+E238) */
+.gi-gc-ms-clan-vms::before { content: "\e239"; } /* Volcanogenic massive sulfide (U+E239) */
+.gi-gc-ms-clan-chemical-sediment-fe-mn::before { content: "\e23a"; } /* Chemical sediment Fe-Mn (U+E23A) */
+.gi-gc-ms-clan-chemical-sediment-other::before { content: "\e23b"; } /* Chemical and biochemical sediment (P, evaporite, black shale) (U+E23B) */
+.gi-gc-ms-clan-residual-laterite::before { content: "\e23c"; } /* Residual and lateritic (U+E23C) */
+.gi-gc-ms-clan-supergene-sulfide::before { content: "\e23d"; } /* Supergene sulfide and non-sulfide (U+E23D) */
+.gi-gc-ms-clan-evaporative-brine::before { content: "\e23e"; } /* Evaporative and brine (U+E23E) */
+.gi-gc-ms-clan-placer::before { content: "\e23f"; } /* Placer and palaeoplacer (U+E23F) */
+.gi-gc-ms-clan-industrial-minerals::before { content: "\e240"; } /* Industrial minerals and rocks (U+E240) */
+.gi-gc-ms-clan-gemstone::before { content: "\e241"; } /* Gemstone systems (U+E241) */
+.gi-gc-ms-clan-energy-adjacent::before { content: "\e242"; } /* Energy-adjacent and excluded systems (U+E242) */

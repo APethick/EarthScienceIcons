@@ -29,3 +29,12 @@ ALL_ICONS += FIELD_INSTRUMENT_ICONS
 
 from icons_seismic_equipment import ICONS as SEISMIC_EQUIPMENT_ICONS
 ALL_ICONS += SEISMIC_EQUIPMENT_ICONS
+
+from icons_mt_equipment import ICONS as MT_EQUIPMENT_ICONS
+ALL_ICONS += MT_EQUIPMENT_ICONS
+
+from icons_wave_concepts import ICONS as WAVE_CONCEPT_ICONS
+ALL_ICONS += WAVE_CONCEPT_ICONS
+
+from icons_mineral_systems import ICONS as MINERAL_SYSTEM_ICONS
+ALL_ICONS += MINERAL_SYSTEM_ICONS

@@ -17,7 +17,7 @@ import opus.base.properties.OpusProperty;
 import opus.base.resources.OpusResources;
 
 /**
- * GeoScienceIcons TrueType glyph font (527 icons) covering Geophysical, Geotechnical,
+ * GeoScienceIcons TrueType glyph font (578 icons) covering Geophysical, Geotechnical,
  * Geological, and Geochemical methods, earth model types, and processes.
  * Includes dedicated suites for Inversion, Thermodynamics, Petrophysics, and Geochemistry,
  * aligned with opus.geo.geochemistry, opus.geo.petrophysics, and opus.geo.geotechnical.
@@ -555,6 +555,57 @@ public class GeoScienceIcons extends GlyphFont {
 		GP_SEISMIC_RECEIVER_HYDROPHONE('\ue20d'), // Hydrophone (Geophysical - Methods)
 		GP_LOOP_MAGNETIC_FIELD('\ue20e'), // Magnetic Field Around a Loop (Geophysical - Processes)
 		GP_EM_SMOKE_RING('\ue20f'), // Propagating EM Smoke Ring (Geophysical - Processes)
+		GP_MT_V8('\ue210'), // Phoenix V8 Magnetotelluric System (Geophysical - Methods)
+		GP_MT_MTU_5C('\ue211'), // Phoenix MTU-5C Magnetotelluric Receiver (Geophysical - Methods)
+		GP_MT_MTU_8A('\ue212'), // Phoenix MTU-8A Magnetotelluric Receiver (Geophysical - Methods)
+		GP_MT_ADU_07('\ue213'), // Metronix ADU-07 Magnetotelluric Unit (Geophysical - Methods)
+		GP_MT_ADU_10E('\ue214'), // Metronix ADU-10e Magnetotelluric Unit (Geophysical - Methods)
+		GP_IGRF('\ue215'), // International Geomagnetic Reference Field (IGRF) (Geophysical - Methods)
+		GP_MAGNETOSPHERE('\ue216'), // Magnetosphere (Geophysical - Methods)
+		GP_PLANE_WAVE('\ue217'), // Plane Wave (Geophysical - Methods)
+		GP_WAVE_DIFFRACTION('\ue218'), // Wave Diffraction (Geophysical - Methods)
+		GP_WAVE_REFLECTION('\ue219'), // Wave Reflection (Geophysical - Methods)
+		GP_SEISMIC_P_WAVE('\ue21a'), // P Wave (Geophysical - Methods)
+		GP_SEISMIC_S_WAVE('\ue21b'), // S Wave (Geophysical - Methods)
+		GP_SEISMIC_LOVE_WAVE('\ue21c'), // Love Wave (Geophysical - Methods)
+		GP_SEISMIC_RAYLEIGH_WAVE('\ue21d'), // Rayleigh Wave (Geophysical - Methods)
+		GP_SEISMIC_TUBE_WAVE('\ue21e'), // Tube Wave (Geophysical - Methods)
+		GC_MS_REALM_MAGMATIC('\ue21f'), // Magmatic (orthomagmatic) (Geological - Mineral Systems)
+		GC_MS_REALM_MAGMATIC_HYDROTHERMAL('\ue220'), // Magmatic-hydrothermal (Geological - Mineral Systems)
+		GC_MS_REALM_METAMORPHIC_OROGENIC('\ue221'), // Metamorphic / orogenic hydrothermal (Geological - Mineral Systems)
+		GC_MS_REALM_BASINAL_HYDROTHERMAL('\ue222'), // Basinal and diagenetic hydrothermal (Geological - Mineral Systems)
+		GC_MS_REALM_SUBMARINE_HYDROTHERMAL('\ue223'), // Submarine hydrothermal (seawater-convection driven) (Geological - Mineral Systems)
+		GC_MS_REALM_SEDIMENTARY_CHEMICAL('\ue224'), // Sedimentary and chemical-sedimentary (Geological - Mineral Systems)
+		GC_MS_REALM_SURFICIAL_WEATHERING('\ue225'), // Surficial and weathering (Geological - Mineral Systems)
+		GC_MS_REALM_CLASTIC_MECHANICAL('\ue226'), // Clastic / mechanical (placer and palaeoplacer) (Geological - Mineral Systems)
+		GC_MS_REALM_HYBRID_INDUSTRIAL('\ue227'), // Hybrid, industrial and other systems (Geological - Mineral Systems)
+		GC_MS_CLAN_MAGMATIC_SULFIDE('\ue228'), // Magmatic sulfide (Ni-Cu-PGE) (Geological - Mineral Systems)
+		GC_MS_CLAN_MAGMATIC_OXIDE('\ue229'), // Magmatic oxide (Cr, Fe-Ti-V) (Geological - Mineral Systems)
+		GC_MS_CLAN_CARBONATITE_ALKALINE('\ue22a'), // Carbonatite and alkaline-igneous (Geological - Mineral Systems)
+		GC_MS_CLAN_PEGMATITE('\ue22b'), // Granitic pegmatite (Geological - Mineral Systems)
+		GC_MS_CLAN_KIMBERLITE('\ue22c'), // Kimberlite and lamproite (Geological - Mineral Systems)
+		GC_MS_CLAN_PORPHYRY('\ue22d'), // Porphyry (Geological - Mineral Systems)
+		GC_MS_CLAN_SKARN('\ue22e'), // Skarn and carbonate-replacement (Geological - Mineral Systems)
+		GC_MS_CLAN_EPITHERMAL('\ue22f'), // Epithermal (Geological - Mineral Systems)
+		GC_MS_CLAN_INTRUSION_RELATED_OTHER('\ue230'), // Other intrusion-related (Geological - Mineral Systems)
+		GC_MS_CLAN_IRON_OXIDE('\ue231'), // Iron oxide-alkali-altered (Geological - Mineral Systems)
+		GC_MS_CLAN_OROGENIC_GOLD('\ue232'), // Orogenic gold (Geological - Mineral Systems)
+		GC_MS_CLAN_SEDIMENT_HOSTED_GOLD('\ue233'), // Sediment-hosted disseminated gold (Geological - Mineral Systems)
+		GC_MS_CLAN_METAMORPHIC_INDUSTRIAL('\ue234'), // Metamorphic industrial minerals (Geological - Mineral Systems)
+		GC_MS_CLAN_SEDIMENT_HOSTED_ZN_PB('\ue235'), // Sediment-hosted Zn-Pb (Geological - Mineral Systems)
+		GC_MS_CLAN_SEDIMENT_HOSTED_CU('\ue236'), // Sediment-hosted stratiform Cu (Geological - Mineral Systems)
+		GC_MS_CLAN_BASINAL_URANIUM('\ue237'), // Basinal and groundwater uranium (Geological - Mineral Systems)
+		GC_MS_CLAN_BASINAL_VEIN('\ue238'), // Basinal and polymetallic vein (Geological - Mineral Systems)
+		GC_MS_CLAN_VMS('\ue239'), // Volcanogenic massive sulfide (Geological - Mineral Systems)
+		GC_MS_CLAN_CHEMICAL_SEDIMENT_FE_MN('\ue23a'), // Chemical sediment Fe-Mn (Geological - Mineral Systems)
+		GC_MS_CLAN_CHEMICAL_SEDIMENT_OTHER('\ue23b'), // Chemical and biochemical sediment (P, evaporite, black shale) (Geological - Mineral Systems)
+		GC_MS_CLAN_RESIDUAL_LATERITE('\ue23c'), // Residual and lateritic (Geological - Mineral Systems)
+		GC_MS_CLAN_SUPERGENE_SULFIDE('\ue23d'), // Supergene sulfide and non-sulfide (Geological - Mineral Systems)
+		GC_MS_CLAN_EVAPORATIVE_BRINE('\ue23e'), // Evaporative and brine (Geological - Mineral Systems)
+		GC_MS_CLAN_PLACER('\ue23f'), // Placer and palaeoplacer (Geological - Mineral Systems)
+		GC_MS_CLAN_INDUSTRIAL_MINERALS('\ue240'), // Industrial minerals and rocks (Geological - Mineral Systems)
+		GC_MS_CLAN_GEMSTONE('\ue241'), // Gemstone systems (Geological - Mineral Systems)
+		GC_MS_CLAN_ENERGY_ADJACENT('\ue242'), // Energy-adjacent and excluded systems (Geological - Mineral Systems)
         ;
 
         private final char ch;
@@ -1124,6 +1175,57 @@ public class GeoScienceIcons extends GlyphFont {
 			case "gp_seismic_receiver_hydrophone" -> Glyph.GP_SEISMIC_RECEIVER_HYDROPHONE;
 			case "gp_loop_magnetic_field" -> Glyph.GP_LOOP_MAGNETIC_FIELD;
 			case "gp_em_smoke_ring" -> Glyph.GP_EM_SMOKE_RING;
+			case "gp_mt_v8" -> Glyph.GP_MT_V8;
+			case "gp_mt_mtu_5c" -> Glyph.GP_MT_MTU_5C;
+			case "gp_mt_mtu_8a" -> Glyph.GP_MT_MTU_8A;
+			case "gp_mt_adu_07" -> Glyph.GP_MT_ADU_07;
+			case "gp_mt_adu_10e" -> Glyph.GP_MT_ADU_10E;
+			case "gp_igrf" -> Glyph.GP_IGRF;
+			case "gp_magnetosphere" -> Glyph.GP_MAGNETOSPHERE;
+			case "gp_plane_wave" -> Glyph.GP_PLANE_WAVE;
+			case "gp_wave_diffraction" -> Glyph.GP_WAVE_DIFFRACTION;
+			case "gp_wave_reflection" -> Glyph.GP_WAVE_REFLECTION;
+			case "gp_seismic_p_wave" -> Glyph.GP_SEISMIC_P_WAVE;
+			case "gp_seismic_s_wave" -> Glyph.GP_SEISMIC_S_WAVE;
+			case "gp_seismic_love_wave" -> Glyph.GP_SEISMIC_LOVE_WAVE;
+			case "gp_seismic_rayleigh_wave" -> Glyph.GP_SEISMIC_RAYLEIGH_WAVE;
+			case "gp_seismic_tube_wave" -> Glyph.GP_SEISMIC_TUBE_WAVE;
+			case "gc_ms_realm_magmatic" -> Glyph.GC_MS_REALM_MAGMATIC;
+			case "gc_ms_realm_magmatic_hydrothermal" -> Glyph.GC_MS_REALM_MAGMATIC_HYDROTHERMAL;
+			case "gc_ms_realm_metamorphic_orogenic" -> Glyph.GC_MS_REALM_METAMORPHIC_OROGENIC;
+			case "gc_ms_realm_basinal_hydrothermal" -> Glyph.GC_MS_REALM_BASINAL_HYDROTHERMAL;
+			case "gc_ms_realm_submarine_hydrothermal" -> Glyph.GC_MS_REALM_SUBMARINE_HYDROTHERMAL;
+			case "gc_ms_realm_sedimentary_chemical" -> Glyph.GC_MS_REALM_SEDIMENTARY_CHEMICAL;
+			case "gc_ms_realm_surficial_weathering" -> Glyph.GC_MS_REALM_SURFICIAL_WEATHERING;
+			case "gc_ms_realm_clastic_mechanical" -> Glyph.GC_MS_REALM_CLASTIC_MECHANICAL;
+			case "gc_ms_realm_hybrid_industrial" -> Glyph.GC_MS_REALM_HYBRID_INDUSTRIAL;
+			case "gc_ms_clan_magmatic_sulfide" -> Glyph.GC_MS_CLAN_MAGMATIC_SULFIDE;
+			case "gc_ms_clan_magmatic_oxide" -> Glyph.GC_MS_CLAN_MAGMATIC_OXIDE;
+			case "gc_ms_clan_carbonatite_alkaline" -> Glyph.GC_MS_CLAN_CARBONATITE_ALKALINE;
+			case "gc_ms_clan_pegmatite" -> Glyph.GC_MS_CLAN_PEGMATITE;
+			case "gc_ms_clan_kimberlite" -> Glyph.GC_MS_CLAN_KIMBERLITE;
+			case "gc_ms_clan_porphyry" -> Glyph.GC_MS_CLAN_PORPHYRY;
+			case "gc_ms_clan_skarn" -> Glyph.GC_MS_CLAN_SKARN;
+			case "gc_ms_clan_epithermal" -> Glyph.GC_MS_CLAN_EPITHERMAL;
+			case "gc_ms_clan_intrusion_related_other" -> Glyph.GC_MS_CLAN_INTRUSION_RELATED_OTHER;
+			case "gc_ms_clan_iron_oxide" -> Glyph.GC_MS_CLAN_IRON_OXIDE;
+			case "gc_ms_clan_orogenic_gold" -> Glyph.GC_MS_CLAN_OROGENIC_GOLD;
+			case "gc_ms_clan_sediment_hosted_gold" -> Glyph.GC_MS_CLAN_SEDIMENT_HOSTED_GOLD;
+			case "gc_ms_clan_metamorphic_industrial" -> Glyph.GC_MS_CLAN_METAMORPHIC_INDUSTRIAL;
+			case "gc_ms_clan_sediment_hosted_zn_pb" -> Glyph.GC_MS_CLAN_SEDIMENT_HOSTED_ZN_PB;
+			case "gc_ms_clan_sediment_hosted_cu" -> Glyph.GC_MS_CLAN_SEDIMENT_HOSTED_CU;
+			case "gc_ms_clan_basinal_uranium" -> Glyph.GC_MS_CLAN_BASINAL_URANIUM;
+			case "gc_ms_clan_basinal_vein" -> Glyph.GC_MS_CLAN_BASINAL_VEIN;
+			case "gc_ms_clan_vms" -> Glyph.GC_MS_CLAN_VMS;
+			case "gc_ms_clan_chemical_sediment_fe_mn" -> Glyph.GC_MS_CLAN_CHEMICAL_SEDIMENT_FE_MN;
+			case "gc_ms_clan_chemical_sediment_other" -> Glyph.GC_MS_CLAN_CHEMICAL_SEDIMENT_OTHER;
+			case "gc_ms_clan_residual_laterite" -> Glyph.GC_MS_CLAN_RESIDUAL_LATERITE;
+			case "gc_ms_clan_supergene_sulfide" -> Glyph.GC_MS_CLAN_SUPERGENE_SULFIDE;
+			case "gc_ms_clan_evaporative_brine" -> Glyph.GC_MS_CLAN_EVAPORATIVE_BRINE;
+			case "gc_ms_clan_placer" -> Glyph.GC_MS_CLAN_PLACER;
+			case "gc_ms_clan_industrial_minerals" -> Glyph.GC_MS_CLAN_INDUSTRIAL_MINERALS;
+			case "gc_ms_clan_gemstone" -> Glyph.GC_MS_CLAN_GEMSTONE;
+			case "gc_ms_clan_energy_adjacent" -> Glyph.GC_MS_CLAN_ENERGY_ADJACENT;
 			case "saussuritised" -> Glyph.GC_SAUSSURITISED;
 			case "serpentinisation" -> Glyph.GC_SERPENTINISATION;
 			case "epidote_alteration" -> Glyph.GC_EPIDOTE_ALTERATION;
@@ -1309,6 +1411,42 @@ public class GeoScienceIcons extends GlyphFont {
 			case "unit_stratotype" -> Glyph.GL_UNIT_STRATOTYPE;
 			case "boundary_stratotype" -> Glyph.GL_BOUNDARY_STRATOTYPE;
 			case "earthquake_magnitude_energy" -> Glyph.GL_EARTHQUAKE_MAGNITUDE_ENERGY;
+			case "realm_magmatic" -> Glyph.GC_MS_REALM_MAGMATIC;
+			case "realm_magmatic_hydrothermal" -> Glyph.GC_MS_REALM_MAGMATIC_HYDROTHERMAL;
+			case "realm_metamorphic_orogenic" -> Glyph.GC_MS_REALM_METAMORPHIC_OROGENIC;
+			case "realm_basinal_hydrothermal" -> Glyph.GC_MS_REALM_BASINAL_HYDROTHERMAL;
+			case "realm_submarine_hydrothermal" -> Glyph.GC_MS_REALM_SUBMARINE_HYDROTHERMAL;
+			case "realm_sedimentary_chemical" -> Glyph.GC_MS_REALM_SEDIMENTARY_CHEMICAL;
+			case "realm_surficial_weathering" -> Glyph.GC_MS_REALM_SURFICIAL_WEATHERING;
+			case "realm_clastic_mechanical" -> Glyph.GC_MS_REALM_CLASTIC_MECHANICAL;
+			case "realm_hybrid_industrial" -> Glyph.GC_MS_REALM_HYBRID_INDUSTRIAL;
+			case "clan_magmatic_sulfide" -> Glyph.GC_MS_CLAN_MAGMATIC_SULFIDE;
+			case "clan_magmatic_oxide" -> Glyph.GC_MS_CLAN_MAGMATIC_OXIDE;
+			case "clan_carbonatite_alkaline" -> Glyph.GC_MS_CLAN_CARBONATITE_ALKALINE;
+			case "clan_pegmatite" -> Glyph.GC_MS_CLAN_PEGMATITE;
+			case "clan_kimberlite" -> Glyph.GC_MS_CLAN_KIMBERLITE;
+			case "clan_porphyry" -> Glyph.GC_MS_CLAN_PORPHYRY;
+			case "clan_skarn" -> Glyph.GC_MS_CLAN_SKARN;
+			case "clan_epithermal" -> Glyph.GC_MS_CLAN_EPITHERMAL;
+			case "clan_intrusion_related_other" -> Glyph.GC_MS_CLAN_INTRUSION_RELATED_OTHER;
+			case "clan_iron_oxide" -> Glyph.GC_MS_CLAN_IRON_OXIDE;
+			case "clan_orogenic_gold" -> Glyph.GC_MS_CLAN_OROGENIC_GOLD;
+			case "clan_sediment_hosted_gold" -> Glyph.GC_MS_CLAN_SEDIMENT_HOSTED_GOLD;
+			case "clan_metamorphic_industrial" -> Glyph.GC_MS_CLAN_METAMORPHIC_INDUSTRIAL;
+			case "clan_sediment_hosted_zn_pb" -> Glyph.GC_MS_CLAN_SEDIMENT_HOSTED_ZN_PB;
+			case "clan_sediment_hosted_cu" -> Glyph.GC_MS_CLAN_SEDIMENT_HOSTED_CU;
+			case "clan_basinal_uranium" -> Glyph.GC_MS_CLAN_BASINAL_URANIUM;
+			case "clan_basinal_vein" -> Glyph.GC_MS_CLAN_BASINAL_VEIN;
+			case "clan_vms" -> Glyph.GC_MS_CLAN_VMS;
+			case "clan_chemical_sediment_fe_mn" -> Glyph.GC_MS_CLAN_CHEMICAL_SEDIMENT_FE_MN;
+			case "clan_chemical_sediment_other" -> Glyph.GC_MS_CLAN_CHEMICAL_SEDIMENT_OTHER;
+			case "clan_residual_laterite" -> Glyph.GC_MS_CLAN_RESIDUAL_LATERITE;
+			case "clan_supergene_sulfide" -> Glyph.GC_MS_CLAN_SUPERGENE_SULFIDE;
+			case "clan_evaporative_brine" -> Glyph.GC_MS_CLAN_EVAPORATIVE_BRINE;
+			case "clan_placer" -> Glyph.GC_MS_CLAN_PLACER;
+			case "clan_industrial_minerals" -> Glyph.GC_MS_CLAN_INDUSTRIAL_MINERALS;
+			case "clan_gemstone" -> Glyph.GC_MS_CLAN_GEMSTONE;
+			case "clan_energy_adjacent" -> Glyph.GC_MS_CLAN_ENERGY_ADJACENT;
             default -> null;
         };
     }

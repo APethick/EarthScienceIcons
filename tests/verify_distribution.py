@@ -22,13 +22,16 @@ def verify():
     catalog = json.loads((dist / 'geoscience-icons.json').read_text(encoding='utf-8'))
     validate_manifest(catalog, root)
     icons = catalog['icons']
-    assert len(icons) == catalog['totalIcons'] == 527
+    assert len(icons) == catalog['totalIcons'] == 578
     assert len({icon['id'] for icon in icons}) == len(icons)
     assert len({icon['codepoint_int'] for icon in icons}) == len(icons)
     assert len({icon['ascii_key'] for icon in icons}) == len(icons)
-    assert sum(icon['domain'] == 'Geophysical' for icon in icons) == 177
-    assert sum(icon['domain'] == 'Geological' for icon in icons) == 223
+    assert sum(icon['domain'] == 'Geophysical' for icon in icons) == 192
+    assert sum(icon['domain'] == 'Geological' for icon in icons) == 259
     assert sum(icon['category'] == 'Petrophysical Quantities' for icon in icons) == 12
+    mineral_systems = [icon for icon in icons if icon['category'] == 'Mineral Systems']
+    assert len(mineral_systems) == 36
+    assert all(icon['domain'] == 'Geological' for icon in mineral_systems)
     original = json.loads((root / 'tests' / 'compatibility-193.json').read_text(encoding='utf-8'))
     redraws = json.loads((root / 'tests' / 'redraws-2.8.json').read_text(encoding='utf-8'))
     published = json.loads((root / 'tests' / 'compatibility-471-mappings.json').read_text(encoding='utf-8'))
@@ -68,7 +71,7 @@ def verify():
             assert svg.tag == '{http://www.w3.org/2000/svg}svg', identifier
             assert svg.findall('.//{http://www.w3.org/2000/svg}path'), identifier
             assert path.read_bytes() == (assets / icon[field]).read_bytes(), identifier
-    assert len(original) == 193 and len(added_hashes) == 334
+    assert len(original) == 193 and len(added_hashes) == len(icons) - len(original)
     for name in ('GeoScienceIcons.ttf', 'GeoScienceIcons.woff', 'geoscience-icons.css', 'geoscience-icons.json'):
         assert (dist / name).read_bytes() == (assets / name).read_bytes(), name
     assert (root / 'GeoScienceIcons.ttf').read_bytes() == (dist / 'GeoScienceIcons.ttf').read_bytes()
@@ -107,9 +110,8 @@ def verify():
         for path in dist.rglob('*'):
             if path.is_file():
                 assert archive.read(path.relative_to(dist).as_posix()) == path.read_bytes(), str(path)
-    print('PASS: 527 glyphs, 1054 SVGs, 1054 individual 256px PNGs, webfont, Pages assets and ZIP; 188 original outlines preserved; MT, sensitivity matrix and three 2.8 icons intentionally redrawn; all published mappings preserved.')
+    print(f'PASS: {len(icons)} glyphs, {2*len(icons)} SVGs, {2*len(icons)} individual 256px PNGs, webfont, Pages assets and ZIP; original outlines and published mappings verified.')
 
 
 if __name__ == '__main__':
     verify()
-

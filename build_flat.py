@@ -23,7 +23,10 @@ def build_flat():
     from icons_spectroscopy import SPECTROSCOPY_IDS
     from icons_field_instruments import IDS as FIELD_IDS
     from icons_seismic_equipment import IDS as SEISMIC_IDS
-    available = SEISMIC_IDS | FIELD_IDS | SPECTROSCOPY_IDS | set(ICON_MATERIALS) | EXPANDED_IDS | MT_IDS | GEOCHEM_IDS | FGM_IDS
+    from icons_mt_equipment import IDS as MT_EQUIPMENT_IDS
+    from icons_wave_concepts import IDS as WAVE_IDS
+    from icons_mineral_systems import IDS as MINERAL_SYSTEM_IDS
+    available = MINERAL_SYSTEM_IDS | WAVE_IDS | MT_EQUIPMENT_IDS | SEISMIC_IDS | FIELD_IDS | SPECTROSCOPY_IDS | set(ICON_MATERIALS) | EXPANDED_IDS | MT_IDS | GEOCHEM_IDS | FGM_IDS
     if expected != available:
         raise ValueError(f'Material assignments differ: {expected ^ available}')
     for icon in icons:

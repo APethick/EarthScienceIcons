@@ -4,7 +4,7 @@
 
 **A visual language for Earth science.**
 
-527 specialist icons for geophysics, geology, geochemistry and geotechnical engineering.
+578 specialist icons for geophysics, geology, geochemistry and geotechnical engineering.
 
 **Detailed linework · Flat colour · SVG · TTF · WOFF · Public domain**
 
@@ -20,11 +20,11 @@ The library covers field and laboratory methods, Earth models and scientific pro
 
 | Discipline | Icons | Examples |
 | --- | ---: | --- |
-| Geophysical | 139 | Seismic reflection, magnetotellurics, gravity, GPR, petrophysics |
-| Geological | 207 | Mapping, stratigraphy, folds, lithological patterns, mass movements, QAPF & stereonets |
-| Geochemical | 103 | XRF, ICP-MS, assays, geochemical diagrams, thermodynamics |
+| Geophysical | 192 | Seismic reflection, magnetotellurics, gravity, GPR, petrophysics |
+| Geological | 259 | Mapping, stratigraphy, folds, lithological patterns, mass movements, QAPF & stereonets |
+| Geochemical | 105 | XRF, ICP-MS, assays, geochemical diagrams, thermodynamics |
 | Geotechnical | 22 | SPT, CPT, triaxial testing, rock quality, slope stability |
-| **Total** | **527** | **145 methods · 182 Earth model types · 132 processes · 12 petrophysical quantities** |
+| **Total** | **578** | Detailed science and fieldwork icons, including 36 mineral-system categories |
 
 The [interactive library](https://APethick.github.io/EarthScienceIcons/) shows every icon. Search names and keywords, filter by discipline or category, compare both styles, change the preview size, and copy integration code.
 
@@ -47,6 +47,8 @@ The original 193 IDs, codepoints and fallback keys are preserved. The MT acquisi
 ### Detailed EM equipment
 
 The EM suite uses equipment-led drawings: clothed field operators with backpack instruments and tablets, airframes with cockpit and rotor detail, suspension bridles, distinct VTEM and SkyTEM coil frames, and ground loops with cables, controllers and receivers. Both styles share the same compositions. Existing IDs and Unicode mappings remain stable.
+
+Five magnetotelluric equipment icons depict the Phoenix V8, MTU-5C and MTU-8A, and the Metronix ADU-07 and ADU-10e. The Phoenix connector colours follow the supplied equipment photographs; the drawings are schematic and omit manufacturer logos.
 
 ![EM equipment in flat colour and the detailed TTF](dist/em_equipment_preview.png)
 
@@ -135,7 +137,7 @@ Open `http://localhost:8080`. The website is static, with no npm build or extern
 
 The normal build only writes inside the repository. `python build_font.py --install-opus` also copies the font and Java binding into an existing `C:\projects\opus\opus.base` checkout.
 
-On Windows, run `build_and_push.bat` from this folder to build and verify the distribution, merge generated glyph mappings into `C:\projects\opus\opus.base`, update both Opus font copies, and commit and push the icon repository's `main` branch. The script requires Python 3.10+, the packages in `requirements.txt`, Git access to `origin`, and an existing Opus checkout. It stops on failure or if the Git index already contains staged changes. It stages icon source, documentation, tests, and generated distribution and website assets. Opus changes remain in the Opus working tree.
+On Windows, run `build_and_push.bat` from this folder to build and verify the distribution, merge generated glyph mappings into `C:\projects\opus\opus.base`, update both Opus font copies, and commit and push the icon repository's `main` branch. The script requires Python 3.10+, the packages in `requirements.txt`, Git access to `origin`, and an existing Opus checkout. It stops on failure or if the Git index already contains staged changes. It runs the icon identity regression tests and explicitly stages mineral systems sources, the identity ledger, theme-aware PNG resources, and both SVG styles alongside all icon source, documentation, tests, and generated distribution and website assets. The parent folder's `build_and_push.bat` delegates to this repository script. Opus changes remain in the Opus working tree.
 
 ## GitHub Pages
 
@@ -214,3 +216,19 @@ Every full or flat build also exports each icon individually at **256 x 256 pixe
 - `dist/png/individual/line/<icon-id>.png`
 
 All 527 icons are available in both styles (1,054 PNG files). The existing overview sheets remain available. Website builds copy the individual files into `docs/assets/png/individual/` and include them in `EarthScienceIcons.zip`.
+
+## Mineral systems navigation
+
+Thirty-six icons cover the nine realms and 27 clans in the Opus
+`MineralSystemsQC` taxonomy. They are listed under **Mineral Systems**, use
+stable IDs `gc_ms_<taxonomy-id>` and occupy **U+E21F–U+E242**. All previously
+allocated IDs, codepoints and fallback keys remain unchanged.
+
+Colour SVGs and matching monochrome glyphs depict magma chambers, veins,
+folded rocks, sedimentary basins, seafloor vents, precipitation, weathering
+profiles, placer channels and industrial mineral habits.
+
+`python export_mineral_system_resources.py --output <directory>` exports
+72 transparent PNGs (light/dark variants) and a taxonomy-to-icon manifest.
+The normal font build also writes these under `dist/mineral-system-resources/icons/`.
+MineralSystemsQC uses these colour resources in adjacent vertical button columns.
