@@ -22,15 +22,15 @@ def verify():
     catalog = json.loads((dist / 'geoscience-icons.json').read_text(encoding='utf-8'))
     validate_manifest(catalog, root)
     icons = catalog['icons']
-    assert len(icons) == catalog['totalIcons'] == 578
+    assert len(icons) == catalog['totalIcons'] == 647
     assert len({icon['id'] for icon in icons}) == len(icons)
     assert len({icon['codepoint_int'] for icon in icons}) == len(icons)
     assert len({icon['ascii_key'] for icon in icons}) == len(icons)
     assert sum(icon['domain'] == 'Geophysical' for icon in icons) == 192
-    assert sum(icon['domain'] == 'Geological' for icon in icons) == 259
+    assert sum(icon['domain'] == 'Geological' for icon in icons) == 328
     assert sum(icon['category'] == 'Petrophysical Quantities' for icon in icons) == 12
     mineral_systems = [icon for icon in icons if icon['category'] == 'Mineral Systems']
-    assert len(mineral_systems) == 36
+    assert len(mineral_systems) == 105
     assert all(icon['domain'] == 'Geological' for icon in mineral_systems)
     original = json.loads((root / 'tests' / 'compatibility-193.json').read_text(encoding='utf-8'))
     redraws = json.loads((root / 'tests' / 'redraws-2.8.json').read_text(encoding='utf-8'))

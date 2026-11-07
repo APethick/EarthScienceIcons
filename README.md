@@ -4,7 +4,7 @@
 
 **A visual language for Earth science.**
 
-578 specialist icons for geophysics, geology, geochemistry and geotechnical engineering.
+647 specialist icons for geophysics, geology, geochemistry and geotechnical engineering.
 
 **Detailed linework · Flat colour · SVG · TTF · WOFF · Public domain**
 
@@ -21,10 +21,10 @@ The library covers field and laboratory methods, Earth models and scientific pro
 | Discipline | Icons | Examples |
 | --- | ---: | --- |
 | Geophysical | 192 | Seismic reflection, magnetotellurics, gravity, GPR, petrophysics |
-| Geological | 259 | Mapping, stratigraphy, folds, lithological patterns, mass movements, QAPF & stereonets |
+| Geological | 328 | Mapping, stratigraphy, folds, lithological patterns, mass movements, QAPF & stereonets, mineral systems |
 | Geochemical | 105 | XRF, ICP-MS, assays, geochemical diagrams, thermodynamics |
 | Geotechnical | 22 | SPT, CPT, triaxial testing, rock quality, slope stability |
-| **Total** | **578** | Detailed science and fieldwork icons, including 36 mineral-system categories |
+| **Total** | **647** | Detailed science and fieldwork icons, including 105 mineral-system categories |
 
 The [interactive library](https://APethick.github.io/EarthScienceIcons/) shows every icon. Search names and keywords, filter by discipline or category, compare both styles, change the preview size, and copy integration code.
 
@@ -215,20 +215,25 @@ Every full or flat build also exports each icon individually at **256 x 256 pixe
 - `dist/png/individual/flat-colour/<icon-id>.png`
 - `dist/png/individual/line/<icon-id>.png`
 
-All 527 icons are available in both styles (1,054 PNG files). The existing overview sheets remain available. Website builds copy the individual files into `docs/assets/png/individual/` and include them in `EarthScienceIcons.zip`.
+All 647 icons are available in both styles (1,294 PNG files). The existing overview sheets remain available. Website builds copy the individual files into `docs/assets/png/individual/` and include them in `EarthScienceIcons.zip`.
 
 ## Mineral systems navigation
 
-Thirty-six icons cover the nine realms and 27 clans in the Opus
-`MineralSystemsQC` taxonomy. They are listed under **Mineral Systems**, use
-stable IDs `gc_ms_<taxonomy-id>` and occupy **U+E21F–U+E242**. All previously
-allocated IDs, codepoints and fallback keys remain unchanged.
+One hundred and five icons cover the complete Opus `MineralSystemsQC`
+taxonomy: nine realms, 27 clans and 69 deposit types. They are listed under
+**Mineral Systems**, use stable IDs `gc_ms_<taxonomy-id>` and occupy
+**U+E21F–U+E287** — realms and clans at U+E21F–U+E242 and deposit types at
+U+E243–U+E287. All previously allocated IDs, codepoints and fallback keys
+remain unchanged.
 
 Colour SVGs and matching monochrome glyphs depict magma chambers, veins,
 folded rocks, sedimentary basins, seafloor vents, precipitation, weathering
-profiles, placer channels and industrial mineral habits.
+profiles, placer channels and industrial mineral habits. Each deposit type
+shows its host architecture, ore geometry and one diagnostic texture — a
+komatiite embayment, a porphyry stockwork, a roll front, a karst breccia, a
+sinter terrace, bedrock riffles — so it stays distinct from its clan at 24 px.
 
 `python export_mineral_system_resources.py --output <directory>` exports
-72 transparent PNGs (light/dark variants) and a taxonomy-to-icon manifest.
+210 transparent PNGs (light/dark variants) and a taxonomy-to-icon manifest.
 The normal font build also writes these under `dist/mineral-system-resources/icons/`.
 MineralSystemsQC uses these colour resources in adjacent vertical button columns.

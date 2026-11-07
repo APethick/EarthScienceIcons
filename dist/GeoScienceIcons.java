@@ -17,7 +17,7 @@ import opus.base.properties.OpusProperty;
 import opus.base.resources.OpusResources;
 
 /**
- * GeoScienceIcons TrueType glyph font (578 icons) covering Geophysical, Geotechnical,
+ * GeoScienceIcons TrueType glyph font (647 icons) covering Geophysical, Geotechnical,
  * Geological, and Geochemical methods, earth model types, and processes.
  * Includes dedicated suites for Inversion, Thermodynamics, Petrophysics, and Geochemistry,
  * aligned with opus.geo.geochemistry, opus.geo.petrophysics, and opus.geo.geotechnical.
@@ -606,6 +606,75 @@ public class GeoScienceIcons extends GlyphFont {
 		GC_MS_CLAN_INDUSTRIAL_MINERALS('\ue240'), // Industrial minerals and rocks (Geological - Mineral Systems)
 		GC_MS_CLAN_GEMSTONE('\ue241'), // Gemstone systems (Geological - Mineral Systems)
 		GC_MS_CLAN_ENERGY_ADJACENT('\ue242'), // Energy-adjacent and excluded systems (Geological - Mineral Systems)
+		GC_MS_NI_CU_PGE_KOMATIITE('\ue243'), // Komatiite-hosted Ni-Cu-(PGE) (Geological - Mineral Systems)
+		GC_MS_NI_CU_PGE_CONDUIT('\ue244'), // Conduit- and intrusion-hosted Ni-Cu-(PGE) (Geological - Mineral Systems)
+		GC_MS_LAYERED_INTRUSION_PGE('\ue245'), // Layered-intrusion PGE reef and contact deposits (Geological - Mineral Systems)
+		GC_MS_LAYERED_INTRUSION_CHROMITE('\ue246'), // Stratiform (layered-intrusion) chromitite (Geological - Mineral Systems)
+		GC_MS_PODIFORM_CHROMITE('\ue247'), // Podiform (ophiolitic) chromite (Geological - Mineral Systems)
+		GC_MS_FE_TI_V_OXIDE('\ue248'), // Fe-Ti-(V-P) oxide in mafic intrusions (Geological - Mineral Systems)
+		GC_MS_ALASKAN_TYPE_PT('\ue249'), // Alaskan-Ural type zoned ultramafic Pt (Geological - Mineral Systems)
+		GC_MS_CARBONATITE_REE('\ue24a'), // Carbonatite-associated REE-Nb-P (Geological - Mineral Systems)
+		GC_MS_ALKALINE_PERALKALINE_REE('\ue24b'), // Alkaline-peralkaline REE-Zr-Nb-(Y-Be-Li) (Geological - Mineral Systems)
+		GC_MS_LCT_PEGMATITE('\ue24c'), // LCT (Li-Cs-Ta) pegmatite (Geological - Mineral Systems)
+		GC_MS_NYF_PEGMATITE('\ue24d'), // NYF (Nb-Y-F) pegmatite (Geological - Mineral Systems)
+		GC_MS_KIMBERLITE_DIAMOND('\ue24e'), // Kimberlite- and lamproite-hosted diamond (Geological - Mineral Systems)
+		GC_MS_PORPHYRY_CU('\ue24f'), // Porphyry Cu-(Au-Mo) (Geological - Mineral Systems)
+		GC_MS_ALKALIC_PORPHYRY('\ue250'), // Alkalic porphyry Cu-Au (Geological - Mineral Systems)
+		GC_MS_PORPHYRY_MO('\ue251'), // Porphyry Mo (Geological - Mineral Systems)
+		GC_MS_PORPHYRY_W_SN('\ue252'), // Porphyry W and porphyry Sn (Geological - Mineral Systems)
+		GC_MS_SKARN('\ue253'), // Skarn (metal-classified) (Geological - Mineral Systems)
+		GC_MS_CRD_CARBONATE_REPLACEMENT('\ue254'), // Carbonate-replacement / Cordilleran polymetallic (Zn-Pb-Ag-Cu) (Geological - Mineral Systems)
+		GC_MS_MANTO_TYPE_CU('\ue255'), // Volcanic-hosted strata-bound (manto) Cu (Geological - Mineral Systems)
+		GC_MS_HIGH_SULFIDATION_EPITHERMAL('\ue256'), // High-sulfidation epithermal Au-Ag-(Cu) (Geological - Mineral Systems)
+		GC_MS_INTERMEDIATE_SULFIDATION_EPITHERMAL('\ue257'), // Intermediate-sulfidation epithermal Ag-Au-Zn-Pb (Geological - Mineral Systems)
+		GC_MS_LOW_SULFIDATION_EPITHERMAL('\ue258'), // Low-sulfidation epithermal Au-Ag (Geological - Mineral Systems)
+		GC_MS_RIRGS('\ue259'), // Reduced intrusion-related gold system (Geological - Mineral Systems)
+		GC_MS_SN_W_GRANITE('\ue25a'), // Granite-related Sn-W (greisen, vein, breccia) (Geological - Mineral Systems)
+		GC_MS_BE_F_REPLACEMENT('\ue25b'), // Be-F-(Li-U) volcanic replacement (Geological - Mineral Systems)
+		GC_MS_MAGMATIC_URANIUM('\ue25c'), // Intrusive, metasomatite and volcanic-hosted uranium (Geological - Mineral Systems)
+		GC_MS_IOCG('\ue25d'), // Iron oxide copper-gold (IOCG) (Geological - Mineral Systems)
+		GC_MS_IRON_OXIDE_APATITE('\ue25e'), // Iron oxide-apatite (IOA / Kiruna type) (Geological - Mineral Systems)
+		GC_MS_OROGENIC_GOLD('\ue25f'), // Orogenic (mesothermal) gold (Geological - Mineral Systems)
+		GC_MS_LISTWAENITE_GOLD('\ue260'), // Listwaenite / ultramafic-hosted carbonate-replacement gold (Geological - Mineral Systems)
+		GC_MS_SB_HG_EPIZONAL('\ue261'), // Epizonal Sb-Hg (and Sb-Au) (Geological - Mineral Systems)
+		GC_MS_CARLIN_TYPE_GOLD('\ue262'), // Carlin-type sediment-hosted disseminated gold (Geological - Mineral Systems)
+		GC_MS_GRAPHITE_METAMORPHIC('\ue263'), // Metamorphic and vein graphite (Geological - Mineral Systems)
+		GC_MS_MAGNESITE_TALC('\ue264'), // Magnesite, talc and related ultramafic-hosted industrial minerals (Geological - Mineral Systems)
+		GC_MS_SEDEX_CLASTIC_DOMINATED('\ue265'), // Clastic-dominated (SEDEX) Zn-Pb-Ag (Geological - Mineral Systems)
+		GC_MS_MVT_ZN_PB('\ue266'), // Mississippi Valley-type Zn-Pb (Geological - Mineral Systems)
+		GC_MS_IRISH_TYPE_ZN_PB('\ue267'), // Irish-type carbonate-hosted Zn-Pb (Geological - Mineral Systems)
+		GC_MS_SEDIMENT_HOSTED_STRATIFORM_CU('\ue268'), // Sediment-hosted stratiform (and red-bed) Cu-Co (Geological - Mineral Systems)
+		GC_MS_UNCONFORMITY_URANIUM('\ue269'), // Unconformity-related uranium (Geological - Mineral Systems)
+		GC_MS_SANDSTONE_HOSTED_URANIUM('\ue26a'), // Sandstone-hosted uranium (Geological - Mineral Systems)
+		GC_MS_FIVE_ELEMENT_VEIN('\ue26b'), // Five-element (Ag-Ni-Co-As-Bi) vein (Geological - Mineral Systems)
+		GC_MS_FLUORITE_BARITE_VEIN_STRATA('\ue26c'), // Fluorite-barite vein and strata-bound deposits (Geological - Mineral Systems)
+		GC_MS_VMS_CLAN('\ue26d'), // Volcanogenic massive sulfide (VMS) (Geological - Mineral Systems)
+		GC_MS_SEAFLOOR_MASSIVE_SULFIDE('\ue26e'), // Modern seafloor massive sulfide (SMS) (Geological - Mineral Systems)
+		GC_MS_BIF_IRON_FORMATION('\ue26f'), // Iron formation (BIF and GIF) (Geological - Mineral Systems)
+		GC_MS_SEDIMENTARY_MANGANESE('\ue270'), // Sedimentary and volcano-sedimentary manganese (Geological - Mineral Systems)
+		GC_MS_FERROMANGANESE_NODULE_CRUST('\ue271'), // Deep-sea ferromanganese nodules and crusts (Geological - Mineral Systems)
+		GC_MS_PHOSPHORITE('\ue272'), // Phosphorite (Geological - Mineral Systems)
+		GC_MS_BLACK_SHALE_POLYMETALLIC('\ue273'), // Black shale-hosted polymetallic (Ni-Mo-Zn-V-U-PGE) (Geological - Mineral Systems)
+		GC_MS_EVAPORITE_POTASH('\ue274'), // Evaporite potash, salt and polyhalite (Geological - Mineral Systems)
+		GC_MS_BAUXITE('\ue275'), // Bauxite (lateritic and karst) (Geological - Mineral Systems)
+		GC_MS_NICKEL_LATERITE('\ue276'), // Nickel (-cobalt-scandium) laterite (Geological - Mineral Systems)
+		GC_MS_ION_ADSORPTION_CLAY_REE('\ue277'), // Ion-adsorption clay REE (Geological - Mineral Systems)
+		GC_MS_SUPERGENE_IRON_ENRICHMENT('\ue278'), // Supergene-enriched iron ore (Geological - Mineral Systems)
+		GC_MS_CHANNEL_IRON_DEPOSIT('\ue279'), // Channel iron deposit (pisolitic palaeochannel iron) (Geological - Mineral Systems)
+		GC_MS_SUPERGENE_COPPER('\ue27a'), // Supergene copper (leached cap, oxide and chalcocite enrichment) (Geological - Mineral Systems)
+		GC_MS_NON_SULFIDE_ZN('\ue27b'), // Non-sulfide (supergene) zinc (Geological - Mineral Systems)
+		GC_MS_LITHIUM_BRINE('\ue27c'), // Continental, geothermal and oilfield lithium brine (Geological - Mineral Systems)
+		GC_MS_LITHIUM_CLAY('\ue27d'), // Sedimentary and volcano-sedimentary lithium clay (Geological - Mineral Systems)
+		GC_MS_BORATE_NITRATE('\ue27e'), // Borate and nitrate (arid-basin non-halide evaporite) (Geological - Mineral Systems)
+		GC_MS_CALCRETE_URANIUM('\ue27f'), // Surficial (calcrete) uranium (Geological - Mineral Systems)
+		GC_MS_PLACER_GOLD('\ue280'), // Placer and palaeoplacer gold (Geological - Mineral Systems)
+		GC_MS_QUARTZ_PEBBLE_CONGLOMERATE_GOLD_U('\ue281'), // Quartz-pebble conglomerate (Witwatersrand-type) Au-U (Geological - Mineral Systems)
+		GC_MS_HEAVY_MINERAL_SANDS('\ue282'), // Heavy mineral sands (Ti-Zr-REE) (Geological - Mineral Systems)
+		GC_MS_PLACER_TIN('\ue283'), // Placer tin (and associated Nb-Ta) (Geological - Mineral Systems)
+		GC_MS_PLACER_DIAMOND('\ue284'), // Placer and marine-placer diamond (Geological - Mineral Systems)
+		GC_MS_INDUSTRIAL_MINERALS_OVERVIEW('\ue285'), // Industrial minerals (kaolin, bentonite, zeolite, silica, gypsum, limestone, diatomite) (Geological - Mineral Systems)
+		GC_MS_GEMSTONE_SYSTEMS('\ue286'), // Gemstone deposits (emerald, corundum, opal, jade, garnet) (Geological - Mineral Systems)
+		GC_MS_ENERGY_ADJACENT_NOTE('\ue287'), // Coal, oil shale, hydrocarbon and geothermal systems (Geological - Mineral Systems)
         ;
 
         private final char ch;
@@ -1226,6 +1295,75 @@ public class GeoScienceIcons extends GlyphFont {
 			case "gc_ms_clan_industrial_minerals" -> Glyph.GC_MS_CLAN_INDUSTRIAL_MINERALS;
 			case "gc_ms_clan_gemstone" -> Glyph.GC_MS_CLAN_GEMSTONE;
 			case "gc_ms_clan_energy_adjacent" -> Glyph.GC_MS_CLAN_ENERGY_ADJACENT;
+			case "gc_ms_ni_cu_pge_komatiite" -> Glyph.GC_MS_NI_CU_PGE_KOMATIITE;
+			case "gc_ms_ni_cu_pge_conduit" -> Glyph.GC_MS_NI_CU_PGE_CONDUIT;
+			case "gc_ms_layered_intrusion_pge" -> Glyph.GC_MS_LAYERED_INTRUSION_PGE;
+			case "gc_ms_layered_intrusion_chromite" -> Glyph.GC_MS_LAYERED_INTRUSION_CHROMITE;
+			case "gc_ms_podiform_chromite" -> Glyph.GC_MS_PODIFORM_CHROMITE;
+			case "gc_ms_fe_ti_v_oxide" -> Glyph.GC_MS_FE_TI_V_OXIDE;
+			case "gc_ms_alaskan_type_pt" -> Glyph.GC_MS_ALASKAN_TYPE_PT;
+			case "gc_ms_carbonatite_ree" -> Glyph.GC_MS_CARBONATITE_REE;
+			case "gc_ms_alkaline_peralkaline_ree" -> Glyph.GC_MS_ALKALINE_PERALKALINE_REE;
+			case "gc_ms_lct_pegmatite" -> Glyph.GC_MS_LCT_PEGMATITE;
+			case "gc_ms_nyf_pegmatite" -> Glyph.GC_MS_NYF_PEGMATITE;
+			case "gc_ms_kimberlite_diamond" -> Glyph.GC_MS_KIMBERLITE_DIAMOND;
+			case "gc_ms_porphyry_cu" -> Glyph.GC_MS_PORPHYRY_CU;
+			case "gc_ms_alkalic_porphyry" -> Glyph.GC_MS_ALKALIC_PORPHYRY;
+			case "gc_ms_porphyry_mo" -> Glyph.GC_MS_PORPHYRY_MO;
+			case "gc_ms_porphyry_w_sn" -> Glyph.GC_MS_PORPHYRY_W_SN;
+			case "gc_ms_skarn" -> Glyph.GC_MS_SKARN;
+			case "gc_ms_crd_carbonate_replacement" -> Glyph.GC_MS_CRD_CARBONATE_REPLACEMENT;
+			case "gc_ms_manto_type_cu" -> Glyph.GC_MS_MANTO_TYPE_CU;
+			case "gc_ms_high_sulfidation_epithermal" -> Glyph.GC_MS_HIGH_SULFIDATION_EPITHERMAL;
+			case "gc_ms_intermediate_sulfidation_epithermal" -> Glyph.GC_MS_INTERMEDIATE_SULFIDATION_EPITHERMAL;
+			case "gc_ms_low_sulfidation_epithermal" -> Glyph.GC_MS_LOW_SULFIDATION_EPITHERMAL;
+			case "gc_ms_rirgs" -> Glyph.GC_MS_RIRGS;
+			case "gc_ms_sn_w_granite" -> Glyph.GC_MS_SN_W_GRANITE;
+			case "gc_ms_be_f_replacement" -> Glyph.GC_MS_BE_F_REPLACEMENT;
+			case "gc_ms_magmatic_uranium" -> Glyph.GC_MS_MAGMATIC_URANIUM;
+			case "gc_ms_iocg" -> Glyph.GC_MS_IOCG;
+			case "gc_ms_iron_oxide_apatite" -> Glyph.GC_MS_IRON_OXIDE_APATITE;
+			case "gc_ms_orogenic_gold" -> Glyph.GC_MS_OROGENIC_GOLD;
+			case "gc_ms_listwaenite_gold" -> Glyph.GC_MS_LISTWAENITE_GOLD;
+			case "gc_ms_sb_hg_epizonal" -> Glyph.GC_MS_SB_HG_EPIZONAL;
+			case "gc_ms_carlin_type_gold" -> Glyph.GC_MS_CARLIN_TYPE_GOLD;
+			case "gc_ms_graphite_metamorphic" -> Glyph.GC_MS_GRAPHITE_METAMORPHIC;
+			case "gc_ms_magnesite_talc" -> Glyph.GC_MS_MAGNESITE_TALC;
+			case "gc_ms_sedex_clastic_dominated" -> Glyph.GC_MS_SEDEX_CLASTIC_DOMINATED;
+			case "gc_ms_mvt_zn_pb" -> Glyph.GC_MS_MVT_ZN_PB;
+			case "gc_ms_irish_type_zn_pb" -> Glyph.GC_MS_IRISH_TYPE_ZN_PB;
+			case "gc_ms_sediment_hosted_stratiform_cu" -> Glyph.GC_MS_SEDIMENT_HOSTED_STRATIFORM_CU;
+			case "gc_ms_unconformity_uranium" -> Glyph.GC_MS_UNCONFORMITY_URANIUM;
+			case "gc_ms_sandstone_hosted_uranium" -> Glyph.GC_MS_SANDSTONE_HOSTED_URANIUM;
+			case "gc_ms_five_element_vein" -> Glyph.GC_MS_FIVE_ELEMENT_VEIN;
+			case "gc_ms_fluorite_barite_vein_strata" -> Glyph.GC_MS_FLUORITE_BARITE_VEIN_STRATA;
+			case "gc_ms_vms_clan" -> Glyph.GC_MS_VMS_CLAN;
+			case "gc_ms_seafloor_massive_sulfide" -> Glyph.GC_MS_SEAFLOOR_MASSIVE_SULFIDE;
+			case "gc_ms_bif_iron_formation" -> Glyph.GC_MS_BIF_IRON_FORMATION;
+			case "gc_ms_sedimentary_manganese" -> Glyph.GC_MS_SEDIMENTARY_MANGANESE;
+			case "gc_ms_ferromanganese_nodule_crust" -> Glyph.GC_MS_FERROMANGANESE_NODULE_CRUST;
+			case "gc_ms_phosphorite" -> Glyph.GC_MS_PHOSPHORITE;
+			case "gc_ms_black_shale_polymetallic" -> Glyph.GC_MS_BLACK_SHALE_POLYMETALLIC;
+			case "gc_ms_evaporite_potash" -> Glyph.GC_MS_EVAPORITE_POTASH;
+			case "gc_ms_bauxite" -> Glyph.GC_MS_BAUXITE;
+			case "gc_ms_nickel_laterite" -> Glyph.GC_MS_NICKEL_LATERITE;
+			case "gc_ms_ion_adsorption_clay_ree" -> Glyph.GC_MS_ION_ADSORPTION_CLAY_REE;
+			case "gc_ms_supergene_iron_enrichment" -> Glyph.GC_MS_SUPERGENE_IRON_ENRICHMENT;
+			case "gc_ms_channel_iron_deposit" -> Glyph.GC_MS_CHANNEL_IRON_DEPOSIT;
+			case "gc_ms_supergene_copper" -> Glyph.GC_MS_SUPERGENE_COPPER;
+			case "gc_ms_non_sulfide_zn" -> Glyph.GC_MS_NON_SULFIDE_ZN;
+			case "gc_ms_lithium_brine" -> Glyph.GC_MS_LITHIUM_BRINE;
+			case "gc_ms_lithium_clay" -> Glyph.GC_MS_LITHIUM_CLAY;
+			case "gc_ms_borate_nitrate" -> Glyph.GC_MS_BORATE_NITRATE;
+			case "gc_ms_calcrete_uranium" -> Glyph.GC_MS_CALCRETE_URANIUM;
+			case "gc_ms_placer_gold" -> Glyph.GC_MS_PLACER_GOLD;
+			case "gc_ms_quartz_pebble_conglomerate_gold_u" -> Glyph.GC_MS_QUARTZ_PEBBLE_CONGLOMERATE_GOLD_U;
+			case "gc_ms_heavy_mineral_sands" -> Glyph.GC_MS_HEAVY_MINERAL_SANDS;
+			case "gc_ms_placer_tin" -> Glyph.GC_MS_PLACER_TIN;
+			case "gc_ms_placer_diamond" -> Glyph.GC_MS_PLACER_DIAMOND;
+			case "gc_ms_industrial_minerals_overview" -> Glyph.GC_MS_INDUSTRIAL_MINERALS_OVERVIEW;
+			case "gc_ms_gemstone_systems" -> Glyph.GC_MS_GEMSTONE_SYSTEMS;
+			case "gc_ms_energy_adjacent_note" -> Glyph.GC_MS_ENERGY_ADJACENT_NOTE;
 			case "saussuritised" -> Glyph.GC_SAUSSURITISED;
 			case "serpentinisation" -> Glyph.GC_SERPENTINISATION;
 			case "epidote_alteration" -> Glyph.GC_EPIDOTE_ALTERATION;
@@ -1447,6 +1585,75 @@ public class GeoScienceIcons extends GlyphFont {
 			case "clan_industrial_minerals" -> Glyph.GC_MS_CLAN_INDUSTRIAL_MINERALS;
 			case "clan_gemstone" -> Glyph.GC_MS_CLAN_GEMSTONE;
 			case "clan_energy_adjacent" -> Glyph.GC_MS_CLAN_ENERGY_ADJACENT;
+			case "ni_cu_pge_komatiite" -> Glyph.GC_MS_NI_CU_PGE_KOMATIITE;
+			case "ni_cu_pge_conduit" -> Glyph.GC_MS_NI_CU_PGE_CONDUIT;
+			case "layered_intrusion_pge" -> Glyph.GC_MS_LAYERED_INTRUSION_PGE;
+			case "layered_intrusion_chromite" -> Glyph.GC_MS_LAYERED_INTRUSION_CHROMITE;
+			case "podiform_chromite" -> Glyph.GC_MS_PODIFORM_CHROMITE;
+			case "fe_ti_v_oxide" -> Glyph.GC_MS_FE_TI_V_OXIDE;
+			case "alaskan_type_pt" -> Glyph.GC_MS_ALASKAN_TYPE_PT;
+			case "carbonatite_ree" -> Glyph.GC_MS_CARBONATITE_REE;
+			case "alkaline_peralkaline_ree" -> Glyph.GC_MS_ALKALINE_PERALKALINE_REE;
+			case "lct_pegmatite" -> Glyph.GC_MS_LCT_PEGMATITE;
+			case "nyf_pegmatite" -> Glyph.GC_MS_NYF_PEGMATITE;
+			case "kimberlite_diamond" -> Glyph.GC_MS_KIMBERLITE_DIAMOND;
+			case "porphyry_cu" -> Glyph.GC_MS_PORPHYRY_CU;
+			case "alkalic_porphyry" -> Glyph.GC_MS_ALKALIC_PORPHYRY;
+			case "porphyry_mo" -> Glyph.GC_MS_PORPHYRY_MO;
+			case "porphyry_w_sn" -> Glyph.GC_MS_PORPHYRY_W_SN;
+			case "skarn" -> Glyph.GC_MS_SKARN;
+			case "crd_carbonate_replacement" -> Glyph.GC_MS_CRD_CARBONATE_REPLACEMENT;
+			case "manto_type_cu" -> Glyph.GC_MS_MANTO_TYPE_CU;
+			case "high_sulfidation_epithermal" -> Glyph.GC_MS_HIGH_SULFIDATION_EPITHERMAL;
+			case "intermediate_sulfidation_epithermal" -> Glyph.GC_MS_INTERMEDIATE_SULFIDATION_EPITHERMAL;
+			case "low_sulfidation_epithermal" -> Glyph.GC_MS_LOW_SULFIDATION_EPITHERMAL;
+			case "rirgs" -> Glyph.GC_MS_RIRGS;
+			case "sn_w_granite" -> Glyph.GC_MS_SN_W_GRANITE;
+			case "be_f_replacement" -> Glyph.GC_MS_BE_F_REPLACEMENT;
+			case "magmatic_uranium" -> Glyph.GC_MS_MAGMATIC_URANIUM;
+			case "iocg" -> Glyph.GC_MS_IOCG;
+			case "iron_oxide_apatite" -> Glyph.GC_MS_IRON_OXIDE_APATITE;
+			case "orogenic_gold" -> Glyph.GC_MS_OROGENIC_GOLD;
+			case "listwaenite_gold" -> Glyph.GC_MS_LISTWAENITE_GOLD;
+			case "sb_hg_epizonal" -> Glyph.GC_MS_SB_HG_EPIZONAL;
+			case "carlin_type_gold" -> Glyph.GC_MS_CARLIN_TYPE_GOLD;
+			case "graphite_metamorphic" -> Glyph.GC_MS_GRAPHITE_METAMORPHIC;
+			case "magnesite_talc" -> Glyph.GC_MS_MAGNESITE_TALC;
+			case "sedex_clastic_dominated" -> Glyph.GC_MS_SEDEX_CLASTIC_DOMINATED;
+			case "mvt_zn_pb" -> Glyph.GC_MS_MVT_ZN_PB;
+			case "irish_type_zn_pb" -> Glyph.GC_MS_IRISH_TYPE_ZN_PB;
+			case "sediment_hosted_stratiform_cu" -> Glyph.GC_MS_SEDIMENT_HOSTED_STRATIFORM_CU;
+			case "unconformity_uranium" -> Glyph.GC_MS_UNCONFORMITY_URANIUM;
+			case "sandstone_hosted_uranium" -> Glyph.GC_MS_SANDSTONE_HOSTED_URANIUM;
+			case "five_element_vein" -> Glyph.GC_MS_FIVE_ELEMENT_VEIN;
+			case "fluorite_barite_vein_strata" -> Glyph.GC_MS_FLUORITE_BARITE_VEIN_STRATA;
+			case "vms_clan" -> Glyph.GC_MS_VMS_CLAN;
+			case "seafloor_massive_sulfide" -> Glyph.GC_MS_SEAFLOOR_MASSIVE_SULFIDE;
+			case "bif_iron_formation" -> Glyph.GC_MS_BIF_IRON_FORMATION;
+			case "sedimentary_manganese" -> Glyph.GC_MS_SEDIMENTARY_MANGANESE;
+			case "ferromanganese_nodule_crust" -> Glyph.GC_MS_FERROMANGANESE_NODULE_CRUST;
+			case "phosphorite" -> Glyph.GC_MS_PHOSPHORITE;
+			case "black_shale_polymetallic" -> Glyph.GC_MS_BLACK_SHALE_POLYMETALLIC;
+			case "evaporite_potash" -> Glyph.GC_MS_EVAPORITE_POTASH;
+			case "bauxite" -> Glyph.GC_MS_BAUXITE;
+			case "nickel_laterite" -> Glyph.GC_MS_NICKEL_LATERITE;
+			case "ion_adsorption_clay_ree" -> Glyph.GC_MS_ION_ADSORPTION_CLAY_REE;
+			case "supergene_iron_enrichment" -> Glyph.GC_MS_SUPERGENE_IRON_ENRICHMENT;
+			case "channel_iron_deposit" -> Glyph.GC_MS_CHANNEL_IRON_DEPOSIT;
+			case "supergene_copper" -> Glyph.GC_MS_SUPERGENE_COPPER;
+			case "non_sulfide_zn" -> Glyph.GC_MS_NON_SULFIDE_ZN;
+			case "lithium_brine" -> Glyph.GC_MS_LITHIUM_BRINE;
+			case "lithium_clay" -> Glyph.GC_MS_LITHIUM_CLAY;
+			case "borate_nitrate" -> Glyph.GC_MS_BORATE_NITRATE;
+			case "calcrete_uranium" -> Glyph.GC_MS_CALCRETE_URANIUM;
+			case "placer_gold" -> Glyph.GC_MS_PLACER_GOLD;
+			case "quartz_pebble_conglomerate_gold_u" -> Glyph.GC_MS_QUARTZ_PEBBLE_CONGLOMERATE_GOLD_U;
+			case "heavy_mineral_sands" -> Glyph.GC_MS_HEAVY_MINERAL_SANDS;
+			case "placer_tin" -> Glyph.GC_MS_PLACER_TIN;
+			case "placer_diamond" -> Glyph.GC_MS_PLACER_DIAMOND;
+			case "industrial_minerals_overview" -> Glyph.GC_MS_INDUSTRIAL_MINERALS_OVERVIEW;
+			case "gemstone_systems" -> Glyph.GC_MS_GEMSTONE_SYSTEMS;
+			case "energy_adjacent_note" -> Glyph.GC_MS_ENERGY_ADJACENT_NOTE;
             default -> null;
         };
     }

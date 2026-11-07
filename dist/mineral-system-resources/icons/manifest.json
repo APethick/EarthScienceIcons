@@ -214,5 +214,419 @@
     "icon_id": "gc_ms_clan_energy_adjacent",
     "light": "clan_energy_adjacent.png",
     "dark": "clan_energy_adjacent-dark.png"
+  },
+  {
+    "taxonomy_id": "ni_cu_pge_komatiite",
+    "icon_id": "gc_ms_ni_cu_pge_komatiite",
+    "light": "ni_cu_pge_komatiite.png",
+    "dark": "ni_cu_pge_komatiite-dark.png"
+  },
+  {
+    "taxonomy_id": "ni_cu_pge_conduit",
+    "icon_id": "gc_ms_ni_cu_pge_conduit",
+    "light": "ni_cu_pge_conduit.png",
+    "dark": "ni_cu_pge_conduit-dark.png"
+  },
+  {
+    "taxonomy_id": "layered_intrusion_pge",
+    "icon_id": "gc_ms_layered_intrusion_pge",
+    "light": "layered_intrusion_pge.png",
+    "dark": "layered_intrusion_pge-dark.png"
+  },
+  {
+    "taxonomy_id": "layered_intrusion_chromite",
+    "icon_id": "gc_ms_layered_intrusion_chromite",
+    "light": "layered_intrusion_chromite.png",
+    "dark": "layered_intrusion_chromite-dark.png"
+  },
+  {
+    "taxonomy_id": "podiform_chromite",
+    "icon_id": "gc_ms_podiform_chromite",
+    "light": "podiform_chromite.png",
+    "dark": "podiform_chromite-dark.png"
+  },
+  {
+    "taxonomy_id": "fe_ti_v_oxide",
+    "icon_id": "gc_ms_fe_ti_v_oxide",
+    "light": "fe_ti_v_oxide.png",
+    "dark": "fe_ti_v_oxide-dark.png"
+  },
+  {
+    "taxonomy_id": "alaskan_type_pt",
+    "icon_id": "gc_ms_alaskan_type_pt",
+    "light": "alaskan_type_pt.png",
+    "dark": "alaskan_type_pt-dark.png"
+  },
+  {
+    "taxonomy_id": "carbonatite_ree",
+    "icon_id": "gc_ms_carbonatite_ree",
+    "light": "carbonatite_ree.png",
+    "dark": "carbonatite_ree-dark.png"
+  },
+  {
+    "taxonomy_id": "alkaline_peralkaline_ree",
+    "icon_id": "gc_ms_alkaline_peralkaline_ree",
+    "light": "alkaline_peralkaline_ree.png",
+    "dark": "alkaline_peralkaline_ree-dark.png"
+  },
+  {
+    "taxonomy_id": "lct_pegmatite",
+    "icon_id": "gc_ms_lct_pegmatite",
+    "light": "lct_pegmatite.png",
+    "dark": "lct_pegmatite-dark.png"
+  },
+  {
+    "taxonomy_id": "nyf_pegmatite",
+    "icon_id": "gc_ms_nyf_pegmatite",
+    "light": "nyf_pegmatite.png",
+    "dark": "nyf_pegmatite-dark.png"
+  },
+  {
+    "taxonomy_id": "kimberlite_diamond",
+    "icon_id": "gc_ms_kimberlite_diamond",
+    "light": "kimberlite_diamond.png",
+    "dark": "kimberlite_diamond-dark.png"
+  },
+  {
+    "taxonomy_id": "porphyry_cu",
+    "icon_id": "gc_ms_porphyry_cu",
+    "light": "porphyry_cu.png",
+    "dark": "porphyry_cu-dark.png"
+  },
+  {
+    "taxonomy_id": "alkalic_porphyry",
+    "icon_id": "gc_ms_alkalic_porphyry",
+    "light": "alkalic_porphyry.png",
+    "dark": "alkalic_porphyry-dark.png"
+  },
+  {
+    "taxonomy_id": "porphyry_mo",
+    "icon_id": "gc_ms_porphyry_mo",
+    "light": "porphyry_mo.png",
+    "dark": "porphyry_mo-dark.png"
+  },
+  {
+    "taxonomy_id": "porphyry_w_sn",
+    "icon_id": "gc_ms_porphyry_w_sn",
+    "light": "porphyry_w_sn.png",
+    "dark": "porphyry_w_sn-dark.png"
+  },
+  {
+    "taxonomy_id": "skarn",
+    "icon_id": "gc_ms_skarn",
+    "light": "skarn.png",
+    "dark": "skarn-dark.png"
+  },
+  {
+    "taxonomy_id": "crd_carbonate_replacement",
+    "icon_id": "gc_ms_crd_carbonate_replacement",
+    "light": "crd_carbonate_replacement.png",
+    "dark": "crd_carbonate_replacement-dark.png"
+  },
+  {
+    "taxonomy_id": "manto_type_cu",
+    "icon_id": "gc_ms_manto_type_cu",
+    "light": "manto_type_cu.png",
+    "dark": "manto_type_cu-dark.png"
+  },
+  {
+    "taxonomy_id": "high_sulfidation_epithermal",
+    "icon_id": "gc_ms_high_sulfidation_epithermal",
+    "light": "high_sulfidation_epithermal.png",
+    "dark": "high_sulfidation_epithermal-dark.png"
+  },
+  {
+    "taxonomy_id": "intermediate_sulfidation_epithermal",
+    "icon_id": "gc_ms_intermediate_sulfidation_epithermal",
+    "light": "intermediate_sulfidation_epithermal.png",
+    "dark": "intermediate_sulfidation_epithermal-dark.png"
+  },
+  {
+    "taxonomy_id": "low_sulfidation_epithermal",
+    "icon_id": "gc_ms_low_sulfidation_epithermal",
+    "light": "low_sulfidation_epithermal.png",
+    "dark": "low_sulfidation_epithermal-dark.png"
+  },
+  {
+    "taxonomy_id": "rirgs",
+    "icon_id": "gc_ms_rirgs",
+    "light": "rirgs.png",
+    "dark": "rirgs-dark.png"
+  },
+  {
+    "taxonomy_id": "sn_w_granite",
+    "icon_id": "gc_ms_sn_w_granite",
+    "light": "sn_w_granite.png",
+    "dark": "sn_w_granite-dark.png"
+  },
+  {
+    "taxonomy_id": "be_f_replacement",
+    "icon_id": "gc_ms_be_f_replacement",
+    "light": "be_f_replacement.png",
+    "dark": "be_f_replacement-dark.png"
+  },
+  {
+    "taxonomy_id": "magmatic_uranium",
+    "icon_id": "gc_ms_magmatic_uranium",
+    "light": "magmatic_uranium.png",
+    "dark": "magmatic_uranium-dark.png"
+  },
+  {
+    "taxonomy_id": "iocg",
+    "icon_id": "gc_ms_iocg",
+    "light": "iocg.png",
+    "dark": "iocg-dark.png"
+  },
+  {
+    "taxonomy_id": "iron_oxide_apatite",
+    "icon_id": "gc_ms_iron_oxide_apatite",
+    "light": "iron_oxide_apatite.png",
+    "dark": "iron_oxide_apatite-dark.png"
+  },
+  {
+    "taxonomy_id": "orogenic_gold",
+    "icon_id": "gc_ms_orogenic_gold",
+    "light": "orogenic_gold.png",
+    "dark": "orogenic_gold-dark.png"
+  },
+  {
+    "taxonomy_id": "listwaenite_gold",
+    "icon_id": "gc_ms_listwaenite_gold",
+    "light": "listwaenite_gold.png",
+    "dark": "listwaenite_gold-dark.png"
+  },
+  {
+    "taxonomy_id": "sb_hg_epizonal",
+    "icon_id": "gc_ms_sb_hg_epizonal",
+    "light": "sb_hg_epizonal.png",
+    "dark": "sb_hg_epizonal-dark.png"
+  },
+  {
+    "taxonomy_id": "carlin_type_gold",
+    "icon_id": "gc_ms_carlin_type_gold",
+    "light": "carlin_type_gold.png",
+    "dark": "carlin_type_gold-dark.png"
+  },
+  {
+    "taxonomy_id": "graphite_metamorphic",
+    "icon_id": "gc_ms_graphite_metamorphic",
+    "light": "graphite_metamorphic.png",
+    "dark": "graphite_metamorphic-dark.png"
+  },
+  {
+    "taxonomy_id": "magnesite_talc",
+    "icon_id": "gc_ms_magnesite_talc",
+    "light": "magnesite_talc.png",
+    "dark": "magnesite_talc-dark.png"
+  },
+  {
+    "taxonomy_id": "sedex_clastic_dominated",
+    "icon_id": "gc_ms_sedex_clastic_dominated",
+    "light": "sedex_clastic_dominated.png",
+    "dark": "sedex_clastic_dominated-dark.png"
+  },
+  {
+    "taxonomy_id": "mvt_zn_pb",
+    "icon_id": "gc_ms_mvt_zn_pb",
+    "light": "mvt_zn_pb.png",
+    "dark": "mvt_zn_pb-dark.png"
+  },
+  {
+    "taxonomy_id": "irish_type_zn_pb",
+    "icon_id": "gc_ms_irish_type_zn_pb",
+    "light": "irish_type_zn_pb.png",
+    "dark": "irish_type_zn_pb-dark.png"
+  },
+  {
+    "taxonomy_id": "sediment_hosted_stratiform_cu",
+    "icon_id": "gc_ms_sediment_hosted_stratiform_cu",
+    "light": "sediment_hosted_stratiform_cu.png",
+    "dark": "sediment_hosted_stratiform_cu-dark.png"
+  },
+  {
+    "taxonomy_id": "unconformity_uranium",
+    "icon_id": "gc_ms_unconformity_uranium",
+    "light": "unconformity_uranium.png",
+    "dark": "unconformity_uranium-dark.png"
+  },
+  {
+    "taxonomy_id": "sandstone_hosted_uranium",
+    "icon_id": "gc_ms_sandstone_hosted_uranium",
+    "light": "sandstone_hosted_uranium.png",
+    "dark": "sandstone_hosted_uranium-dark.png"
+  },
+  {
+    "taxonomy_id": "five_element_vein",
+    "icon_id": "gc_ms_five_element_vein",
+    "light": "five_element_vein.png",
+    "dark": "five_element_vein-dark.png"
+  },
+  {
+    "taxonomy_id": "fluorite_barite_vein_strata",
+    "icon_id": "gc_ms_fluorite_barite_vein_strata",
+    "light": "fluorite_barite_vein_strata.png",
+    "dark": "fluorite_barite_vein_strata-dark.png"
+  },
+  {
+    "taxonomy_id": "vms_clan",
+    "icon_id": "gc_ms_vms_clan",
+    "light": "vms_clan.png",
+    "dark": "vms_clan-dark.png"
+  },
+  {
+    "taxonomy_id": "seafloor_massive_sulfide",
+    "icon_id": "gc_ms_seafloor_massive_sulfide",
+    "light": "seafloor_massive_sulfide.png",
+    "dark": "seafloor_massive_sulfide-dark.png"
+  },
+  {
+    "taxonomy_id": "bif_iron_formation",
+    "icon_id": "gc_ms_bif_iron_formation",
+    "light": "bif_iron_formation.png",
+    "dark": "bif_iron_formation-dark.png"
+  },
+  {
+    "taxonomy_id": "sedimentary_manganese",
+    "icon_id": "gc_ms_sedimentary_manganese",
+    "light": "sedimentary_manganese.png",
+    "dark": "sedimentary_manganese-dark.png"
+  },
+  {
+    "taxonomy_id": "ferromanganese_nodule_crust",
+    "icon_id": "gc_ms_ferromanganese_nodule_crust",
+    "light": "ferromanganese_nodule_crust.png",
+    "dark": "ferromanganese_nodule_crust-dark.png"
+  },
+  {
+    "taxonomy_id": "phosphorite",
+    "icon_id": "gc_ms_phosphorite",
+    "light": "phosphorite.png",
+    "dark": "phosphorite-dark.png"
+  },
+  {
+    "taxonomy_id": "black_shale_polymetallic",
+    "icon_id": "gc_ms_black_shale_polymetallic",
+    "light": "black_shale_polymetallic.png",
+    "dark": "black_shale_polymetallic-dark.png"
+  },
+  {
+    "taxonomy_id": "evaporite_potash",
+    "icon_id": "gc_ms_evaporite_potash",
+    "light": "evaporite_potash.png",
+    "dark": "evaporite_potash-dark.png"
+  },
+  {
+    "taxonomy_id": "bauxite",
+    "icon_id": "gc_ms_bauxite",
+    "light": "bauxite.png",
+    "dark": "bauxite-dark.png"
+  },
+  {
+    "taxonomy_id": "nickel_laterite",
+    "icon_id": "gc_ms_nickel_laterite",
+    "light": "nickel_laterite.png",
+    "dark": "nickel_laterite-dark.png"
+  },
+  {
+    "taxonomy_id": "ion_adsorption_clay_ree",
+    "icon_id": "gc_ms_ion_adsorption_clay_ree",
+    "light": "ion_adsorption_clay_ree.png",
+    "dark": "ion_adsorption_clay_ree-dark.png"
+  },
+  {
+    "taxonomy_id": "supergene_iron_enrichment",
+    "icon_id": "gc_ms_supergene_iron_enrichment",
+    "light": "supergene_iron_enrichment.png",
+    "dark": "supergene_iron_enrichment-dark.png"
+  },
+  {
+    "taxonomy_id": "channel_iron_deposit",
+    "icon_id": "gc_ms_channel_iron_deposit",
+    "light": "channel_iron_deposit.png",
+    "dark": "channel_iron_deposit-dark.png"
+  },
+  {
+    "taxonomy_id": "supergene_copper",
+    "icon_id": "gc_ms_supergene_copper",
+    "light": "supergene_copper.png",
+    "dark": "supergene_copper-dark.png"
+  },
+  {
+    "taxonomy_id": "non_sulfide_zn",
+    "icon_id": "gc_ms_non_sulfide_zn",
+    "light": "non_sulfide_zn.png",
+    "dark": "non_sulfide_zn-dark.png"
+  },
+  {
+    "taxonomy_id": "lithium_brine",
+    "icon_id": "gc_ms_lithium_brine",
+    "light": "lithium_brine.png",
+    "dark": "lithium_brine-dark.png"
+  },
+  {
+    "taxonomy_id": "lithium_clay",
+    "icon_id": "gc_ms_lithium_clay",
+    "light": "lithium_clay.png",
+    "dark": "lithium_clay-dark.png"
+  },
+  {
+    "taxonomy_id": "borate_nitrate",
+    "icon_id": "gc_ms_borate_nitrate",
+    "light": "borate_nitrate.png",
+    "dark": "borate_nitrate-dark.png"
+  },
+  {
+    "taxonomy_id": "calcrete_uranium",
+    "icon_id": "gc_ms_calcrete_uranium",
+    "light": "calcrete_uranium.png",
+    "dark": "calcrete_uranium-dark.png"
+  },
+  {
+    "taxonomy_id": "placer_gold",
+    "icon_id": "gc_ms_placer_gold",
+    "light": "placer_gold.png",
+    "dark": "placer_gold-dark.png"
+  },
+  {
+    "taxonomy_id": "quartz_pebble_conglomerate_gold_u",
+    "icon_id": "gc_ms_quartz_pebble_conglomerate_gold_u",
+    "light": "quartz_pebble_conglomerate_gold_u.png",
+    "dark": "quartz_pebble_conglomerate_gold_u-dark.png"
+  },
+  {
+    "taxonomy_id": "heavy_mineral_sands",
+    "icon_id": "gc_ms_heavy_mineral_sands",
+    "light": "heavy_mineral_sands.png",
+    "dark": "heavy_mineral_sands-dark.png"
+  },
+  {
+    "taxonomy_id": "placer_tin",
+    "icon_id": "gc_ms_placer_tin",
+    "light": "placer_tin.png",
+    "dark": "placer_tin-dark.png"
+  },
+  {
+    "taxonomy_id": "placer_diamond",
+    "icon_id": "gc_ms_placer_diamond",
+    "light": "placer_diamond.png",
+    "dark": "placer_diamond-dark.png"
+  },
+  {
+    "taxonomy_id": "industrial_minerals_overview",
+    "icon_id": "gc_ms_industrial_minerals_overview",
+    "light": "industrial_minerals_overview.png",
+    "dark": "industrial_minerals_overview-dark.png"
+  },
+  {
+    "taxonomy_id": "gemstone_systems",
+    "icon_id": "gc_ms_gemstone_systems",
+    "light": "gemstone_systems.png",
+    "dark": "gemstone_systems-dark.png"
+  },
+  {
+    "taxonomy_id": "energy_adjacent_note",
+    "icon_id": "gc_ms_energy_adjacent_note",
+    "light": "energy_adjacent_note.png",
+    "dark": "energy_adjacent_note-dark.png"
   }
 ]

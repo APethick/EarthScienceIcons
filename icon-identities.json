@@ -2891,6 +2891,351 @@
       "id": "gc_ms_clan_energy_adjacent",
       "unicode": "E242",
       "fallback": "\u0284"
+    },
+    {
+      "id": "gc_ms_ni_cu_pge_komatiite",
+      "unicode": "E243",
+      "fallback": "\u0285"
+    },
+    {
+      "id": "gc_ms_ni_cu_pge_conduit",
+      "unicode": "E244",
+      "fallback": "\u0286"
+    },
+    {
+      "id": "gc_ms_layered_intrusion_pge",
+      "unicode": "E245",
+      "fallback": "\u0287"
+    },
+    {
+      "id": "gc_ms_layered_intrusion_chromite",
+      "unicode": "E246",
+      "fallback": "\u0288"
+    },
+    {
+      "id": "gc_ms_podiform_chromite",
+      "unicode": "E247",
+      "fallback": "\u0289"
+    },
+    {
+      "id": "gc_ms_fe_ti_v_oxide",
+      "unicode": "E248",
+      "fallback": "\u028a"
+    },
+    {
+      "id": "gc_ms_alaskan_type_pt",
+      "unicode": "E249",
+      "fallback": "\u028b"
+    },
+    {
+      "id": "gc_ms_carbonatite_ree",
+      "unicode": "E24A",
+      "fallback": "\u028c"
+    },
+    {
+      "id": "gc_ms_alkaline_peralkaline_ree",
+      "unicode": "E24B",
+      "fallback": "\u028d"
+    },
+    {
+      "id": "gc_ms_lct_pegmatite",
+      "unicode": "E24C",
+      "fallback": "\u028e"
+    },
+    {
+      "id": "gc_ms_nyf_pegmatite",
+      "unicode": "E24D",
+      "fallback": "\u028f"
+    },
+    {
+      "id": "gc_ms_kimberlite_diamond",
+      "unicode": "E24E",
+      "fallback": "\u0290"
+    },
+    {
+      "id": "gc_ms_porphyry_cu",
+      "unicode": "E24F",
+      "fallback": "\u0291"
+    },
+    {
+      "id": "gc_ms_alkalic_porphyry",
+      "unicode": "E250",
+      "fallback": "\u0292"
+    },
+    {
+      "id": "gc_ms_porphyry_mo",
+      "unicode": "E251",
+      "fallback": "\u0293"
+    },
+    {
+      "id": "gc_ms_porphyry_w_sn",
+      "unicode": "E252",
+      "fallback": "\u0294"
+    },
+    {
+      "id": "gc_ms_skarn",
+      "unicode": "E253",
+      "fallback": "\u0295"
+    },
+    {
+      "id": "gc_ms_crd_carbonate_replacement",
+      "unicode": "E254",
+      "fallback": "\u0296"
+    },
+    {
+      "id": "gc_ms_manto_type_cu",
+      "unicode": "E255",
+      "fallback": "\u0297"
+    },
+    {
+      "id": "gc_ms_high_sulfidation_epithermal",
+      "unicode": "E256",
+      "fallback": "\u0298"
+    },
+    {
+      "id": "gc_ms_intermediate_sulfidation_epithermal",
+      "unicode": "E257",
+      "fallback": "\u0299"
+    },
+    {
+      "id": "gc_ms_low_sulfidation_epithermal",
+      "unicode": "E258",
+      "fallback": "\u029a"
+    },
+    {
+      "id": "gc_ms_rirgs",
+      "unicode": "E259",
+      "fallback": "\u029b"
+    },
+    {
+      "id": "gc_ms_sn_w_granite",
+      "unicode": "E25A",
+      "fallback": "\u029c"
+    },
+    {
+      "id": "gc_ms_be_f_replacement",
+      "unicode": "E25B",
+      "fallback": "\u029d"
+    },
+    {
+      "id": "gc_ms_magmatic_uranium",
+      "unicode": "E25C",
+      "fallback": "\u029e"
+    },
+    {
+      "id": "gc_ms_iocg",
+      "unicode": "E25D",
+      "fallback": "\u029f"
+    },
+    {
+      "id": "gc_ms_iron_oxide_apatite",
+      "unicode": "E25E",
+      "fallback": "\u02a0"
+    },
+    {
+      "id": "gc_ms_orogenic_gold",
+      "unicode": "E25F",
+      "fallback": "\u02a1"
+    },
+    {
+      "id": "gc_ms_listwaenite_gold",
+      "unicode": "E260",
+      "fallback": "\u02a2"
+    },
+    {
+      "id": "gc_ms_sb_hg_epizonal",
+      "unicode": "E261",
+      "fallback": "\u02a3"
+    },
+    {
+      "id": "gc_ms_carlin_type_gold",
+      "unicode": "E262",
+      "fallback": "\u02a4"
+    },
+    {
+      "id": "gc_ms_graphite_metamorphic",
+      "unicode": "E263",
+      "fallback": "\u02a5"
+    },
+    {
+      "id": "gc_ms_magnesite_talc",
+      "unicode": "E264",
+      "fallback": "\u02a6"
+    },
+    {
+      "id": "gc_ms_sedex_clastic_dominated",
+      "unicode": "E265",
+      "fallback": "\u02a7"
+    },
+    {
+      "id": "gc_ms_mvt_zn_pb",
+      "unicode": "E266",
+      "fallback": "\u02a8"
+    },
+    {
+      "id": "gc_ms_irish_type_zn_pb",
+      "unicode": "E267",
+      "fallback": "\u02a9"
+    },
+    {
+      "id": "gc_ms_sediment_hosted_stratiform_cu",
+      "unicode": "E268",
+      "fallback": "\u02aa"
+    },
+    {
+      "id": "gc_ms_unconformity_uranium",
+      "unicode": "E269",
+      "fallback": "\u02ab"
+    },
+    {
+      "id": "gc_ms_sandstone_hosted_uranium",
+      "unicode": "E26A",
+      "fallback": "\u02ac"
+    },
+    {
+      "id": "gc_ms_five_element_vein",
+      "unicode": "E26B",
+      "fallback": "\u02ad"
+    },
+    {
+      "id": "gc_ms_fluorite_barite_vein_strata",
+      "unicode": "E26C",
+      "fallback": "\u02ae"
+    },
+    {
+      "id": "gc_ms_vms_clan",
+      "unicode": "E26D",
+      "fallback": "\u02af"
+    },
+    {
+      "id": "gc_ms_seafloor_massive_sulfide",
+      "unicode": "E26E",
+      "fallback": "\u02b0"
+    },
+    {
+      "id": "gc_ms_bif_iron_formation",
+      "unicode": "E26F",
+      "fallback": "\u02b1"
+    },
+    {
+      "id": "gc_ms_sedimentary_manganese",
+      "unicode": "E270",
+      "fallback": "\u02b2"
+    },
+    {
+      "id": "gc_ms_ferromanganese_nodule_crust",
+      "unicode": "E271",
+      "fallback": "\u02b3"
+    },
+    {
+      "id": "gc_ms_phosphorite",
+      "unicode": "E272",
+      "fallback": "\u02b4"
+    },
+    {
+      "id": "gc_ms_black_shale_polymetallic",
+      "unicode": "E273",
+      "fallback": "\u02b5"
+    },
+    {
+      "id": "gc_ms_evaporite_potash",
+      "unicode": "E274",
+      "fallback": "\u02b6"
+    },
+    {
+      "id": "gc_ms_bauxite",
+      "unicode": "E275",
+      "fallback": "\u02b7"
+    },
+    {
+      "id": "gc_ms_nickel_laterite",
+      "unicode": "E276",
+      "fallback": "\u02b8"
+    },
+    {
+      "id": "gc_ms_ion_adsorption_clay_ree",
+      "unicode": "E277",
+      "fallback": "\u02b9"
+    },
+    {
+      "id": "gc_ms_supergene_iron_enrichment",
+      "unicode": "E278",
+      "fallback": "\u02ba"
+    },
+    {
+      "id": "gc_ms_channel_iron_deposit",
+      "unicode": "E279",
+      "fallback": "\u02bb"
+    },
+    {
+      "id": "gc_ms_supergene_copper",
+      "unicode": "E27A",
+      "fallback": "\u02bc"
+    },
+    {
+      "id": "gc_ms_non_sulfide_zn",
+      "unicode": "E27B",
+      "fallback": "\u02bd"
+    },
+    {
+      "id": "gc_ms_lithium_brine",
+      "unicode": "E27C",
+      "fallback": "\u02be"
+    },
+    {
+      "id": "gc_ms_lithium_clay",
+      "unicode": "E27D",
+      "fallback": "\u02bf"
+    },
+    {
+      "id": "gc_ms_borate_nitrate",
+      "unicode": "E27E",
+      "fallback": "\u02c0"
+    },
+    {
+      "id": "gc_ms_calcrete_uranium",
+      "unicode": "E27F",
+      "fallback": "\u02c1"
+    },
+    {
+      "id": "gc_ms_placer_gold",
+      "unicode": "E280",
+      "fallback": "\u02c2"
+    },
+    {
+      "id": "gc_ms_quartz_pebble_conglomerate_gold_u",
+      "unicode": "E281",
+      "fallback": "\u02c3"
+    },
+    {
+      "id": "gc_ms_heavy_mineral_sands",
+      "unicode": "E282",
+      "fallback": "\u02c4"
+    },
+    {
+      "id": "gc_ms_placer_tin",
+      "unicode": "E283",
+      "fallback": "\u02c5"
+    },
+    {
+      "id": "gc_ms_placer_diamond",
+      "unicode": "E284",
+      "fallback": "\u02c6"
+    },
+    {
+      "id": "gc_ms_industrial_minerals_overview",
+      "unicode": "E285",
+      "fallback": "\u02c7"
+    },
+    {
+      "id": "gc_ms_gemstone_systems",
+      "unicode": "E286",
+      "fallback": "\u02c8"
+    },
+    {
+      "id": "gc_ms_energy_adjacent_note",
+      "unicode": "E287",
+      "fallback": "\u02c9"
     }
   ]
 }

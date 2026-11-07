@@ -603,3 +603,72 @@
 .gi-gc-ms-clan-industrial-minerals::before { content: "\e240"; } /* Industrial minerals and rocks (U+E240) */
 .gi-gc-ms-clan-gemstone::before { content: "\e241"; } /* Gemstone systems (U+E241) */
 .gi-gc-ms-clan-energy-adjacent::before { content: "\e242"; } /* Energy-adjacent and excluded systems (U+E242) */
+.gi-gc-ms-ni-cu-pge-komatiite::before { content: "\e243"; } /* Komatiite-hosted Ni-Cu-(PGE) (U+E243) */
+.gi-gc-ms-ni-cu-pge-conduit::before { content: "\e244"; } /* Conduit- and intrusion-hosted Ni-Cu-(PGE) (U+E244) */
+.gi-gc-ms-layered-intrusion-pge::before { content: "\e245"; } /* Layered-intrusion PGE reef and contact deposits (U+E245) */
+.gi-gc-ms-layered-intrusion-chromite::before { content: "\e246"; } /* Stratiform (layered-intrusion) chromitite (U+E246) */
+.gi-gc-ms-podiform-chromite::before { content: "\e247"; } /* Podiform (ophiolitic) chromite (U+E247) */
+.gi-gc-ms-fe-ti-v-oxide::before { content: "\e248"; } /* Fe-Ti-(V-P) oxide in mafic intrusions (U+E248) */
+.gi-gc-ms-alaskan-type-pt::before { content: "\e249"; } /* Alaskan-Ural type zoned ultramafic Pt (U+E249) */
+.gi-gc-ms-carbonatite-ree::before { content: "\e24a"; } /* Carbonatite-associated REE-Nb-P (U+E24A) */
+.gi-gc-ms-alkaline-peralkaline-ree::before { content: "\e24b"; } /* Alkaline-peralkaline REE-Zr-Nb-(Y-Be-Li) (U+E24B) */
+.gi-gc-ms-lct-pegmatite::before { content: "\e24c"; } /* LCT (Li-Cs-Ta) pegmatite (U+E24C) */
+.gi-gc-ms-nyf-pegmatite::before { content: "\e24d"; } /* NYF (Nb-Y-F) pegmatite (U+E24D) */
+.gi-gc-ms-kimberlite-diamond::before { content: "\e24e"; } /* Kimberlite- and lamproite-hosted diamond (U+E24E) */
+.gi-gc-ms-porphyry-cu::before { content: "\e24f"; } /* Porphyry Cu-(Au-Mo) (U+E24F) */
+.gi-gc-ms-alkalic-porphyry::before { content: "\e250"; } /* Alkalic porphyry Cu-Au (U+E250) */
+.gi-gc-ms-porphyry-mo::before { content: "\e251"; } /* Porphyry Mo (U+E251) */
+.gi-gc-ms-porphyry-w-sn::before { content: "\e252"; } /* Porphyry W and porphyry Sn (U+E252) */
+.gi-gc-ms-skarn::before { content: "\e253"; } /* Skarn (metal-classified) (U+E253) */
+.gi-gc-ms-crd-carbonate-replacement::before { content: "\e254"; } /* Carbonate-replacement / Cordilleran polymetallic (Zn-Pb-Ag-Cu) (U+E254) */
+.gi-gc-ms-manto-type-cu::before { content: "\e255"; } /* Volcanic-hosted strata-bound (manto) Cu (U+E255) */
+.gi-gc-ms-high-sulfidation-epithermal::before { content: "\e256"; } /* High-sulfidation epithermal Au-Ag-(Cu) (U+E256) */
+.gi-gc-ms-intermediate-sulfidation-epithermal::before { content: "\e257"; } /* Intermediate-sulfidation epithermal Ag-Au-Zn-Pb (U+E257) */
+.gi-gc-ms-low-sulfidation-epithermal::before { content: "\e258"; } /* Low-sulfidation epithermal Au-Ag (U+E258) */
+.gi-gc-ms-rirgs::before { content: "\e259"; } /* Reduced intrusion-related gold system (U+E259) */
+.gi-gc-ms-sn-w-granite::before { content: "\e25a"; } /* Granite-related Sn-W (greisen, vein, breccia) (U+E25A) */
+.gi-gc-ms-be-f-replacement::before { content: "\e25b"; } /* Be-F-(Li-U) volcanic replacement (U+E25B) */
+.gi-gc-ms-magmatic-uranium::before { content: "\e25c"; } /* Intrusive, metasomatite and volcanic-hosted uranium (U+E25C) */
+.gi-gc-ms-iocg::before { content: "\e25d"; } /* Iron oxide copper-gold (IOCG) (U+E25D) */
+.gi-gc-ms-iron-oxide-apatite::before { content: "\e25e"; } /* Iron oxide-apatite (IOA / Kiruna type) (U+E25E) */
+.gi-gc-ms-orogenic-gold::before { content: "\e25f"; } /* Orogenic (mesothermal) gold (U+E25F) */
+.gi-gc-ms-listwaenite-gold::before { content: "\e260"; } /* Listwaenite / ultramafic-hosted carbonate-replacement gold (U+E260) */
+.gi-gc-ms-sb-hg-epizonal::before { content: "\e261"; } /* Epizonal Sb-Hg (and Sb-Au) (U+E261) */
+.gi-gc-ms-carlin-type-gold::before { content: "\e262"; } /* Carlin-type sediment-hosted disseminated gold (U+E262) */
+.gi-gc-ms-graphite-metamorphic::before { content: "\e263"; } /* Metamorphic and vein graphite (U+E263) */
+.gi-gc-ms-magnesite-talc::before { content: "\e264"; } /* Magnesite, talc and related ultramafic-hosted industrial minerals (U+E264) */
+.gi-gc-ms-sedex-clastic-dominated::before { content: "\e265"; } /* Clastic-dominated (SEDEX) Zn-Pb-Ag (U+E265) */
+.gi-gc-ms-mvt-zn-pb::before { content: "\e266"; } /* Mississippi Valley-type Zn-Pb (U+E266) */
+.gi-gc-ms-irish-type-zn-pb::before { content: "\e267"; } /* Irish-type carbonate-hosted Zn-Pb (U+E267) */
+.gi-gc-ms-sediment-hosted-stratiform-cu::before { content: "\e268"; } /* Sediment-hosted stratiform (and red-bed) Cu-Co (U+E268) */
+.gi-gc-ms-unconformity-uranium::before { content: "\e269"; } /* Unconformity-related uranium (U+E269) */
+.gi-gc-ms-sandstone-hosted-uranium::before { content: "\e26a"; } /* Sandstone-hosted uranium (U+E26A) */
+.gi-gc-ms-five-element-vein::before { content: "\e26b"; } /* Five-element (Ag-Ni-Co-As-Bi) vein (U+E26B) */
+.gi-gc-ms-fluorite-barite-vein-strata::before { content: "\e26c"; } /* Fluorite-barite vein and strata-bound deposits (U+E26C) */
+.gi-gc-ms-vms-clan::before { content: "\e26d"; } /* Volcanogenic massive sulfide (VMS) (U+E26D) */
+.gi-gc-ms-seafloor-massive-sulfide::before { content: "\e26e"; } /* Modern seafloor massive sulfide (SMS) (U+E26E) */
+.gi-gc-ms-bif-iron-formation::before { content: "\e26f"; } /* Iron formation (BIF and GIF) (U+E26F) */
+.gi-gc-ms-sedimentary-manganese::before { content: "\e270"; } /* Sedimentary and volcano-sedimentary manganese (U+E270) */
+.gi-gc-ms-ferromanganese-nodule-crust::before { content: "\e271"; } /* Deep-sea ferromanganese nodules and crusts (U+E271) */
+.gi-gc-ms-phosphorite::before { content: "\e272"; } /* Phosphorite (U+E272) */
+.gi-gc-ms-black-shale-polymetallic::before { content: "\e273"; } /* Black shale-hosted polymetallic (Ni-Mo-Zn-V-U-PGE) (U+E273) */
+.gi-gc-ms-evaporite-potash::before { content: "\e274"; } /* Evaporite potash, salt and polyhalite (U+E274) */
+.gi-gc-ms-bauxite::before { content: "\e275"; } /* Bauxite (lateritic and karst) (U+E275) */
+.gi-gc-ms-nickel-laterite::before { content: "\e276"; } /* Nickel (-cobalt-scandium) laterite (U+E276) */
+.gi-gc-ms-ion-adsorption-clay-ree::before { content: "\e277"; } /* Ion-adsorption clay REE (U+E277) */
+.gi-gc-ms-supergene-iron-enrichment::before { content: "\e278"; } /* Supergene-enriched iron ore (U+E278) */
+.gi-gc-ms-channel-iron-deposit::before { content: "\e279"; } /* Channel iron deposit (pisolitic palaeochannel iron) (U+E279) */
+.gi-gc-ms-supergene-copper::before { content: "\e27a"; } /* Supergene copper (leached cap, oxide and chalcocite enrichment) (U+E27A) */
+.gi-gc-ms-non-sulfide-zn::before { content: "\e27b"; } /* Non-sulfide (supergene) zinc (U+E27B) */
+.gi-gc-ms-lithium-brine::before { content: "\e27c"; } /* Continental, geothermal and oilfield lithium brine (U+E27C) */
+.gi-gc-ms-lithium-clay::before { content: "\e27d"; } /* Sedimentary and volcano-sedimentary lithium clay (U+E27D) */
+.gi-gc-ms-borate-nitrate::before { content: "\e27e"; } /* Borate and nitrate (arid-basin non-halide evaporite) (U+E27E) */
+.gi-gc-ms-calcrete-uranium::before { content: "\e27f"; } /* Surficial (calcrete) uranium (U+E27F) */
+.gi-gc-ms-placer-gold::before { content: "\e280"; } /* Placer and palaeoplacer gold (U+E280) */
+.gi-gc-ms-quartz-pebble-conglomerate-gold-u::before { content: "\e281"; } /* Quartz-pebble conglomerate (Witwatersrand-type) Au-U (U+E281) */
+.gi-gc-ms-heavy-mineral-sands::before { content: "\e282"; } /* Heavy mineral sands (Ti-Zr-REE) (U+E282) */
+.gi-gc-ms-placer-tin::before { content: "\e283"; } /* Placer tin (and associated Nb-Ta) (U+E283) */
+.gi-gc-ms-placer-diamond::before { content: "\e284"; } /* Placer and marine-placer diamond (U+E284) */
+.gi-gc-ms-industrial-minerals-overview::before { content: "\e285"; } /* Industrial minerals (kaolin, bentonite, zeolite, silica, gypsum, limestone, diatomite) (U+E285) */
+.gi-gc-ms-gemstone-systems::before { content: "\e286"; } /* Gemstone deposits (emerald, corundum, opal, jade, garnet) (U+E286) */
+.gi-gc-ms-energy-adjacent-note::before { content: "\e287"; } /* Coal, oil shale, hydrocarbon and geothermal systems (U+E287) */

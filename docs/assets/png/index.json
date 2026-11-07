@@ -26,13 +26,13 @@
   {
     "group": "categories/Mineral Systems",
     "style": "line",
-    "count": 36,
+    "count": 105,
     "file": "png/categories/mineral-systems-line.png"
   },
   {
     "group": "categories/Mineral Systems",
     "style": "flat-colour",
-    "count": 36,
+    "count": 105,
     "file": "png/categories/mineral-systems-flat-colour.png"
   },
   {
@@ -156,6 +156,18 @@
     "file": "png/collections/mineral-systems-realms-flat-colour.png"
   },
   {
+    "group": "collections/Mineral systems types",
+    "style": "line",
+    "count": 69,
+    "file": "png/collections/mineral-systems-types-line.png"
+  },
+  {
+    "group": "collections/Mineral systems types",
+    "style": "flat-colour",
+    "count": 69,
+    "file": "png/collections/mineral-systems-types-flat-colour.png"
+  },
+  {
     "group": "collections/Seismic receivers",
     "style": "line",
     "count": 9,
@@ -194,13 +206,13 @@
   {
     "group": "disciplines/Geological",
     "style": "line",
-    "count": 259,
+    "count": 328,
     "file": "png/disciplines/geological-line.png"
   },
   {
     "group": "disciplines/Geological",
     "style": "flat-colour",
-    "count": 259,
+    "count": 328,
     "file": "png/disciplines/geological-flat-colour.png"
   },
   {

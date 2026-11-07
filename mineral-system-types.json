@@ -250,5 +250,488 @@
     "parent": "realm_hybrid_industrial",
     "level": "clan",
     "description": "A dark coal seam and geothermal well represent the corpus cross-reference category."
+  },
+  {
+    "id": "ni_cu_pge_komatiite",
+    "name": "Komatiite-hosted Ni-Cu-(PGE)",
+    "parent": "clan_magmatic_sulfide",
+    "level": "type",
+    "description": "A komatiite flow with spinifex blades banks over a footwall embayment holding a massive sulfide pool."
+  },
+  {
+    "id": "ni_cu_pge_conduit",
+    "name": "Conduit- and intrusion-hosted Ni-Cu-(PGE)",
+    "parent": "clan_magmatic_sulfide",
+    "level": "type",
+    "description": "A magma conduit cuts the host sediments and drops sulfide at a dilation along its path."
+  },
+  {
+    "id": "layered_intrusion_pge",
+    "name": "Layered-intrusion PGE reef and contact deposits",
+    "parent": "clan_magmatic_sulfide",
+    "level": "type",
+    "description": "A single sulfide reef runs through the cumulate layers of a layered intrusion."
+  },
+  {
+    "id": "layered_intrusion_chromite",
+    "name": "Stratiform (layered-intrusion) chromitite",
+    "parent": "clan_magmatic_oxide",
+    "level": "type",
+    "description": "Stacked chromitite seams repeat through a layered mafic intrusion."
+  },
+  {
+    "id": "podiform_chromite",
+    "name": "Podiform (ophiolitic) chromite",
+    "parent": "clan_magmatic_oxide",
+    "level": "type",
+    "description": "Chromite pods lie in the foliated mantle rocks of an ophiolite."
+  },
+  {
+    "id": "fe_ti_v_oxide",
+    "name": "Fe-Ti-(V-P) oxide in mafic intrusions",
+    "parent": "clan_magmatic_oxide",
+    "level": "type",
+    "description": "A discordant oxide lens with apatite crystals cuts the layering of a mafic intrusion."
+  },
+  {
+    "id": "alaskan_type_pt",
+    "name": "Alaskan-Ural type zoned ultramafic Pt",
+    "parent": "clan_magmatic_oxide",
+    "level": "type",
+    "description": "Concentric ultramafic zones ring the platinum-bearing dunite core of a vertical pipe."
+  },
+  {
+    "id": "carbonatite_ree",
+    "name": "Carbonatite-associated REE-Nb-P",
+    "parent": "clan_carbonatite_alkaline",
+    "level": "type",
+    "description": "A carbonatite plug with ring dykes carries rare earths inside a fenite halo."
+  },
+  {
+    "id": "alkaline_peralkaline_ree",
+    "name": "Alkaline-peralkaline REE-Zr-Nb-(Y-Be-Li)",
+    "parent": "clan_carbonatite_alkaline",
+    "level": "type",
+    "description": "Inclined layers of an alkaline complex carry rare earth, zirconium and niobium minerals."
+  },
+  {
+    "id": "lct_pegmatite",
+    "name": "LCT (Li-Cs-Ta) pegmatite",
+    "parent": "clan_pegmatite",
+    "level": "type",
+    "description": "A zoned pegmatite dyke in foliated host rock carries spodumene laths and lepidolite books."
+  },
+  {
+    "id": "nyf_pegmatite",
+    "name": "NYF (Nb-Y-F) pegmatite",
+    "parent": "clan_pegmatite",
+    "level": "type",
+    "description": "Crystals line a miarolitic cavity inside a granite-hosted pegmatite with graphic texture."
+  },
+  {
+    "id": "kimberlite_diamond",
+    "name": "Kimberlite- and lamproite-hosted diamond",
+    "parent": "clan_kimberlite",
+    "level": "type",
+    "description": "A tuff ring, crater, diatreme and root zone make up a diamond-bearing kimberlite pipe."
+  },
+  {
+    "id": "porphyry_cu",
+    "name": "Porphyry Cu-(Au-Mo)",
+    "parent": "clan_porphyry",
+    "level": "type",
+    "description": "Nested alteration shells and a veinlet stockwork surround a copper-bearing porphyry cupola."
+  },
+  {
+    "id": "alkalic_porphyry",
+    "name": "Alkalic porphyry Cu-Au",
+    "parent": "clan_porphyry",
+    "level": "type",
+    "description": "A narrow alkalic porphyry pipe carries gold with carbonate veins and magnetite."
+  },
+  {
+    "id": "porphyry_mo",
+    "name": "Porphyry Mo",
+    "parent": "clan_porphyry",
+    "level": "type",
+    "description": "An inverted-cup molybdenite ore shell arches over a small high-silica stock."
+  },
+  {
+    "id": "porphyry_w_sn",
+    "name": "Porphyry W and porphyry Sn",
+    "parent": "clan_porphyry",
+    "level": "type",
+    "description": "Sheeted quartz veins above a cupola carry wolframite blades and cassiterite."
+  },
+  {
+    "id": "skarn",
+    "name": "Skarn (metal-classified)",
+    "parent": "clan_skarn",
+    "level": "type",
+    "description": "Zoned garnet and pyroxene bands follow the contact between an intrusion and limestone."
+  },
+  {
+    "id": "crd_carbonate_replacement",
+    "name": "Carbonate-replacement / Cordilleran polymetallic (Zn-Pb-Ag-Cu)",
+    "parent": "clan_skarn",
+    "level": "type",
+    "description": "A sulfide chimney feeds flat replacement mantos out through the limestone beds."
+  },
+  {
+    "id": "manto_type_cu",
+    "name": "Volcanic-hosted strata-bound (manto) Cu",
+    "parent": "clan_skarn",
+    "level": "type",
+    "description": "A strata-bound copper layer follows a permeable flow top in amygdaloidal volcanics."
+  },
+  {
+    "id": "high_sulfidation_epithermal",
+    "name": "High-sulfidation epithermal Au-Ag-(Cu)",
+    "parent": "clan_epithermal",
+    "level": "type",
+    "description": "Vuggy residual silica sits inside the advanced argillic lithocap of a volcanic edifice."
+  },
+  {
+    "id": "intermediate_sulfidation_epithermal",
+    "name": "Intermediate-sulfidation epithermal Ag-Au-Zn-Pb",
+    "parent": "clan_epithermal",
+    "level": "type",
+    "description": "A banded carbonate-base metal vein carries sphalerite and galena."
+  },
+  {
+    "id": "low_sulfidation_epithermal",
+    "name": "Low-sulfidation epithermal Au-Ag",
+    "parent": "clan_epithermal",
+    "level": "type",
+    "description": "A colloform-banded vein with bladed calcite rises to a sinter terrace at the surface."
+  },
+  {
+    "id": "rirgs",
+    "name": "Reduced intrusion-related gold system",
+    "parent": "clan_intrusion_related_other",
+    "level": "type",
+    "description": "Sheeted gold-bearing quartz veins fill the apex of a reduced granite cupola."
+  },
+  {
+    "id": "sn_w_granite",
+    "name": "Granite-related Sn-W (greisen, vein, breccia)",
+    "parent": "clan_intrusion_related_other",
+    "level": "type",
+    "description": "A greisen cap and quartz lodes above a granite carry cassiterite."
+  },
+  {
+    "id": "be_f_replacement",
+    "name": "Be-F-(Li-U) volcanic replacement",
+    "parent": "clan_intrusion_related_other",
+    "level": "type",
+    "description": "A fluorite-rich replacement layer follows a tuff bed beneath a rhyolite dome."
+  },
+  {
+    "id": "magmatic_uranium",
+    "name": "Intrusive, metasomatite and volcanic-hosted uranium",
+    "parent": "clan_intrusion_related_other",
+    "level": "type",
+    "description": "Pale alaskite sheets cut foliated gneiss and carry uranium oxide."
+  },
+  {
+    "id": "iocg",
+    "name": "Iron oxide copper-gold (IOCG)",
+    "parent": "clan_iron_oxide",
+    "level": "type",
+    "description": "A hematite breccia pipe with rotated clasts carries copper and gold."
+  },
+  {
+    "id": "iron_oxide_apatite",
+    "name": "Iron oxide-apatite (IOA / Kiruna type)",
+    "parent": "clan_iron_oxide",
+    "level": "type",
+    "description": "A massive magnetite body with apatite crystals sits in volcanic host rocks."
+  },
+  {
+    "id": "orogenic_gold",
+    "name": "Orogenic (mesothermal) gold",
+    "parent": "clan_orogenic_gold",
+    "level": "type",
+    "description": "A laminated quartz lode follows a shear zone, with tension gashes in the walls."
+  },
+  {
+    "id": "listwaenite_gold",
+    "name": "Listwaenite / ultramafic-hosted carbonate-replacement gold",
+    "parent": "clan_orogenic_gold",
+    "level": "type",
+    "description": "Carbonate alteration replaces serpentinite along a fault, with gold in quartz gashes."
+  },
+  {
+    "id": "sb_hg_epizonal",
+    "name": "Epizonal Sb-Hg (and Sb-Au)",
+    "parent": "clan_orogenic_gold",
+    "level": "type",
+    "description": "Radiating stibnite blades fill a shallow quartz vein close to the surface."
+  },
+  {
+    "id": "carlin_type_gold",
+    "name": "Carlin-type sediment-hosted disseminated gold",
+    "parent": "clan_sediment_hosted_gold",
+    "level": "type",
+    "description": "Jasperoid replaces a receptive carbonate bed above a steep feeder fault."
+  },
+  {
+    "id": "graphite_metamorphic",
+    "name": "Metamorphic and vein graphite",
+    "parent": "clan_metamorphic_industrial",
+    "level": "type",
+    "description": "Graphite seams follow the folds, with flake books and a crosscutting vein."
+  },
+  {
+    "id": "magnesite_talc",
+    "name": "Magnesite, talc and related ultramafic-hosted industrial minerals",
+    "parent": "clan_metamorphic_industrial",
+    "level": "type",
+    "description": "A magnesite stockwork cuts an ultramafic body with talc along its upper contact."
+  },
+  {
+    "id": "sedex_clastic_dominated",
+    "name": "Clastic-dominated (SEDEX) Zn-Pb-Ag",
+    "parent": "clan_sediment_hosted_zn_pb",
+    "level": "type",
+    "description": "A laminated sulfide lens thins away from a syn-sedimentary feeder fault."
+  },
+  {
+    "id": "mvt_zn_pb",
+    "name": "Mississippi Valley-type Zn-Pb",
+    "parent": "clan_sediment_hosted_zn_pb",
+    "level": "type",
+    "description": "Collapse breccia in a karst void carries sphalerite and galena from migrating brines."
+  },
+  {
+    "id": "irish_type_zn_pb",
+    "name": "Irish-type carbonate-hosted Zn-Pb",
+    "parent": "clan_sediment_hosted_zn_pb",
+    "level": "type",
+    "description": "Sulfide builds at the base of a carbonate wedge against a syn-rift normal fault."
+  },
+  {
+    "id": "sediment_hosted_stratiform_cu",
+    "name": "Sediment-hosted stratiform (and red-bed) Cu-Co",
+    "parent": "clan_sediment_hosted_cu",
+    "level": "type",
+    "description": "Zoned copper and sulfide bands follow a redox front between red beds and grey shale."
+  },
+  {
+    "id": "unconformity_uranium",
+    "name": "Unconformity-related uranium",
+    "parent": "clan_basinal_uranium",
+    "level": "type",
+    "description": "An ore lens straddles the unconformity where a graphitic fault meets the sandstone."
+  },
+  {
+    "id": "sandstone_hosted_uranium",
+    "name": "Sandstone-hosted uranium",
+    "parent": "clan_basinal_uranium",
+    "level": "type",
+    "description": "A crescent roll front separates oxidised from reduced sand in a channel."
+  },
+  {
+    "id": "five_element_vein",
+    "name": "Five-element (Ag-Ni-Co-As-Bi) vein",
+    "parent": "clan_basinal_vein",
+    "level": "type",
+    "description": "Cockade bands and silver dendrites fill a carbonate vein."
+  },
+  {
+    "id": "fluorite_barite_vein_strata",
+    "name": "Fluorite-barite vein and strata-bound deposits",
+    "parent": "clan_basinal_vein",
+    "level": "type",
+    "description": "A fluorite vein feeds strata-bound flats, with barite blades at the top."
+  },
+  {
+    "id": "vms_clan",
+    "name": "Volcanogenic massive sulfide (VMS)",
+    "parent": "clan_vms",
+    "level": "type",
+    "description": "A massive sulfide mound caps a discordant stringer zone in altered volcanics."
+  },
+  {
+    "id": "seafloor_massive_sulfide",
+    "name": "Modern seafloor massive sulfide (SMS)",
+    "parent": "clan_vms",
+    "level": "type",
+    "description": "Active chimneys and plumes stand in a rift valley on the modern seafloor."
+  },
+  {
+    "id": "bif_iron_formation",
+    "name": "Iron formation (BIF and GIF)",
+    "parent": "clan_chemical_sediment_fe_mn",
+    "level": "type",
+    "description": "Rhythmic iron and chert bands repeat through a tilted iron formation."
+  },
+  {
+    "id": "sedimentary_manganese",
+    "name": "Sedimentary and volcano-sedimentary manganese",
+    "parent": "clan_chemical_sediment_fe_mn",
+    "level": "type",
+    "description": "A manganese oxide bed of ooids settles on a shallow shelf."
+  },
+  {
+    "id": "ferromanganese_nodule_crust",
+    "name": "Deep-sea ferromanganese nodules and crusts",
+    "parent": "clan_chemical_sediment_fe_mn",
+    "level": "type",
+    "description": "Nodules litter the abyssal floor beside a manganese crust on a seamount flank."
+  },
+  {
+    "id": "phosphorite",
+    "name": "Phosphorite",
+    "parent": "clan_chemical_sediment_other",
+    "level": "type",
+    "description": "Upwelling feeds a pelletal phosphate bed at the shelf edge."
+  },
+  {
+    "id": "black_shale_polymetallic",
+    "name": "Black shale-hosted polymetallic (Ni-Mo-Zn-V-U-PGE)",
+    "parent": "clan_chemical_sediment_other",
+    "level": "type",
+    "description": "Pyrite laminae and a polymetallic layer sit within anoxic black shale."
+  },
+  {
+    "id": "evaporite_potash",
+    "name": "Evaporite potash, salt and polyhalite",
+    "parent": "clan_chemical_sediment_other",
+    "level": "type",
+    "description": "Cyclic halite, anhydrite and potash beds form beneath an evaporating brine."
+  },
+  {
+    "id": "bauxite",
+    "name": "Bauxite (lateritic and karst)",
+    "parent": "clan_residual_laterite",
+    "level": "type",
+    "description": "A pisolitic bauxite layer caps the clay and bedrock of a weathering profile."
+  },
+  {
+    "id": "nickel_laterite",
+    "name": "Nickel (-cobalt-scandium) laterite",
+    "parent": "clan_residual_laterite",
+    "level": "type",
+    "description": "Garnierite veins cut the saprolite between limonite cover and serpentinite bedrock."
+  },
+  {
+    "id": "ion_adsorption_clay_ree",
+    "name": "Ion-adsorption clay REE",
+    "parent": "clan_residual_laterite",
+    "level": "type",
+    "description": "Rare earths adsorb onto clay platelets in regolith above weathered granite."
+  },
+  {
+    "id": "supergene_iron_enrichment",
+    "name": "Supergene-enriched iron ore",
+    "parent": "clan_residual_laterite",
+    "level": "type",
+    "description": "Leaching upgrades banded iron formation to high-grade hematite beneath a hardcap."
+  },
+  {
+    "id": "channel_iron_deposit",
+    "name": "Channel iron deposit (pisolitic palaeochannel iron)",
+    "parent": "clan_residual_laterite",
+    "level": "type",
+    "description": "Pisolitic iron ore fills an incised palaeochannel."
+  },
+  {
+    "id": "supergene_copper",
+    "name": "Supergene copper (leached cap, oxide and chalcocite enrichment)",
+    "parent": "clan_supergene_sulfide",
+    "level": "type",
+    "description": "A leached cap, oxide zone and chalcocite blanket stack above the water table."
+  },
+  {
+    "id": "non_sulfide_zn",
+    "name": "Non-sulfide (supergene) zinc",
+    "parent": "clan_supergene_sulfide",
+    "level": "type",
+    "description": "Oxide zinc ore fills a karst cavity above a relict sulfide body."
+  },
+  {
+    "id": "lithium_brine",
+    "name": "Continental, geothermal and oilfield lithium brine",
+    "parent": "clan_evaporative_brine",
+    "level": "type",
+    "description": "Brine sits beneath the halite crust of a closed salar."
+  },
+  {
+    "id": "lithium_clay",
+    "name": "Sedimentary and volcano-sedimentary lithium clay",
+    "parent": "clan_evaporative_brine",
+    "level": "type",
+    "description": "Lithium-bearing clay beds fill a volcanic basin."
+  },
+  {
+    "id": "borate_nitrate",
+    "name": "Borate and nitrate (arid-basin non-halide evaporite)",
+    "parent": "clan_evaporative_brine",
+    "level": "type",
+    "description": "Borate crystal beds grow beneath the cracked crust of an arid playa."
+  },
+  {
+    "id": "calcrete_uranium",
+    "name": "Surficial (calcrete) uranium",
+    "parent": "clan_evaporative_brine",
+    "level": "type",
+    "description": "Carnotite sits in valley calcrete above the water table."
+  },
+  {
+    "id": "placer_gold",
+    "name": "Placer and palaeoplacer gold",
+    "parent": "clan_placer",
+    "level": "type",
+    "description": "Gold collects in bedrock riffles beneath a gravel terrace."
+  },
+  {
+    "id": "quartz_pebble_conglomerate_gold_u",
+    "name": "Quartz-pebble conglomerate (Witwatersrand-type) Au-U",
+    "parent": "clan_placer",
+    "level": "type",
+    "description": "Rounded quartz pebbles and gold line a tilted conglomerate reef."
+  },
+  {
+    "id": "heavy_mineral_sands",
+    "name": "Heavy mineral sands (Ti-Zr-REE)",
+    "parent": "clan_placer",
+    "level": "type",
+    "description": "Dark heavy-mineral laminae follow the beach face and dune."
+  },
+  {
+    "id": "placer_tin",
+    "name": "Placer tin (and associated Nb-Ta)",
+    "parent": "clan_placer",
+    "level": "type",
+    "description": "Cassiterite-bearing gravel fills a drowned bedrock valley beneath marine mud."
+  },
+  {
+    "id": "placer_diamond",
+    "name": "Placer and marine-placer diamond",
+    "parent": "clan_placer",
+    "level": "type",
+    "description": "Diamonds settle into bedrock potholes beneath river gravel."
+  },
+  {
+    "id": "industrial_minerals_overview",
+    "name": "Industrial minerals (kaolin, bentonite, zeolite, silica, gypsum, limestone, diatomite)",
+    "parent": "clan_industrial_minerals",
+    "level": "type",
+    "description": "Quarry benches step down through industrial mineral beds to a product stockpile."
+  },
+  {
+    "id": "gemstone_systems",
+    "name": "Gemstone deposits (emerald, corundum, opal, jade, garnet)",
+    "parent": "clan_gemstone",
+    "level": "type",
+    "description": "A beryl prism grows in a vein cutting schist, beside corundum and an opal nodule."
+  },
+  {
+    "id": "energy_adjacent_note",
+    "name": "Coal, oil shale, hydrocarbon and geothermal systems",
+    "parent": "clan_energy_adjacent",
+    "level": "type",
+    "description": "A coal seam, an anticlinal hydrocarbon trap and rising geothermal heat share one section."
   }
 ]

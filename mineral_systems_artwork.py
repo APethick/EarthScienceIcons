@@ -189,7 +189,7 @@ def profile(d, supergene=False):
     path(d, [(35, 43), (33, 37), (37, 33)], .8)
 
 
-@lru_cache(maxsize=40)
+@lru_cache(maxsize=256)
 def drawing(identifier):
     d = Drawing()
     if identifier == 'realm_magmatic':
@@ -463,7 +463,10 @@ def drawing(identifier):
             curve(d, [(x, 19), (x-4, 15), (x+3, 12), (x, 6)], MELT, 1)
         path(d, [(5, 33), (11, 32), (17, 34), (23, 33)], .7, QUARTZ)
     else:
-        raise ValueError('No draft drawing for taxonomy ID: ' + identifier)
+        from mineral_systems_deposits import DRAWINGS
+        if identifier not in DRAWINGS:
+            raise ValueError('No draft drawing for taxonomy ID: ' + identifier)
+        DRAWINGS[identifier](d)
     return d
 
 

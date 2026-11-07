@@ -20,6 +20,13 @@ def build_site():
     markup = re.sub(r'(<span data-total>)\d+(</span>)', lambda match: match[1] + str(total) + match[2], markup)
     markup = re.sub(r'content="Explore \d+ detailed Earth', f'content="Explore {total} detailed Earth', markup)
     markup = re.sub(r'([?&]v=)[0-9.]+', lambda match: match[1] + version, markup)
+
+    def discipline_count(match):
+        domain = match[1]
+        count = sum(domain == 'all' or icon['domain'] == domain for icon in catalog['icons'])
+        return match[1] + match[2] + str(count) + match[3]
+
+    markup = re.sub(r'(?<=data-domain=")([A-Za-z]+)(".*?<span>)\d+(</span>)', discipline_count, markup)
     page.write_text(markup, encoding='utf-8')
     script = root / 'docs' / 'app.js'
     javascript = script.read_text(encoding='utf-8')

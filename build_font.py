@@ -40,6 +40,8 @@ printable_chars = [chr(c) for c in range(0x0021, 0x007F)] + [
 ] + [chr(c) for c in range(0x0100, 0x0180)]
 # Append Latin Extended-B without changing any published fallback.
 printable_chars += [chr(c) for c in range(0x0180, 0x02B0)]
+# Append the spacing modifier letters, again without changing published keys.
+printable_chars += [chr(c) for c in range(0x02B0, 0x0300)]
 ASCII_KEYS = printable_chars
 
 
